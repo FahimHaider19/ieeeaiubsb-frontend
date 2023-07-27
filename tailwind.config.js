@@ -12,6 +12,9 @@ module.exports = {
       //   'gradient-conic':
       //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       // },
+      aspectRatio: {
+        "4/5": "4 / 5",
+      },
       animation: {
         "fade-in": "fade-in 0.5s linear forwards",
         marquee: "marquee var(--marquee-duration) linear infinite",
@@ -52,7 +55,7 @@ module.exports = {
         "2xl": "40rem",
       },
       screens: {
-        'sm-max': { 'max': "767px" },
+        "sm-max": { max: "767px" },
       },
     },
   },

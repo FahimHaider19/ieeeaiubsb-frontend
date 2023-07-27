@@ -1,4 +1,4 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { ArrowPathIcon, CloudArrowUpIcon, ComputerDesktopIcon, FingerPrintIcon, HomeModernIcon, LifebuoyIcon, LockClosedIcon, NewspaperIcon, PresentationChartBarIcon, PresentationChartLineIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 import { CheckIcon } from '@heroicons/react/20/solid'
 // import { Dialog } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -7,37 +7,26 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 const features = [
   {
     name: 'Informative Meetings, Seminars and Conferences.',
-    description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+    description: "By personally attending chapter meetings, seminars, and regional, national, and international conferences—all of which can be found on the Events and Conferences page—you will have the chance to converse with the leading industrial experts.",
+    icon: PresentationChartBarIcon,
   },
   {
     name: 'Valuable Professional Publications.',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+    description: "By supporting a variety of publications and journals within its technical specialty, IEEE IAS fosters the link between professional knowledge and practice. Working Groups are active throughout the Society, and the IAS is one of the major contributors to IEEE Standards.",
+    icon: NewspaperIcon,
   },
   {
     name: 'Advance Your Industry.',
-    description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+    description: "An important benefit for IAS members is the chance to individually improve your industry. More than 25% of all IEEE industrial standards are developed by committees within IAS. Four technical departments, each servicing a significant industry sector, bring experts together to further the field's objectives.",
+    icon: HomeModernIcon,
   },
   {
     name: 'Community of Professionals.',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    description: "The benefits of being an IAS member go beyond what is discussed in technical journals or during conference sessions. It results from actively participating in a community of young and experienced engineers who are connected by a shared passion. It includes developing a network of business contacts and keeping abreast of developments in the industry. ",
+    icon: UserGroupIcon,
   },
 ]
-/* This example requires Tailwind CSS v3.0+ */
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 function Example() {
   return (
@@ -50,20 +39,32 @@ function Example() {
                 What is IEEE IAS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ut, corporis voluptate totam velit corrupti temporibus voluptatem atque id tenetur reprehenderit nam tempora reiciendis similique obcaecati, necessitatibus, adipisci nisi voluptates non nemo. Saepe perspiciatis voluptates neque aut quod quos? Assumenda possimus accusantium maiores obcaecati facilis quisquam, exercitationem culpa tempore?
+                The IEEE Industry Applications Society (IAS) stands out from the
+                other IEEE societies because they bridge theory and practice,
+                advancing the work of academics and other engineers while
+                establishing the standards for its implementation. There are
+                many chances to provide you during your career, from networking
+                with other experts in our field to developing your professional
+                abilities and traits to contributing to mission-driven
+                activities. Join global organization, which is run by volunteers
+                in the business sector and has members from all around the
+                world.
               </p>
-              <div className='grid place-items-center my-12'>
-                <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/ias-new-01-400x400.png" alt="" />
+              <div className="grid place-items-center my-12">
+                <img src="/images/logo/IAS-01.png" alt="" />
               </div>
 
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/membership"
                   className="rounded-md bg-green-600 px-5 py-3 text-center text-xl font-semibold leading-8 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                 >
                   Join Us
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -98,7 +99,7 @@ function Example() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 
@@ -126,7 +127,7 @@ function Benefits() {
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                <p className="mt-2 text-base text-justify leading-7 text-gray-600">{feature.description}</p>
               </div>
             ))}
           </dl>
@@ -155,7 +156,14 @@ function Conference() {
                   Conferences & Events
                 </h1>
                 <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
-                  The IEEE Computer Society sponsors more than 200 technical conferences and events each year, including the industry-oriented “Rock Stars” series, all over the world, aimed at research and industry professionals. The IEEE Computer Society annually sponsors a wide range of geographically diverse technical conferences, symposiums, and workshops dedicated to providing computing enthusiasts with innovative forums designed to facilitate the identification, creation, capture, and exchange of highly peer-reviewed scientific and technological knowledge that benefits our members, the profession, and humanity. Visit the link to check the upcoming conferences.
+                  In addition to providing support with planning, forecasting,
+                  and the final financial submission, this department makes sure
+                  that all IEEE-required paperwork is delivered on time and is
+                  available to the conference organizers for guidance on IEEE
+                  rules and regulations. They host conferences on relevant
+                  subjects. As long as one of these organizations is the sole
+                  sponsor, IAS members are eligible to register at member rates
+                  for any meetings, conferences, or seminars that they organize.{" "}
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -164,7 +172,10 @@ function Conference() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -183,7 +194,7 @@ function Conference() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -199,7 +210,17 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  The IEEE Computer Society publications are peer-reviewed, indexed, and authored by technology thought leaders worldwide, and include 17 scholarly journals and 13 magazines featuring the latest technology trends. It also offers cutting-edge products such as the myComputer app (available for iOS or Android), that provide unprecedented user-driven access to its content, and the Digital Library with more than 550,000 articles and papers spanning the full spectrum of computer science and technology. Check out the journals and publications of IEEE Computer Society here.
+                  The society's publishing activities are handled by the
+                  Publications Department. This involves putting out the IAS
+                  Newsletter, Industry Applications Magazine, and IEEE
+                  Transactions on Industry Applications. IAS also sponsors a
+                  variety of journals, transactions, and magazines in
+                  collaboration with other organizations. The Technical
+                  Department and Technical Committees serve as the foundation
+                  for operations flagship publications, as they do for other
+                  elements of IAS. The Paper Review Chairs of each Technical
+                  Committee (TCPRC) are the focal point of the distinctive
+                  editorial system that governs IAS.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -208,7 +229,10 @@ function Publication() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -242,22 +266,25 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
 
 
 const educationFeatures = [
   {
     name: 'IEEE IAS Expert Webinars ',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, sequi, id consectetur, placeat quia iure ut omnis beatae unde magni itaque consequuntur eos. Voluptatum voluptate doloremque corporis sit nulla cum ad dignissimos asperiores natus error magnam, incidunt nobis ullam beatae.',
+    description: "The foremost authorities in their fields who are relevant to the IAS membership will deliver these technical webinars. The series began in the middle of 2015, and you can watch previous webinars whenever it's convenient for you. Future webinars will be available in a live setting where participants can prepare questions in advance to ask the presenter. ",
+    icon: ComputerDesktopIcon,
   },
   {
     name: 'IEEE IAS Young Professional (YP) Webinars ',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, sequi, id consectetur, placeat quia iure ut omnis beatae unde magni itaque consequuntur eos. Voluptatum voluptate doloremque corporis sit nulla cum ad dignissimos asperiores natus error magnam, incidunt nobis ullam beatae.',
+    description: "Several webinars are available from IEEE IAS that were created by and for students and young professionals. These IAS webinars, which concentrate on the younger members, are accessible to everyone who has a keen interest in the subject matter. Anyone, IAS member or not, may also access them. Program planning for the IEEE IAS YP Webinars is currently underway.",
+    icon: PresentationChartLineIcon
   },
   {
     name: 'Mentoring Resource',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, sequi, id consectetur, placeat quia iure ut omnis beatae unde magni itaque consequuntur eos. Voluptatum voluptate doloremque corporis sit nulla cum ad dignissimos asperiores natus error magnam, incidunt nobis ullam beatae.',
+    description: "The IAS Magazine's Pathways articles, which show how some IAS young professionals are finding their way to fulfilling careers, can be used as an e-mentoring tool. Perhaps one of these tales can motivate or inspire you on your own professional path. To get a summary of the articles and links to read any of them, kindly click on the link below.",
+    icon: LifebuoyIcon
   }
 ]
 
@@ -267,30 +294,38 @@ function Education() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div>
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-green-800">Everything you need</h2>
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-green-800">
+              Everything you need
+            </h2>
             <h1 className="mt-1 max-w-fit text-3xl font-extrabold bg-gradient-to-r from-green-500 to-green-800 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
               Education
             </h1>
-            <p className="mt-6 text-base leading-7 text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-              dolor cupiditate blanditiis ratione.
+            <p className="mt-6 text-base leading-7 text-gray-600 text-justify">
+              The IAS Education Department oversees assessing the educational
+              options available to IAS members. With the variety of educational
+              choices provided by the organization and IEEE, you have a ton of
+              opportunities to remain on top of things both technically and
+              professionally.
             </p>
           </div>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 lg:gap-y-16">
             {educationFeatures.map((feature) => (
               <div key={feature.name} className="relative pl-9">
                 <dt className="font-semibold text-gray-900">
-                  <CheckIcon className="absolute top-1 left-0 h-5 w-5 text-green-500" aria-hidden="true" />
+                  <feature.icon
+                    className="absolute top-1 left-0 h-5 w-5 text-green-500"
+                    aria-hidden="true"
+                  />
                   {feature.name}
                 </dt>
-                <dd className="mt-2">{feature.description}</dd>
+                <p className="mt-2 text-justify">{feature.description}</p>
               </div>
             ))}
           </dl>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -301,20 +336,23 @@ function JoinUs() {
       <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           <span className="block">Boost your productivity.</span>
-          <span className="block text-green-900">Start your journey today.</span>
+          <span className="block text-green-900">
+            Start your journey today.
+          </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-green-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+          Malesuada adipiscing sagittis vel nulla nec.
         </p>
         <a
-          href="#"
+          href="/membership"
           className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-green-50 py-3 px-5 text-base font-medium text-green-700 hover:bg-green-100 sm:w-auto"
         >
           Join Us
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -325,7 +363,7 @@ export default function IAS() {
       <Conference />
       <Publication />
       <Education />
-      <Benefits> </Benefits>
+      <Benefits />
       <JoinUs />
     </>
   )

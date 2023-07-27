@@ -1,4 +1,4 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, AdjustmentsHorizontalIcon, ArrowPathIcon, BanknotesIcon, BookOpenIcon, ChatBubbleLeftRightIcon, CloudArrowUpIcon, CubeTransparentIcon, CurrencyEuroIcon, FingerPrintIcon, GlobeAltIcon, LifebuoyIcon, LockClosedIcon, NewspaperIcon, PresentationChartBarIcon, RocketLaunchIcon, ServerIcon, StarIcon, TrophyIcon } from '@heroicons/react/24/outline'
 // import { Dialog } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { ChevronRightIcon } from '@heroicons/react/20/solid'
@@ -8,39 +8,38 @@ const benefits = [
     name: 'Networking opportunities',
     description:
       'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+    icon: GlobeAltIcon,
   },
   {
     name: 'Newsletters and magazines',
     description:
       'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+    icon: NewspaperIcon,
   },
   {
     name: 'Awards and recognition',
     description:
       'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+    icon: TrophyIcon,
   },
   {
     name: 'Discounted registration',
     description:
       'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: BanknotesIcon,
   },
   {
     name: 'Travel grants',
     description:
       'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: CurrencyEuroIcon,
   },
   {
     name: 'Scholarship for Students',
     description: '[https://mtt.org/students/]Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: AcademicCapIcon,
   },
 ]
-/* This Description requires Tailwind CSS v3.0+ */
 
 function Description() {
   return (
@@ -53,20 +52,29 @@ function Description() {
                 What is IEEE WIE?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ut, corporis voluptate totam velit corrupti temporibus voluptatem atque id tenetur reprehenderit nam tempora reiciendis similique obcaecati, necessitatibus, adipisci nisi voluptates non nemo. Saepe perspiciatis voluptates neque aut quod quos? Assumenda possimus accusantium maiores obcaecati facilis quisquam, exercitationem culpa tempore?
+                IEEE Women in Engineering (WIE) is a global network of IEEE
+                members and volunteers committed to promoting women scientists
+                and engineers and motivating young women to pursue careers in
+                science and engineering. WIE's mission is to support women's
+                recruitment and retention in technical disciplines on a global
+                scale. We picture a thriving IEEE community made up of both men
+                and women who work together to develop for the good of all.
               </p>
-              <div className='grid place-items-center my-12'>
-                <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wie-new-01-400x400.png" alt="" />
+              <div className="grid place-items-center my-12">
+                <img src="/images/logo/WIE-01.png" alt="" />
               </div>
 
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/membership"
                   className="rounded-md bg-fuchsia-700 px-5 py-3 text-center text-xl font-semibold leading-8 text-white shadow-sm hover:bg-fuchsia-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-900"
                 >
                   Join Us
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -101,51 +109,62 @@ function Description() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 
 const strives = [
   {
-    name: 'Newsletter',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+    description: "Provide support to ongoing activities and aid in the creation of new IEEE WIE Affinity Groups.",
+    icon: LifebuoyIcon,
   },
   {
-    name: 'Magazine.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+    description: "Nominate women for IEEE Awards to honor their excellent contributions to electrical and electronics engineering.",
+    icon: TrophyIcon,
   },
   {
-    name: 'Manga Contest',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    description: "Create workshops at significant technical conferences to promote IEEE WIE membership and improve networking.",
+    icon: PresentationChartBarIcon,
   },
-]
+  {
+    description: "Encourage women to take up leadership positions in IEEE governance and to enhance their careers.",
+    icon: RocketLaunchIcon,
+  },
+  {
+    description: "Encourage the promotion of female members to the IEEE membership grades of Senior Member and Fellow.",
+    icon: StarIcon,
+  },
+  {
+    description: "Encourage the creation of programs and activities that encourage women's enrollment in and retention in engineering programs.",
+    icon: AdjustmentsHorizontalIcon,
+  },
+  {
+    description: "To mentor young women in junior high and high school, administer the IEEE Student-Teacher and Research Engineer/Scientist (STAR) Program.",
+    icon: AcademicCapIcon,
+  },
+];
 
-function Conference() {
+function Strive() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
-        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div className="px-6 lg:px-0">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h1 className="text-4xl max-w-fit font-bold tracking-tight bg-gradient-to-r from-fuchsia-600 to-fuchsia-900 bg-clip-text text-transparent sm:text-5xl">
-                IEEE WIE Strives to???????
+                IEEE WIE Strives to...
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
                 iste dolor cupiditate blanditiis ratione.
               </p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-800 lg:max-w-none">
                 {strives.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
-                    <dt className="inline font-semibold text-gray-900">
+                    <dt className="text-gray-600">
                       <feature.icon className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600" aria-hidden="true" />
-                      {feature.name}
-                    </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
+                      <p className="text-justify">{feature.description}</p>
+                    </dt>
                   </div>
                 ))}
               </dl>
@@ -170,19 +189,18 @@ function Conference() {
 const publications = [
   {
     name: 'Newsletter',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+    description:"IEEE WIE members receive the bi-monthly WIE Exchange newsletter which contains reports on WIE and Affinity Group activities and other relevant WIE information and features opportunities to network, volunteer, and participate in local and global WIE activities. ",
+    icon: NewspaperIcon,
   },
   {
     name: 'Magazine.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+    description: "The award-winning 'IEEE Women in Engineering Magazine' includes profiles of women with successful careers in science, technology, engineering, and mathematics, as well as coverage of educational programs that attract young women to those disciplines. ",
+    icon: BookOpenIcon,
   },
   {
     name: 'Manga Contest',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    description: "To bridge the gender gap and promote gender diversity, IEEE Women-in-Engineering (WIE) is organizing a Manga story contest. The winners‘ stories will be plotted in the format of Manga comics, which will be socialized with the community through IEEE WIE Newsletter and website.",
+    icon: ChatBubbleLeftRightIcon,
   },
 ]
 
@@ -190,7 +208,7 @@ function Publication() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-fuchsia-100/20">
-        <div className="mx-auto mx-6s max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-40">
+        <div className="mx-auto mx-6s max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:grid lg:grid-cols-2 place-items-center lg:gap-x-8 lg:py-40">
           <div className="px-6 lg:px-0">
             <div className="mx-auto max-w-2xl lg:mx-0">
               <h1 className="text-4xl py-2 max-w-fit font-bold tracking-tight bg-gradient-to-r from-fuchsia-600 to-fuchsia-900 bg-clip-text text-transparent sm:text-5xl">
@@ -207,7 +225,7 @@ function Publication() {
                       <feature.icon className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600" aria-hidden="true" />
                       {feature.name}
                     </dt>{' '}
-                    <dd className="inline">{feature.description}</dd>
+                    <p className="text-justify">{feature.description}</p>
                   </div>
                 ))}
               </dl>
@@ -327,7 +345,7 @@ function Benefits() {
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
+                  <p className="flex-auto text-justify">{feature.description}</p>
                   <p className="mt-6">
                     <a href={feature.href} className="text-base font-semibold leading-7 text-fuchsia-600">
                       Learn more <span aria-hidden="true">→</span>
@@ -350,20 +368,23 @@ function JoinUs() {
       <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           <span className="block">Boost your productivity.</span>
-          <span className="block text-fuchsia-900">Start your journey today.</span>
+          <span className="block text-fuchsia-900">
+            Start your journey today.
+          </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-fuchsia-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+          Malesuada adipiscing sagittis vel nulla nec.
         </p>
         <a
-          href="#"
+          href="/membership"
           className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-fuchsia-50 py-3 px-5 text-base font-medium text-fuchsia-700 hover:bg-fuchsia-200 sm:w-auto"
         >
           Join Us
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -371,7 +392,7 @@ export default function WIE() {
   return (
     <>
       <Description />
-      <Conference />
+      <Strive />
       <Publication />
       <Stats />
       <Benefits> </Benefits>

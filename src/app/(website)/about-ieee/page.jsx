@@ -62,92 +62,150 @@ function Description() {
         <div className="relative py-12 lg:pb-40">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             {/* <div className="bg-white"> */}
-              <div className="max-w-7xl mx-auto p-6 lg:px-8">
-                <div className="text-center">
-                  <p className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">What is IEEE?</p>
-                  <p className="mt-5 text-justify mx-auto text-xl text-gray-500">
-                    IEEE (Institute of Electrical and Electronics Engineers) is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity.  IEEE was established in 1963 with the goals of fostering technological innovation, developing standards, and advancing science, technology, and engineering. Through its widely recognized publications, conferences, technical standards, professional, and educational activities, IEEE and its members motivate a global community. It has grown into a global organization with more than 400,000 members that offers professional services in more than 190 countries and has conferences all over the world. IEEE also fosters innovation through its student competitions. The primary objective of IEEE is to promote technological innovation and excellence for the benefit of humanity.
-                  </p>
-                </div>
+            <div className="max-w-7xl mx-auto p-6 lg:px-8">
+              <div className="text-center">
+                <p className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+                  What is IEEE?
+                </p>
+                <p className="mt-5 text-justify mx-auto text-xl text-gray-500">
+                  IEEE is a worldwide organization of professionals committed to
+                  using technology to advance humanity. IEEE is renowned for
+                  creating and disseminating industry standards, hosting
+                  conferences, and offering opportunities for continuing
+                  education and career advancement. Electrical engineering,
+                  computer science, telecommunications, biomedical engineering,
+                  and many other technological subjects are covered by IEEE,
+                  which has a broad scope. The association is made up of
+                  experts, researchers, students, and practitioners in different
+                  sectors who work together to advance technical advancement and
+                  address societal concerns. The creation of standards is one of
+                  IEEE's major contributions and these standards are essential
+                  to several industries and sectors, including
+                  telecommunications, power systems, the automotive industry,
+                  and the healthcare sector. IEEE also produces technical
+                  content in a variety of formats, including journals,
+                  magazines, and conference proceedings in addition to setting
+                  standards and hosting conferences. As a result of these
+                  activities, technology and scientific knowledge are advanced
+                  and researchers and practitioners can share their most recent
+                  discoveries and information. All things considered, IEEE plays
+                  a critical role in shaping the technological landscape,
+                  promoting professional collaboration, and fostering
+                  discoveries that benefit society. To improve the welfare of
+                  individuals and communities worldwide, it promotes knowledge
+                  exchange, the development of industrial standards, and the
+                  extension of technological expertise.
+                </p>
               </div>
+            </div>
             {/* </div> */}
-            <div className="mt-16 flow-root sm:mt-24">
-              <img
-                src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/homecarousel/hero/medicine-tech.jpg"
-                alt=""
-                width={2432}
-                height={1442}
-                className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
-              />
+            <div className="grid place-items-center my-12">
+              <img src="/images/logo/IEEE-01.png" alt="" />
             </div>
           </div>
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 
 function Glance() {
   return (
     <div className="bg-white grid place-items-center py-24 my-12">
-      <div className='relative max-w-7xl px-6'>
-      <div className="h-56 rounded-t-lg lg:rounded-l-lg overflow-hidden shadow-lg bg-cyan-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
-        <img
-          className="h-full w-full object-cover"
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-          alt="Support team"
-        />
-      </div>
-      <div className="relative mx-auto max-w-7xl py-8 px-6 sm:py-12 lg:py-16">
-        <div className="mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10">
-            <p className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">IEEE At A Glance</p>
-          <p className="mt-6 text-justify text-lg text-gray-500">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur
-            sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod molestias quia aspernatur
-            deserunt voluptatibus.
-          </p>
-          <div className="mt-8 overflow-hidden">
-            <dl className="grid grid-cols-4 gap-x-4 sm:gap-y-12 gap-y-8 place-items-center">
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Members</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">400k+</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Articles</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">5M+</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Societies</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">39</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Sections</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">340</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Conferenes</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">2000+</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Standards</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">1000+</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Projects</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">1000+</dd>
-              </div>
-              <div className="flex flex-col">
-                <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">Regions</dt>
-                <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">10</dd>
-              </div>
-            </dl>
+      <div className="relative max-w-7xl px-6">
+        <div className="h-56 rounded-t-lg lg:rounded-l-lg overflow-hidden shadow-lg bg-cyan-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+          <img
+            className="h-full w-full object-cover"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            alt="Support team"
+          />
+        </div>
+        <div className="relative mx-auto max-w-7xl py-8 px-6 sm:py-12 lg:py-16">
+          <div className="mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10">
+            <p className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+              IEEE At A Glance
+            </p>
+            <p className="mt-6 text-justify text-lg text-gray-500">
+              The biggest technical professional association in the world, IEEE
+              works to advance technology for the good of all. Through its
+              frequently recognized publications, conferences, technology
+              standards, professional and educational activities, and
+              membership, IEEE inspires a global community.
+            </p>
+            <div className="mt-8 overflow-hidden">
+              <dl className="grid grid-cols-4 gap-x-4 sm:gap-y-12 gap-y-8 place-items-center">
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Members
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    400k+
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Articles
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    5M+
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Societies
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    39
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Sections
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    340
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Conferenes
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    2000+
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Standards
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    1000+
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Projects
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    1000+
+                  </dd>
+                </div>
+                <div className="flex flex-col">
+                  <dt className="order-2 text-center text-sm md:text-base font-medium text-gray-500">
+                    Regions
+                  </dt>
+                  <dd className="order-1 text-center text-2xl font-bold text-cyan-600 sm:text-3xl sm:tracking-tight">
+                    10
+                  </dd>
+                </div>
+              </dl>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </div>
-  )
+  );
 }
 
 

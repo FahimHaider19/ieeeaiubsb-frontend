@@ -183,37 +183,42 @@ function classNames(...classes) {
 
 export default function NavBar2() {
   return (
-    <div className="bg-white shadow">
-      <Popover className="relative shadow">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="flex items-center space-x-4 justify-between py-6 lg:justify-start">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
-              <Link href="#">
-                <span className="sr-only">IEEEAIUBSB</span>
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/ieeeaiubsb_logo-2.png"
-                  alt=""
-                />
-              </Link>
-            </div>
-            <Options />
-            <div className="hidden items-center justify-end space-x-6 lg:flex lg:flex-1 lg:w-0">
-              <Link href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                Sign in
-              </Link>
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-sky-700 py-2 px-4 text-base font-medium text-white hover:bg-sky-800"
-              >
-                Sign up
-              </Link>
+    <>
+      <div className="bg-white shadow">
+        <Popover className="relative shadow">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="flex items-center space-x-4 justify-between py-6 lg:justify-start">
+              <div className="flex justify-start lg:w-0 lg:flex-1">
+                <Link href="#">
+                  <span className="sr-only">IEEEAIUBSB</span>
+                  <img
+                    className="h-8 w-auto sm:h-10"
+                    src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/ieeeaiubsb_logo-2.png"
+                    alt=""
+                  />
+                </Link>
+              </div>
+              <Options />
+              <div className="hidden items-center justify-end space-x-6 lg:flex lg:flex-1 lg:w-0">
+                <Link
+                  href="#"
+                  className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  href="#"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-sky-700 py-2 px-4 text-base font-medium text-white hover:bg-sky-800"
+                >
+                  Sign up
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
 
-        <MobileOptions />
-      </Popover>
-    </div>
-  )
+          <MobileOptions />
+        </Popover>
+      </div>
+    </>
+  );
 }

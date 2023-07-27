@@ -3,67 +3,66 @@ const products = [
     name: 'Abozzo 2021',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2021-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
     imageAlt: 'Abozzo 2021',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2020',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2020-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2020',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2019',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2019-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2019',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2018',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2018-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2018',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2017',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2017-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2017',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2016',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2016-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2016',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2015',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2015-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2015',
   },
   {
-    name: 'Abozzo 2021',
+    name: 'Abozzo 2015',
     href: '#',
     price: '$48',
-    imageSrc: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.png',
+    imageSrc: '/images/abozzo/Abozzo 2015 P_1-01.png',
     link: 'https://ieeeaiubsb.com/wp-content/uploads/2020/09/Abozzo-2021.pdf',
-    imageAlt: 'Abozzo 2021',
+    imageAlt: 'Abozzo 2015',
   },
-  
 ]
 
 export default function Abozzo() {
@@ -79,7 +78,7 @@ export default function Abozzo() {
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                  className="h-full w-full object-cover object-center group-hover:opacity-75 shadow-lg"
                 />
               </div>
               <p className="mt-1 text-lg text-center font-medium text-gray-600">{product.name}</p>

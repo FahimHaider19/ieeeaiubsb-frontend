@@ -9,20 +9,31 @@ function Description() {
                 IEEE Reion-10
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ut, corporis voluptate totam velit corrupti temporibus voluptatem atque id tenetur reprehenderit nam tempora reiciendis similique obcaecati, necessitatibus, adipisci nisi voluptates non nemo. Saepe perspiciatis voluptates neque aut quod quos? Assumenda possimus accusantium maiores obcaecati facilis quisquam, exercitationem culpa tempore?
+                IEEE Region 10, also known as the Asia Pacific Region,
+                encompasses a vast network of 60 Sections, 6 Councils, 42
+                Sub-sections, 697 Chapters, over 60 Affinity Groups, and 1600
+                Student Branches. This region spans a significant geographical
+                area, stretching from South Korea and Japan in the northeast to
+                New Zealand in the south, and Pakistan in the west. With a
+                membership exceeding 135,000+, IEEE Region 10 stands as one of
+                the largest regions within the organization. For further
+                details, please visit https://www.ieeer10.org/
               </p>
-              <div className='grid place-items-center my-12'>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRiqfpplwZ4ugas-B-k_IJCD3ZECpq-LihndqwSnDDnsNXmddaUT0f_Jqrum5uZsqNkA&usqp=CAU" alt="" />
+              <div className="grid place-items-center my-12">
+                <img src="/images/logo/R10-01.png" alt="" />
               </div>
 
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/membership"
                   className="rounded-md bg-cyan-700 px-5 py-3 text-center text-xl font-semibold leading-8 text-white shadow-sm hover:bg-cyan-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-900"
                 >
                   Join Us
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -57,7 +68,7 @@ function Description() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 function History() {
@@ -90,10 +101,21 @@ function History() {
                 height={20}
                 patternUnits="userSpaceOnUse"
               >
-                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
-            <rect width={404} height={384} fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
+            <rect
+              width={404}
+              height={384}
+              fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)"
+            />
           </svg>
           <svg
             className="absolute bottom-0 left-0 -mb-20 -ml-20 hidden md:block md:[overflow-anchor:none]"
@@ -112,21 +134,65 @@ function History() {
                 height={20}
                 patternUnits="userSpaceOnUse"
               >
-                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
-            <rect width={404} height={384} fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
+            <rect
+              width={404}
+              height={384}
+              fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
+            />
           </svg>
           <div className="relative md:bg-white md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
               <div className="prose prose-lg prose-cyan text-gray-500 lg:max-w-none">
-                <p className="text-justify" >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae consectetur tenetur nulla quae nemo, dicta neque tempora. Autem vitae soluta quisquam dolor delectus iste suscipit officiis, impedit dicta blanditiis accusamus. Distinctio sequi modi expedita eius, incidunt nam beatae libero ab, cumque aliquid nihil eos alias rem est voluptatibus numquam nobis, molestiae officiis? Ea nobis exercitationem, natus cum magnam est voluptas optio laudantium aliquam quo repellat, eum quaerat ut saepe neque libero alias, veritatis aut ratione culpa in suscipit. Totam debitis possimus cum. Pariatur voluptatibus delectus nemo adipisci recusandae omnis aut facere harum! Alias molestias vero dolore. Repellat animi error debitis! Quas perferendis, optio quod ut fugit voluptas illum, aliquam eos sed numquam libero culpa tenetur totam asperiores aperiam enim incidunt distinctio qui velit facere? Commodi quisquam, molestias odit at temporibus molestiae nisi, omnis, earum iste perspiciatis odio? Deserunt rem commodi, ratione ab earum eius doloremque officia necessitatibus iusto facilis.
+                <p className="text-justify">
+                  The IEEE is divided into 10 geographical regions, each with
+                  its own unique focus and membership base. Region 10, also
+                  known as the Asia Pacific Region, is the largest region in
+                  terms of membership count. As of 2019, Region 10 had over
+                  135,000 members, making it a significant and influential force
+                  within the IEEE community. The primary aim of the IEEE Regions
+                  is to foster global technological advancement for the
+                  betterment of human life. Region 10 is committed to this goal,
+                  and its members are actively involved in a wide range of
+                  technological initiatives, from developing new products and
+                  services to improving the lives of people around the world.
+                  Region 10 is also home to a number of IEEE societies, which
+                  provide specialized technical support and networking
+                  opportunities to members with similar interests. These
+                  societies play a vital role in the growth and development of
+                  the region's technology community.
                 </p>
               </div>
               <div className="prose prose-lg prose-cyan mt-6 text-gray-500 lg:mt-0">
-                <p className="text-justify" >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae consectetur tenetur nulla quae nemo, dicta neque tempora. Autem vitae soluta quisquam dolor delectus iste suscipit officiis, impedit dicta blanditiis accusamus. Distinctio sequi modi expedita eius, incidunt nam beatae libero ab, cumque aliquid nihil eos alias rem est voluptatibus numquam nobis, molestiae officiis? Ea nobis exercitationem, natus cum magnam est voluptas optio laudantium aliquam quo repellat, eum quaerat ut saepe neque libero alias, veritatis aut ratione culpa in suscipit. Totam debitis possimus cum. Pariatur voluptatibus delectus nemo adipisci recusandae omnis aut facere harum! Alias molestias vero dolore. Repellat animi error debitis! Quas perferendis, optio quod ut fugit voluptas illum, aliquam eos sed numquam libero culpa tenetur totam asperiores aperiam enim incidunt distinctio qui velit facere? Commodi quisquam, molestias odit at temporibus molestiae nisi, omnis, earum iste perspiciatis odio? Deserunt rem commodi, ratione ab earum eius doloremque officia necessitatibus iusto facilis.
+                <p className="text-justify">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                  molestiae consectetur tenetur nulla quae nemo, dicta neque
+                  tempora. Autem vitae soluta quisquam dolor delectus iste
+                  suscipit officiis, impedit dicta blanditiis accusamus.
+                  Distinctio sequi modi expedita eius, incidunt nam beatae
+                  libero ab, cumque aliquid nihil eos alias rem est voluptatibus
+                  numquam nobis, molestiae officiis? Ea nobis exercitationem,
+                  natus cum magnam est voluptas optio laudantium aliquam quo
+                  repellat, eum quaerat ut saepe neque libero alias, veritatis
+                  aut ratione culpa in suscipit. Totam debitis possimus cum.
+                  Pariatur voluptatibus delectus nemo adipisci recusandae omnis
+                  aut facere harum! Alias molestias vero dolore. Repellat animi
+                  error debitis! Quas perferendis, optio quod ut fugit voluptas
+                  illum, aliquam eos sed numquam libero culpa tenetur totam
+                  asperiores aperiam enim incidunt distinctio qui velit facere?
+                  Commodi quisquam, molestias odit at temporibus molestiae nisi,
+                  omnis, earum iste perspiciatis odio? Deserunt rem commodi,
+                  ratione ab earum eius doloremque officia necessitatibus iusto
+                  facilis.
                 </p>
               </div>
             </div>
@@ -142,7 +208,7 @@ function History() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default function IEEER10() {

@@ -1,10 +1,7 @@
+import Panel from "./components/panel";
 
-
-import Panel from "./components/panel"
-export default function OurTeam() {
-	return (
-		<>
-			<Panel />
-		</>
+export default function OurTeam(props) {
+	return(
+		<Panel />
 	)
 }

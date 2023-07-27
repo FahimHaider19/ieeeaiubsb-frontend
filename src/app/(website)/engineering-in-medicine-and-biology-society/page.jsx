@@ -1,4 +1,4 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, NewspaperIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 // import { Dialog } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { ChevronRightIcon } from '@heroicons/react/20/solid'
@@ -29,14 +29,7 @@ const features = [
     icon: FingerPrintIcon,
   },
 ]
-/* This example requires Tailwind CSS v3.0+ */
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 function Example() {
   return (
@@ -49,20 +42,29 @@ function Example() {
                 What is IEEE EMBS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                The IEEE Engineering in Medicine and Biology Society (EMBS) is an international society consisting of biomedical engineers. The organization focuses on the implementation of engineering principles and methods of biology and medicine. EMBS provides its members with access to the people, practices, information, ideas and opinions that are shaping the development of the fields in science.
+                The IEEE Engineering in Medicine and Biology Society (EMBS) is
+                an international society consisting of biomedical engineers. The
+                organization focuses on the implementation of engineering
+                principles and methods of biology and medicine. EMBS provides
+                its members with access to the people, practices, information,
+                ideas and opinions that are shaping the development of the
+                fields in science.
               </p>
-              <div className='grid place-items-center my-12'>
-                <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/embs-new-01-400x400.png" alt="" />
+              <div className="grid place-items-center my-12">
+                <img src="/images/logo/EMBS-01.png" alt="" />
               </div>
 
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/membership"
                   className="rounded-md bg-purple-600 px-5 py-3 text-center text-xl font-semibold leading-8 text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                 >
                   Join Us
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -97,7 +99,7 @@ function Example() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 
@@ -215,21 +217,21 @@ const benefits = [
     name: 'Technical community',
     description: '[community, Student Club and Chapter Benefits] Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
     href: '#',
-    icon: InboxIcon,
+    icon: UserGroupIcon,
   },
   {
     name: 'Career development',
     description:
       '[mentorship programs, young professionals].Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
     href: '#',
-    icon: UsersIcon,
+    icon: AcademicCapIcon,
   },
   {
     name: 'Research and Publications',
     description:
       'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
     href: '#',
-    icon: TrashIcon,
+    icon: NewspaperIcon,
   },
 ]
 
@@ -281,20 +283,23 @@ function JoinUs() {
       <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           <span className="block">Boost your productivity.</span>
-          <span className="block text-purple-900">Start your journey today.</span>
+          <span className="block text-purple-900">
+            Start your journey today.
+          </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-purple-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+          Malesuada adipiscing sagittis vel nulla nec.
         </p>
         <a
-          href="#"
+          href="/membership"
           className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-purple-50 py-3 px-5 text-base font-medium text-purple-700 hover:bg-purple-100 sm:w-auto"
         >
           Join Us
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 

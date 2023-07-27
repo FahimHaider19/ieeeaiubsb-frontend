@@ -1,4 +1,4 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { AcademicCapIcon, ArrowPathIcon, BanknotesIcon, CloudArrowUpIcon, CurrencyDollarIcon, FingerPrintIcon, GlobeAltIcon, LockClosedIcon, NewspaperIcon, SquaresPlusIcon } from '@heroicons/react/24/outline'
 // import { Dialog } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { ChevronRightIcon } from '@heroicons/react/20/solid'
@@ -8,46 +8,39 @@ const benefits = [
     name: 'Professonal Networking',
     description:
       'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+    icon: GlobeAltIcon,
   },
   {
     name: 'Publications and Education Activities',
     description:
       'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
+    icon: NewspaperIcon,
   },
   {
     name: 'Discounts on IEEE/Wiley Books',
     description:
       'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
-    icon: ArrowPathIcon,
+    icon: BanknotesIcon,
   },
   {
     name: 'Discount for Conferences Registration',
     description:
       'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: CurrencyDollarIcon,
   },
   {
     name: 'GOOGLEAPPS@IEEE',
     description:
       'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: SquaresPlusIcon,
   },
   {
     name: 'Scholarship for Students',
     description: '[https://mtt.org/students/]Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+    icon: AcademicCapIcon,
   },
 ]
-/* This Description requires Tailwind CSS v3.0+ */
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 function Description() {
   return (
@@ -60,20 +53,29 @@ function Description() {
                 What is IEEE MTTS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ut, corporis voluptate totam velit corrupti temporibus voluptatem atque id tenetur reprehenderit nam tempora reiciendis similique obcaecati, necessitatibus, adipisci nisi voluptates non nemo. Saepe perspiciatis voluptates neque aut quod quos? Assumenda possimus accusantium maiores obcaecati facilis quisquam, exercitationem culpa tempore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                inventore ut, corporis voluptate totam velit corrupti temporibus
+                voluptatem atque id tenetur reprehenderit nam tempora reiciendis
+                similique obcaecati, necessitatibus, adipisci nisi voluptates
+                non nemo. Saepe perspiciatis voluptates neque aut quod quos?
+                Assumenda possimus accusantium maiores obcaecati facilis
+                quisquam, exercitationem culpa tempore?
               </p>
-              <div className='grid place-items-center my-12'>
-                <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/IMG_1257-400x400.png" alt="" />
+              <div className="grid place-items-center my-12">
+                <img src="/images/logo/MTTS-01.png" alt="" />
               </div>
 
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="/membership"
                   className="rounded-md bg-sky-800 px-5 py-3 text-center text-xl font-semibold leading-8 text-white shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-800"
                 >
                   Join Us
                 </a>
-                <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                <a
+                  href="#"
+                  className="text-base font-semibold leading-7 text-gray-900"
+                >
                   Learn more <span aria-hidden="true">→</span>
                 </a>
               </div>
@@ -108,7 +110,7 @@ function Description() {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 
@@ -137,7 +139,7 @@ function Benefits() {
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
+                  <p className="flex-auto text-justify">{feature.description}</p>
                   <p className="mt-6">
                     <a href={feature.href} className="text-base font-semibold leading-7 text-sky-600">
                       Learn more <span aria-hidden="true">→</span>
@@ -271,17 +273,18 @@ function JoinUs() {
           <span className="block text-sky-900">Start your journey today.</span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-sky-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
+          Malesuada adipiscing sagittis vel nulla nec.
         </p>
         <a
-          href="#"
+          href="/membership"
           className="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-sky-50 py-3 px-5 text-base font-medium text-sky-700 hover:bg-sky-100 sm:w-auto"
         >
           Join Us
         </a>
       </div>
     </div>
-  )
+  );
 }
 
 

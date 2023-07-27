@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const people = [
   {
     name: 'Lindsay Walton',
@@ -69,7 +68,7 @@ export default function Team() {
 
                   <div className="space-y-2 px-4 pb-4">
                     <div className="space-y-1 text-lg font-medium leading-6">
-                      <h3 className="text-2xl font-semibold">{person.name}</h3>
+                      <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{person.name}</h3>
                       <p className="text-blue-600">{person.role}</p>
                       <p className="text-gray-500 text-sm">BSc in EEE</p>
                     </div>

@@ -2,46 +2,46 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 
 const tiers = [
   {
-    name: 'Enterprise',
-    href: 'https://liberconference.eu/wp-content/uploads/2019/04/IEEE-XploreDigitalLibrary.jpg',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Xplore Digital Library",
+    href: "/images/logo/ieeexplore-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://media.licdn.com/dms/image/C4D1BAQF-_PZj_7Fn-w/company-background_10000/0/1612998898844?e=1687096800&v=beta&t=8RTTq-vWAFBHLSKCvdrV-wO-vR1vRB5ayyfhQwo7mKk',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Potentials",
+    href: "/images/logo/ieeepotentials-02.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://r5.ieee.org/houston/wp-content/uploads/sites/32/2015/11/IEEE-JobSites2.png',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Job Site",
+    href: "/images/logo/ieeejobsite-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://www.ieeemansb.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fresumelab.4c039322.png&w=750&q=75',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Resume Lab",
+    href: "/images/logo/ieeeresumelab-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://www.ieeemansb.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcollabratec.22e9682c.png&w=640&q=75',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Collabratec",
+    href: "/images/logo/ieeecollabratec-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://www.ieeemansb.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fxtreme.75c4dff7.png&w=750&q=75',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Xtreme",
+    href: "/images/logo/ieeextreme-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://www.ieeemansb.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fspectrum.e1b62874.png&w=640&q=75',
-    description: 'All the basics for starting a new business',
+    name: "IEEE Spectrum",
+    href: "/images/logo/ieeespectrum-01.png",
+    description: "All the basics for starting a new business",
   },
   {
-    name: 'Enterprise',
-    href: 'https://ieeemansb.org/static/img/membership/ieee%40gapps.png',
-    description: 'All the basics for starting a new business',
-  }
-]
+    name: "IEEE Google Apps",
+    href: "/images/logo/ieeegoogleapps-01.png",
+    description: "All the basics for starting a new business",
+  },
+];
 
 
 export default function MembershipBenefits() {
@@ -59,8 +59,9 @@ export default function MembershipBenefits() {
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
           {tiers.map((tier) => (
+            // eslint-disable-next-line react/jsx-key
             <div className="flex flex-col rounded-3xl bg-white shadow-xl ring-1 ring-gray-200">
-              <div className="p-8 sm:p-10">
+              <div className="px-8 pt-8 pb-3 sm:pt-10 grid place-items-center ">
                 {/* <h3 className="text-lg font-semibold leading-8 tracking-tight text-cyan-600" id="tier-hobby">Hobby</h3> */}
                 <img src={tier.href} alt="" />
                 {/* <p className="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">A better workflow</p> */}

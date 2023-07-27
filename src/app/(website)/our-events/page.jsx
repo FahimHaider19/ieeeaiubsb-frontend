@@ -65,24 +65,37 @@ export default function OurEvents() {
       </div>
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Events</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+          <h1 className="mt-1 text-center w-full text-3xl font-extrabold bg-gradient-to-r from-cyan-400 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+            Events
+          </h1>
+          <p className="mx-auto mt-3 max-w-4xl text-xl text-gray-500 sm:mt-4">
+            Welcome to our Events section. Here, you will find a complete
+            listing of exciting and engaging events hosted by IEEE AIUB Student
+            Branch.
           </p>
         </div>
         <div className="mx-auto mt-12 max-w-md md:max-w-none grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
-            <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+            <div
+              key={post.title}
+              className="flex flex-col overflow-hidden rounded-lg shadow-lg"
+            >
               <div className="flex-shrink-0">
-                <img className="h-64 w-full object-fill" src={post.imageUrl} alt="" />
+                <img
+                  className="h-64 w-full object-fill"
+                  src={post.imageUrl}
+                  alt=""
+                />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">
-                  <p className="text-sm font-medium text-blue-600">
+                  <p className="text-sm font-medium text-cyan-600">
                     {post.category.name}
                   </p>
                   <a href={post.href} className="mt-2 block">
-                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                    <p className="text-xl font-semibold text-gray-900">
+                      {post.title}
+                    </p>
                   </a>
                 </div>
                 <p className="mt-3 text-sm font-medium text-gray-900">
@@ -93,69 +106,75 @@ export default function OurEvents() {
           ))}
         </div>
         <nav className="flex items-center justify-between pt-8 sm:pt-12 border-t border-gray-200 px-4 sm:px-0">
-            <div className="-mt-px flex w-0 flex-1">
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                <ArrowLongLeftIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-                Previous
-                </a>
-            </div>
-            <div className="hidden md:-mt-px md:flex">
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                1
-                </a>
-                {/* Current: "border-blue-500 text-blue-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-blue-500 px-4 pt-4 text-sm font-medium text-blue-600"
-                aria-current="page"
-                >
-                2
-                </a>
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                3
-                </a>
-                <span className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">
-                ...
-                </span>
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                8
-                </a>
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                9
-                </a>
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                10
-                </a>
-            </div>
-            <div className="-mt-px flex w-0 flex-1 justify-end">
-                <a
-                href="#"
-                className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                >
-                Next
-                <ArrowLongRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-                </a>
-            </div>
+          <div className="-mt-px flex w-0 flex-1">
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              <ArrowLongLeftIcon
+                className="mr-3 h-5 w-5 text-gray-400"
+                aria-hidden="true"
+              />
+              Previous
+            </a>
+          </div>
+          <div className="hidden md:-mt-px md:flex">
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              1
+            </a>
+            {/* Current: "border-cyan-500 text-cyan-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-cyan-500 px-4 pt-4 text-sm font-medium text-cyan-600"
+              aria-current="page"
+            >
+              2
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              3
+            </a>
+            <span className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">
+              ...
+            </span>
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              8
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              9
+            </a>
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              10
+            </a>
+          </div>
+          <div className="-mt-px flex w-0 flex-1 justify-end">
+            <a
+              href="#"
+              className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+            >
+              Next
+              <ArrowLongRightIcon
+                className="ml-3 h-5 w-5 text-gray-400"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
         </nav>
       </div>
     </div>
-  )
+  );
 }

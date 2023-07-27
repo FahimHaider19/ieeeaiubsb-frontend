@@ -286,6 +286,7 @@ const unsplashPhotos ={
 }
 
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -296,50 +297,45 @@ export default function PhotoGallery() {
   const [index, setIndex] = useState(-1);
 
   const tabs = [
-    { name: "2023", href: "#2023", current: activeTab === 0 },
-    { name: "2022", href: "#2022", current: activeTab === 1 },
-    { name: "2021", href: "#2021", current: activeTab === 2 },
-    { name: "2020", href: "#2020", current: activeTab === 3 },
-    { name: "2019", href: "#2019", current: activeTab === 4 },
-    { name: "2018", href: "#2018", current: activeTab === 5 },
-    { name: "2017", href: "#2017", current: activeTab === 6 },
-    { name: "2016", href: "#2016", current: activeTab === 7 },
-    { name: "2015", href: "#2015", current: activeTab === 8 },
-    { name: "2014", href: "#2014", current: activeTab === 9 },
-    { name: "2013", href: "#2013", current: activeTab === 10 },
+    { name: "2023", current: activeTab === 0 },
+    { name: "2022", current: activeTab === 1 },
+    { name: "2021", current: activeTab === 2 },
+    { name: "2020", current: activeTab === 3 },
+    { name: "2019", current: activeTab === 4 },
+    { name: "2018", current: activeTab === 5 },
+    { name: "2017", current: activeTab === 6 },
+    { name: "2016", current: activeTab === 7 },
+    { name: "2015", current: activeTab === 8 },
+    { name: "2014", current: activeTab === 9 },
+    { name: "2013", current: activeTab === 10 },
   ];
 	const firstTab = 2023
 
-	const photos = unsplashPhotos[firstTab-activeTab].map((photo, index) => {
-    const width = photo.width * 4;
-    const height = photo.height * 4;
-    return {
-      src: unsplashLink(photo.id, width, height),
-      key: `${index}`,
-      width,
-      height,
-      // images: breakpoints.map((breakpoint) => {
-      //   const breakpointHeight = Math.round((height / width) * breakpoint);
-      //   return {
-      //     src: unsplashLink(photo.id, breakpoint, breakpointHeight),
-      //     width: breakpoint,
-      //     height: breakpointHeight,
-      //   };
-      // }),
-    };
-  });
+	// const photos = unsplashPhotos[firstTab-activeTab].map((photo, index) => {
+  //   const width = photo.width * 4;
+  //   const height = photo.height * 4;
+  //   return {
+  //     src: unsplashLink(photo.id, width, height),
+  //     key: `${index}`,
+  //     width,
+  //     height,
+  //     // images: breakpoints.map((breakpoint) => {
+  //     //   const breakpointHeight = Math.round((height / width) * breakpoint);
+  //     //   return {
+  //     //     src: unsplashLink(photo.id, breakpoint, breakpointHeight),
+  //     //     width: breakpoint,
+  //     //     height: breakpointHeight,
+  //     //   };
+  //     // }),
+  //   };
+  // });
 
-  const slides = photos.map(({ src, key, width, height, images }) => ({
-    src,
-    // key,
-    // width,
-    // height,
-    // srcSet: images?.map((image) => ({
-    // 	src: image.src,
-    // 	width: image.width,
-    // 	height: image.height
-    // }))
-  }));
+const images = {
+	"2023": require.context("../../../../public/images/gallery/2023", true),
+	"2022": require.context("../../../../public/images/gallery/2022", true),
+}
+const imagelist = images[firstTab-activeTab].keys().map((image) => (images[firstTab-activeTab])(image).default);
+  const slides = imagelist.map(({ src }) => ({ src }));
 
   return (
     <>
@@ -374,9 +370,9 @@ export default function PhotoGallery() {
 							<div className="border-b border-gray-200">
 								<nav className="-mb-px flex" aria-label="Tabs">
 									{tabs.map((tab, index) => (
-										<a
+										<div
 											key={tab.name}
-											href={tab.href}
+											// href={tab.href}
 											className={classNames(
 												tab.current
 													? 'border-cyan-500 text-cyan-600'
@@ -390,7 +386,7 @@ export default function PhotoGallery() {
 											onClick={() => setActiveTab(index)}
 										>
 											{tab.name}
-										</a>
+										</div>
 									))}
 								</nav>
 							</div>
@@ -398,7 +394,7 @@ export default function PhotoGallery() {
 					</div>
           <PhotoAlbum
             layout="rows"
-            photos={photos}
+            photos={imagelist}
             targetRowHeight={150}
             onClick={({ index }) => setIndex(index)}
           />
