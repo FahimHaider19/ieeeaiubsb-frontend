@@ -62,7 +62,7 @@ export default function Hero() {
           data-nimg="future"
           className="absolute top-0 w-full h-full object-cover object-center opacity-10"
           loading="lazy"
-          style="color:transparent"
+          // style="color:transparent"
           width="918"
           height="1495"
         />
