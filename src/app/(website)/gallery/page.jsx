@@ -21,7 +21,7 @@ export default function PhotoGallery() {
   const tabs = [
     { name: "2023", current: activeTab === 0 },
     { name: "2022", current: activeTab === 1 },
-    // { name: "2021", current: activeTab === 2 },
+    { name: "2021", current: activeTab === 2 },
     { name: "2020", current: activeTab === 3 },
     { name: "2019", current: activeTab === 4 },
     { name: "2018", current: activeTab === 5 },
@@ -84,7 +84,7 @@ const imagelist = images[firstTab-activeTab].keys().map((image) => (images[first
 								id="tabs"
 								name="tabs"
 								className="block mb-8 w-full rounded-md border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
-								defaultValue={tabs.find((tab) => tab.current).name}
+								defaultValue={tabs?.find((tab) => tab.current).name}
 								onChange={(e) => setActiveTab(parseInt(e.target.value))}
 							>
 								{tabs.map((tab, index) => (
