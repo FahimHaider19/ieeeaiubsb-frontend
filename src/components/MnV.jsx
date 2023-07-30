@@ -42,7 +42,7 @@ export default function MissionAndVision() {
             Mission and Vision
           </h1>
           <p className="mt-6 max-w-inherited text-xl text-white text-center">
-            IEEE`&apos;`s core purpose is to foster technological innovation and
+            IEEE&apos;s core purpose is to foster technological innovation and
             excellence for the benefit of humanity.
           </p>
         </div>

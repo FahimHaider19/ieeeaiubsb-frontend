@@ -92,7 +92,7 @@ export default function MembershipBenefits() {
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center text-justify">
             IEEE membership offers a range of benefits, including access to IEEE
-            Xplore`&apos;`s extensive research, career insights from IEEE
+            Xplore&apos;s extensive research, career insights from IEEE
             Potentials, industry-specific job sites, and tools like IEEE
             ResumeLab for creating professional resumes. These resources enhance
             knowledge, career opportunities, and networking for members.

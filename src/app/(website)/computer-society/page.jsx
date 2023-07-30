@@ -102,7 +102,7 @@ function Description() {
                 culture of collaboration among engineers, sparking ingenious
                 solutions and forging unparalleled opportunities in the
                 ever-evolving landscape of technology. In essence, IEEE Computer
-                Society`&apos;`s unwavering commitment to excellence not only
+                Society&apos;s unwavering commitment to excellence not only
                 shapes the trajectory of the computing field but also fortifies
                 the industry for a dynamic and promising future.
               </p>

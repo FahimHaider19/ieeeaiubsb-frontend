@@ -50,8 +50,8 @@ function Description() {
                 IEEE Women in Engineering (WIE) is a global network of IEEE
                 members and volunteers committed to promoting women scientists
                 and engineers and motivating young women to pursue careers in
-                science and engineering. WIE`&apos;`s mission is to support
-                women`&apos;`s recruitment and retention in technical
+                science and engineering. WIE&apos;s mission is to support
+                women&apos;s recruitment and retention in technical
                 disciplines on a global scale. We picture a thriving IEEE
                 community made up of both men and women who work together to
                 develop for the good of all.
@@ -153,7 +153,7 @@ function Strive() {
               <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
                 The IEEE WIE aims to honor the remarkable accomplishments of
                 women by featuring the most recent webinars, events, and program
-                information. Additionally, the weekly highlights WIE`&apos;`s
+                information. Additionally, the weekly highlights WIE&apos;s
                 partnerships with the IEEE Foundation, IEEE ILN, IEEE Reach,
                 etc.
               </p>

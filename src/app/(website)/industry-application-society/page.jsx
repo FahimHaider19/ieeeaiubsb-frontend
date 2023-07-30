@@ -205,7 +205,7 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  The society`&apos;`s publishing activities are handled by the
+                  The society&apos;s publishing activities are handled by the
                   Publications Department. This involves putting out the IAS
                   Newsletter, Industry Applications Magazine, and IEEE
                   Transactions on Industry Applications. IAS also sponsors a

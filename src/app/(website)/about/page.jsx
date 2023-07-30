@@ -109,8 +109,8 @@ function History() {
                 </p>
                 <p>
                   The hard work of its members and their support contributed to
-                  the IEEE AIUB Student Branch`&apos;`s success. Without their
-                  dedication, the founder`&apos;`s dream would have been
+                  the IEEE AIUB Student Branch&apos;s success. Without their
+                  dedication, the founder&apos;s dream would have been
                   incomplete. We appreciate and salute all the members of IEEE
                   AIUB Student Branch for their efforts.
                 </p>

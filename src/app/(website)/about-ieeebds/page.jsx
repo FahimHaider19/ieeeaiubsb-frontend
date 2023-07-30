@@ -155,14 +155,14 @@ function History() {
                   The IEEE Bangladesh Section was founded in November 1993 with
                   54 founding members. The section was initially headed by Dr.
                   M. Asaduzzaman, who served as the first Chair of the section.
-                  The section`&apos;`s first office was located at the
+                  The section&apos;s first office was located at the
                   Bangladesh University of Engineering and Technology (BUET). In
-                  the early years, the section`&apos;`s activities were focused
+                  the early years, the section&apos;s activities were focused
                   on organizing technical seminars and workshops. The section
                   also started publishing a newsletter called the <em>IEEE
                   Bangladesh Section Newsletter</em> in 1994. In 1995, the section
                   organized its first annual conference, the IEEE Bangladesh
-                  Section Conference (IBSC). The section`&apos;`s activities
+                  Section Conference (IBSC). The section&apos;s activities
                   grew steadily over the years, and by the early 2000s, the
                   section had become one of the most active sections in region
                   10. In 2001, the IBSC evolved into the Biennial International
