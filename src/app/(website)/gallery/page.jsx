@@ -9,284 +9,6 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 // import Zoom from "yet-another-react-lightbox/plugins/zoom";
 // import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-
-const breakpoints = [4320, 2160, 1080, 640, 384, 256, 128];
-
-const unsplashLink = (id, width, height) =>
-	`https://source.unsplash.com/${id}/${width}x${height}`;
-
-const unsplashPhotos ={
-	"2023":[
-		{
-			id: "ts1zXzsD7xc",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "F_r83HEzsXI",
-			width: 1080,
-			height: 1426
-		},
-		{
-			id: "m82uh_vamhg",
-			width: 1080,
-			height: 1440
-		},
-		{
-			id: "br-Xdb9KE0Q",
-			width: 1080,
-			height: 716
-		},
-		{
-			id: "6mze64HRU2Q",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "7ENqG6Gmch0",
-			width: 1080,
-			height: 718
-		},
-		{
-			id: "KMn4VEeEPR8",
-			width: 1080,
-			height: 718
-		},
-		{
-			id: "uQDRDqpYJHI",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "AD6rn3vqG7o",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "SYx3UCHZJlo",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "qH-JPcFXUTY",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "NLUkAA-nDdE",
-			width: 1080,
-			height: 1441
-		},
-		{
-			id: "55OH6wnJqXo",
-			width: 1080,
-			height: 1587
-		},
-		{
-			id: "CSs8aiN_LkI",
-			width: 1080,
-			height: 1626
-		},
-		{
-			id: "dZ4Ylj91F2M",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "35muyqODIHA",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "xarhNpLSHTk",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "oR0uERTVyD0",
-			width: 1080,
-			height: 1922
-		},
-		{
-			id: "h0AnGGgseio",
-			width: 1080,
-			height: 1623
-		},
-		{
-			id: "ImHttRUM2jE",
-			width: 1080,
-			height: 1613
-		},
-		{
-			id: "TkGZFU2t9gc",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "P93ijX1URuU",
-			width: 1080,
-			height: 1441
-		},
-		{
-			id: "MGKGuMP9nLY",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "1VYdx37vOGQ",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "9kY6iayVGIk",
-			width: 1080,
-			height: 1620
-		},
-	],
-	"2022":[
-		{
-			id: "7zT-vbOFoSM",
-			width: 1080,
-			height: 1309
-		},
-		{
-			id: "K8e4DtETWpg",
-			width: 1080,
-			height: 718
-		},
-		{
-			id: "HRVpJIkZP4o",
-			width: 1080,
-			height: 1923
-		},
-		{
-			id: "qY_yTu7YBT4",
-			width: 1080,
-			height: 639
-		},
-		{
-			id: "Siuwr3uCir0",
-			width: 1080,
-			height: 1440
-		},
-		{
-			id: "alfhBV8JxlE",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "6_pFPo2YM9c",
-			width: 1080,
-			height: 1440
-		},
-		{
-			id: "exfO5IC0etk",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "CY3wdG4eRoA",
-			width: 1080,
-			height: 1920
-		},
-		{
-			id: "4-Dq3Gyozk8",
-			width: 1080,
-			height: 1440
-		},
-		{
-			id: "yt1-v0TrOi8",
-			width: 1080,
-			height: 810
-		},
-		{
-			id: "nRZoLSr0mEE",
-			width: 1080,
-			height: 864
-		},
-		{
-			id: "5iYR93akU48",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "yRc9FiM1Zdk",
-			width: 1080,
-			height: 1619
-		},
-		{
-			id: "HXqpJnLyHzg",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "3bAblStd-IY",
-			width: 1080,
-			height: 607
-		},
-		{
-			id: "a6ux9NBPJac",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "8qEuawM_txg",
-			width: 1080,
-			height: 1440
-		},
-		{
-			id: "p0Fvb9MvLAY",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "72IuuwilrY8",
-			width: 1080,
-			height: 1350
-		},
-		{
-			id: "Q3Qdb3ni-zw",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "AAFH_AADpRg",
-			width: 1080,
-			height: 2206
-		},
-		{
-			id: "6JU5C73KQ5Q",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "UxZVUDxWppw",
-			width: 1080,
-			height: 720
-		},
-		{
-			id: "X-Far-t1woI",
-			width: 1080,
-			height: 1620
-		},
-		{
-			id: "Y1gBZbB_5bA",
-			width: 1080,
-			height: 720
-		}
-	],
-	"2021":[],
-	"2020":[],
-	"2019":[],
-	"2018":[],
-	"2017":[],
-	"2016":[],
-	"2015":[],
-	"2014":[],
-}
-
-
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
@@ -299,15 +21,15 @@ export default function PhotoGallery() {
   const tabs = [
     { name: "2023", current: activeTab === 0 },
     { name: "2022", current: activeTab === 1 },
-    { name: "2021", current: activeTab === 2 },
+    // { name: "2021", current: activeTab === 2 },
     { name: "2020", current: activeTab === 3 },
     { name: "2019", current: activeTab === 4 },
     { name: "2018", current: activeTab === 5 },
     { name: "2017", current: activeTab === 6 },
-    { name: "2016", current: activeTab === 7 },
-    { name: "2015", current: activeTab === 8 },
-    { name: "2014", current: activeTab === 9 },
-    { name: "2013", current: activeTab === 10 },
+    // { name: "2016", current: activeTab === 7 },
+    // { name: "2015", current: activeTab === 8 },
+    // { name: "2014", current: activeTab === 9 },
+    // { name: "2013", current: activeTab === 10 },
   ];
 	const firstTab = 2023
 
@@ -331,9 +53,15 @@ export default function PhotoGallery() {
   // });
 
 const images = {
-	"2023": require.context("../../../../public/images/gallery/2023", true),
-	"2022": require.context("../../../../public/images/gallery/2022", true),
-}
+  2023: require.context("../../../../public/images/gallery/2023", true),
+  2022: require.context("../../../../public/images/gallery/2022", true),
+  2021: require.context("../../../../public/images/gallery/2021", true),
+  2020: require.context("../../../../public/images/gallery/2020", true),
+  2019: require.context("../../../../public/images/gallery/2019", true),
+  2018: require.context("../../../../public/images/gallery/2018", true),
+  2017: require.context("../../../../public/images/gallery/2017", true),
+};
+
 const imagelist = images[firstTab-activeTab].keys().map((image) => (images[firstTab-activeTab])(image).default);
   const slides = imagelist.map(({ src }) => ({ src }));
 

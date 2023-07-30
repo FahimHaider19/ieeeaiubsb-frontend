@@ -213,27 +213,25 @@ function Conference() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
-        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-20 lg:px-0">
           <div>
-            <div></div>
             <div className="mt-6">
               <div className="">
                 <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
                   Conference & Events
                 </h1>
                 <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
-                  The IEEE Computer Society sponsors more than 200 technical
-                  conferences and events each year, including the
-                  industry-oriented “Rock Stars” series, all over the world,
-                  aimed at research and industry professionals. The IEEE
-                  Computer Society annually sponsors a wide range of
-                  geographically diverse technical conferences, symposiums, and
-                  workshops dedicated to providing computing enthusiasts with
-                  innovative forums designed to facilitate the identification,
-                  creation, capture, and exchange of highly peer-reviewed
-                  scientific and technological knowledge that benefits our
-                  members, the profession, and humanity. Visit the link to check
-                  the upcoming conferences.
+                  The Institute of Electrical and Electronics Engineers, or
+                  IEEE, is a professional organization that organizes a variety
+                  of conferences and other events in the areas of engineering,
+                  technology, and computer science. As an example, consider the
+                  IEEE International Conference on Big Data, IEEE International
+                  Conference on Robotics and Automation, IEEE International
+                  Symposium on Circuits and Systems, and the IEEE Global
+                  Communications Conference. These are only a handful of the
+                  conferences and events that IEEE sponsors in relation to many
+                  areas of electrical engineering, electronics, and computer
+                  science.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -280,7 +278,17 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  Digital Library with 840,000 Articles, Award-Winning Special Issues. Computer Society Digital Library (CSDL) and the IEEE Xplore® digital library. ComputingEdge Newsletter, Colloquium Abstracts, Tech News Blog, Resource Library. Short description of opportuinties and discounts.
+                  The leading journals, transactions, letters, and magazines in
+                  electrical engineering, computing, biotechnology,
+                  telecommunications, power and energy, as well as dozens of
+                  other technologies, are published by IEEE. IEEE journals
+                  continue to hold positions at the top of their respective
+                  fields and are the most frequently cited in US and European
+                  patents. Additionally, the IEEE publishes over 1,200
+                  cutting-edge conference proceedings each year, which are
+                  regarded by both academia and business as the most significant
+                  compilation of papers in the fields of electrical engineering,
+                  computer science, and related fields.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -289,7 +297,10 @@ function Publication() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -309,7 +320,10 @@ function Publication() {
                 />
                 <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">
                   <div className="mx-auto max-w-2xl md:mx-0 md:max-w-none">
-                    <img src="https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg" alt="" />
+                    <img
+                      src="https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg"
+                      alt=""
+                    />
                   </div>
                   <div
                     className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl"
@@ -323,7 +337,7 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
 
 

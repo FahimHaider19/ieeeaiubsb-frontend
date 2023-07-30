@@ -6,37 +6,32 @@ import { AcademicCapIcon, ArrowPathIcon, BanknotesIcon, CloudArrowUpIcon, Curren
 const benefits = [
   {
     name: 'Professonal Networking',
-    description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+    description: "IEEE Microwave Theory and Techniques Society (MTTS) provides a platform for professionals to connect and collaborate with like-minded individuals, fostering valuable networking opportunities within the microwave and RF community.",
     icon: GlobeAltIcon,
   },
   {
     name: 'Publications and Education Activities',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+    description:"MTTS offers access to high-quality publications, including journals and conference proceedings, as well as educational resources, enabling members to stay updated with the latest research and advancements in the field.",
     icon: NewspaperIcon,
   },
   {
     name: 'Discounts on IEEE/Wiley Books',
-    description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+    description:"Members enjoy exclusive discounts on IEEE and Wiley publications, allowing them to access a wealth of technical literature at reduced prices.",
     icon: BanknotesIcon,
   },
   {
     name: 'Discount for Conferences Registration',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description:"MTTS members receive discounted rates for attending conferences, symposiums, and workshops, facilitating their participation in key industry events.",
     icon: CurrencyDollarIcon,
   },
   {
     name: 'GOOGLEAPPS@IEEE',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description:"MTTS provides members with access to Google Apps, facilitating efficient communication and collaboration among members using tools such as Gmail, Google Drive, and Google Calendar.",
     icon: SquaresPlusIcon,
   },
   {
     name: 'Scholarship for Students',
-    description: '[https://mtt.org/students/]Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description: 'The society offers scholarships to support and encourage students pursuing studies and research in the field of microwave theory and techniques, empowering the next generation of RF and microwave professionals.',
     icon: AcademicCapIcon,
   },
 ]
@@ -53,13 +48,24 @@ function Description() {
                 What is IEEE MTTS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                inventore ut, corporis voluptate totam velit corrupti temporibus
-                voluptatem atque id tenetur reprehenderit nam tempora reiciendis
-                similique obcaecati, necessitatibus, adipisci nisi voluptates
-                non nemo. Saepe perspiciatis voluptates neque aut quod quos?
-                Assumenda possimus accusantium maiores obcaecati facilis
-                quisquam, exercitationem culpa tempore?
+                The IEEE Microwave Theory and Techniques Society (MTTS) stands
+                as an illustrious and influential global community passionately
+                committed to propelling the frontiers of microwave and radio
+                frequency (RF) technologies to unprecedented heights. Steeped in
+                a legacy of pioneering breakthroughs and unwavering excellence,
+                MTTS serves as a dynamic platform where brilliant minds from all
+                corners of the world converge to explore, collaborate, and
+                exchange visionary ideas. Researchers, seasoned professionals,
+                and aspiring students alike find a nurturing environment within
+                MTTS, fostering an atmosphere of innovation and knowledge
+                sharing that resonates throughout the realm of wireless
+                communications and beyond. This prestigious society acts as a
+                beacon of progress, championing the development of cutting-edge
+                technologies, and steering the course of wireless connectivity
+                towards an era of boundless possibilities. By uniting the
+                brightest minds and promoting a culture of exploration, MTTS
+                heralds a future where communication knows no bounds,
+                transforming how the world connects and thrives.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/MTTS-01.png" alt="" />
@@ -119,13 +125,20 @@ function Benefits() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid place-items-center lg:mx-0">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-700">Benefits</h2>
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-sky-700">
+            Benefits
+          </h2>
           <h1 className="mt-1 p-2 max-w-fit text-3xl font-extrabold text-center bg-gradient-to-r from-sky-500 to-sky-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
             Why join IEEE Engineering in Medicine and Biology Society?
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+          <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
+            Joining MTTS (IEEE Microwave Theory and Techniques Society) opens
+            doors to a world of opportunities in microwave and radio frequency
+            (RF) technologies. As a member, you gain access to a vibrant global
+            community of researchers, professionals, and students, fostering
+            collaboration and idea exchange. Stay updated with cutting-edge
+            innovations, advance your career, and contribute to shaping the
+            future of wireless communications and beyond.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -134,14 +147,22 @@ function Benefits() {
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-sky-600">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                   </div>
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto text-justify">{feature.description}</p>
+                  <p className="flex-auto text-justify">
+                    {feature.description}
+                  </p>
                   <p className="mt-6">
-                    <a href={feature.href} className="text-base font-semibold leading-7 text-sky-600">
+                    <a
+                      href={feature.href}
+                      className="text-base font-semibold leading-7 text-sky-600"
+                    >
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </p>
@@ -152,7 +173,7 @@ function Benefits() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -161,7 +182,7 @@ function Conference() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
-        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-24 lg:px-0">
           <div>
             <div>
               {/* <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-sky-800 to-blue-600">
@@ -174,7 +195,18 @@ function Conference() {
                   Conferences & Events
                 </h1>
                 <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
-                  The IEEE Computer Society sponsors more than 200 technical conferences and events each year, including the industry-oriented “Rock Stars” series, all over the world, aimed at research and industry professionals. The IEEE Computer Society annually sponsors a wide range of geographically diverse technical conferences, symposiums, and workshops dedicated to providing computing enthusiasts with innovative forums designed to facilitate the identification, creation, capture, and exchange of highly peer-reviewed scientific and technological knowledge that benefits our members, the profession, and humanity. Visit the link to check the upcoming conferences.
+                  At IEEE MTTS, technical gatherings bring together experts and
+                  enthusiasts from various disciplines, creating a vibrant
+                  environment to present cutting-edge research, share
+                  breakthroughs, and discuss emerging trends.
+                </p>
+                <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
+                  The IEEE MTTS International Microwave Symposium (IMS) is one
+                  of the most prominent and highly regarded conferences in the
+                  field of microwave theory and techniques. Organized by the
+                  IEEE Microwave Theory and Techniques Society (MTTS), the IMS
+                  attracts researchers, engineers, and professionals from around
+                  the world.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -183,7 +215,10 @@ function Conference() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -202,7 +237,7 @@ function Conference() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -210,15 +245,33 @@ function Publication() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-sky-100/20">
-        <div className="mx-auto mx-6s max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:py-40">
+        <div className="mx-auto mx-6s max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:grid lg:grid-cols-2 place-items-center lg:gap-x-8 lg:py-40">
           <div className="px-6 lg:px-0">
             <div className="mx-auto max-w-4xl">
               <div className="">
                 <h1 className="text-4xl max-w-fit font-bold tracking-tight bg-gradient-to-r from-sky-500 to-sky-900 bg-clip-text text-transparent sm:text-5xl">
                   Publications
                 </h1>
-                <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  The IEEE Computer Society publications are peer-reviewed, indexed, and authored by technology thought leaders worldwide, and include 17 scholarly journals and 13 magazines featuring the latest technology trends. It also offers cutting-edge products such as the myComputer app (available for iOS or Android), that provide unprecedented user-driven access to its content, and the Digital Library with more than 550,000 articles and papers spanning the full spectrum of computer science and technology. Check out the journals and publications of IEEE Computer Society here.
+                <p className="mt-6 lg:pr-5 text-lg text-justify leading-8 text-gray-600">
+                  The MTT-S Book Series sponsored by the MTT Society and
+                  co-published by IEEE and John Wiley is the leading series on
+                  microwave and wireless component technology. The Society has
+                  extensive Digital Products including Multimedia Products. All
+                  this has been made possible by volunteers, authors, and
+                  readers like you. The MTT-S publish monthly e-Newsletter
+                  and quarterly Student Newsletter which announcements of upcoming microwave events and
+                  deadlines for nominations, applications and calls for papers.
+                  IT also publishes
+                  peer reviewed papers in IEEE Transactions on Microwave Theory
+                  and Techniques, IEEE Transactions on Terahertz Science and
+                  Technology, IEEE Microwave and Wireless Technology Letters,
+                  IEEE Journal of Microwaves (Open Access) and IEEE Microwave
+                  Magazine that focus on that part of engineering and theory
+                  associated with microwave/millimeter-wave technology and
+                  components, electronic devices, guided wave structures and
+                  theory, electromagnetic theory, Radio Frequency Hybrid and
+                  Monolithic Integrated Circuits, including mixed-signal
+                  circuits, and systems from a few MHz to THz.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -227,7 +280,10 @@ function Publication() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -261,20 +317,19 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
 
 function JoinUs() {
   return (
     <div className="bg-gradient-to-r from-sky-500 to-sky-800">
-      <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Boost your productivity.</span>
-          <span className="block text-sky-900">Start your journey today.</span>
+          <span className="block py-2">Join IEEE today.</span>
+          <span className="block text-sky-900">Embark on a journey of limitless possibilities.</span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-sky-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-          Malesuada adipiscing sagittis vel nulla nec.
+          Explore the frontiers of innovation, share knowledge, and collaborate to advance technology for humanity.
         </p>
         <a
           href="/membership"
@@ -294,7 +349,7 @@ export default function MTTS() {
       <Description />
       <Conference />
       <Publication />
-      <Benefits> </Benefits>
+      <Benefits />
       <JoinUs />
     </>
   )

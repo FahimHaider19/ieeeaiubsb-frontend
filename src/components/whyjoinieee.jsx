@@ -28,8 +28,7 @@ const benefits = [
   },
   {
     name: "Events and Activities",
-    description:
-      "IEEE sponsors a variety of events and participates in a range of activities, including job fairs, career fairs, seminars, webinars, and mentorship programs. .",
+    description:"Throughout the year IEEE sponsors a variety of events like IEEE Conferences, Hackathons and coding competitions, Networking events, and Awards and recognition programs and participates in a range of activities, including job fairs, career fairs, seminars, webinars, and mentorship programs.",
     icon: FingerPrintIcon,
   },
   {
@@ -50,7 +49,7 @@ export default function WhyJoinIEEE() {
           <h1 className="mt-1 p-2 max-w-fit text-3xl font-extrabold text-center bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
             Why join IEEE?
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
             Numerous advantages come with joining IEEE, such as networking
             possibilities, resource access, access to professionals, career
             progress, collaboration, and acknowledgment. Electrical and

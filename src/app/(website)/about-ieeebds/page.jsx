@@ -152,48 +152,44 @@ function History() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
               <div className="prose prose-lg prose-cyan text-gray-500 lg:max-w-none">
                 <p className="text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  molestiae consectetur tenetur nulla quae nemo, dicta neque
-                  tempora. Autem vitae soluta quisquam dolor delectus iste
-                  suscipit officiis, impedit dicta blanditiis accusamus.
-                  Distinctio sequi modi expedita eius, incidunt nam beatae
-                  libero ab, cumque aliquid nihil eos alias rem est voluptatibus
-                  numquam nobis, molestiae officiis? Ea nobis exercitationem,
-                  natus cum magnam est voluptas optio laudantium aliquam quo
-                  repellat, eum quaerat ut saepe neque libero alias, veritatis
-                  aut ratione culpa in suscipit. Totam debitis possimus cum.
-                  Pariatur voluptatibus delectus nemo adipisci recusandae omnis
-                  aut facere harum! Alias molestias vero dolore. Repellat animi
-                  error debitis! Quas perferendis, optio quod ut fugit voluptas
-                  illum, aliquam eos sed numquam libero culpa tenetur totam
-                  asperiores aperiam enim incidunt distinctio qui velit facere?
-                  Commodi quisquam, molestias odit at temporibus molestiae nisi,
-                  omnis, earum iste perspiciatis odio? Deserunt rem commodi,
-                  ratione ab earum eius doloremque officia necessitatibus iusto
-                  facilis.
+                  The IEEE Bangladesh Section was founded in November 1993 with
+                  54 founding members. The section was initially headed by Dr.
+                  M. Asaduzzaman, who served as the first Chair of the section.
+                  The section's first office was located at the Bangladesh
+                  University of Engineering and Technology (BUET). In the early
+                  years, the section's activities were focused on organizing
+                  technical seminars and workshops. The section also started
+                  publishing a newsletter called the "IEEE Bangladesh Section
+                  Newsletter" in 1994. In 1995, the section organized its first
+                  annual conference, the IEEE Bangladesh Section Conference
+                  (IBSC). The section's activities grew steadily over the years,
+                  and by the early 2000s, the section had become one of the most
+                  active sections in region 10. In 2001, the IBSC evolved into
+                  the Biennial International Conference on Electrical and
+                  Computer Engineering (ICECE), which is now one of the largest
+                  and most prestigious conferences in Bangladesh.
                 </p>
               </div>
               <div className="prose prose-lg prose-cyan mt-6 text-gray-500 lg:mt-0">
                 <p className="text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  molestiae consectetur tenetur nulla quae nemo, dicta neque
-                  tempora. Autem vitae soluta quisquam dolor delectus iste
-                  suscipit officiis, impedit dicta blanditiis accusamus.
-                  Distinctio sequi modi expedita eius, incidunt nam beatae
-                  libero ab, cumque aliquid nihil eos alias rem est voluptatibus
-                  numquam nobis, molestiae officiis? Ea nobis exercitationem,
-                  natus cum magnam est voluptas optio laudantium aliquam quo
-                  repellat, eum quaerat ut saepe neque libero alias, veritatis
-                  aut ratione culpa in suscipit. Totam debitis possimus cum.
-                  Pariatur voluptatibus delectus nemo adipisci recusandae omnis
-                  aut facere harum! Alias molestias vero dolore. Repellat animi
-                  error debitis! Quas perferendis, optio quod ut fugit voluptas
-                  illum, aliquam eos sed numquam libero culpa tenetur totam
-                  asperiores aperiam enim incidunt distinctio qui velit facere?
-                  Commodi quisquam, molestias odit at temporibus molestiae nisi,
-                  omnis, earum iste perspiciatis odio? Deserunt rem commodi,
-                  ratione ab earum eius doloremque officia necessitatibus iusto
-                  facilis.
+                  The IEEE Bangladesh Section has received numerous awards and
+                  recognition over the years. In 2015, the section received the
+                  Outstanding Section Membership Recruitment Award for the first
+                  time. The section has received this award every year since
+                  then. In 2017, the section was also awarded the IEEE Region 10
+                  Section of the Year Award. The IEEE Bangladesh Section is
+                  committed to promoting the advancement of technology in
+                  Bangladesh and providing opportunities for its members to
+                  learn and grow. The section has several student branches at
+                  universities across Bangladesh, and it also organizes a
+                  variety of technical activities, including seminars,
+                  workshops, and conferences. The section is also involved in
+                  several community service projects. The IEEE Bangladesh
+                  Section is a vibrant and active organization that is making a
+                  significant contribution to the advancement of technology in
+                  Bangladesh. The section is committed to providing its members
+                  with opportunities to learn and grow, and to giving back to
+                  the community.
                 </p>
               </div>
             </div>

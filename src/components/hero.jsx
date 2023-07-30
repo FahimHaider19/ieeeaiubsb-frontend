@@ -97,9 +97,9 @@ export default function Hero() {
                   </div>
                   <div className="relative h-full pb-12 flex flex-col justify-end">
                     <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                      <span className="block text-gray-200">
+                      {/* <span className="block text-gray-200">
                         {slide.heading}
-                      </span>
+                      </span> */}
                       <span className="block text-cyan-300">
                         {slide.subheading}
                       </span>

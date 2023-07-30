@@ -2,7 +2,7 @@ export default function TeamCard2({person}) {
   return(
     <>
       <div className="space-y-6">
-        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
+        <img className="mx-auto h-40 w-40 object-cover rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
         <div className="space-y-2">
           <div className="space-y-1 text-lg font-medium leading-6">
             <h3>{person.name}</h3>

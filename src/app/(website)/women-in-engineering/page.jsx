@@ -6,37 +6,32 @@ import { AcademicCapIcon, AdjustmentsHorizontalIcon, ArrowPathIcon, BanknotesIco
 const benefits = [
   {
     name: 'Networking opportunities',
-    description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+    description: "IEEE Women in Engineering offers a forum for networking between women working in engineering. By becoming a member of this organization, individuals can broaden their professional networks and make connections with like-minded people who might be able to offer insightful advice, support, and mentorship.",
     icon: GlobeAltIcon,
   },
   {
     name: 'Newsletters and magazines',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+    description: "Numerous materials, including newsletters, magazines, and journals, are provided by IEEE Women in Engineering which shows it’s collaborations and showcases women’s outstanding achievements. ",
     icon: NewspaperIcon,
   },
   {
     name: 'Awards and recognition',
-    description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+    description: "Women can use IEEE Women in Engineering as a forum to increase their visibility and respect in the engineering community. Members can present their work, share research, and participate in conversations and activities. In addition, they get prizes for their outstanding achievements.",
     icon: TrophyIcon,
   },
   {
     name: 'Discounted registration',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description: "They can register to a variety of useful seminars, webinars, and events at discounted rates by being a member of IEEE Women in Engineering.   ",
     icon: BanknotesIcon,
   },
   {
     name: 'Travel grants',
-    description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description: "The IEEE WIE Travel Grant program offers grants to IEEE WIE members so they can present at conferences or other activities that IEEE or IEEE WIE sponsors.",
     icon: CurrencyEuroIcon,
   },
   {
     name: 'Scholarship for Students',
-    description: '[https://mtt.org/students/]Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+    description: "Members of IEEE Women in Engineering are eligible for several scholarships and grants in different stages like pre-university, undergraduate, and graduate.",
     icon: AcademicCapIcon,
   },
 ]
@@ -154,15 +149,21 @@ function Strive() {
               <h1 className="text-4xl max-w-fit font-bold tracking-tight bg-gradient-to-r from-fuchsia-600 to-fuchsia-900 bg-clip-text text-transparent sm:text-5xl">
                 IEEE WIE Strives to...
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
+              <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
+                The IEEE WIE aims to honor the remarkable
+                accomplishments of women by featuring the most recent webinars,
+                events, and program information. Additionally, the weekly
+                highlights WIE's partnerships with the IEEE Foundation, IEEE
+                ILN, IEEE Reach, etc.
               </p>
               <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-800 lg:max-w-none">
                 {strives.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="text-gray-600">
-                      <feature.icon className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600" aria-hidden="true" />
+                      <feature.icon
+                        className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600"
+                        aria-hidden="true"
+                      />
                       <p className="text-justify">{feature.description}</p>
                     </dt>
                   </div>
@@ -182,7 +183,7 @@ function Strive() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -214,18 +215,17 @@ function Publication() {
               <h1 className="text-4xl py-2 max-w-fit font-bold tracking-tight bg-gradient-to-r from-fuchsia-600 to-fuchsia-900 bg-clip-text text-transparent sm:text-5xl">
                 Publications & Digital Media
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-600">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
-              </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                 {publications.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-gray-900">
-                      <feature.icon className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600" aria-hidden="true" />
+                      <feature.icon
+                        className="absolute top-1 left-1 h-5 w-5 text-fuchsia-600"
+                        aria-hidden="true"
+                      />
                       {feature.name}
-                    </dt>{' '}
-                    <p className="text-justify">{feature.description}</p>
+                    </dt>{" "}
+                    <p className="text-justify lg: pr-4">{feature.description}</p>
                   </div>
                 ))}
               </dl>
@@ -258,65 +258,75 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
 
 const metrics = [
-  { id: 1, stat: '30K+', emphasis: 'Members', rest: 'use laoreet amet lacus nibh integer quis.' },
-  { id: 4, stat: '100+', emphasis: 'Countries', rest: 'lacus nibh integer quis.' },
-  { id: 2, stat: '214', emphasis: 'Sections', rest: 'lacus nibh integer quis.' },
-  { id: 3, stat: '958', emphasis: 'Student Branches', rest: 'laoreet amet lacus nibh integer quis.' },
+  { id: 1, stat: '30K+', emphasis: 'Members', rest: 'are part of IEEE WIE.' },
+  { id: 4, stat: '100+', emphasis: 'Countries', rest: 'connected from all around the world.' },
+  { id: 2, stat: '214', emphasis: 'Sections', rest: 'in total under IEEE.' },
+  { id: 3, stat: '958', emphasis: 'Student Branches', rest: 'have WIE Affinity Groups.' },
 ]
 
 function Stats() {
   return (
     <div className="bg-fuchsia-900 grid place-items-center">
-      <div className='relative max-w-7xl'>
-      <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
-        <div className="h-full w-full xl:grid xl:grid-cols-2">
-          <div className="h-full xl:relative xl:col-start-2">
-            <img
-              className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-              src="/images/SPAVe 6.0-169_cropped.jpg"
-              alt="People working on laptops"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-fuchsia-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute bottom-0 h-32 bg-gradient-to-b from-fuchsia-900 right-0 xl:h-full xl:w-32 xl:bg-gradient-to-l"
-            />
+      <div className="relative max-w-7xl">
+        <div className="absolute bottom-0 h-80 w-full xl:inset-0 xl:h-full">
+          <div className="h-full w-full xl:grid xl:grid-cols-2">
+            <div className="h-full xl:relative xl:col-start-2">
+              <img
+                className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                src="/images/SPAVe 6.0-169_cropped.jpg"
+                alt="People working on laptops"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-fuchsia-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+              />
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 h-32 bg-gradient-to-b from-fuchsia-900 right-0 xl:h-full xl:w-32 xl:bg-gradient-to-l"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">
-        <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
-          <h2 className="text-base font-semibold text-white">Valuable Metrics</h2>
-          <p className="mt-3 text-3xl font-bold tracking-tight text-white">
-            IEEE WIE by the Numbers
-          </p>
-          <p className="mt-5 text-lg text-fuchsia-300">
-            Rhoncus sagittis risus arcu erat lectus bibendum. Ut in adipiscing quis in viverra tristique sem. Ornare
-            feugiat viverra eleifend fusce orci in quis amet. Sit in et vitae tortor, massa. Dapibus laoreet amet lacus
-            nibh integer quis. Eu vulputate diam sit tellus quis at.
-          </p>
-          <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
-            {metrics.map((item) => (
-              <p key={item.id}>
-                <span className="block text-2xl font-bold text-white">{item.stat}</span>
-                <span className="mt-1 block text-base text-gray-300">
-                  <span className="font-medium text-white">{item.emphasis}</span> {item.rest}
-                </span>
-              </p>
-            ))}
+        <div className="mx-auto max-w-4xl px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-flow-col-dense xl:grid-cols-2 xl:gap-x-8">
+          <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
+            <h2 className="text-base font-semibold text-white">
+              Valuable Metrics
+            </h2>
+            <p className="mt-3 text-3xl font-bold tracking-tight text-white">
+              IEEE WIE by the Numbers
+            </p>
+            <p className="mt-5 text-lg text-justify text-fuchsia-300">
+              IEEE Women in Engineering (WIE) has experienced significant growth
+              since its inception in 1994. This global network encourages women
+              to pursue careers in engineering, promoting diversity and
+              inclusion. It provides support through various programs, events,
+              and initiatives, fostering a vibrant community for female
+              engineers worldwide.
+            </p>
+            <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+              {metrics.map((item) => (
+                <p key={item.id}>
+                  <span className="block text-2xl font-bold text-white">
+                    {item.stat}
+                  </span>
+                  <span className="mt-1 block text-base text-gray-300">
+                    <span className="font-medium text-white">
+                      {item.emphasis}
+                    </span>{" "}
+                    {item.rest}
+                  </span>
+                </p>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -325,13 +335,15 @@ function Benefits() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid place-items-center lg:mx-0">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-fuchsia-700">Benefits</h2>
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-fuchsia-700">
+            Benefits
+          </h2>
           <h1 className="mt-1 p-2 max-w-fit text-3xl font-extrabold text-center bg-gradient-to-r from-fuchsia-600 to-fuchsia-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
             Why join IEEE Women in Engineering?
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+            There are several reasons why one might consider joining IEEE Women
+            in Engineering
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -340,14 +352,22 @@ function Benefits() {
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-fuchsia-600">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                   </div>
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto text-justify">{feature.description}</p>
+                  <p className="flex-auto text-justify">
+                    {feature.description}
+                  </p>
                   <p className="mt-6">
-                    <a href={feature.href} className="text-base font-semibold leading-7 text-fuchsia-600">
+                    <a
+                      href={feature.href}
+                      className="text-base font-semibold leading-7 text-fuchsia-600"
+                    >
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </p>
@@ -358,23 +378,22 @@ function Benefits() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
 function JoinUs() {
   return (
     <div className="bg-gradient-to-r from-fuchsia-600 to-fuchsia-900">
-      <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Boost your productivity.</span>
+          <span className="block py-2">Join IEEE today.</span>
           <span className="block text-fuchsia-900">
-            Start your journey today.
+            Embark on a journey of limitless possibilities.
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-fuchsia-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-          Malesuada adipiscing sagittis vel nulla nec.
+          Explore the frontiers of innovation, share knowledge, and collaborate to advance technology for humanity.
         </p>
         <a
           href="/membership"

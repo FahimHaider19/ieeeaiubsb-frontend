@@ -278,7 +278,8 @@ export default function Contact() {
                   <h3 className="text-lg font-medium text-gray-500">
                     Send us a message
                   </h3>
-                  <form
+                  {/* form */}
+                  <div
                     action="#"
                     method="POST"
                     className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
@@ -404,13 +405,12 @@ export default function Contact() {
                     </div>
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
-                        type="submit"
                         className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-teal-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 sm:w-auto"
                       >
                         Submit
                       </button>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

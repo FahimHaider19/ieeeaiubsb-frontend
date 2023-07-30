@@ -28,7 +28,7 @@ const slides = [
     title: "Online Community Specialist, IEEE Member and Geographic Activities (MGA), Big Media Co"
   },
   {
-    imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
+    imageSrc: "/images/sarangsheikh.jpg",
     imageAlt: "image",
     text: "I have known IEEE people from AIUB SB since 2013. I have always seen this branch creating not just amazing IEEE volunteer/leaders but also great human beings. AIUB is not just a SB, its a process that takes an average student and shape them into a responsible citizen by creating interest for both engineering and community development. I have always been a fan, follower and a supporter to AIUB and I feel really honored when I happen to get chance to assist or guide them with any IEEE related decision. Wish AIUB and its amazing people all the very best for their personal and mutual endeavors.",
     name: "Sarang Shaikh",

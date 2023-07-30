@@ -90,8 +90,8 @@ function Example() {
                   y2="474.645"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#5b21b6" />
-                  <stop offset={1} stopColor="#0ea5e9" />
+                  <stop stopColor="#148b44" />
+                  <stop offset={1} stopColor="#37b54a" />
                 </linearGradient>
               </defs>
             </svg>
@@ -145,11 +145,6 @@ function Conference() {
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
         <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
           <div>
-            <div>
-              {/* <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-green-600 to-blue-600">
-                      <SparklesIcon className="h-6 w-6 text-white" aria-hidden="true" />
-                    </span> */}
-            </div>
             <div className="mt-6">
               <div className="">
                 <h1 className="text-4xl max-w-fit font-bold tracking-tight bg-gradient-to-r from-green-500 to-green-900 bg-clip-text text-transparent sm:text-5xl">
@@ -163,7 +158,7 @@ function Conference() {
                   rules and regulations. They host conferences on relevant
                   subjects. As long as one of these organizations is the sole
                   sponsor, IAS members are eligible to register at member rates
-                  for any meetings, conferences, or seminars that they organize.{" "}
+                  for any meetings, conferences, or seminars that they organize.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -333,16 +328,15 @@ function Education() {
 function JoinUs() {
   return (
     <div className="bg-gradient-to-r from-green-500 to-green-800">
-      <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Boost your productivity.</span>
+          <span className="block py-2">Join IEEE today.</span>
           <span className="block text-green-900">
-            Start your journey today.
+            Embark on a journey of limitless posibilities.
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-green-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-          Malesuada adipiscing sagittis vel nulla nec.
+          Explore the frontiers of innovation, share knowledge, and collaborate to advance technology for humanity.
         </p>
         <a
           href="/membership"

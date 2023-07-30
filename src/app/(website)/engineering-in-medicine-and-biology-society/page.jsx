@@ -42,13 +42,23 @@ function Example() {
                 What is IEEE EMBS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                The IEEE Engineering in Medicine and Biology Society (EMBS) is
-                an international society consisting of biomedical engineers. The
-                organization focuses on the implementation of engineering
-                principles and methods of biology and medicine. EMBS provides
-                its members with access to the people, practices, information,
-                ideas and opinions that are shaping the development of the
-                fields in science.
+                The IEEE Engineering in Medicine and Biology Society (EMBS)
+                stands as a vibrant and globally connected international
+                society, bringing together a diverse community of biomedical
+                engineers. At its core, EMBS is dedicated to bridging the realms
+                of engineering, biology, and medicine, where cutting-edge
+                innovations thrive. By seamlessly integrating engineering
+                principles and methodologies into the fabric of medical and
+                biological sciences, EMBS paves the way for groundbreaking
+                advancements with far-reaching implications for human health and
+                well-being. Members of this esteemed society gain unparalleled
+                access to a rich tapestry of resources, including a vast network
+                of likeminded professionals, pioneering practices, invaluable
+                information, and a wealth of transformative ideas and
+                perspectives. EMBS serves as an epicenter of progress, where the
+                brightest minds unite to shape the future of science, unlocking
+                new frontiers of knowledge, and revolutionizing healthcare for
+                generations to come.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/EMBS-01.png" alt="" />
@@ -107,7 +117,7 @@ function Conference() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
-        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div>
             <div>
               {/* <span className="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-blue-600">
@@ -120,7 +130,26 @@ function Conference() {
                   Conferences & Events
                 </h1>
                 <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
-                  The IEEE Computer Society sponsors more than 200 technical conferences and events each year, including the industry-oriented “Rock Stars” series, all over the world, aimed at research and industry professionals. The IEEE Computer Society annually sponsors a wide range of geographically diverse technical conferences, symposiums, and workshops dedicated to providing computing enthusiasts with innovative forums designed to facilitate the identification, creation, capture, and exchange of highly peer-reviewed scientific and technological knowledge that benefits our members, the profession, and humanity. Visit the link to check the upcoming conferences.
+                  The IEEE EMBS organizes a wide range of conferences and events
+                  that play a crucial role in advancing the field of biomedical
+                  engineering. These gatherings provide a platform for
+                  researchers, practitioners, and industry experts to exchange
+                  knowledge, present their latest findings, and foster
+                  collaborations. EMBC, the annual conference of the Society is
+                  designed as a general topic conference with multiple technical
+                  themes. We have a vibrant student and young professional (post
+                  grad) participation in the General Conference. Attendees range
+                  from high school students to senior industry and academic
+                  researchers. EMB Special Topic Conferences are designed to
+                  create a high quality, technological event with leading
+                  technology experts. Attendees range from graduate students to
+                  senior industry and academic researchers. All EMBS Conference
+                  Proceedings are published in IEEE Xplore, a digital library of
+                  the IEEE. EMBS also co-sponsors events with other IEEE
+                  Societies. Additionally, several Conference Proceedings of
+                  EMBS Conferences are indexed in Medline/PUBmed, Elsevier
+                  (Compendex, ScienceDirect and Scopus), Google Scholar, INSPEC,
+                  CiteSeerX and Web of Science.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -129,7 +158,10 @@ function Conference() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -148,7 +180,7 @@ function Conference() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
@@ -164,7 +196,13 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  The IEEE Computer Society publications are peer-reviewed, indexed, and authored by technology thought leaders worldwide, and include 17 scholarly journals and 13 magazines featuring the latest technology trends. It also offers cutting-edge products such as the myComputer app (available for iOS or Android), that provide unprecedented user-driven access to its content, and the Digital Library with more than 550,000 articles and papers spanning the full spectrum of computer science and technology. Check out the journals and publications of IEEE Computer Society here.
+                  IEEE EMBS offers a range of prestigious publications that
+                  cover diverse areas of biomedical engineering and healthcare
+                  technology and is regarded as the leading publisher of
+                  original research in biomedical engineering. We have 11
+                  technical journals and transactions, including the
+                  award-winning IEEE PULSE Magazine, which attracts a broad
+                  readership, with its general and technical articles.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -173,7 +211,10 @@ function Publication() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -207,29 +248,25 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
-
-import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 const benefits = [
   {
     name: 'Technical community',
-    description: '[community, Student Club and Chapter Benefits] Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.',
+    description: 'IEEE Engineering in Medicine and Biology Society (EMBS) provides a vibrant technical community where professionals in the field of biomedical engineering connect, collaborate, and share knowledge. Through conferences, workshops, and online forums, members stay updated on the latest advancements, exchange ideas, and contribute to the growth of this interdisciplinary field.',
     href: '#',
     icon: UserGroupIcon,
   },
   {
     name: 'Career development',
-    description:
-      '[mentorship programs, young professionals].Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.',
+    description:"EMBS offers valuable resources for career development  including job boards, mentoring programs and professional networking opportunities. Members can access career guidance, find job openings, and connect with experienced mentors to enhance their skills and advance in their biomedical engineering careers.",
     href: '#',
     icon: AcademicCapIcon,
   },
   {
     name: 'Research and Publications',
-    description:
-      'Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.',
+    description:"EMBS supports and promotes research in biomedical engineering through its publications, such as journals, magazines, and conference proceedings. Researchers can disseminate their work to a wide audience, gain recognition for their contributions, and stay informed about the latest research trends and findings in the field.",
     href: '#',
     icon: NewspaperIcon,
   },
@@ -240,13 +277,19 @@ function Benefits() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid place-items-center lg:mx-0">
-          <h2 className="text-lg font-semibold leading-8 tracking-tight text-purple-700">Benefits</h2>
+          <h2 className="text-lg font-semibold leading-8 tracking-tight text-purple-700">
+            Benefits
+          </h2>
           <h1 className="mt-1 p-2 max-w-fit text-3xl text-center font-extrabold bg-gradient-to-r from-sky-500 to-purple-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
             Why join IEEE Engineering in Medicine and Biology Society?
           </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-            accusamus quisquam.
+          <p className="mt-6 text-lg leading-8 text-gray-600 text-justify">
+            Joining will provide professionals and researchers in biomedical,
+            healthcare, and medicine with a platform for networking, sharing
+            ideas and perspectives, and collaboration. By becoming a member,
+            individuals can access valuable resources, attend conferences,
+            publish research, and contribute to the advancement of technology in
+            the medical sector and practices.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -255,14 +298,20 @@ function Benefits() {
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-purple-600">
-                    <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
                   </div>
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
+                  <p className="flex-auto text-justify">{feature.description}</p>
                   <p className="mt-6">
-                    <a href={feature.href} className="text-base font-semibold leading-7 text-purple-600">
+                    <a
+                      href={feature.href}
+                      className="text-base font-semibold leading-7 text-purple-600"
+                    >
                       Learn more <span aria-hidden="true">→</span>
                     </a>
                   </p>
@@ -273,23 +322,22 @@ function Benefits() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 
 function JoinUs() {
   return (
     <div className="bg-gradient-to-r from-sky-500 to-purple-800">
-      <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Boost your productivity.</span>
+          <span className="block py-2">Join IEEE today.</span>
           <span className="block text-purple-900">
-            Start your journey today.
+            Embark on a journey of limitless possibilities.
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-purple-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-          Malesuada adipiscing sagittis vel nulla nec.
+          Explore the frontiers of innovation, share knowledge, and collaborate to advance technology for humanity.
         </p>
         <a
           href="/membership"
@@ -309,7 +357,7 @@ export default function EMBS() {
       <Example />
       <Conference />
       <Publication />
-      <Benefits> </Benefits>
+      <Benefits />
       <JoinUs />
     </>
   )

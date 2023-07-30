@@ -154,57 +154,49 @@ function History() {
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
               <div className="prose prose-lg prose-cyan text-gray-500 lg:max-w-none">
                 <p className="text-justify">
-                  The IEEE is divided into 10 geographical regions, each with
-                  its own unique focus and membership base. Region 10, also
-                  known as the Asia Pacific Region, is the largest region in
-                  terms of membership count. As of 2019, Region 10 had over
-                  135,000 members, making it a significant and influential force
-                  within the IEEE community. The primary aim of the IEEE Regions
-                  is to foster global technological advancement for the
-                  betterment of human life. Region 10 is committed to this goal,
-                  and its members are actively involved in a wide range of
-                  technological initiatives, from developing new products and
-                  services to improving the lives of people around the world.
-                  Region 10 is also home to a number of IEEE societies, which
-                  provide specialized technical support and networking
-                  opportunities to members with similar interests. These
-                  societies play a vital role in the growth and development of
-                  the region's technology community.
+                  The IEEE Region 10, also known as the Asia Pacific Region, was
+                  formed in 1967. The region was originally made up of 12
+                  countries, but it has since grown to include over 40 countries
+                  and territories. Region 10 is the largest region in terms of
+                  membership count, with over 135,000 members. The mission of
+                  IEEE Region 10 is to foster global technological advancement
+                  for the betterment of human life. The region accomplishes this
+                  mission by organizing and delivering a wide range of technical
+                  activities, including conferences, workshops, and training
+                  programs. Region 10 also plays a key role in promoting IEEE
+                  standards and publications. Over the years, IEEE Region 10 has
+                  made a significant contribution to the advancement of
+                  technology in the Asia Pacific region. The region has hosted
+                  several major international conferences, including the IEEE
+                  International Conference on Communications (ICC) and the IEEE
+                  International Conference on Robotics and Automation (ICRA).
                 </p>
               </div>
               <div className="prose prose-lg prose-cyan mt-6 text-gray-500 lg:mt-0">
                 <p className="text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                  molestiae consectetur tenetur nulla quae nemo, dicta neque
-                  tempora. Autem vitae soluta quisquam dolor delectus iste
-                  suscipit officiis, impedit dicta blanditiis accusamus.
-                  Distinctio sequi modi expedita eius, incidunt nam beatae
-                  libero ab, cumque aliquid nihil eos alias rem est voluptatibus
-                  numquam nobis, molestiae officiis? Ea nobis exercitationem,
-                  natus cum magnam est voluptas optio laudantium aliquam quo
-                  repellat, eum quaerat ut saepe neque libero alias, veritatis
-                  aut ratione culpa in suscipit. Totam debitis possimus cum.
-                  Pariatur voluptatibus delectus nemo adipisci recusandae omnis
-                  aut facere harum! Alias molestias vero dolore. Repellat animi
-                  error debitis! Quas perferendis, optio quod ut fugit voluptas
-                  illum, aliquam eos sed numquam libero culpa tenetur totam
-                  asperiores aperiam enim incidunt distinctio qui velit facere?
-                  Commodi quisquam, molestias odit at temporibus molestiae nisi,
-                  omnis, earum iste perspiciatis odio? Deserunt rem commodi,
-                  ratione ab earum eius doloremque officia necessitatibus iusto
-                  facilis.
+                  Region 10 has also been instrumental in the development of
+                  IEEE standards, such as the IEEE 802.11 wireless networking
+                  standard. The IEEE Region 10 is committed to diversity and
+                  inclusion, and it is working to ensure that all members can
+                  participate in and benefit from IEEE activities. The region
+                  has several programs in place to support women and
+                  underrepresented minorities, and it is working to expand its
+                  reach to new countries and territories. The IEEE Region 10 is
+                  a vibrant and dynamic region that is making a significant
+                  contribution to the advancement of technology around the
+                  world. The region is committed to its mission of fostering
+                  global technological advancement for the betterment of human
+                  life, and it is working to ensure that all members can
+                  participate in and benefit from IEEE activities. The IEEE
+                  Region 10 is a valuable resource for engineers and
+                  technologists in the Asia Pacific region. The region provides
+                  its members with opportunities to learn and grow, to network
+                  with other professionals, and to contribute to the advancement
+                  of technology.
                 </p>
               </div>
             </div>
           </div>
-          {/* <div className="mt-8 w-full grid place-items-center">
-            <a
-              href="#"
-              className="flex items-center justify-center rounded-md border border-transparent bg-cyan-600 px-5 py-3 text-base font-medium text-white hover:bg-cyan-700"
-            >
-              The Constitution, Rules & By-Laws
-            </a>
-          </div> */}
         </div>
       </div>
     </div>

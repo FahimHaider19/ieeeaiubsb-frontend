@@ -4,22 +4,22 @@ import { CheckIcon } from '@heroicons/react/20/solid'
 const features = [
   {
     name: 'Access the Latest Research',
-    description: 'Access to Computer magazine(12x/year). 18 complimentary articles per membership year. Save $350 on publishing papers with your IEEE Computer Society Membership.Discounts on Magazine Subscriptions - Discounts on Magazine Subscriptions, IEEE Computer Society Digital Library. Discounts on Magazine Subscriptions',
+    description: 'The IEEE Computer Society provides access to a vast repository of cutting-edge research papers, articles, and publications, keeping individuals updated with the latest advancements in the field of computer science and technology.',
     icon: NewspaperIcon,
   },
   {
     name: 'Network With Your Peers',
-    description: 'Join + 50k professionals in computing and participate in professional chapters, share your research, and collaborate on the latest trends. Young Professionals, IEEE Diversity and Inclusivity (DEI), IEEE Diversity and Inclusivity (DEI). Short desccription of IEEE Collabratec',
+    description: 'Engage with a global community of like-minded professionals, researchers, and experts through IEEE CS, fostering valuable connections and collaborations to enhance knowledge and career opportunities.',
     icon: GlobeAltIcon,
   },
   {
     name: 'Get Recognized',
-    description: 'Join + 50k professionals in computing and participate in professional chapters. Student Scholarships and Awards(US $40,000 in scholarships plus $1,000s in travel grants), International Awards, Achieve IEEE Fellow Status; Chapter, Region, and Section Activities. Technical Community Leadership',
+    description: 'Participation in IEEE CS activities, conferences, and certifications enhances professional credibility, showcasing commitment to continuous learning and expertise in the domain of computer science.p',
     icon: UserPlusIcon,
   },
   {
     name: 'Sharpen Your Skills to boost your career',
-    description: 'Career Center, Professional Education Courses, Early Career Webinars, Global Startup Accelerator Index',
+    description: 'IEEE CS fosters a sense of community among its members, offering support and camaraderie in the pursuit of shared interests and goals. Whether you are seeking guidance, collaboration, or mentorship, the society provides a supportive environment.',
     icon: SparklesIcon,
   },
 ]
@@ -86,15 +86,25 @@ function Description() {
                 What is IEEE CS?
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
-                IEEE Computer Society (IEEE CS) is a global professional society
-                focused on advancing computer and information processing
-                technology. With over three million members, including computer
-                science professionals, researchers, and practitioners worldwide,
-                it offers various activities like technical conferences and
-                workshops, shaping the computing industry's future. Through
-                publications and programs, it empowers members and the industry,
-                fostering collaboration among engineers and creating new
-                opportunities.
+                The IEEE Computer Society (IEEE CS) stands as a prominent and
+                far-reaching global professional society, dedicated to driving
+                the progress of computer and information processing technology.
+                Boasting an impressive membership base of over three million
+                computer science professionals, researchers, and practitioners
+                hailing from all corners of the world, it serves as a thriving
+                hub of innovation and knowledge dissemination. This esteemed
+                society orchestrates a myriad of impactful activities, including
+                technical conferences and workshops, which propel the frontiers
+                of the computing industry into new realms of possibilities.
+                Leveraging its extensive network and expertise, IEEE CS empowers
+                its members and the broader tech community through a wide array
+                of publications and programs. This empowerment nurtures a
+                culture of collaboration among engineers, sparking ingenious
+                solutions and forging unparalleled opportunities in the
+                ever-evolving landscape of technology. In essence, IEEE Computer
+                Society's unwavering commitment to excellence not only shapes
+                the trajectory of the computing field but also fortifies the
+                industry for a dynamic and promising future.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/CS-01.png" alt="" />
@@ -152,9 +162,9 @@ function Benefits() {
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
+                <p className="mt-2 text-base text-justify leading-7 text-gray-600">
                   {feature.description}
-                </dd>
+                </p>
               </div>
             ))}
           </dl>
@@ -170,26 +180,31 @@ function Conference() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12">
-        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
+        <div className="mx-auto max-w-4xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
           <div>
             <div></div>
-            <div className="mt-6">
+            <div className="mt-3">
               <div className="">
                 <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent sm:text-5xl">
                   Conferences & Events
                 </h1>
-                <p className="mt-6 text-lg leading-8  text-justify text-gray-600">
-                  IEEE CS organizes technical conferences, workshops, and
-                  seminars, providing platforms to present research findings and
-                  cutting-edge technologies in computer science. These events
-                  foster learning, intellectual exchange, and skill development,
-                  empowering participants to stay updated with industry trends.
-                  Additionally, hackathons and coding competitions promote
-                  creativity and teamwork, enhancing practical knowledge. These
-                  initiatives contribute to a dynamic learning environment,
-                  nurturing talent, and preparing future leaders in computer
-                  science and engineering within the broader tech community in
-                  Bangladesh.
+                <p className="mt-3 text-lg leading-8  text-justify text-gray-600">
+                  IEEE CS conducts technical conferences that bring together
+                  students, researchers, and professionals from diverse
+                  backgrounds. These conferences serve as platforms for
+                  presenting research findings, innovative projects, and
+                  cutting-edge technologies within the field of computer
+                  science. In addition to conferences, the student
+                  branch hosts workshops and seminars focused on emerging
+                  technologies, industry trends, and skill development. These
+                  interactive sessions provide hands-on training and insights
+                  from industry experts, empowering participants to stay updated
+                  with the latest advancements and preparing them for the
+                  challenges of the tech industry. The IEEE CS also organizes
+                  hackathons and coding competitions that unleash the creativity
+                  and problem-solving skills of students. These events allow
+                  participants to work collaboratively on real-world projects,
+                  enhancing their practical knowledge and fostering teamwork.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -236,7 +251,15 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  Digital Library with 840,000 Articles, Award-Winning Special Issues. Computer Society Digital Library (CSDL) and the IEEE Xplore® digital library. ComputingEdge Newsletter, Colloquium Abstracts, Tech News Blog, Resource Library. Short description of opportuinties and discounts. 
+                  The IEEE Computer Society publishes a variety of publications
+                  including technical journals, magazines, conference
+                  proceedings, books, and online resources. These publications
+                  cover various topics related to computer science, technology,
+                  and engineering, including but not limited to artificial
+                  intelligence, computer networks, data science, cybersecurity,
+                  software engineering, computer graphics, computer
+                  architecture, machine learning, and human-computer
+                  interaction.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -245,7 +268,10 @@ function Publication() {
                   >
                     Documentation
                   </a>
-                  <a href="#" className="text-base font-semibold leading-7 text-gray-900">
+                  <a
+                    href="#"
+                    className="text-base font-semibold leading-7 text-gray-900"
+                  >
                     View on GitHub <span aria-hidden="true">→</span>
                   </a>
                 </div>
@@ -279,49 +305,49 @@ function Publication() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
       </div>
     </div>
-  )
+  );
 }
 
 
 const educationFeatures = [
   {
     name: 'Bodies of Knowledge',
-    description: '[SWEBoK, SEBoK]. Rerum repellat labore necessitatibus reprehenderit molestiae praesentium.',
+    description: 'IEEE CS provides comprehensive bodies of knowledge that serve as essential references for professionals, covering various domains within the technology industry.',
     icon: BookOpenIcon,
   },
   {
     name: 'Online Courses',
-    description: 'Corporis asperiores ea nulla temporibus asperiores non tempore assumenda aut.',
+    description: 'IEEE CS offers a wide range of courses through its online learning platform, allowing individuals to access high-quality education conveniently from anywhere in the world.',
     icon: ComputerDesktopIcon,
   },
   {
     name: 'Certifications',
-    description: 'In sit qui aliquid deleniti et. Ad nobis sunt omnis. Quo sapiente dicta laboriosam.',
+    description: 'IEEE CS certifications validate expertise in specific technical areas, bolstering professional credentials and recognition within the global tech community.',
     icon: AcademicCapIcon,
   },
   {
     name: 'Webinars',
-    description: 'Sed rerum sunt dignissimos ullam. Iusto iure occaecati voluptate eligendi fugiat sequi.',
+    description: 'Regular webinars hosted by IEEE CS feature industry experts, offering insights into cutting-edge technologies and trends, fostering continuous learning.',
     icon: GlobeAltIcon,
   },
   {
     name: 'Conferences',
-    description: 'Quos inventore harum enim nesciunt. Aut repellat rerum omnis adipisci.',
+    description: 'IEEE CS organizes conferences that bring together researchers, practitioners, and enthusiasts, facilitating knowledge exchange and collaboration to advance the field.',
     icon: UserGroupIcon,
   },
   {
     name: 'Boards',
-    description: 'Quae sit sunt excepturi fugit veniam voluptatem ipsum commodi.',
+    description: 'IEEE CS establishes boards to address critical topics, promote research, and drive technological advancements, fostering innovation and best practices.',
     icon: ClipboardDocumentCheckIcon,
   },
   {
     name: 'Podcasts',
-    description: 'Eos laudantium repellat sed architecto earum unde incidunt. Illum sit dolores voluptatem.',
+    description: 'The platform offers podcasts, presenting engaging discussions on various technology-related topics, making learning entertaining and accessible.',
     icon: MicrophoneIcon,
   },
   {
     name: 'Digital Library',
-    description: 'Nulla est saepe accusamus nostrum est est. Fugit voluptatum omnis quidem voluptatem.',
+    description: 'IEEE CS provides an extensive digital library, housing a vast collection of research papers, journals, and publications, serving as a valuable resource for academic and professional researchers.',
     icon: BuildingOffice2Icon
   },
 ]
@@ -348,7 +374,7 @@ function Education() {
                   <feature.icon className="absolute top-1 left-0 h-5 w-5 text-amber-500" aria-hidden="true" />
                   {feature.name}
                 </dt>
-                <dd className="mt-2">{feature.description}</dd>
+                <dd className="mt-2 text-justify">{feature.description}</dd>
               </div>
             ))}
           </dl>
@@ -362,16 +388,16 @@ function Education() {
 function JoinUs() {
   return (
     <div className="bg-gradient-to-r from-amber-600 to-yellow-400">
-      <div className="mx-auto max-w-2xl py-16 px-6 text-center sm:py-20 lg:px-8">
+      <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          <span className="block">Boost your productivity.</span>
+          <span className="block py-2">Join IEEE today.</span>
           <span className="block text-amber-900">
-            Start your journey today.
+            Embark on a journey of limitless possibilities.
           </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-amber-100">
-          Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-          Malesuada adipiscing sagittis vel nulla nec.
+          Explore the frontiers of innovation, share knowledge, and collaborate
+          to advance technology for humanity.
         </p>
         <a
           href="/membership"

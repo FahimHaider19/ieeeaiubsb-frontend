@@ -43,7 +43,7 @@ const committees = [
   {
     logo: "/images/logo/MTTS-icon.png",
     name: 'MTTS Committee',
-    href: '/cs-committee'
+    href: '/mtts-committee'
   },
   {
     logo: "/images/logo/WIE-icon.png",

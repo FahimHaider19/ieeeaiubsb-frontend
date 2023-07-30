@@ -7,7 +7,7 @@ export default function TeamCard1({person}) {
             <div className="aspect-w-4 aspect-h-5">
               <img
                 className="rounded-t-lg object-cover shadow-lg"
-                src={person.image}
+                src={person.imageUrl}
                 alt=""
               />
             </div>
@@ -17,7 +17,7 @@ export default function TeamCard1({person}) {
                 <p className="text-cyan-600 text-lg">{person.role}</p>
                 <p className="text-gray-500 font-light text-sm">BSc in CSE</p>
               </div>
-              <ul role="list" className="flex justify-left space-x-5">
+              <ul role="list" className="flex justify-center space-x-5">
                 <li>
                   <a href={person.email} className="text-gray-400 hover:text-[#EA4335]">
                     <span className="sr-only">Email</span>

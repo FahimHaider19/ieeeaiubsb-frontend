@@ -7,42 +7,41 @@ import "swiper/css/effect-fade";
 
 
 const slides = [
-  // {
-  //   imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
-  //   imageAlt: "image",
-  //   text: "Always hang-out with people smarter than you” – AIUB SB is a pack of smart volunteers with myriad of expertise. Unwavering dedication, engaging activities and persistent drive for excellence set them apart. They are an exemplary student branch not only in Bangladesh but also in the Region 10. Wish they will evolve continually into new heights.",
-  //   name: "Abdullah A.S.H. Saki, ",
-  //   title: "Former Student Activities Coordinator, IEEE Bangladesh Section"
-  // },
-  // {
-  //   imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
-  //   imageAlt: "Farah Nazifa",
-  //   text: "I really appreciate the efforts coming from the enthusiastic IEEE AIUB Student Branch volunteers who worked together to make the event of Women Techmakers a successful one. In the near future, we are looking forward to organize more events at your wonderful campus! Best wishes!",
-  //   name: "Farah Nazifa",
-  //   title: "Lead, Google Women Techmakers Bangladesh"
-  // },
-  // {
-  //   imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
-  //   imageAlt: "image",
-  //   text: "Congratulations to all of the members of the IEEE AIUB Student Branch! I love reading about all of your achievements in Abozzo. I enjoy reading about the awards you’ve won and the activities you hold like industrial tours, the FREEDM Concept seminar, and STEM events for children. I wish you the best of luck and continued success in your efforts!",
-  //   name: "Justine Spack",
-  //   title: "Online Community Specialist, IEEE Member and Geographic Activities (MGA), Big Media Co"
-  // },
   {
-    imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
+    imageSrc: "/images/abdullahsaki.jpg",
+    imageAlt: "image",
+    text: "Always hang-out with people smarter than you” – AIUB SB is a pack of smart volunteers with myriad of expertise. Unwavering dedication, engaging activities and persistent drive for excellence set them apart. They are an exemplary student branch not only in Bangladesh but also in the Region 10. Wish they will evolve continually into new heights.",
+    name: "Abdullah A.S.H. Saki, Ph.D; ",
+    title: "Researcher @ IBM Quantum. Former Student Activities Coordinator, IEEE Bangladesh Section"
+  },
+  {
+    imageSrc: "/images/farahnazifa.jpg",
+    imageAlt: "Farah Nazifa",
+    text: "I really appreciate the efforts coming from the enthusiastic IEEE AIUB Student Branch volunteers who worked together to make the event of Women Techmakers a successful one. In the near future, we are looking forward to organize more events at your wonderful campus! Best wishes!",
+    name: "Farah Nazifa",
+    title: "Lead, Google Women Techmakers Bangladesh"
+  },
+  {
+    imageSrc: "/images/justinespack.jpg",
+    imageAlt: "image",
+    text: "Congratulations to all of the members of the IEEE AIUB Student Branch! I love reading about all of your achievements in Abozzo. I enjoy reading about the awards you’ve won and the activities you hold like industrial tours, the FREEDM Concept seminar, and STEM events for children. I wish you the best of luck and continued success in your efforts!",
+    name: "Justine Spack",
+    title: "Online Community Specialist, IEEE Member and Geographic Activities (MGA), Big Media Co"
+  },
+  {
+    imageSrc: "/images/mahvishzahoor.jpg",
     imageAlt: "image",
     text: "It’s an honour to write for AIUB.It was great visiting biggest student branch of Bangladesh section in 2015. I believe the AIUB Student Branch is setting an exemplary role in R10 in terms of teamwork, motivation, volunteering, commitment and innovation.I look forward to the branch team to continue their devotion in raising the bar everyday.",
     name: "Mehvish Zahoor",
     title: "Former Regional Student Representative(RSR), IEEE Region 10(Asia- Pacific)"
   },
   {
-    imageSrc: "//ieeeaiubsb.com/wp-content/uploads/2020/09/NBI_1405-1.jpg",
+    imageSrc: "/images/sarangshaikh.jpg",
     imageAlt: "image",
     text: "I have known IEEE people from AIUB SB since 2013. I have always seen this branch creating not just amazing IEEE volunteer/leaders but also great human beings. AIUB is not just a SB, its a process that takes an average student and shape them into a responsible citizen by creating interest for both engineering and community development. I have always been a fan, follower and a supporter to AIUB and I feel really honored when I happen to get chance to assist or guide them with any IEEE related decision. Wish AIUB and its amazing people all the very best for their personal and mutual endeavors.",
     name: "Sarang Shaikh",
     title: "Founder, Humans of IEEE (HOIEEE)"
   },
-  
 ]
 
 export default function Testimonial() {
@@ -51,7 +50,7 @@ export default function Testimonial() {
       <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">What They Say</h1>
       <Swiper
         autoplay={{
-          delay: 2500,
+          delay: 4000,
           disableOnInteraction: false
         }}
         spaceBetween={30}

@@ -1,63 +1,120 @@
+'use client'
+import { useState } from 'react';
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link';
 
 const posts = [
   {
-    title: 'AIUBians On Erasmus',
-    href: 'https://ieeeaiubsb.com/2022/12/23/aiubians-on-erasmus-2/',
-    category: { name: 'Article', href: '#' },
-    description:'On Saturday, December 10th, 2022, The IEEE AIUB Student Branch organized a webinar on “AIUBians on Erasmus.” This webinar’s objective was to offer variety of useful insights and recommendations on the Erasmus Mundus scholarship from AIUB alumni on various Erasmus programs.',
-    date: 'Dec 10, 2022',
-    datetime: '2020-03-16',
-    imageUrl:'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_8000/https://ieeeaiubsb.com/wp-content/uploads/2022/12/Erasmus-01.png'
+    id: 1,
+    title: `AIUBians On Erasmus`,
+    category: `Webinar`,
+    imageUrl: "/images/event/",
+    date: "December 23, 2022",
+    datetime: "2022/12/23",
   },
+
   {
-    title: 'THE IEEE AIUB Student branch celebrated “IEEE Day 2022”',
-    href: 'https://ieeeaiubsb.com/2022/10/11/the-ieee-aiub-student-branch-celebrated-ieee-day-2022/',
-    category: { name: 'Video', href: '#' },
-    description:'IEEE AIUB Student Branch organized an all-day long event celebrating “IEEE Day 2022” consisted of a workshop titled “A Medium Voltage Substation Design Maintaining Proper Standard,” organized by IEEE IAS Student Branch Chapter in collaboration with IEEE AIUB Student Branch, followed by a seminar.',
-    date: 'Mar 10, 2020',
-    datetime: '2020-03-10',
-    imageUrl:'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1350/https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022.jpg'
+    id: 2,
+    title: `Seminar on International Day of Medical Physics & World Radiography Day`,
+    category: `Seminar`,
+    imageUrl: "/images/event/",
+    date: "November 8, 2022",
+    datetime: "2022/11/08",
   },
+
   {
-    title: 'Members’ Orientation 2022 – IEEE AIUB Student Branch',
-    href: 'https://ieeeaiubsb.com/2022/08/07/seminer-onmembers-orientation-2022/',
-    category: { name: 'Case Study', href: '#' },
-    description:'The IEEE AIUB Student Branch has successfully organized the orientation ceremony for the new members of the IEEE. The event took place from 4:30 pm to 6:30 pm at the Multipurpose Hall, D building, AIUB Campus. The objective of this event was to welcome the new members, volunteers, and the new executive committee for the year 2022 of the IEEE AIUB Student Branch',
-    date: 'Feb 12, 2020',
-    datetime: '2020-02-12',
-    imageUrl:'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1920/https://ieeeaiubsb.com/wp-content/uploads/2022/10/Member-orientation-2022.png'
+    id: 3,
+    title: `Seminar on A Journey of Unknowns in the Femto-Nano World`,
+    category: `Seminar`,
+    imageUrl: "/images/event/",
+    date: "October 18, 2022",
+    datetime: "2022/10/18",
   },
+
   {
-    title: 'AIUBians On Erasmus',
-    href: 'https://ieeeaiubsb.com/2022/12/23/aiubians-on-erasmus-2/',
-    category: { name: 'Article', href: '#' },
-    description: 'On Saturday, December 10th, 2022, The IEEE AIUB Student Branch organized a webinar on “AIUBians on Erasmus.” This webinar’s objective was to offer variety of useful insights and recommendations on the Erasmus Mundus scholarship from AIUB alumni on various Erasmus programs.',
-    date: 'Dec 10, 2022',
-    datetime: '2020-03-16',
-    imageUrl: 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_8000/https://ieeeaiubsb.com/wp-content/uploads/2022/12/Erasmus-01.png'
+    id: 4,
+    title: `THE IEEE AIUB Student branch celebrated “IEEE Day 2022”`,
+    category: `IEEE DAY`,
+    imageUrl: "/images/event/",
+    date: "October 10, 2022",
+    datetime: "2022/10/10",
   },
+
   {
-    title: 'THE IEEE AIUB Student branch celebrated “IEEE Day 2022”',
-    href: 'https://ieeeaiubsb.com/2022/10/11/the-ieee-aiub-student-branch-celebrated-ieee-day-2022/',
-    category: { name: 'Video', href: '#' },
-    description: 'IEEE AIUB Student Branch organized an all-day long event celebrating “IEEE Day 2022” consisted of a workshop titled “A Medium Voltage Substation Design Maintaining Proper Standard,” organized by IEEE IAS Student Branch Chapter in collaboration with IEEE AIUB Student Branch, followed by a seminar.',
-    date: 'Mar 10, 2020',
-    datetime: '2020-03-10',
-    imageUrl: 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1350/https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022.jpg'
+    id: 5,
+    title: `Seminar on “Bangladesh at Space and James Webb Space Telescope.”`,
+    category: `Seminar`,
+    imageUrl: "/images/event/",
+    date: "September 28, 2022",
+    datetime: "2022/09/28",
   },
+
   {
-    title: 'Members’ Orientation 2022 – IEEE AIUB Student Branch',
-    href: 'https://ieeeaiubsb.com/2022/08/07/seminer-onmembers-orientation-2022/',
-    category: { name: 'Case Study', href: '#' },
-    description: 'The IEEE AIUB Student Branch has successfully organized the orientation ceremony for the new members of the IEEE. The event took place from 4:30 pm to 6:30 pm at the Multipurpose Hall, D building, AIUB Campus. The objective of this event was to welcome the new members, volunteers, and the new executive committee for the year 2022 of the IEEE AIUB Student Branch',
-    date: 'Feb 12, 2020',
-    datetime: '2020-02-12',
-    imageUrl: 'https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1920/https://ieeeaiubsb.com/wp-content/uploads/2022/10/Member-orientation-2022.png'
+    id: 6,
+    title: `Members’ Orientation 2022 – IEEE AIUB Student Branch`,
+    category: `Orientation`,
+    imageUrl: "/images/event/",
+    date: "August 7, 2022",
+    datetime: "2022/08/07",
   },
-]
+
+  {
+    id: 7,
+    title: `Seminar on “Biomedical Research for Sustainable Development.” organized by CBR & IEEE EMBS AIUB Chapter`,
+    category: `EMBS`,
+    imageUrl: "/images/event/",
+    date: "July 27, 2022",
+    datetime: "2022/07/27",
+  },
+
+  {
+    id: 8,
+    title: `IEEE AIUB Student Branch organized “IEEE Student Professional Awareness Venture (SPAVe 5.0)”`,
+    category: `Flagship Event`,
+    imageUrl: "/images/event/",
+    date: "December 18, 2021",
+    datetime: "2021/12/18",
+  },
+
+  {
+    id: 9,
+    title: `AIUBians on ERASMUS`,
+    category: `Webinar`,
+    imageUrl: "/images/event/",
+    date: "November 23, 2021",
+    datetime: "2021/11/23",
+  },
+
+  {
+    id: 10,
+    title: `Webinar on “Insights into the Single Line Diagram, Layout & Panel Design of MVLV Substations”`,
+    category: `IAS`,
+    imageUrl: "/images/event/",
+    date: "November 17, 2021",
+    datetime: "2021/11/17",
+  },
+];
 
 export default function OurEvents() {
+
+  const postsPerPage = 9;
+  const totalPages = Math.ceil(posts.length / postsPerPage);
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const handleNextPage = () => {
+    setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  const handlePreviousPage = () => {
+    setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
+  };
+
+  const getPagePosts = () => {
+    const startIndex = (currentPage - 1) * postsPerPage;
+    return posts.slice(startIndex, startIndex + postsPerPage);
+  };
+
   return (
     <div className="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 ">
       <div className="absolute inset-0">
@@ -75,8 +132,9 @@ export default function OurEvents() {
           </p>
         </div>
         <div className="mx-auto mt-12 max-w-md md:max-w-none grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <div
+          {getPagePosts().map((post) => (
+            <a
+              href={"/post/"+post.id}
               key={post.title}
               className="flex flex-col overflow-hidden rounded-lg shadow-lg"
             >
@@ -90,7 +148,7 @@ export default function OurEvents() {
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">
                   <p className="text-sm font-medium text-cyan-600">
-                    {post.category.name}
+                    {post.category}
                   </p>
                   <a href={post.href} className="mt-2 block">
                     <p className="text-xl font-semibold text-gray-900">
@@ -102,77 +160,46 @@ export default function OurEvents() {
                   {post.date}
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
         <nav className="flex items-center justify-between pt-8 sm:pt-12 border-t border-gray-200 px-4 sm:px-0">
           <div className="-mt-px flex w-0 flex-1">
-            <a
-              href="#"
+            <button
+              onClick={handlePreviousPage}
               className="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+              disabled={currentPage === 1}
             >
-              <ArrowLongLeftIcon
-                className="mr-3 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-              />
+              <ArrowLongLeftIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
               Previous
-            </a>
+            </button>
           </div>
           <div className="hidden md:-mt-px md:flex">
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+          {/* Render page numbers dynamically */}
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+            <button
+              key={pageNum}
+              onClick={() => setCurrentPage(pageNum)}
+              className={`inline-flex items-center border-t-2 ${
+                pageNum === currentPage
+                  ? 'border-cyan-500 text-cyan-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              } px-4 pt-4 text-sm font-medium`}
+              aria-current={pageNum === currentPage ? 'page' : undefined}
             >
-              1
-            </a>
-            {/* Current: "border-cyan-500 text-cyan-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" */}
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-cyan-500 px-4 pt-4 text-sm font-medium text-cyan-600"
-              aria-current="page"
-            >
-              2
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >
-              3
-            </a>
-            <span className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500">
-              ...
-            </span>
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >
-              8
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >
-              9
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >
-              10
-            </a>
-          </div>
-          <div className="-mt-px flex w-0 flex-1 justify-end">
-            <a
-              href="#"
-              className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-            >
-              Next
-              <ArrowLongRightIcon
-                className="ml-3 h-5 w-5 text-gray-400"
-                aria-hidden="true"
-              />
-            </a>
-          </div>
+              {pageNum}
+            </button>
+          ))}
+        </div>
+        <div className="-mt-px flex w-0 flex-1 justify-end">
+          <button
+            onClick={handleNextPage}
+            className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+          >
+            Next
+            <ArrowLongRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+          </button>
+        </div>
         </nav>
       </div>
     </div>

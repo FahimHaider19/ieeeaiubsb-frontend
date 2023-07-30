@@ -24,8 +24,8 @@ function Description() {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#FF80B5" />
+              <stop stopColor="#00669e" />
+              <stop offset={1} stopColor="#0891b2" />
             </linearGradient>
           </defs>
         </svg>
@@ -49,8 +49,8 @@ function Description() {
               y2="474.645"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#9089FC" />
-              <stop offset={1} stopColor="#FF80B5" />
+              <stop stopColor="#00669e" />
+              <stop offset={1} stopColor="#0891b2" />
             </linearGradient>
           </defs>
         </svg>
@@ -86,7 +86,7 @@ function Description() {
             {/* </div> */}
             <div className="mt-16 flow-root sm:mt-24">
               <img
-                src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/homecarousel/hero/medicine-tech.jpg"
+                src="/images/ieee-motto.jpg"
                 alt=""
                 width={2432}
                 height={1442}

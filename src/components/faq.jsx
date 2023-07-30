@@ -12,9 +12,8 @@ const faqs = [
     answer: "The IEEE (Institute of Electrical and Electronics Engineers) student branch is a student-run organization that operates under the umbrella of the larger IEEE organization. It is typically found in universities and colleges around the world. The primary purpose of an IEEE student branch is to promote and foster interest in the fields of electrical engineering, electronics, computer science, and related disciplines among students.",
   },
   {
-    question:
-      "What sort of activities does the IEEE AIUB Student Branch engage in?",
-    answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    question: "What sort of activities does the IEEE AIUB Student Branch engage in?",
+    answer: "IEEE AIUB Student Branch engages in activities such as technical workshops, webinars, seminars, industry visits and competition hackathons. These activities cover a wide range of emerging technologies, such as AI, IoT, and robotics, and are designed to expose students to industry trends and to encourage their competitive spirit.",
   },
   {
     question: "What advantages do members of the IEEE AIUB Student Branch receive?",
@@ -22,7 +21,7 @@ const faqs = [
   },
   {
     question: "What accomplishments has the IEEE AIUB STUDENT BRANCH made?",
-    answer: "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    answer: "The IEEE AIUB Student Branch has received the IEEE Regional Exemplary Student Branch Award twice, in 2020 and 2022. It hosted the IEEE Student Professional Awareness Workshop (SPAW) in 2019 and won the IEEE Region 10 Student Branch Website Contest in 2018 and 2016.",
   },
   {
     question: "Is the IEEE AIUB STUDENT BRANCH restricted to undergraduate EEE students only?",
