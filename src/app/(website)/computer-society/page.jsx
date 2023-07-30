@@ -102,9 +102,9 @@ function Description() {
                 culture of collaboration among engineers, sparking ingenious
                 solutions and forging unparalleled opportunities in the
                 ever-evolving landscape of technology. In essence, IEEE Computer
-                Society's unwavering commitment to excellence not only shapes
-                the trajectory of the computing field but also fortifies the
-                industry for a dynamic and promising future.
+                Society`&apos;`s unwavering commitment to excellence not only
+                shapes the trajectory of the computing field but also fortifies
+                the industry for a dynamic and promising future.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/CS-01.png" alt="" />

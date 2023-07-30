@@ -34,10 +34,21 @@ function History() {
                 height={20}
                 patternUnits="userSpaceOnUse"
               >
-                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
-            <rect width={404} height={384} fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
+            <rect
+              width={404}
+              height={384}
+              fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)"
+            />
           </svg>
           <svg
             className="absolute bottom-0 left-0 -mb-20 -ml-20 hidden md:block md:[overflow-anchor:none]"
@@ -56,19 +67,52 @@ function History() {
                 height={20}
                 patternUnits="userSpaceOnUse"
               >
-                <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                <rect
+                  x={0}
+                  y={0}
+                  width={4}
+                  height={4}
+                  className="text-gray-200"
+                  fill="currentColor"
+                />
               </pattern>
             </defs>
-            <rect width={404} height={384} fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
+            <rect
+              width={404}
+              height={384}
+              fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)"
+            />
           </svg>
           <div className="relative md:bg-white md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
               <div className="prose prose-lg prose-cyan text-gray-500 lg:max-w-none">
-                <p className="text-justify" >
-                  In 12th December 2006 IEEE AIUB Student Branch was formed under the administration of Office of Student Affairs (OSA), AIUB in Dhaka, Bangladesh. It is a registered Student Branch under the Institute of Electrical and Electronics Engineers (IEEE), based in Piscataway, NJ, USA. The student branch began with just a handful of members and minimal activities, but there was a dream, a hope, and a drive to "advance technology for the benefit of humanity." Pursuing this goal, the IEEE AIUB Student Branch team developed the Student Branch over the years 2009 to 2012.After that the next generation of IEEE AIUB Student Branch set a target and a vision to reach the very top. What the Student Branch represents today and in its current glory is the result of all those years of arduous work, passion, and dedication. In 2014 IEEE AIUB Student Branch received 1st place in Best Student Branch Award 2014 at IEEE Bangladesh Section Annual Dinner & Awards Ceremony. Also, in 2020 and 2022 it received ‘IEEE Regional Exemplary Student Branch Award’ in IEEE Region 10. It received 35+ awards from 2014 to 2022.
+                <p className="text-justify">
+                  In 12th December 2006 IEEE AIUB Student Branch was formed
+                  under the administration of Office of Student Affairs (OSA),
+                  AIUB in Dhaka, Bangladesh. It is a registered Student Branch
+                  under the Institute of Electrical and Electronics Engineers
+                  (IEEE), based in Piscataway, NJ, USA. The student branch began
+                  with just a handful of members and minimal activities, but
+                  there was a dream, a hope, and a drive to
+                  <em>advance technology for the benefit of humanity</em>.
+                  Pursuing this goal, the IEEE AIUB Student Branch team
+                  developed the Student Branch over the years 2009 to 2012.After
+                  that the next generation of IEEE AIUB Student Branch set a
+                  target and a vision to reach the very top. What the Student
+                  Branch represents today and in its current glory is the result
+                  of all those years of arduous work, passion, and dedication.
+                  In 2014 IEEE AIUB Student Branch received 1st place in Best
+                  Student Branch Award 2014 at IEEE Bangladesh Section Annual
+                  Dinner & Awards Ceremony. Also, in 2020 and 2022 it received
+                  <em>IEEE Regional Exemplary Student Branch Award</em> in IEEE
+                  Region 10. It received 35+ awards from 2014 to 2022.
                 </p>
                 <p>
-                  The hard work of its members and their support contributed to the IEEE AIUB Student Branch's success. Without their dedication, the founders' dream would have been incomplete. We appreciate and salute all the members of IEEE AIUB Student Branch for their efforts.	
+                  The hard work of its members and their support contributed to
+                  the IEEE AIUB Student Branch`&apos;`s success. Without their
+                  dedication, the founder`&apos;`s dream would have been
+                  incomplete. We appreciate and salute all the members of IEEE
+                  AIUB Student Branch for their efforts.
                 </p>
                 {/* <ol role="list">
                   <li>Integer varius imperdiet sed interdum felis cras in nec nunc.</li>
@@ -81,22 +125,41 @@ function History() {
               </div>
               <div className="prose prose-lg prose-cyan mt-6 text-gray-500 lg:mt-0">
                 <p className="text-justify">
-                  In 12th December 2006 IEEE AIUB Student Branch was formed under the administration of Office of Student Affairs (OSA), AIUB in Dhaka, Bangladesh. It is a registered Student Branch under the Institute of Electrical and Electronics Engineers (IEEE), based in Piscataway, NJ, USA. The student branch began with just a handful of members and minimal activities, but there was a dream, a hope, and a drive to "advance technology for the benefit of humanity." Pursuing this goal, the IEEE AIUB Student Branch team developed the Student Branch over the years 2009 to 2012.After that the next generation of IEEE AIUB Student Branch set a target and a vision to reach the very top. What the Student Branch represents today and in its current glory is the result of all those years of arduous work, passion, and dedication. In 2014 IEEE AIUB Student Branch received 1st place in Best Student Branch Award 2014 at IEEE Bangladesh Section Annual Dinner & Awards Ceremony. Also, in 2020 and 2022 it received ‘IEEE Regional Exemplary Student Branch Award’ in IEEE Region 10. It received 35+ awards from 2014 to 2022.
+                  In 12th December 2006 IEEE AIUB Student Branch was formed
+                  under the administration of Office of Student Affairs (OSA),
+                  AIUB in Dhaka, Bangladesh. It is a registered Student Branch
+                  under the Institute of Electrical and Electronics Engineers
+                  (IEEE), based in Piscataway, NJ, USA. The student branch began
+                  with just a handful of members and minimal activities, but
+                  there was a dream, a hope, and a drive to <em>advance technology
+                  for the benefit of humanity</em>. Pursuing this goal, the IEEE
+                  AIUB Student Branch team developed the Student Branch over the
+                  years 2009 to 2012.After that the next generation of IEEE AIUB
+                  Student Branch set a target and a vision to reach the very
+                  top. What the Student Branch represents today and in its
+                  current glory is the result of all those years of arduous
+                  work, passion, and dedication. In 2014 IEEE AIUB Student
+                  Branch received 1st place in Best Student Branch Award 2014 at
+                  IEEE Bangladesh Section Annual Dinner & Awards Ceremony. Also,
+                  in 2020 and 2022 it received <em>IEEE Regional Exemplary Student
+                  Branch Award</em> in IEEE Region 10. It received 35+ awards from
+                  2014 to 2022.
                 </p>
                 <p>
-                  The Constitution, Rules & By-Laws of IEEE AIUB Student Branch is provided in the link below - 
+                  The Constitution, Rules & By-Laws of IEEE AIUB Student Branch
+                  is provided in the link below -
                 </p>
               </div>
             </div>
           </div>
           <div className="mt-8 w-full grid place-items-center">
-              <a
-                href="#"
-                className="flex items-center justify-center rounded-md border border-transparent bg-cyan-600 px-5 py-3 text-base font-medium text-white hover:bg-cyan-700"
-              >
-                The Constitution, Rules & By-Laws
-              </a>
-            </div>
+            <a
+              href="#"
+              className="flex items-center justify-center rounded-md border border-transparent bg-cyan-600 px-5 py-3 text-base font-medium text-white hover:bg-cyan-700"
+            >
+              The Constitution, Rules & By-Laws
+            </a>
+          </div>
         </div>
       </div>
       <div className="grid place-items-center py-6 md:mt-16">
@@ -107,7 +170,7 @@ function History() {
         />
       </div>
     </div>
-  )
+  );
 }
 
 

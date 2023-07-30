@@ -79,8 +79,8 @@ function Description() {
                   experts, researchers, students, and practitioners in different
                   sectors who work together to advance technical advancement and
                   address societal concerns. The creation of standards is one of
-                  IEEE's major contributions and these standards are essential
-                  to several industries and sectors, including
+                  IEEE`&apos;`s major contributions and these standards are
+                  essential to several industries and sectors, including
                   telecommunications, power systems, the automotive industry,
                   and the healthcare sector. IEEE also produces technical
                   content in a variety of formats, including journals,

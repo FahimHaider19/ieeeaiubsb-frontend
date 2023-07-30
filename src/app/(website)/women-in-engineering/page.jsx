@@ -50,10 +50,11 @@ function Description() {
                 IEEE Women in Engineering (WIE) is a global network of IEEE
                 members and volunteers committed to promoting women scientists
                 and engineers and motivating young women to pursue careers in
-                science and engineering. WIE's mission is to support women's
-                recruitment and retention in technical disciplines on a global
-                scale. We picture a thriving IEEE community made up of both men
-                and women who work together to develop for the good of all.
+                science and engineering. WIE`&apos;`s mission is to support
+                women`&apos;`s recruitment and retention in technical
+                disciplines on a global scale. We picture a thriving IEEE
+                community made up of both men and women who work together to
+                develop for the good of all.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/WIE-01.png" alt="" />
@@ -150,11 +151,11 @@ function Strive() {
                 IEEE WIE Strives to...
               </h1>
               <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                The IEEE WIE aims to honor the remarkable
-                accomplishments of women by featuring the most recent webinars,
-                events, and program information. Additionally, the weekly
-                highlights WIE's partnerships with the IEEE Foundation, IEEE
-                ILN, IEEE Reach, etc.
+                The IEEE WIE aims to honor the remarkable accomplishments of
+                women by featuring the most recent webinars, events, and program
+                information. Additionally, the weekly highlights WIE`&apos;`s
+                partnerships with the IEEE Foundation, IEEE ILN, IEEE Reach,
+                etc.
               </p>
               <dl className="mt-10 max-w-xl space-y-4 text-base leading-7 text-gray-800 lg:max-w-none">
                 {strives.map((feature) => (

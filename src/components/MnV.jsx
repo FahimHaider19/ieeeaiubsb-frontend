@@ -32,33 +32,54 @@ export default function MissionAndVision() {
             src="/images/Untitled1.jpg"
             alt=""
           />
-          <div className="absolute inset-0 bg-cyan-50 mix-blend-multiply" aria-hidden="true" />
+          <div
+            className="absolute inset-0 bg-cyan-50 mix-blend-multiply"
+            aria-hidden="true"
+          />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">Mission and Vision</h1>
-          <p className="mt-6 max-w-inherited text-xl text-white text-center">IEEE's core purpose is to foster technological innovation and excellence for the benefit of humanity.</p>
+          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
+            Mission and Vision
+          </h1>
+          <p className="mt-6 max-w-inherited text-xl text-white text-center">
+            IEEE`&apos;`s core purpose is to foster technological innovation and
+            excellence for the benefit of humanity.
+          </p>
         </div>
       </div>
 
       {/* Overlapping cards */}
-      <section className="relative z-5 mx-auto -mt-32 max-w-7xl px-6 pb-32 lg:px-8" aria-labelledby="contact-heading">
+      <section
+        className="relative z-5 mx-auto -mt-32 max-w-7xl px-6 pb-32 lg:px-8"
+        aria-labelledby="contact-heading"
+      >
         <h2 className="sr-only" id="contact-heading">
           Contact us
         </h2>
         <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
           {supportLinks.map((link) => (
-            <div key={link.name} className="flex flex-col rounded-2xl bg-white shadow-xl">
+            <div
+              key={link.name}
+              className="flex flex-col rounded-2xl bg-white shadow-xl"
+            >
               <div className="relative flex flex-col px-6 pt-16 pb-8 md:px-8">
                 <div className="absolute top-0 self-center -translate-y-1/2 transform rounded-xl bg-cyan-600 p-5 shadow-lg">
-                  <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                  <link.icon
+                    className="h-6 w-6 text-white"
+                    aria-hidden="true"
+                  />
                 </div>
-                <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
-                <p className="mt-4 text-justify text-base text-gray-500">{link.description}</p>
+                <h3 className="text-xl font-medium text-gray-900">
+                  {link.name}
+                </h3>
+                <p className="mt-4 text-justify text-base text-gray-500">
+                  {link.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </section>
     </div>
-  )
+  );
 }
