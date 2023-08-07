@@ -636,9 +636,10 @@ export default function OurEvents() {
   const getPagePosts = () => {
     const startIndex = (currentPage - 1) * postsPerPage;
     const sortedPosts = posts.sort((a, b) => {
-      const datetimeA = new Date(a.datetime);
-      const datetimeB = new Date(b.datetime);
-      return datetimeB - datetimeA; // Sort in descending order
+      // const datetimeA = new Date(a.datetime);
+      // const datetimeB = new Date(b.datetime);
+      // return datetimeB - datetimeA; // Sort in descending order
+      return b.id - a.id;
     });
 
     return sortedPosts.slice(startIndex, startIndex + postsPerPage);

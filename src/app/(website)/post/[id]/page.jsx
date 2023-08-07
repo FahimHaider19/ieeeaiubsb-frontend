@@ -1,5 +1,4 @@
-import { notFound } from "next/navigation";
-
+// 'use client'
 const posts = [
   {
     id: 1,

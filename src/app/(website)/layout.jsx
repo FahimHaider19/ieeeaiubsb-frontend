@@ -1,6 +1,6 @@
 import '../globals.css'
 import { Inter } from 'next/font/google'
-import NextAuthSessionProvider from '../../context/NextAuthContext'
+// import NextAuthSessionProvider from '../../context/NextAuthContext'
 import NavBar2 from '@/components/navbar2'
 import Footer from '@/components/footer'
 import LoadingBar from '@/components/loadingBar'
@@ -11,11 +11,11 @@ export default function WebsiteLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <LoadingBar />
-        <NextAuthSessionProvider>
+        {/* <NextAuthSessionProvider> */}
           <NavBar2 />
           <main>{children}</main>
           <Footer />
-        </NextAuthSessionProvider>
+        {/* </NextAuthSessionProvider> */}
       </body>
     </html>
   );
