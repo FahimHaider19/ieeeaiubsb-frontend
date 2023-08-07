@@ -102,9 +102,9 @@ function Description() {
                 culture of collaboration among engineers, sparking ingenious
                 solutions and forging unparalleled opportunities in the
                 ever-evolving landscape of technology. In essence, IEEE Computer
-                Society&apos;s unwavering commitment to excellence not only
-                shapes the trajectory of the computing field but also fortifies
-                the industry for a dynamic and promising future.
+                Society&epos;s unwavering commitment to excellence not only shapes
+                the trajectory of the computing field but also fortifies the
+                industry for a dynamic and promising future.
               </p>
               <div className="grid place-items-center my-12">
                 <img src="/images/logo/CS-01.png" alt="" />
@@ -117,7 +117,7 @@ function Description() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="https://www.computer.org/"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
@@ -208,17 +208,17 @@ function Conference() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.computer.org/conferences"
                     className="rounded-md bg-orange-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -263,17 +263,17 @@ function Publication() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.computer.org/publications"
                     className="rounded-md bg-orange-500 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-amber-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

@@ -92,10 +92,10 @@ export default function MembershipBenefits() {
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center text-justify">
             IEEE membership offers a range of benefits, including access to IEEE
-            Xplore&apos;s extensive research, career insights from IEEE
-            Potentials, industry-specific job sites, and tools like IEEE
-            ResumeLab for creating professional resumes. These resources enhance
-            knowledge, career opportunities, and networking for members.
+            Xplore&epos; extensive research, career insights from IEEE Potentials,
+            industry-specific job sites, and tools like IEEE ResumeLab for
+            creating professional resumes. These resources enhance knowledge,
+            career opportunities, and networking for members.
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">

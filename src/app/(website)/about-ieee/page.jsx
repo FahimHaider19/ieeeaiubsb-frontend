@@ -79,8 +79,8 @@ function Description() {
                   experts, researchers, students, and practitioners in different
                   sectors who work together to advance technical advancement and
                   address societal concerns. The creation of standards is one of
-                  IEEE&apos;s major contributions and these standards are
-                  essential to several industries and sectors, including
+                  IEEE&epos; major contributions and these standards are essential
+                  to several industries and sectors, including
                   telecommunications, power systems, the automotive industry,
                   and the healthcare sector. IEEE also produces technical
                   content in a variety of formats, including journals,
@@ -117,7 +117,7 @@ function Glance() {
         <div className="h-56 rounded-t-lg lg:rounded-l-lg overflow-hidden shadow-lg bg-cyan-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
           <img
             className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+            src="/images/ieee-stat.jpg"
             alt="Support team"
           />
         </div>
@@ -235,17 +235,17 @@ function Conference() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.ieee.org/conferences"
                     className="rounded-md bg-cyan-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -255,8 +255,8 @@ function Conference() {
           <div className="py-6 lg:m-0 lg:h-full lg:px-0">
             <img
               className="w-full h-[80%] object-cover rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:right-0 lg:h-full lg:w-auto"
-              src="https://www.phonexia.com/wp-content/uploads/top-11-call-center-conferences-2020.jpg"
               alt="Customer profile user interface"
+              src='/images/ieee-conference.jpg'
             />
           </div>
         </div>
@@ -292,17 +292,17 @@ function Publication() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.ieee.org/publications"
                     className="rounded-md bg-cyan-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-cyan-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -321,7 +321,7 @@ function Publication() {
                 <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">
                   <div className="mx-auto max-w-2xl md:mx-0 md:max-w-none">
                     <img
-                      src="https://img.freepik.com/free-photo/business-women-signature-document_1388-90.jpg"
+                      src="/images/ieee-publication.jpg"
                       alt=""
                     />
                   </div>

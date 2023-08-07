@@ -79,7 +79,7 @@ function Description() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="https://mtt.org"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
@@ -160,7 +160,8 @@ function Benefits() {
                   </p>
                   <p className="mt-6">
                     <a
-                      href={feature.href}
+                      // href={feature.href}
+                      href='https://mtt.org'
                       className="text-base font-semibold leading-7 text-sky-600"
                     >
                       Learn more <span aria-hidden="true">→</span>
@@ -210,17 +211,17 @@ function Conference() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://mtt.org/mtt-s-sponsored-conferences/"
                     className="rounded-md bg-sky-800 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-800"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -275,17 +276,17 @@ function Publication() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://mtt.org/publications"
                     className="rounded-md bg-sky-800 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-800"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

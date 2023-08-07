@@ -16,12 +16,12 @@ const years = [
 
 const committees = [
   {
-    logo: "/images/logo/IEEE LOGO Blue-01.png",
+    logo: "/images/logo/executive.png",
     name: 'Executive Committee',
     href: '/executive-committee'
   },
   {
-    logo: "/images/logo/IEEE LOGO Black-01.png",
+    logo: "/images/logo/volunteer.png",
     name: 'Volunteers',
     href: '/volunteers'
   },

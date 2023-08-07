@@ -17,7 +17,7 @@ const features = [
   },
   {
     name: 'Advance Your Industry.',
-    description: "An important benefit for IAS members is the chance to individually improve your industry. More than 25% of all IEEE industrial standards are developed by committees within IAS. Four technical departments, each servicing a significant industry sector, bring experts together to further the field's objectives.",
+    description: "An important benefit for IAS members is the chance to individually improve your industry. More than 25% of all IEEE industrial standards are developed by committees within IAS. Four technical departments, each servicing a significant industry sector, bring experts together to further the field&epos; objectives.",
     icon: HomeModernIcon,
   },
   {
@@ -62,7 +62,7 @@ function Example() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="https://ias.ieee.org/"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
@@ -162,17 +162,17 @@ function Conference() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://ias.ieee.org/conferences"
                     className="rounded-md bg-green-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ function Publication() {
                   Publications
                 </h1>
                 <p className="mt-6 text-lg text-justify leading-8 text-gray-600">
-                  The society&apos;s publishing activities are handled by the
+                  The society&epos;s publishing activities are handled by the
                   Publications Department. This involves putting out the IAS
                   Newsletter, Industry Applications Magazine, and IEEE
                   Transactions on Industry Applications. IAS also sponsors a
@@ -219,17 +219,17 @@ function Publication() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://ias.ieee.org/publications"
                     className="rounded-md bg-green-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -268,7 +268,7 @@ function Publication() {
 const educationFeatures = [
   {
     name: 'IEEE IAS Expert Webinars ',
-    description: "The foremost authorities in their fields who are relevant to the IAS membership will deliver these technical webinars. The series began in the middle of 2015, and you can watch previous webinars whenever it's convenient for you. Future webinars will be available in a live setting where participants can prepare questions in advance to ask the presenter. ",
+    description: "The foremost authorities in their fields who are relevant to the IAS membership will deliver these technical webinars. The series began in the middle of 2015, and you can watch previous webinars whenever it&epos; convenient for you. Future webinars will be available in a live setting where participants can prepare questions in advance to ask the presenter. ",
     icon: ComputerDesktopIcon,
   },
   {
@@ -278,7 +278,7 @@ const educationFeatures = [
   },
   {
     name: 'Mentoring Resource',
-    description: "The IAS Magazine's Pathways articles, which show how some IAS young professionals are finding their way to fulfilling careers, can be used as an e-mentoring tool. Perhaps one of these tales can motivate or inspire you on your own professional path. To get a summary of the articles and links to read any of them, kindly click on the link below.",
+    description: "The IAS Magazine&epos; Pathways articles, which show how some IAS young professionals are finding their way to fulfilling careers, can be used as an e-mentoring tool. Perhaps one of these tales can motivate or inspire you on your own professional path. To get a summary of the articles and links to read any of them, kindly click on the link below.",
     icon: LifebuoyIcon
   }
 ]

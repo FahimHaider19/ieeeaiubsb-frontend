@@ -29,7 +29,7 @@ function Description() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="http://www.ieeebd.com/"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
@@ -155,20 +155,19 @@ function History() {
                   The IEEE Bangladesh Section was founded in November 1993 with
                   54 founding members. The section was initially headed by Dr.
                   M. Asaduzzaman, who served as the first Chair of the section.
-                  The section&apos;s first office was located at the
-                  Bangladesh University of Engineering and Technology (BUET). In
-                  the early years, the section&apos;s activities were focused
-                  on organizing technical seminars and workshops. The section
-                  also started publishing a newsletter called the <em>IEEE
-                  Bangladesh Section Newsletter</em> in 1994. In 1995, the section
-                  organized its first annual conference, the IEEE Bangladesh
-                  Section Conference (IBSC). The section&apos;s activities
-                  grew steadily over the years, and by the early 2000s, the
-                  section had become one of the most active sections in region
-                  10. In 2001, the IBSC evolved into the Biennial International
-                  Conference on Electrical and Computer Engineering (ICECE),
-                  which is now one of the largest and most prestigious
-                  conferences in Bangladesh.
+                  The section&epos; first office was located at the Bangladesh
+                  University of Engineering and Technology (BUET). In the early
+                  years, the section&epos; activities were focused on organizing
+                  technical seminars and workshops. The section also started
+                  publishing a newsletter called the &quot;IEEE Bangladesh Section
+                  Newsletter&quot; in 1994. In 1995, the section organized its first
+                  annual conference, the IEEE Bangladesh Section Conference
+                  (IBSC). The section&epos; activities grew steadily over the years,
+                  and by the early 2000s, the section had become one of the most
+                  active sections in region 10. In 2001, the IBSC evolved into
+                  the Biennial International Conference on Electrical and
+                  Computer Engineering (ICECE), which is now one of the largest
+                  and most prestigious conferences in Bangladesh.
                 </p>
               </div>
               <div className="prose prose-lg prose-cyan mt-6 text-gray-500 lg:mt-0">
@@ -222,11 +221,12 @@ function Stat() {
       <div className="mx-auto max-w-7xl py-12 px-6 sm:py-16 lg:px-8 lg:py-20">
         <div className="mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Lorem ipsum dolor sit amet consectetur.
+            IEEE Bangladesh Section.
           </h2>
-          <p className="mt-3 text-xl text-cyan-200 sm:mt-4">
+          {/* change */}
+          {/* <p className="mt-3 text-xl text-cyan-200 sm:mt-4">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum vitae aspernatur dolorem non harum iure ullam. Quod sunt quis eius.
-          </p>
+          </p> */}
         </div>
         <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-4 sm:gap-8">
           <div className="flex flex-col">

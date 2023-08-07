@@ -22,22 +22,22 @@ import Link from 'next/link'
 const about = [
   {
     name: 'About IEEE',
-    href: 'about-ieee',
+    href: '/about-ieee',
     icon: CheckIcon,
   },
   {
     name: 'IEEE R10',
-    href: 'about-r10',
+    href: '/about-r10',
     icon: CheckIcon,
   },
   {
     name: 'IEEE Bangladesh Section',
-    href: 'about-ieeebds',
+    href: '/about-ieeebds',
     icon: CheckIcon,
   },
   {
     name: 'IEEE AIUB Student Branch',
-    href: 'about',
+    href: '/about',
     icon: CheckIcon,
   }
 ]
@@ -45,24 +45,24 @@ const about = [
 const chaptersandaffinitygroup = [
   {
     name: 'Computer Society',
-    href: 'computer-society',
+    href: '/computer-society',
     icon: CheckIcon,
   },
   {
     name: 'Engineering in Medicine and Biology Society',
-    href: 'engineering-in-medicine-and-biology-society',
+    href: '/engineering-in-medicine-and-biology-society',
     icon: CheckIcon,
   }, {
     name: 'Industry Applications Society',
-    href: 'industry-application-society',
+    href: '/industry-application-society',
     icon: CheckIcon,
   }, {
     name: 'Microwave Theory and Techniques Society',
-    href: 'microwave-theory-techniques-society',
+    href: '/microwave-theory-techniques-society',
     icon: CheckIcon,
   }, {
     name: 'WIE Affinity Group',
-    href: 'women-in-engineering',
+    href: '/women-in-engineering',
     icon: CheckIcon,
   }
 ]
@@ -70,22 +70,22 @@ const chaptersandaffinitygroup = [
 const activity = [
   {
     name: 'Our Events',
-    href: 'our-events',
+    href: '/our-events',
     icon: CheckIcon,
   },
   {
     name: 'Achievements',
-    href: 'achievements',
+    href: '/achievements',
     icon: CheckIcon,
   },
   {
     name: 'Abozzo',
-    href: 'abozzo',
+    href: '/abozzo',
     icon: CheckIcon,
   },
   {
     name: 'Gallery',
-    href: 'gallery',
+    href: '/gallery',
     icon: CheckIcon,
   }
 ]
@@ -93,12 +93,12 @@ const activity = [
 const team = [
   {
     name: 'Our Team',
-    href: 'our-team',
+    href: '/our-team',
     icon: CheckIcon,
   },
   {
     name: 'Membership',
-    href: 'membership',
+    href: '/membership',
     icon: CheckIcon,
   },
 ]

@@ -16,7 +16,7 @@ export default function JoinUs() {
             Join Us
           </a>
           <a
-            href=""
+            href="https://www.ieee.org/"
             className="flex items-center justify-center rounded-md border border-transparent bg-cyan-50 bg-origin-border px-4 py-3 text-base font-medium text-cyan-800 shadow-sm hover:bg-cyan-100"
           >
             Learn more

@@ -19,7 +19,7 @@ export default function Post() {
       <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
         <CreatePost />
         <div className="px-4 md:px-0  ">
-          <div className="-mx-4 mt-8 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 rounded-lg">
+          {/* <div className="-mx-4 mt-8 overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:-mx-6 md:mx-0 rounded-lg">
             <table className="min-w-full divide-y divide-gray-300">
               <thead className="bg-gray-50">
                 <tr>
@@ -71,7 +71,7 @@ export default function Post() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

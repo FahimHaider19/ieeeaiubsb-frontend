@@ -11,7 +11,7 @@ const benefits = [
   {
     name: "Career Resources",
     description:
-      "One's career may benefit from being an IEEE member. IEEE provides a range of activities and programs, including career tools, job fairs, and mentorship programs, to assist professionals in advancing their careers. Being a member of IEEE can also increase one's professional credibility and create new prospects.",
+      "One&epos; career may benefit from being an IEEE member. IEEE provides a range of activities and programs, including career tools, job fairs, and mentorship programs, to assist professionals in advancing their careers. Being a member of IEEE can also increase one&epos; professional credibility and create new prospects.",
     icon: LockClosedIcon,
   },
   {
@@ -75,7 +75,8 @@ export default function WhyJoinIEEE() {
                   <p className="flex-auto text-justify">{feature.description}</p>
                   <p className="mt-6">
                     <a
-                      href={feature.href}
+                      // href={feature.href}
+                      href='https://www.ieee.org/'
                       className="text-base font-semibold leading-7 text-cyan-600"
                     >
                       Learn more <span aria-hidden="true">→</span>

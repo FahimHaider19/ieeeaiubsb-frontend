@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 const posts = [
   {
     id: 1,
@@ -6,13 +8,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Erasmus-01.png"
+              src="/images/event/Erasmus-01.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -53,55 +55,55 @@ const posts = [
         <div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png" width="2190" height="1332" alt="" title="Screenshot 2022-12-17 at 12.00.35 AM" aria-label=
+              <a href="/images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png" width="2190" height="1332" alt="" title="Screenshot 2022-12-17 at 12.00.35 AM" aria-label=
               "Screenshot 2022-12-17 at 12.00.35 AM" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-200x122.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-400x243.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-600x365.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-800x487.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-1200x730.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png 2190w"
+              "/images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-200x122.png 200w, /images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-400x243.png 400w, /images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-600x365.png 600w, /images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-800x487.png 800w, /images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM-1200x730.png 1200w, /images/ieee/2022/12/Screenshot-2022-12-17-at-12.00.35-AM.png 2190w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png" width="2188" height="1338" alt="" title="Screenshot 2022-12-16 at 11.57.13 PM" aria-label=
+              <a href="/images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png" width="2188" height="1338" alt="" title="Screenshot 2022-12-16 at 11.57.13 PM" aria-label=
               "Screenshot 2022-12-16 at 11.57.13 PM" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-200x122.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-400x245.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-600x367.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-800x489.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-1200x734.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png 2188w"
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-200x122.png 200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-400x245.png 400w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-600x367.png 600w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-800x489.png 800w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM-1200x734.png 1200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.57.13-PM.png 2188w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png" width="2194" height="1336" alt="" title="Screenshot 2022-12-16 at 11.56.37 PM" aria-label=
+              <a href="/images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png" width="2194" height="1336" alt="" title="Screenshot 2022-12-16 at 11.56.37 PM" aria-label=
               "Screenshot 2022-12-16 at 11.56.37 PM" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-200x122.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-400x244.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-600x365.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-800x487.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-1200x731.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png 2194w"
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-200x122.png 200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-400x244.png 400w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-600x365.png 600w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-800x487.png 800w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM-1200x731.png 1200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.56.37-PM.png 2194w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png" width="2190" height="1330" alt="" title="Screenshot 2022-12-16 at 11.55.59 PM" aria-label=
+              <a href="/images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png" width="2190" height="1330" alt="" title="Screenshot 2022-12-16 at 11.55.59 PM" aria-label=
               "Screenshot 2022-12-16 at 11.55.59 PM" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-200x121.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-400x243.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-600x364.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-800x486.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-1200x729.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png 2190w"
+              "/images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-200x121.png 200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-400x243.png 400w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-600x364.png 600w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-800x486.png 800w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM-1200x729.png 1200w, /images/ieee/2022/12/Screenshot-2022-12-16-at-11.55.59-PM.png 2190w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png" width="2880" height="1800" alt="" title="Screenshot 2022-12-10 at 7.00.13 PM" aria-label=
+              <a href="/images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png" width="2880" height="1800" alt="" title="Screenshot 2022-12-10 at 7.00.13 PM" aria-label=
               "Screenshot 2022-12-10 at 7.00.13 PM" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-200x125.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-400x250.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-600x375.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-800x500.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-1200x750.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png 2880w"
+              "/images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-200x125.png 200w, /images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-400x250.png 400w, /images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-600x375.png 600w, /images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-800x500.png 800w, /images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM-1200x750.png 1200w, /images/ieee/2020/09/Screenshot-2022-12-10-at-7.00.13-PM.png 2880w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus.png" width="2426" height="1322" alt="" title="Group photo on erasmus" aria-label="Group photo on erasmus"
+              <a href="/images/ieee/2022/12/Group-photo-on-erasmus.png" rel="noreferrer" data-rel="iLightbox[gallery_image_1]" target="_self"><img src=
+              "/images/ieee/2022/12/Group-photo-on-erasmus.png" width="2426" height="1322" alt="" title="Group photo on erasmus" aria-label="Group photo on erasmus"
               srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus-200x109.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus-400x218.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus-600x327.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus-800x436.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus-1200x654.png 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/12/Group-photo-on-erasmus.png 2426w"
+              "/images/ieee/2022/12/Group-photo-on-erasmus-200x109.png 200w, /images/ieee/2022/12/Group-photo-on-erasmus-400x218.png 400w, /images/ieee/2022/12/Group-photo-on-erasmus-600x327.png 600w, /images/ieee/2022/12/Group-photo-on-erasmus-800x436.png 800w, /images/ieee/2022/12/Group-photo-on-erasmus-1200x654.png 1200w, /images/ieee/2022/12/Group-photo-on-erasmus.png 2426w"
                /></a>
             </div>
           </div>
@@ -121,13 +123,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/International-Day-of-Medical-Physics-World-Radiography-Day.jpg"
+              src="/images/event/International-Day-of-Medical-Physics-World-Radiography-Day.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   On <strong>Tuesday, November 8th, 2022</strong>, the <strong>Center for Biomedical Research (CBR)</strong>, a section of <strong>Dr. Anawarul Abedin Innovation Institute</strong>, in
@@ -160,13 +162,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/A-Journey-of-Unknowns-in-the-Femto-Nano-World.jpg"
+              src="/images/event/A-Journey-of-Unknowns-in-the-Femto-Nano-World.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   On <strong>Tuesday, October 18th, 2022</strong>, The <strong>Centre for Nanotechnology Research(CNR)</strong>, a section of <strong>Dr. Anawarul Abedin Innovation Institute</strong>,
@@ -207,13 +209,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/ieee_day_2022.jpg"
+              src="/images/event/ieee_day_2022.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -288,145 +290,145 @@ const posts = [
         <div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022.jpg" width="1350" height="900" alt="" title="ieee_day_2022" aria-label="ieee_day_2022" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022.jpg 1350w"
+              <a href="/images/ieee/2022/10/ieee_day_2022.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022.jpg" width="1350" height="900" alt="" title="ieee_day_2022" aria-label="ieee_day_2022" srcset=
+              "/images/ieee/2022/10/ieee_day_2022-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022-1200x800.jpg 1200w, /images/ieee/2022/10/ieee_day_2022.jpg 1350w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1.jpg" width="1200" height="800" alt="" title="ieee_day_2022_1" aria-label="ieee_day_2022_1" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_1.jpg 1200w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_1.jpg" width="1200" height="800" alt="" title="ieee_day_2022_1" aria-label="ieee_day_2022_1" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_1-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_1-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_1-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_1-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_1.jpg 1200w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2.jpg" width="900" height="600" alt="" title="ieee_day_2022_2" aria-label="ieee_day_2022_2" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_2.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_2.jpg" width="900" height="600" alt="" title="ieee_day_2022_2" aria-label="ieee_day_2022_2" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_2-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_2-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_2-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_2-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_2.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3.jpg" width="900" height="600" alt="" title="ieee_day_2022_3" aria-label="ieee_day_2022_3" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_3.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_3.jpg" width="900" height="600" alt="" title="ieee_day_2022_3" aria-label="ieee_day_2022_3" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_3-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_3-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_3-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_3-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_3.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-scaled.jpg" width="2000" height="1333" alt="" title="ieee_day_2022_4" aria-label="ieee_day_2022_4" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_4-scaled.jpg 2000w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_4-scaled.jpg" width="2000" height="1333" alt="" title="ieee_day_2022_4" aria-label="ieee_day_2022_4" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_4-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_4-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_4-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_4-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_4-1200x800.jpg 1200w, /images/ieee/2022/10/ieee_day_2022_4-scaled.jpg 2000w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg" width="900" height="600" alt="" title="ieee_day_2022_5" aria-label="ieee_day_2022_5" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_5.jpg" width="900" height="600" alt="" title="ieee_day_2022_5" aria-label="ieee_day_2022_5" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_5-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_5-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_5-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_5-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_5.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg" width="900" height="600" alt="" title="ieee_day_2022_5" aria-label="ieee_day_2022_5" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_5.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_5.jpg" width="900" height="600" alt="" title="ieee_day_2022_5" aria-label="ieee_day_2022_5" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_5-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_5-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_5-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_5-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_5.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6.jpg" width="900" height="600" alt="" title="ieee_day_2022_6" aria-label="ieee_day_2022_6" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_6.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_6.jpg" width="900" height="600" alt="" title="ieee_day_2022_6" aria-label="ieee_day_2022_6" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_6-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_6-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_6-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_6-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_6.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7.jpg" width="900" height="600" alt="" title="ieee_day_2022_7" aria-label="ieee_day_2022_7" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_7.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_7.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_7.jpg" width="900" height="600" alt="" title="ieee_day_2022_7" aria-label="ieee_day_2022_7" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_7-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_7-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_7-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_7-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_7.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8.jpg" width="900" height="600" alt="" title="ieee_day_2022_8" aria-label="ieee_day_2022_8" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_8.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_8.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_8.jpg" width="900" height="600" alt="" title="ieee_day_2022_8" aria-label="ieee_day_2022_8" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_8-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_8-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_8-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_8-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_8.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9.jpg" width="900" height="600" alt="" title="ieee_day_2022_9" aria-label="ieee_day_2022_9" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_9.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_9.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_9.jpg" width="900" height="600" alt="" title="ieee_day_2022_9" aria-label="ieee_day_2022_9" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_9-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_9-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_9-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_9-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_9.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10.jpg" width="900" height="600" alt="" title="ieee_day_2022_10" aria-label="ieee_day_2022_10" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_10.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_10.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_10.jpg" width="900" height="600" alt="" title="ieee_day_2022_10" aria-label="ieee_day_2022_10" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_10-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_10-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_10-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_10-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_10.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15.jpg" width="900" height="600" alt="" title="ieee_day_2022_15" aria-label="ieee_day_2022_15" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_15.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_15.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_15.jpg" width="900" height="600" alt="" title="ieee_day_2022_15" aria-label="ieee_day_2022_15" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_15-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_15-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_15-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_15-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_15.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-scaled.jpg" width="2000" height="1333" alt="" title="ieee_day_2022_16" aria-label="ieee_day_2022_16" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_16-scaled.jpg 2000w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_16-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_16-scaled.jpg" width="2000" height="1333" alt="" title="ieee_day_2022_16" aria-label="ieee_day_2022_16" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_16-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_16-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_16-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_16-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_16-1200x800.jpg 1200w, /images/ieee/2022/10/ieee_day_2022_16-scaled.jpg 2000w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11.jpg" width="900" height="600" alt="" title="ieee_day_2022_11" aria-label="ieee_day_2022_11" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_11.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_11.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_11.jpg" width="900" height="600" alt="" title="ieee_day_2022_11" aria-label="ieee_day_2022_11" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_11-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_11-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_11-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_11-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_11.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12.jpg" width="900" height="600" alt="" title="ieee_day_2022_12" aria-label="ieee_day_2022_12" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_12.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_12.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_12.jpg" width="900" height="600" alt="" title="ieee_day_2022_12" aria-label="ieee_day_2022_12" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_12-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_12-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_12-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_12-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_12.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13.jpg" width="900" height="600" alt="" title="ieee_day_2022_13" aria-label="ieee_day_2022_13" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_13.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_13.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_13.jpg" width="900" height="600" alt="" title="ieee_day_2022_13" aria-label="ieee_day_2022_13" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_13-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_13-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_13-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_13-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_13.jpg 900w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14.jpg" width="900" height="600" alt="" title="ieee_day_2022_14" aria-label="ieee_day_2022_14" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/10/ieee_day_2022_14.jpg 900w"
+              <a href="/images/ieee/2022/10/ieee_day_2022_14.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_2]" target="_self"><img src=
+              "/images/ieee/2022/10/ieee_day_2022_14.jpg" width="900" height="600" alt="" title="ieee_day_2022_14" aria-label="ieee_day_2022_14" srcset=
+              "/images/ieee/2022/10/ieee_day_2022_14-200x133.jpg 200w, /images/ieee/2022/10/ieee_day_2022_14-400x267.jpg 400w, /images/ieee/2022/10/ieee_day_2022_14-600x400.jpg 600w, /images/ieee/2022/10/ieee_day_2022_14-800x533.jpg 800w, /images/ieee/2022/10/ieee_day_2022_14.jpg 900w"
                /></a>
             </div>
           </div>
@@ -446,13 +448,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Bangladesh_at_Space_and_James_Webb_space_telescope-01.png"
+              src="/images/event/Bangladesh_at_Space_and_James_Webb_space_telescope-01.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   On <strong>Wednesday, September 28th, 2022</strong>, the <strong>IEEE AIUB Student Branch</strong> successfully organized a seminar session titled <strong>“Bangladesh at Space and James Webb Space
@@ -489,13 +491,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Member-orientation-2022.png"
+              src="/images/event/event/Member-orientation-2022.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   The <strong>IEEE AIUB Student Branch</strong> has successfully organized the orientation ceremony for the new members of the <strong>IEEE</strong>. The event took place from <strong>4:30
@@ -573,13 +575,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Biomedical-Research4-01.png"
+              src="/images/event/Biomedical-Research4-01.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -642,13 +644,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/spave.jpg"
+              src="/images/event/spave.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -692,73 +694,73 @@ const posts = [
         <div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01.png" width="800" height="450" alt="" title="spav01" aria-label="spav01" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav01.png 800w"
+              <a href="/images/ieee/2020/09/spav01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav01.png" width="800" height="450" alt="" title="spav01" aria-label="spav01" srcset=
+              "/images/ieee/2020/09/spav01-200x113.png 200w, /images/ieee/2020/09/spav01-400x225.png 400w, /images/ieee/2020/09/spav01-600x338.png 600w, /images/ieee/2020/09/spav01.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02.png" width="800" height="450" alt="" title="spav02" aria-label="spav02" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav02.png 800w"
+              <a href="/images/ieee/2020/09/spav02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav02.png" width="800" height="450" alt="" title="spav02" aria-label="spav02" srcset=
+              "/images/ieee/2020/09/spav02-200x113.png 200w, /images/ieee/2020/09/spav02-400x225.png 400w, /images/ieee/2020/09/spav02-600x338.png 600w, /images/ieee/2020/09/spav02.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03.png" width="800" height="449" alt="" title="spav03" aria-label="spav03" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav03.png 800w"
+              <a href="/images/ieee/2020/09/spav03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav03.png" width="800" height="449" alt="" title="spav03" aria-label="spav03" srcset=
+              "/images/ieee/2020/09/spav03-200x112.png 200w, /images/ieee/2020/09/spav03-400x225.png 400w, /images/ieee/2020/09/spav03-600x337.png 600w, /images/ieee/2020/09/spav03.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04.png" width="800" height="450" alt="" title="spav04" aria-label="spav04" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav04.png 800w"
+              <a href="/images/ieee/2020/09/spav04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav04.png" width="800" height="450" alt="" title="spav04" aria-label="spav04" srcset=
+              "/images/ieee/2020/09/spav04-200x113.png 200w, /images/ieee/2020/09/spav04-400x225.png 400w, /images/ieee/2020/09/spav04-600x338.png 600w, /images/ieee/2020/09/spav04.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05.png" width="800" height="449" alt="" title="spav05" aria-label="spav05" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav05.png 800w"
+              <a href="/images/ieee/2020/09/spav05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav05.png" width="800" height="449" alt="" title="spav05" aria-label="spav05" srcset=
+              "/images/ieee/2020/09/spav05-200x112.png 200w, /images/ieee/2020/09/spav05-400x225.png 400w, /images/ieee/2020/09/spav05-600x337.png 600w, /images/ieee/2020/09/spav05.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06.png" width="800" height="449" alt="" title="spav06" aria-label="spav06" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav06.png 800w"
+              <a href="/images/ieee/2020/09/spav06.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav06.png" width="800" height="449" alt="" title="spav06" aria-label="spav06" srcset=
+              "/images/ieee/2020/09/spav06-200x112.png 200w, /images/ieee/2020/09/spav06-400x225.png 400w, /images/ieee/2020/09/spav06-600x337.png 600w, /images/ieee/2020/09/spav06.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07.png" width="800" height="450" alt="" title="spav07" aria-label="spav07" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav07.png 800w"
+              <a href="/images/ieee/2020/09/spav07.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav07.png" width="800" height="450" alt="" title="spav07" aria-label="spav07" srcset=
+              "/images/ieee/2020/09/spav07-200x113.png 200w, /images/ieee/2020/09/spav07-400x225.png 400w, /images/ieee/2020/09/spav07-600x338.png 600w, /images/ieee/2020/09/spav07.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08.png" width="800" height="450" alt="" title="spav08" aria-label="spav08" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav08.png 800w"
+              <a href="/images/ieee/2020/09/spav08.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav08.png" width="800" height="450" alt="" title="spav08" aria-label="spav08" srcset=
+              "/images/ieee/2020/09/spav08-200x113.png 200w, /images/ieee/2020/09/spav08-400x225.png 400w, /images/ieee/2020/09/spav08-600x338.png 600w, /images/ieee/2020/09/spav08.png 800w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09.png" width="800" height="449" alt="" title="spav09" aria-label="spav09" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/spav09.png 800w"
+              <a href="/images/ieee/2020/09/spav09.png" rel="noreferrer" data-rel="iLightbox[gallery_image_3]" target="_self"><img src=
+              "/images/ieee/2020/09/spav09.png" width="800" height="449" alt="" title="spav09" aria-label="spav09" srcset=
+              "/images/ieee/2020/09/spav09-200x112.png 200w, /images/ieee/2020/09/spav09-400x225.png 400w, /images/ieee/2020/09/spav09-600x337.png 600w, /images/ieee/2020/09/spav09.png 800w"
                /></a>
             </div>
           </div>
@@ -778,13 +780,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/erasmus.jpg"
+              src="/images/event/erasmus.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -819,41 +821,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01.png" width="800" height="395" alt="" title="aiubonerasmus01" aria-label="aiubonerasmus01" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01-200x99.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01-400x198.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01-600x296.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus01.png 800w"
+                <a href="/images/ieee/2020/09/aiubonerasmus01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
+                "/images/ieee/2020/09/aiubonerasmus01.png" width="800" height="395" alt="" title="aiubonerasmus01" aria-label="aiubonerasmus01" srcset=
+                "/images/ieee/2020/09/aiubonerasmus01-200x99.png 200w, /images/ieee/2020/09/aiubonerasmus01-400x198.png 400w, /images/ieee/2020/09/aiubonerasmus01-600x296.png 600w, /images/ieee/2020/09/aiubonerasmus01.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02.png" width="800" height="395" alt="" title="aiubonerasmus02" aria-label="aiubonerasmus02" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02-200x99.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02-400x198.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02-600x296.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus02.png 800w"
+                <a href="/images/ieee/2020/09/aiubonerasmus02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
+                "/images/ieee/2020/09/aiubonerasmus02.png" width="800" height="395" alt="" title="aiubonerasmus02" aria-label="aiubonerasmus02" srcset=
+                "/images/ieee/2020/09/aiubonerasmus02-200x99.png 200w, /images/ieee/2020/09/aiubonerasmus02-400x198.png 400w, /images/ieee/2020/09/aiubonerasmus02-600x296.png 600w, /images/ieee/2020/09/aiubonerasmus02.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03.png" width="800" height="398" alt="" title="aiubonerasmus03" aria-label="aiubonerasmus03" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03-200x100.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03-400x199.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03-600x299.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus03.png 800w"
+                <a href="/images/ieee/2020/09/aiubonerasmus03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
+                "/images/ieee/2020/09/aiubonerasmus03.png" width="800" height="398" alt="" title="aiubonerasmus03" aria-label="aiubonerasmus03" srcset=
+                "/images/ieee/2020/09/aiubonerasmus03-200x100.png 200w, /images/ieee/2020/09/aiubonerasmus03-400x199.png 400w, /images/ieee/2020/09/aiubonerasmus03-600x299.png 600w, /images/ieee/2020/09/aiubonerasmus03.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04.png" width="800" height="450" alt="" title="aiubonerasmus04" aria-label="aiubonerasmus04" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus04.png 800w"
+                <a href="/images/ieee/2020/09/aiubonerasmus04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
+                "/images/ieee/2020/09/aiubonerasmus04.png" width="800" height="450" alt="" title="aiubonerasmus04" aria-label="aiubonerasmus04" srcset=
+                "/images/ieee/2020/09/aiubonerasmus04-200x113.png 200w, /images/ieee/2020/09/aiubonerasmus04-400x225.png 400w, /images/ieee/2020/09/aiubonerasmus04-600x338.png 600w, /images/ieee/2020/09/aiubonerasmus04.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05.png" width="800" height="404" alt="" title="aiubonerasmus05" aria-label="aiubonerasmus05" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05-200x101.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05-400x202.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05-600x303.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/aiubonerasmus05.png 800w"
+                <a href="/images/ieee/2020/09/aiubonerasmus05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_4]" target="_self"><img src=
+                "/images/ieee/2020/09/aiubonerasmus05.png" width="800" height="404" alt="" title="aiubonerasmus05" aria-label="aiubonerasmus05" srcset=
+                "/images/ieee/2020/09/aiubonerasmus05-200x101.png 200w, /images/ieee/2020/09/aiubonerasmus05-400x202.png 400w, /images/ieee/2020/09/aiubonerasmus05-600x303.png 600w, /images/ieee/2020/09/aiubonerasmus05.png 800w"
                  /></a>
               </div>
             </div>
@@ -874,13 +876,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Cover.jpg"
+              src="/images/event/Cover.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -916,49 +918,49 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png" width="800" height="378" alt="" title="eeebe001" aria-label="eeebe001" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png 800w"
+                <a href="/images/ieee/2020/09/eeebe001.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe001.png" width="800" height="378" alt="" title="eeebe001" aria-label="eeebe001" srcset=
+                "/images/ieee/2020/09/eeebe001-200x95.png 200w, /images/ieee/2020/09/eeebe001-400x189.png 400w, /images/ieee/2020/09/eeebe001-600x284.png 600w, /images/ieee/2020/09/eeebe001.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png" width="800" height="378" alt="" title="eeebe002" aria-label="eeebe002" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png 800w"
+                <a href="/images/ieee/2020/09/eeebe002.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe002.png" width="800" height="378" alt="" title="eeebe002" aria-label="eeebe002" srcset=
+                "/images/ieee/2020/09/eeebe002-200x95.png 200w, /images/ieee/2020/09/eeebe002-400x189.png 400w, /images/ieee/2020/09/eeebe002-600x284.png 600w, /images/ieee/2020/09/eeebe002.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png" width="800" height="378" alt="" title="eeebe003" aria-label="eeebe003" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png 800w"
+                <a href="/images/ieee/2020/09/eeebe003.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe003.png" width="800" height="378" alt="" title="eeebe003" aria-label="eeebe003" srcset=
+                "/images/ieee/2020/09/eeebe003-200x95.png 200w, /images/ieee/2020/09/eeebe003-400x189.png 400w, /images/ieee/2020/09/eeebe003-600x284.png 600w, /images/ieee/2020/09/eeebe003.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png 800w"
+                <a href="/images/ieee/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
+                "/images/ieee/2020/09/eeebe004-200x95.png 200w, /images/ieee/2020/09/eeebe004-400x189.png 400w, /images/ieee/2020/09/eeebe004-600x284.png 600w, /images/ieee/2020/09/eeebe004.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png" width="800" height="378" alt="" title="eeebe005" aria-label="eeebe005" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png 800w"
+                <a href="/images/ieee/2020/09/eeebe005.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe005.png" width="800" height="378" alt="" title="eeebe005" aria-label="eeebe005" srcset=
+                "/images/ieee/2020/09/eeebe005-200x95.png 200w, /images/ieee/2020/09/eeebe005-400x189.png 400w, /images/ieee/2020/09/eeebe005-600x284.png 600w, /images/ieee/2020/09/eeebe005.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png 800w"
+                <a href="/images/ieee/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_5]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
+                "/images/ieee/2020/09/eeebe004-200x95.png 200w, /images/ieee/2020/09/eeebe004-400x189.png 400w, /images/ieee/2020/09/eeebe004-600x284.png 600w, /images/ieee/2020/09/eeebe004.png 800w"
                  /></a>
               </div>
             </div>
@@ -979,13 +981,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/cover.jpg"
+              src="/images/event/cover.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1019,41 +1021,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png" width="800" height="378" alt="" title="eeebe001" aria-label="eeebe001" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe001.png 800w"
+                <a href="/images/ieee/2020/09/eeebe001.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe001.png" width="800" height="378" alt="" title="eeebe001" aria-label="eeebe001" srcset=
+                "/images/ieee/2020/09/eeebe001-200x95.png 200w, /images/ieee/2020/09/eeebe001-400x189.png 400w, /images/ieee/2020/09/eeebe001-600x284.png 600w, /images/ieee/2020/09/eeebe001.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png" width="800" height="378" alt="" title="eeebe002" aria-label="eeebe002" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe002.png 800w"
+                <a href="/images/ieee/2020/09/eeebe002.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe002.png" width="800" height="378" alt="" title="eeebe002" aria-label="eeebe002" srcset=
+                "/images/ieee/2020/09/eeebe002-200x95.png 200w, /images/ieee/2020/09/eeebe002-400x189.png 400w, /images/ieee/2020/09/eeebe002-600x284.png 600w, /images/ieee/2020/09/eeebe002.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png" width="800" height="378" alt="" title="eeebe003" aria-label="eeebe003" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe003.png 800w"
+                <a href="/images/ieee/2020/09/eeebe003.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe003.png" width="800" height="378" alt="" title="eeebe003" aria-label="eeebe003" srcset=
+                "/images/ieee/2020/09/eeebe003-200x95.png 200w, /images/ieee/2020/09/eeebe003-400x189.png 400w, /images/ieee/2020/09/eeebe003-600x284.png 600w, /images/ieee/2020/09/eeebe003.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe004.png 800w"
+                <a href="/images/ieee/2020/09/eeebe004.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe004.png" width="800" height="378" alt="" title="eeebe004" aria-label="eeebe004" srcset=
+                "/images/ieee/2020/09/eeebe004-200x95.png 200w, /images/ieee/2020/09/eeebe004-400x189.png 400w, /images/ieee/2020/09/eeebe004-600x284.png 600w, /images/ieee/2020/09/eeebe004.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png" width="800" height="378" alt="" title="eeebe005" aria-label="eeebe005" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-400x189.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005-600x284.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/eeebe005.png 800w"
+                <a href="/images/ieee/2020/09/eeebe005.png" rel="noreferrer" data-rel="iLightbox[gallery_image_6]" target="_self"><img src=
+                "/images/ieee/2020/09/eeebe005.png" width="800" height="378" alt="" title="eeebe005" aria-label="eeebe005" srcset=
+                "/images/ieee/2020/09/eeebe005-200x95.png 200w, /images/ieee/2020/09/eeebe005-400x189.png 400w, /images/ieee/2020/09/eeebe005-600x284.png 600w, /images/ieee/2020/09/eeebe005.png 800w"
                  /></a>
               </div>
             </div>
@@ -1074,13 +1076,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/249774690_4545653268814803_382015203504928536_n.jpg"
+              src="/images/event/249774690_4545653268814803_382015203504928536_n.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1112,41 +1114,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01.png" width="800" height="380" alt="" title="wieieee01" aria-label="wieieee01" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01-400x190.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01-600x285.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee01.png 800w"
+                <a href="/images/ieee/2020/09/wieieee01.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
+                "/images/ieee/2020/09/wieieee01.png" width="800" height="380" alt="" title="wieieee01" aria-label="wieieee01" srcset=
+                "/images/ieee/2020/09/wieieee01-200x95.png 200w, /images/ieee/2020/09/wieieee01-400x190.png 400w, /images/ieee/2020/09/wieieee01-600x285.png 600w, /images/ieee/2020/09/wieieee01.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02.png" width="800" height="380" alt="" title="wieieee02" aria-label="wieieee02" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02-400x190.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02-600x285.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee02.png 800w"
+                <a href="/images/ieee/2020/09/wieieee02.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
+                "/images/ieee/2020/09/wieieee02.png" width="800" height="380" alt="" title="wieieee02" aria-label="wieieee02" srcset=
+                "/images/ieee/2020/09/wieieee02-200x95.png 200w, /images/ieee/2020/09/wieieee02-400x190.png 400w, /images/ieee/2020/09/wieieee02-600x285.png 600w, /images/ieee/2020/09/wieieee02.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03.png" width="800" height="380" alt="" title="wieieee03" aria-label="wieieee03" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03-400x190.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03-600x285.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee03.png 800w"
+                <a href="/images/ieee/2020/09/wieieee03.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
+                "/images/ieee/2020/09/wieieee03.png" width="800" height="380" alt="" title="wieieee03" aria-label="wieieee03" srcset=
+                "/images/ieee/2020/09/wieieee03-200x95.png 200w, /images/ieee/2020/09/wieieee03-400x190.png 400w, /images/ieee/2020/09/wieieee03-600x285.png 600w, /images/ieee/2020/09/wieieee03.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04.png" width="800" height="380" alt="" title="wieieee04" aria-label="wieieee04" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04-400x190.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04-600x285.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee04.png 800w"
+                <a href="/images/ieee/2020/09/wieieee04.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
+                "/images/ieee/2020/09/wieieee04.png" width="800" height="380" alt="" title="wieieee04" aria-label="wieieee04" srcset=
+                "/images/ieee/2020/09/wieieee04-200x95.png 200w, /images/ieee/2020/09/wieieee04-400x190.png 400w, /images/ieee/2020/09/wieieee04-600x285.png 600w, /images/ieee/2020/09/wieieee04.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05.png" width="800" height="380" alt="" title="wieieee05" aria-label="wieieee05" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05-200x95.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05-400x190.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05-600x285.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/wieieee05.png 800w"
+                <a href="/images/ieee/2020/09/wieieee05.png" rel="noreferrer" data-rel="iLightbox[gallery_image_7]" target="_self"><img src=
+                "/images/ieee/2020/09/wieieee05.png" width="800" height="380" alt="" title="wieieee05" aria-label="wieieee05" srcset=
+                "/images/ieee/2020/09/wieieee05-200x95.png 200w, /images/ieee/2020/09/wieieee05-400x190.png 400w, /images/ieee/2020/09/wieieee05-600x285.png 600w, /images/ieee/2020/09/wieieee05.png 800w"
                  /></a>
               </div>
             </div>
@@ -1167,13 +1169,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/FB_IMG_1636039759078.jpg"
+              src="/images/event/FB_IMG_1636039759078.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1212,41 +1214,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2021/11/1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/1.jpg" width="800" height="426" alt="" title="1" aria-label="1" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/1-200x107.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/1-400x213.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/1-600x320.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/1.jpg 800w"
+                <a href="/images/ieee/2021/11/1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
+                "/images/ieee/2021/11/1.jpg" width="800" height="426" alt="" title="1" aria-label="1" srcset=
+                "/images/ieee/2021/11/1-200x107.jpg 200w, /images/ieee/2021/11/1-400x213.jpg 400w, /images/ieee/2021/11/1-600x320.jpg 600w, /images/ieee/2021/11/1.jpg 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2021/11/2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/2.jpg" width="800" height="415" alt="" title="2" aria-label="2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/2-200x104.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/2-400x208.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/2-600x311.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/2.jpg 800w"
+                <a href="/images/ieee/2021/11/2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
+                "/images/ieee/2021/11/2.jpg" width="800" height="415" alt="" title="2" aria-label="2" srcset=
+                "/images/ieee/2021/11/2-200x104.jpg 200w, /images/ieee/2021/11/2-400x208.jpg 400w, /images/ieee/2021/11/2-600x311.jpg 600w, /images/ieee/2021/11/2.jpg 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2021/11/3.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/3.png" width="800" height="429" alt="" title="3" aria-label="3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/3-200x107.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/3-400x215.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/3-600x322.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/3.png 800w"
+                <a href="/images/ieee/2021/11/3.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
+                "/images/ieee/2021/11/3.png" width="800" height="429" alt="" title="3" aria-label="3" srcset=
+                "/images/ieee/2021/11/3-200x107.png 200w, /images/ieee/2021/11/3-400x215.png 400w, /images/ieee/2021/11/3-600x322.png 600w, /images/ieee/2021/11/3.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2021/11/4.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/4.png" width="800" height="450" alt="" title="4" aria-label="4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/4-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/4-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/4.png 800w"
+                <a href="/images/ieee/2021/11/4.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
+                "/images/ieee/2021/11/4.png" width="800" height="450" alt="" title="4" aria-label="4" srcset=
+                "/images/ieee/2021/11/4-200x113.png 200w, /images/ieee/2021/11/4-400x225.png 400w, /images/ieee/2021/11/4-600x338.png 600w, /images/ieee/2021/11/4.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2021/11/5.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/5.png" width="800" height="500" alt="" title="5" aria-label="5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2021/11/5-200x125.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/5-400x250.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/5-600x375.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/11/5.png 800w"
+                <a href="/images/ieee/2021/11/5.png" rel="noreferrer" data-rel="iLightbox[gallery_image_8]" target="_self"><img src=
+                "/images/ieee/2021/11/5.png" width="800" height="500" alt="" title="5" aria-label="5" srcset=
+                "/images/ieee/2021/11/5-200x125.png 200w, /images/ieee/2021/11/5-400x250.png 400w, /images/ieee/2021/11/5-600x375.png 600w, /images/ieee/2021/11/5.png 800w"
                  /></a>
               </div>
             </div>
@@ -1275,13 +1277,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/FB_IMG_1636039776191.jpg"
+              src="/images/event/FB_IMG_1636039776191.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1333,57 +1335,57 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8.png" width="800" height="450" alt="" title="1" aria-label="1" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-8.png 800w"
+                <a href="/images/ieee/2020/09/1-8.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/1-8.png" width="800" height="450" alt="" title="1" aria-label="1" srcset=
+                "/images/ieee/2020/09/1-8-200x113.png 200w, /images/ieee/2020/09/1-8-400x225.png 400w, /images/ieee/2020/09/1-8-600x338.png 600w, /images/ieee/2020/09/1-8.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8.png" width="800" height="450" alt="" title="2" aria-label="2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-8.png 800w"
+                <a href="/images/ieee/2020/09/2-8.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/2-8.png" width="800" height="450" alt="" title="2" aria-label="2" srcset=
+                "/images/ieee/2020/09/2-8-200x113.png 200w, /images/ieee/2020/09/2-8-400x225.png 400w, /images/ieee/2020/09/2-8-600x338.png 600w, /images/ieee/2020/09/2-8.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6.png" width="800" height="450" alt="" title="3" aria-label="3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-6.png 800w"
+                <a href="/images/ieee/2020/09/3-6.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/3-6.png" width="800" height="450" alt="" title="3" aria-label="3" srcset=
+                "/images/ieee/2020/09/3-6-200x113.png 200w, /images/ieee/2020/09/3-6-400x225.png 400w, /images/ieee/2020/09/3-6-600x338.png 600w, /images/ieee/2020/09/3-6.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4.png" width="800" height="450" alt="" title="4" aria-label="4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4-600x338.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-4.png 800w"
+                <a href="/images/ieee/2020/09/4-4.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/4-4.png" width="800" height="450" alt="" title="4" aria-label="4" srcset=
+                "/images/ieee/2020/09/4-4-200x113.png 200w, /images/ieee/2020/09/4-4-400x225.png 400w, /images/ieee/2020/09/4-4-600x338.png 600w, /images/ieee/2020/09/4-4.png 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3.png" width="829" height="481" alt="" title="5" aria-label="5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3-200x116.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3-400x232.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3-600x348.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3-800x464.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-3.png 829w"
+                <a href="/images/ieee/2020/09/5-3.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/5-3.png" width="829" height="481" alt="" title="5" aria-label="5" srcset=
+                "/images/ieee/2020/09/5-3-200x116.png 200w, /images/ieee/2020/09/5-3-400x232.png 400w, /images/ieee/2020/09/5-3-600x348.png 600w, /images/ieee/2020/09/5-3-800x464.png 800w, /images/ieee/2020/09/5-3.png 829w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1.png" width="828" height="476" alt="" title="6" aria-label="6" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1-200x115.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1-400x230.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1-600x345.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1-800x460.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1.png 828w"
+                <a href="/images/ieee/2020/09/6-1.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/6-1.png" width="828" height="476" alt="" title="6" aria-label="6" srcset=
+                "/images/ieee/2020/09/6-1-200x115.png 200w, /images/ieee/2020/09/6-1-400x230.png 400w, /images/ieee/2020/09/6-1-600x345.png 600w, /images/ieee/2020/09/6-1-800x460.png 800w, /images/ieee/2020/09/6-1.png 828w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/7.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/7.png" width="829" height="452" alt="" title="7" aria-label="7" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/7-200x109.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/7-400x218.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/7-600x327.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/7-800x436.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/7.png 829w"
+                <a href="/images/ieee/2020/09/7.png" rel="noreferrer" data-rel="iLightbox[gallery_image_9]" target="_self"><img src=
+                "/images/ieee/2020/09/7.png" width="829" height="452" alt="" title="7" aria-label="7" srcset=
+                "/images/ieee/2020/09/7-200x109.png 200w, /images/ieee/2020/09/7-400x218.png 400w, /images/ieee/2020/09/7-600x327.png 600w, /images/ieee/2020/09/7-800x436.png 800w, /images/ieee/2020/09/7.png 829w"
                  /></a>
               </div>
             </div>
@@ -1409,13 +1411,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/baner.jpg"
+              src="/images/event/baner.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1461,16 +1463,16 @@ const posts = [
             branch members, and volunteers.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7.png" alt="" width="910" height="526" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-200x116.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-300x173.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-400x231.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-600x347.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-768x444.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7-800x462.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-7.png 910w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-7.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-5.png" alt="" width="1650" height="928" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-5.png 1650w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-3.png" alt="" width="1650" height="928" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-3.png 1650w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-2.png 1366w"
+            <img src="/images/ieee/2020/09/1-7.png" alt="" width="910" height="526" srcset=
+            "/images/ieee/2020/09/1-7-200x116.png 200w, /images/ieee/2020/09/1-7-300x173.png 300w, /images/ieee/2020/09/1-7-400x231.png 400w, /images/ieee/2020/09/1-7-600x347.png 600w, /images/ieee/2020/09/1-7-768x444.png 768w, /images/ieee/2020/09/1-7-800x462.png 800w, /images/ieee/2020/09/1-7.png 910w"
+             /> <img src="/images/ieee/2020/09/2-7.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/2-7-200x112.png 200w, /images/ieee/2020/09/2-7-300x169.png 300w, /images/ieee/2020/09/2-7-400x225.png 400w, /images/ieee/2020/09/2-7-600x337.png 600w, /images/ieee/2020/09/2-7-768x432.png 768w, /images/ieee/2020/09/2-7-800x450.png 800w, /images/ieee/2020/09/2-7-1024x576.png 1024w, /images/ieee/2020/09/2-7.png 1366w"
+             /> <img src="/images/ieee/2020/09/3-5.png" alt="" width="1650" height="928" srcset=
+            "/images/ieee/2020/09/3-5-300x169.png 300w, /images/ieee/2020/09/3-5-768x432.png 768w, /images/ieee/2020/09/3-5-1024x576.png 1024w, /images/ieee/2020/09/3-5.png 1650w"
+             /> <img src="/images/ieee/2020/09/4-3.png" alt="" width="1650" height="928" srcset=
+            "/images/ieee/2020/09/4-3-300x169.png 300w, /images/ieee/2020/09/4-3-768x432.png 768w, /images/ieee/2020/09/4-3-1024x576.png 1024w, /images/ieee/2020/09/4-3.png 1650w"
+             /> <img src="/images/ieee/2020/09/5-2.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/5-2-200x112.png 200w, /images/ieee/2020/09/5-2-300x169.png 300w, /images/ieee/2020/09/5-2-400x225.png 400w, /images/ieee/2020/09/5-2-600x337.png 600w, /images/ieee/2020/09/5-2-768x432.png 768w, /images/ieee/2020/09/5-2-800x450.png 800w, /images/ieee/2020/09/5-2-1024x576.png 1024w, /images/ieee/2020/09/5-2.png 1366w"
              />
           </p>
         </div>
@@ -1489,13 +1491,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/erasmus_banner.jpg"
+              src="/images/event/erasmus_banner.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1553,18 +1555,18 @@ const posts = [
             faculty members and students as well as 380+ registered participants from different universities along with executive branch members and volunteers.<em> </em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/1.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/1.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/2.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/3.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/3.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/4.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/4.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/5.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/5.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/09/6.jpg" alt="" width="1644" height="925" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/09/6-300x169.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/6-768x432.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/6-1024x576.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/09/6.jpg 1644w"
+            <img src="/images/ieee/2021/09/1.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/09/1-200x112.png 200w, /images/ieee/2021/09/1-300x169.png 300w, /images/ieee/2021/09/1-400x225.png 400w, /images/ieee/2021/09/1-600x337.png 600w, /images/ieee/2021/09/1-768x432.png 768w, /images/ieee/2021/09/1-800x450.png 800w, /images/ieee/2021/09/1-1024x576.png 1024w, /images/ieee/2021/09/1.png 1366w"
+             /> <img src="/images/ieee/2021/09/2.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/09/2-200x112.png 200w, /images/ieee/2021/09/2-300x169.png 300w, /images/ieee/2021/09/2-400x225.png 400w, /images/ieee/2021/09/2-600x337.png 600w, /images/ieee/2021/09/2-768x432.png 768w, /images/ieee/2021/09/2-800x450.png 800w, /images/ieee/2021/09/2-1024x576.png 1024w, /images/ieee/2021/09/2.png 1366w"
+             /> <img src="/images/ieee/2021/09/3.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/09/3-200x112.png 200w, /images/ieee/2021/09/3-300x169.png 300w, /images/ieee/2021/09/3-400x225.png 400w, /images/ieee/2021/09/3-600x337.png 600w, /images/ieee/2021/09/3-768x432.png 768w, /images/ieee/2021/09/3-800x450.png 800w, /images/ieee/2021/09/3-1024x576.png 1024w, /images/ieee/2021/09/3.png 1366w"
+             /> <img src="/images/ieee/2021/09/4.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/09/4-200x112.png 200w, /images/ieee/2021/09/4-300x169.png 300w, /images/ieee/2021/09/4-400x225.png 400w, /images/ieee/2021/09/4-600x337.png 600w, /images/ieee/2021/09/4-768x432.png 768w, /images/ieee/2021/09/4-800x450.png 800w, /images/ieee/2021/09/4-1024x576.png 1024w, /images/ieee/2021/09/4.png 1366w"
+             /> <img src="/images/ieee/2021/09/5.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/09/5-200x112.png 200w, /images/ieee/2021/09/5-300x169.png 300w, /images/ieee/2021/09/5-400x225.png 400w, /images/ieee/2021/09/5-600x337.png 600w, /images/ieee/2021/09/5-768x432.png 768w, /images/ieee/2021/09/5-800x450.png 800w, /images/ieee/2021/09/5-1024x576.png 1024w, /images/ieee/2021/09/5.png 1366w"
+             /> <img src="/images/ieee/2021/09/6.jpg" alt="" width="1644" height="925" srcset=
+            "/images/ieee/2021/09/6-300x169.jpg 300w, /images/ieee/2021/09/6-768x432.jpg 768w, /images/ieee/2021/09/6-1024x576.jpg 1024w, /images/ieee/2021/09/6.jpg 1644w"
              />
           </p>
         </div>
@@ -1583,13 +1585,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-5.jpg"
+              src="/images/event/banner-5.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1629,12 +1631,12 @@ const posts = [
             volunteers of <strong>IEEE AIUB Student Branch</strong>, and other registered participants of AIUB and other universities.</span>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-6.png" alt="" width="1920" height="1080" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-6-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-6-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-6-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-6.png 1920w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3-300x162.png" alt="" width="827" height="447" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3-200x108.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3-300x162.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3-400x217.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3-600x325.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/pb3.png 748w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4.jpg" alt="" width="1646" height="855" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-300x156.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-768x399.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1024x532.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4.jpg 1646w"
+            <img src="/images/ieee/2020/09/1-6.png" alt="" width="1920" height="1080" srcset=
+            "/images/ieee/2020/09/1-6-300x169.png 300w, /images/ieee/2020/09/1-6-768x432.png 768w, /images/ieee/2020/09/1-6-1024x576.png 1024w, /images/ieee/2020/09/1-6.png 1920w"
+             /> <img src="/images/ieee/2021/08/pb3-300x162.png" alt="" width="827" height="447" srcset=
+            "/images/ieee/2021/08/pb3-200x108.png 200w, /images/ieee/2021/08/pb3-300x162.png 300w, /images/ieee/2021/08/pb3-400x217.png 400w, /images/ieee/2021/08/pb3-600x325.png 600w, /images/ieee/2021/08/pb3.png 748w"
+             /><img src="/images/ieee/2020/09/4.jpg" alt="" width="1646" height="855" srcset=
+            "/images/ieee/2020/09/4-300x156.jpg 300w, /images/ieee/2020/09/4-768x399.jpg 768w, /images/ieee/2020/09/4-1024x532.jpg 1024w, /images/ieee/2020/09/4.jpg 1646w"
              />
           </p>
         </div>
@@ -1653,13 +1655,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Research_and_Innovation-in-Power-and-Energy_Report.jpg"
+              src="/images/event/Research_and_Innovation-in-Power-and-Energy_Report.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1703,16 +1705,16 @@ const posts = [
             Professor, Faculty of Engineering, AIUB</em>, and other faculty members and students from different universities along with executive branch members and volunteers.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-5.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-5.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-3.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1.png 1366w"
+            <img src="/images/ieee/2020/09/1-5.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/1-5-200x112.png 200w, /images/ieee/2020/09/1-5-300x169.png 300w, /images/ieee/2020/09/1-5-400x225.png 400w, /images/ieee/2020/09/1-5-600x337.png 600w, /images/ieee/2020/09/1-5-768x432.png 768w, /images/ieee/2020/09/1-5-800x450.png 800w, /images/ieee/2020/09/1-5-1024x576.png 1024w, /images/ieee/2020/09/1-5.png 1366w"
+             /> <img src="/images/ieee/2020/09/2-5.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/2-5-200x112.png 200w, /images/ieee/2020/09/2-5-300x169.png 300w, /images/ieee/2020/09/2-5-400x225.png 400w, /images/ieee/2020/09/2-5-600x337.png 600w, /images/ieee/2020/09/2-5-768x432.png 768w, /images/ieee/2020/09/2-5-800x450.png 800w, /images/ieee/2020/09/2-5-1024x576.png 1024w, /images/ieee/2020/09/2-5.png 1366w"
+             /> <img src="/images/ieee/2020/09/3-3.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/3-3-200x112.png 200w, /images/ieee/2020/09/3-3-300x169.png 300w, /images/ieee/2020/09/3-3-400x225.png 400w, /images/ieee/2020/09/3-3-600x337.png 600w, /images/ieee/2020/09/3-3-768x432.png 768w, /images/ieee/2020/09/3-3-800x450.png 800w, /images/ieee/2020/09/3-3-1024x576.png 1024w, /images/ieee/2020/09/3-3.png 1366w"
+             /> <img src="/images/ieee/2020/09/4-2.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/4-2-200x112.png 200w, /images/ieee/2020/09/4-2-300x169.png 300w, /images/ieee/2020/09/4-2-400x225.png 400w, /images/ieee/2020/09/4-2-600x337.png 600w, /images/ieee/2020/09/4-2-768x432.png 768w, /images/ieee/2020/09/4-2-800x450.png 800w, /images/ieee/2020/09/4-2-1024x576.png 1024w, /images/ieee/2020/09/4-2.png 1366w"
+             /> <img src="/images/ieee/2020/09/5-1.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2020/09/5-1-200x112.png 200w, /images/ieee/2020/09/5-1-300x169.png 300w, /images/ieee/2020/09/5-1-400x225.png 400w, /images/ieee/2020/09/5-1-600x337.png 600w, /images/ieee/2020/09/5-1-768x432.png 768w, /images/ieee/2020/09/5-1-800x450.png 800w, /images/ieee/2020/09/5-1-1024x576.png 1024w, /images/ieee/2020/09/5-1.png 1366w"
              />
           </p>
         </div>
@@ -1731,13 +1733,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/up_01.jpg"
+              src="/images/event/up_01.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1776,18 +1778,18 @@ const posts = [
             volunteers.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/up_01.jpg" alt="" width="2048" height="1072" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/up_01-300x157.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/up_01-768x402.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/up_01-1024x536.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/up_01.jpg 2048w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/1.png" alt="" width="1650" height="928" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/1.png 1650w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/2.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/2.png 1366w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/3.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/3.png 1366w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/4.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/4.png 1366w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/07/5.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/07/5.png 1366w"
+            <img src="/images/ieee/2021/07/up_01.jpg" alt="" width="2048" height="1072" srcset=
+            "/images/ieee/2021/07/up_01-300x157.jpg 300w, /images/ieee/2021/07/up_01-768x402.jpg 768w, /images/ieee/2021/07/up_01-1024x536.jpg 1024w, /images/ieee/2021/07/up_01.jpg 2048w"
+             /><img src="/images/ieee/2021/07/1.png" alt="" width="1650" height="928" srcset=
+            "/images/ieee/2021/07/1-300x169.png 300w, /images/ieee/2021/07/1-768x432.png 768w, /images/ieee/2021/07/1-1024x576.png 1024w, /images/ieee/2021/07/1.png 1650w"
+             /><img src="/images/ieee/2021/07/2.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/07/2-200x112.png 200w, /images/ieee/2021/07/2-300x169.png 300w, /images/ieee/2021/07/2-400x225.png 400w, /images/ieee/2021/07/2-600x337.png 600w, /images/ieee/2021/07/2-768x432.png 768w, /images/ieee/2021/07/2-800x450.png 800w, /images/ieee/2021/07/2-1024x576.png 1024w, /images/ieee/2021/07/2.png 1366w"
+             /><img src="/images/ieee/2021/07/3.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/07/3-200x112.png 200w, /images/ieee/2021/07/3-300x169.png 300w, /images/ieee/2021/07/3-400x225.png 400w, /images/ieee/2021/07/3-600x337.png 600w, /images/ieee/2021/07/3-768x432.png 768w, /images/ieee/2021/07/3-800x450.png 800w, /images/ieee/2021/07/3-1024x576.png 1024w, /images/ieee/2021/07/3.png 1366w"
+             /><img src="/images/ieee/2021/07/4.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/07/4-200x112.png 200w, /images/ieee/2021/07/4-300x169.png 300w, /images/ieee/2021/07/4-400x225.png 400w, /images/ieee/2021/07/4-600x337.png 600w, /images/ieee/2021/07/4-768x432.png 768w, /images/ieee/2021/07/4-800x450.png 800w, /images/ieee/2021/07/4-1024x576.png 1024w, /images/ieee/2021/07/4.png 1366w"
+             /><img src="/images/ieee/2021/07/5.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/07/5-200x112.png 200w, /images/ieee/2021/07/5-300x169.png 300w, /images/ieee/2021/07/5-400x225.png 400w, /images/ieee/2021/07/5-600x337.png 600w, /images/ieee/2021/07/5-768x432.png 768w, /images/ieee/2021/07/5-800x450.png 800w, /images/ieee/2021/07/5-1024x576.png 1024w, /images/ieee/2021/07/5.png 1366w"
              />
           </p>
         </div>
@@ -1806,13 +1808,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/1.png"
+              src="/images/event/1.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1837,12 +1839,12 @@ const posts = [
             management, idea generation, and many more.
           </p>
           <p>
-            The students attending both sessions have also been awarded an e-certificate.<img src="https://ieeeaiubsb.com/wp-content/uploads/2021/08/1.png" alt="" width="1200" height="628" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-200x105.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-300x157.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-400x209.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-600x314.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-768x402.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-800x419.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1-1024x536.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/1.png 1200w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/08/2.png" alt="" width="1200" height="628" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-200x105.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-300x157.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-400x209.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-600x314.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-768x402.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-800x419.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2-1024x536.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/2.png 1200w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/08/3.jpg" alt="" width="1200" height="628" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-200x105.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-300x157.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-400x209.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-600x314.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-768x402.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-800x419.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3-1024x536.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/08/3.jpg 1200w"
+            The students attending both sessions have also been awarded an e-certificate.<img src="/images/ieee/2021/08/1.png" alt="" width="1200" height="628" srcset=
+            "/images/ieee/2021/08/1-200x105.png 200w, /images/ieee/2021/08/1-300x157.png 300w, /images/ieee/2021/08/1-400x209.png 400w, /images/ieee/2021/08/1-600x314.png 600w, /images/ieee/2021/08/1-768x402.png 768w, /images/ieee/2021/08/1-800x419.png 800w, /images/ieee/2021/08/1-1024x536.png 1024w, /images/ieee/2021/08/1.png 1200w"
+             /> <img src="/images/ieee/2021/08/2.png" alt="" width="1200" height="628" srcset=
+            "/images/ieee/2021/08/2-200x105.png 200w, /images/ieee/2021/08/2-300x157.png 300w, /images/ieee/2021/08/2-400x209.png 400w, /images/ieee/2021/08/2-600x314.png 600w, /images/ieee/2021/08/2-768x402.png 768w, /images/ieee/2021/08/2-800x419.png 800w, /images/ieee/2021/08/2-1024x536.png 1024w, /images/ieee/2021/08/2.png 1200w"
+             /> <img src="/images/ieee/2021/08/3.jpg" alt="" width="1200" height="628" srcset=
+            "/images/ieee/2021/08/3-200x105.jpg 200w, /images/ieee/2021/08/3-300x157.jpg 300w, /images/ieee/2021/08/3-400x209.jpg 400w, /images/ieee/2021/08/3-600x314.jpg 600w, /images/ieee/2021/08/3-768x402.jpg 768w, /images/ieee/2021/08/3-800x419.jpg 800w, /images/ieee/2021/08/3-1024x536.jpg 1024w, /images/ieee/2021/08/3.jpg 1200w"
              />
           </p>
         </div>
@@ -1861,13 +1863,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/197216919_4551266718224863_2116159990468868599_n.png"
+              src="/images/event/197216919_4551266718224863_2116159990468868599_n.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -1916,21 +1918,21 @@ const posts = [
             members of AIUB and 150+ registered IEEE Student Members.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/1.png" alt="" width="1920" height="1080" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/1.png 1920w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/2.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/3.png" alt="" width="1920" height="1080" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/3.png 1920w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/4.png" alt="" width="1920" height="1080" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/4.png 1920w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/9.png" alt="" width="862" height="488" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-200x113.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-300x170.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-400x226.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-600x340.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-768x435.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9-800x453.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/9.png 862w"
+            <img src="/images/ieee/2021/06/1.png" alt="" width="1920" height="1080" srcset=
+            "/images/ieee/2021/06/1-300x169.png 300w, /images/ieee/2021/06/1-768x432.png 768w, /images/ieee/2021/06/1-1024x576.png 1024w, /images/ieee/2021/06/1.png 1920w"
+             /> <img src="/images/ieee/2021/06/2.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/06/2-200x112.png 200w, /images/ieee/2021/06/2-300x169.png 300w, /images/ieee/2021/06/2-400x225.png 400w, /images/ieee/2021/06/2-600x337.png 600w, /images/ieee/2021/06/2-768x432.png 768w, /images/ieee/2021/06/2-800x450.png 800w, /images/ieee/2021/06/2-1024x576.png 1024w, /images/ieee/2021/06/2.png 1366w"
+             /> <img src="/images/ieee/2021/06/3.png" alt="" width="1920" height="1080" srcset=
+            "/images/ieee/2021/06/3-300x169.png 300w, /images/ieee/2021/06/3-768x432.png 768w, /images/ieee/2021/06/3-1024x576.png 1024w, /images/ieee/2021/06/3.png 1920w"
+             /> <img src="/images/ieee/2021/06/4.png" alt="" width="1920" height="1080" srcset=
+            "/images/ieee/2021/06/4-300x169.png 300w, /images/ieee/2021/06/4-768x432.png 768w, /images/ieee/2021/06/4-1024x576.png 1024w, /images/ieee/2021/06/4.png 1920w"
+             /><img src="/images/ieee/2021/06/9.png" alt="" width="862" height="488" srcset=
+            "/images/ieee/2021/06/9-200x113.png 200w, /images/ieee/2021/06/9-300x170.png 300w, /images/ieee/2021/06/9-400x226.png 400w, /images/ieee/2021/06/9-600x340.png 600w, /images/ieee/2021/06/9-768x435.png 768w, /images/ieee/2021/06/9-800x453.png 800w, /images/ieee/2021/06/9.png 862w"
              />
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/06/8.png" alt="" width="1920" height="1080" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/06/8-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/8-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/8-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/06/8.png 1920w"
+            <img src="/images/ieee/2021/06/8.png" alt="" width="1920" height="1080" srcset=
+            "/images/ieee/2021/06/8-300x169.png 300w, /images/ieee/2021/06/8-768x432.png 768w, /images/ieee/2021/06/8-1024x576.png 1024w, /images/ieee/2021/06/8.png 1920w"
              />
           </p>
         </div>
@@ -1949,13 +1951,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/143676036_4171728829511989_1807606762368142406_n.jpg"
+              src="/images/event/143676036_4171728829511989_1807606762368142406_n.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2003,13 +2005,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/functional.jpg"
+              src="/images/event/functional.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2045,20 +2047,20 @@ const posts = [
              
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1-1024x555.png" alt="" width="1024" height="555" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1-300x163.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1-768x416.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1-1024x555.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1.png 1841w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1-1024x554.png" alt="" width="1024" height="554" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1-300x162.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1-768x415.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1-1024x554.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1.png 1842w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1-1024x550.png" alt="" width="1024" height="550" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1-300x161.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1-768x413.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1-1024x550.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1.png 1848w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1024x555.png" alt="" width="1024" height="555" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-300x163.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-768x416.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1024x555.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5.png 1839w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/6-1024x552.png" alt="" width="1024" height="552" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/6-300x162.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/6-768x414.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/6-1024x552.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/6.png 1841w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/7-1024x551.png" alt="" width="1024" height="551" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/7-300x161.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/7-768x413.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/7-1024x551.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/7.png 1648w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1-1024x546.png" alt="" width="1024" height="546" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1-300x160.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1-768x409.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1-1024x546.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1.png 1841w"
+            <img src="/images/ieee/2021/03/2-1-1024x555.png" alt="" width="1024" height="555" srcset=
+            "/images/ieee/2021/03/2-1-300x163.png 300w, /images/ieee/2021/03/2-1-768x416.png 768w, /images/ieee/2021/03/2-1-1024x555.png 1024w, /images/ieee/2021/03/2-1.png 1841w"
+             /> <img src="/images/ieee/2021/03/3-1-1024x554.png" alt="" width="1024" height="554" srcset=
+            "/images/ieee/2021/03/3-1-300x162.png 300w, /images/ieee/2021/03/3-1-768x415.png 768w, /images/ieee/2021/03/3-1-1024x554.png 1024w, /images/ieee/2021/03/3-1.png 1842w"
+             /> <img src="/images/ieee/2021/03/4-1-1024x550.png" alt="" width="1024" height="550" srcset=
+            "/images/ieee/2021/03/4-1-300x161.png 300w, /images/ieee/2021/03/4-1-768x413.png 768w, /images/ieee/2021/03/4-1-1024x550.png 1024w, /images/ieee/2021/03/4-1.png 1848w"
+             /> <img src="/images/ieee/2021/03/5-1024x555.png" alt="" width="1024" height="555" srcset=
+            "/images/ieee/2021/03/5-300x163.png 300w, /images/ieee/2021/03/5-768x416.png 768w, /images/ieee/2021/03/5-1024x555.png 1024w, /images/ieee/2021/03/5.png 1839w"
+             /> <img src="/images/ieee/2021/03/6-1024x552.png" alt="" width="1024" height="552" srcset=
+            "/images/ieee/2021/03/6-300x162.png 300w, /images/ieee/2021/03/6-768x414.png 768w, /images/ieee/2021/03/6-1024x552.png 1024w, /images/ieee/2021/03/6.png 1841w"
+             /> <img src="/images/ieee/2021/03/7-1024x551.png" alt="" width="1024" height="551" srcset=
+            "/images/ieee/2021/03/7-300x161.png 300w, /images/ieee/2021/03/7-768x413.png 768w, /images/ieee/2021/03/7-1024x551.png 1024w, /images/ieee/2021/03/7.png 1648w"
+             /> <img src="/images/ieee/2021/03/1-1-1024x546.png" alt="" width="1024" height="546" srcset=
+            "/images/ieee/2021/03/1-1-300x160.png 300w, /images/ieee/2021/03/1-1-768x409.png 768w, /images/ieee/2021/03/1-1-1024x546.png 1024w, /images/ieee/2021/03/1-1.png 1841w"
              />
           </p>
         </div>
@@ -2077,13 +2079,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/127034411_3988237737861100_5134762277965125483_o.jpg"
+              src="/images/event/127034411_3988237737861100_5134762277965125483_o.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2120,12 +2122,12 @@ const posts = [
             concluded the event. The session was graced by the presence of 79 registered participants.</span>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-1024x511.png" alt="" width="1024" height="511" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-200x100.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-300x150.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-400x200.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-600x300.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-768x383.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-800x399.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-1024x511.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1.png 1432w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-1024x443.png" alt="" width="1024" height="443" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-200x87.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-300x130.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-400x173.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-600x260.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-768x333.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-800x346.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-1024x443.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1.png 1432w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-1024x481.png" alt="" width="1024" height="481" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-200x94.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-300x141.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-400x188.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-600x282.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-768x361.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-800x376.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-1024x481.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1.png 1432w"
+            <img src="/images/ieee/2020/09/1-1-1024x511.png" alt="" width="1024" height="511" srcset=
+            "/images/ieee/2020/09/1-1-200x100.png 200w, /images/ieee/2020/09/1-1-300x150.png 300w, /images/ieee/2020/09/1-1-400x200.png 400w, /images/ieee/2020/09/1-1-600x300.png 600w, /images/ieee/2020/09/1-1-768x383.png 768w, /images/ieee/2020/09/1-1-800x399.png 800w, /images/ieee/2020/09/1-1-1024x511.png 1024w, /images/ieee/2020/09/1-1.png 1432w"
+             /> <img src="/images/ieee/2020/09/2-1-1024x443.png" alt="" width="1024" height="443" srcset=
+            "/images/ieee/2020/09/2-1-200x87.png 200w, /images/ieee/2020/09/2-1-300x130.png 300w, /images/ieee/2020/09/2-1-400x173.png 400w, /images/ieee/2020/09/2-1-600x260.png 600w, /images/ieee/2020/09/2-1-768x333.png 768w, /images/ieee/2020/09/2-1-800x346.png 800w, /images/ieee/2020/09/2-1-1024x443.png 1024w, /images/ieee/2020/09/2-1.png 1432w"
+             /> <img src="/images/ieee/2020/09/3-1-1024x481.png" alt="" width="1024" height="481" srcset=
+            "/images/ieee/2020/09/3-1-200x94.png 200w, /images/ieee/2020/09/3-1-300x141.png 300w, /images/ieee/2020/09/3-1-400x188.png 400w, /images/ieee/2020/09/3-1-600x282.png 600w, /images/ieee/2020/09/3-1-768x361.png 768w, /images/ieee/2020/09/3-1-800x376.png 800w, /images/ieee/2020/09/3-1-1024x481.png 1024w, /images/ieee/2020/09/3-1.png 1432w"
              />
           </p>
         </div>
@@ -2144,13 +2146,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-4.jpg"
+              src="/images/event/banner-4.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2193,14 +2195,14 @@ const posts = [
              
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-4.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-4.png 1366w"
+            <img src="/images/ieee/2020/09/1-4-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/1-4-200x112.png 200w, /images/ieee/2020/09/1-4-300x169.png 300w, /images/ieee/2020/09/1-4-400x225.png 400w, /images/ieee/2020/09/1-4-600x337.png 600w, /images/ieee/2020/09/1-4-768x432.png 768w, /images/ieee/2020/09/1-4-800x450.png 800w, /images/ieee/2020/09/1-4-1024x576.png 1024w, /images/ieee/2020/09/1-4.png 1366w"
+             /> <img src="/images/ieee/2020/09/4-1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/4-1-200x112.png 200w, /images/ieee/2020/09/4-1-300x169.png 300w, /images/ieee/2020/09/4-1-400x225.png 400w, /images/ieee/2020/09/4-1-600x337.png 600w, /images/ieee/2020/09/4-1-768x432.png 768w, /images/ieee/2020/09/4-1-800x450.png 800w, /images/ieee/2020/09/4-1-1024x576.png 1024w, /images/ieee/2020/09/4-1.png 1366w"
+             /> <img src="/images/ieee/2020/09/3-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/3-2-200x112.png 200w, /images/ieee/2020/09/3-2-300x169.png 300w, /images/ieee/2020/09/3-2-400x225.png 400w, /images/ieee/2020/09/3-2-600x337.png 600w, /images/ieee/2020/09/3-2-768x432.png 768w, /images/ieee/2020/09/3-2-800x450.png 800w, /images/ieee/2020/09/3-2-1024x576.png 1024w, /images/ieee/2020/09/3-2.png 1366w"
+             /> <img src="/images/ieee/2020/09/2-4-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/2-4-200x112.png 200w, /images/ieee/2020/09/2-4-300x169.png 300w, /images/ieee/2020/09/2-4-400x225.png 400w, /images/ieee/2020/09/2-4-600x337.png 600w, /images/ieee/2020/09/2-4-768x432.png 768w, /images/ieee/2020/09/2-4-800x450.png 800w, /images/ieee/2020/09/2-4-1024x576.png 1024w, /images/ieee/2020/09/2-4.png 1366w"
              />
           </p>
         </div>
@@ -2219,13 +2221,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner.jpg"
+              src="/images/event/banner.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2265,18 +2267,18 @@ const posts = [
             languages like Machine Language and Python. <em>The session was graced by the presence of <strong>110</strong> registered participants. </em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/5.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/6.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/4.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1.png 1366w"
+            <img src="/images/ieee/2020/09/5-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/5-200x112.png 200w, /images/ieee/2020/09/5-300x169.png 300w, /images/ieee/2020/09/5-400x225.png 400w, /images/ieee/2020/09/5-600x337.png 600w, /images/ieee/2020/09/5-768x432.png 768w, /images/ieee/2020/09/5-800x450.png 800w, /images/ieee/2020/09/5-1024x576.png 1024w, /images/ieee/2020/09/5.png 1366w"
+             /> <img src="/images/ieee/2020/09/6-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/6-200x112.png 200w, /images/ieee/2020/09/6-300x169.png 300w, /images/ieee/2020/09/6-400x225.png 400w, /images/ieee/2020/09/6-600x337.png 600w, /images/ieee/2020/09/6-768x432.png 768w, /images/ieee/2020/09/6-800x450.png 800w, /images/ieee/2020/09/6-1024x576.png 1024w, /images/ieee/2020/09/6.png 1366w"
+             /> <img src="/images/ieee/2020/09/3-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/3-200x112.png 200w, /images/ieee/2020/09/3-300x169.png 300w, /images/ieee/2020/09/3-400x225.png 400w, /images/ieee/2020/09/3-600x337.png 600w, /images/ieee/2020/09/3-768x432.png 768w, /images/ieee/2020/09/3-800x450.png 800w, /images/ieee/2020/09/3-1024x576.png 1024w, /images/ieee/2020/09/3.png 1366w"
+             /> <img src="/images/ieee/2020/09/4-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/4-200x112.png 200w, /images/ieee/2020/09/4-300x169.png 300w, /images/ieee/2020/09/4-400x225.png 400w, /images/ieee/2020/09/4-600x337.png 600w, /images/ieee/2020/09/4-768x432.png 768w, /images/ieee/2020/09/4-800x450.png 800w, /images/ieee/2020/09/4-1024x576.png 1024w, /images/ieee/2020/09/4.png 1366w"
+             /> <img src="/images/ieee/2020/09/2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/2-200x112.png 200w, /images/ieee/2020/09/2-300x169.png 300w, /images/ieee/2020/09/2-400x225.png 400w, /images/ieee/2020/09/2-600x337.png 600w, /images/ieee/2020/09/2-768x432.png 768w, /images/ieee/2020/09/2-800x450.png 800w, /images/ieee/2020/09/2-1024x576.png 1024w, /images/ieee/2020/09/2.png 1366w"
+             /> <img src="/images/ieee/2020/09/1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/1-200x112.png 200w, /images/ieee/2020/09/1-300x169.png 300w, /images/ieee/2020/09/1-400x225.png 400w, /images/ieee/2020/09/1-600x337.png 600w, /images/ieee/2020/09/1-768x432.png 768w, /images/ieee/2020/09/1-800x450.png 800w, /images/ieee/2020/09/1-1024x576.png 1024w, /images/ieee/2020/09/1.png 1366w"
              />
           </p>
           <p>
@@ -2298,13 +2300,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/4.jpg"
+              src="/images/event/4.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2351,14 +2353,14 @@ const posts = [
             presence of <strong>191</strong> registered participants from different parts of the world, including numerous researchers in the sector of Biomedical Engineering.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4.png 1366w"
+            <img src="/images/ieee/2021/03/1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/1-200x112.png 200w, /images/ieee/2021/03/1-300x169.png 300w, /images/ieee/2021/03/1-400x225.png 400w, /images/ieee/2021/03/1-600x337.png 600w, /images/ieee/2021/03/1-768x432.png 768w, /images/ieee/2021/03/1-800x450.png 800w, /images/ieee/2021/03/1-1024x576.png 1024w, /images/ieee/2021/03/1.png 1366w"
+             /> <img src="/images/ieee/2021/03/2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/2-200x112.png 200w, /images/ieee/2021/03/2-300x169.png 300w, /images/ieee/2021/03/2-400x225.png 400w, /images/ieee/2021/03/2-600x337.png 600w, /images/ieee/2021/03/2-768x432.png 768w, /images/ieee/2021/03/2-800x450.png 800w, /images/ieee/2021/03/2-1024x576.png 1024w, /images/ieee/2021/03/2.png 1366w"
+             /> <img src="/images/ieee/2021/03/3-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/3-200x112.png 200w, /images/ieee/2021/03/3-300x169.png 300w, /images/ieee/2021/03/3-400x225.png 400w, /images/ieee/2021/03/3-600x337.png 600w, /images/ieee/2021/03/3-768x432.png 768w, /images/ieee/2021/03/3-800x450.png 800w, /images/ieee/2021/03/3-1024x576.png 1024w, /images/ieee/2021/03/3.png 1366w"
+             /> <img src="/images/ieee/2021/03/4-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/4-200x112.png 200w, /images/ieee/2021/03/4-300x169.png 300w, /images/ieee/2021/03/4-400x225.png 400w, /images/ieee/2021/03/4-600x337.png 600w, /images/ieee/2021/03/4-768x432.png 768w, /images/ieee/2021/03/4-800x450.png 800w, /images/ieee/2021/03/4-1024x576.png 1024w, /images/ieee/2021/03/4.png 1366w"
              />
           </p>
           <p>
@@ -2380,13 +2382,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/22.jpg"
+              src="/images/event/22.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2440,14 +2442,14 @@ const posts = [
              
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/11.jpg" alt="" width="1161" height="1622" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/11-215x300.jpg 215w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/11-733x1024.jpg 733w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/11.jpg 1161w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/22.png" alt="" width="1430" height="851" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-200x119.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-300x179.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-400x238.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-600x357.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-768x457.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-800x476.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22-1024x609.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/22.png 1430w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/33.png" alt="" width="1430" height="866" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-200x121.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-300x182.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-400x242.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-600x363.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-768x465.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-800x484.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33-1024x620.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/33.png 1430w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/44.png" alt="" width="1430" height="846" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-200x118.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-300x177.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-400x237.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-600x355.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-768x454.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-800x473.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44-1024x606.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/44.png 1430w"
+            <img src="/images/ieee/2020/10/11.jpg" alt="" width="1161" height="1622" srcset=
+            "/images/ieee/2020/10/11-215x300.jpg 215w, /images/ieee/2020/10/11-733x1024.jpg 733w, /images/ieee/2020/10/11.jpg 1161w"
+             /> <img src="/images/ieee/2020/10/22.png" alt="" width="1430" height="851" srcset=
+            "/images/ieee/2020/10/22-200x119.png 200w, /images/ieee/2020/10/22-300x179.png 300w, /images/ieee/2020/10/22-400x238.png 400w, /images/ieee/2020/10/22-600x357.png 600w, /images/ieee/2020/10/22-768x457.png 768w, /images/ieee/2020/10/22-800x476.png 800w, /images/ieee/2020/10/22-1024x609.png 1024w, /images/ieee/2020/10/22.png 1430w"
+             /> <img src="/images/ieee/2020/10/33.png" alt="" width="1430" height="866" srcset=
+            "/images/ieee/2020/10/33-200x121.png 200w, /images/ieee/2020/10/33-300x182.png 300w, /images/ieee/2020/10/33-400x242.png 400w, /images/ieee/2020/10/33-600x363.png 600w, /images/ieee/2020/10/33-768x465.png 768w, /images/ieee/2020/10/33-800x484.png 800w, /images/ieee/2020/10/33-1024x620.png 1024w, /images/ieee/2020/10/33.png 1430w"
+             /> <img src="/images/ieee/2020/10/44.png" alt="" width="1430" height="846" srcset=
+            "/images/ieee/2020/10/44-200x118.png 200w, /images/ieee/2020/10/44-300x177.png 300w, /images/ieee/2020/10/44-400x237.png 400w, /images/ieee/2020/10/44-600x355.png 600w, /images/ieee/2020/10/44-768x454.png 768w, /images/ieee/2020/10/44-800x473.png 800w, /images/ieee/2020/10/44-1024x606.png 1024w, /images/ieee/2020/10/44.png 1430w"
              />
           </p>
         </div>
@@ -2466,13 +2468,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-3.jpg"
+              src="/images/event/banner-3.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2529,10 +2531,10 @@ const posts = [
             <strong>Certificate of Participation</strong> for their enthusiastic engagement in the competition.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-1024x565.png" alt="" width="1024" height="565" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-200x110.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-300x166.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-400x221.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-600x331.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-768x424.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-800x442.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3-1024x565.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-3.png 1230w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-3.png 1306w"
+            <img src="/images/ieee/2020/09/1-3-1024x565.png" alt="" width="1024" height="565" srcset=
+            "/images/ieee/2020/09/1-3-200x110.png 200w, /images/ieee/2020/09/1-3-300x166.png 300w, /images/ieee/2020/09/1-3-400x221.png 400w, /images/ieee/2020/09/1-3-600x331.png 600w, /images/ieee/2020/09/1-3-768x424.png 768w, /images/ieee/2020/09/1-3-800x442.png 800w, /images/ieee/2020/09/1-3-1024x565.png 1024w, /images/ieee/2020/09/1-3.png 1230w"
+             /> <img src="/images/ieee/2020/09/2-3-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/09/2-3-200x112.png 200w, /images/ieee/2020/09/2-3-300x169.png 300w, /images/ieee/2020/09/2-3-400x225.png 400w, /images/ieee/2020/09/2-3-600x337.png 600w, /images/ieee/2020/09/2-3-768x432.png 768w, /images/ieee/2020/09/2-3-800x450.png 800w, /images/ieee/2020/09/2-3-1024x576.png 1024w, /images/ieee/2020/09/2-3.png 1306w"
              />
           </p>
         </div>
@@ -2551,13 +2553,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Banner-2.jpg"
+              src="/images/event/Banner-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2604,15 +2606,15 @@ const posts = [
             consisting of all the 75+ registered participants, which marked the end of the session.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-1024x547.jpg" alt="" width="1024" height="547" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-200x107.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-300x160.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-400x214.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-600x321.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-768x410.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-800x428.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1-1024x547.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/SS1.jpg 1366w"
+            <img src="/images/ieee/2021/03/SS1-1024x547.jpg" alt="" width="1024" height="547" srcset=
+            "/images/ieee/2021/03/SS1-200x107.jpg 200w, /images/ieee/2021/03/SS1-300x160.jpg 300w, /images/ieee/2021/03/SS1-400x214.jpg 400w, /images/ieee/2021/03/SS1-600x321.jpg 600w, /images/ieee/2021/03/SS1-768x410.jpg 768w, /images/ieee/2021/03/SS1-800x428.jpg 800w, /images/ieee/2021/03/SS1-1024x547.jpg 1024w, /images/ieee/2021/03/SS1.jpg 1366w"
              />
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-1024x576.jpg" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-200x112.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-300x169.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-400x225.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-600x337.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-768x432.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-800x450.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2-1024x576.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS2.jpg 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-1024x576.jpg" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-200x112.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-300x169.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-400x225.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-600x337.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-768x432.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-800x450.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3-1024x576.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/10/SS3.jpg 1366w"
+            <img src="/images/ieee/2020/10/SS2-1024x576.jpg" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/10/SS2-200x112.jpg 200w, /images/ieee/2020/10/SS2-300x169.jpg 300w, /images/ieee/2020/10/SS2-400x225.jpg 400w, /images/ieee/2020/10/SS2-600x337.jpg 600w, /images/ieee/2020/10/SS2-768x432.jpg 768w, /images/ieee/2020/10/SS2-800x450.jpg 800w, /images/ieee/2020/10/SS2-1024x576.jpg 1024w, /images/ieee/2020/10/SS2.jpg 1366w"
+             /> <img src="/images/ieee/2020/10/SS3-1024x576.jpg" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/10/SS3-200x112.jpg 200w, /images/ieee/2020/10/SS3-300x169.jpg 300w, /images/ieee/2020/10/SS3-400x225.jpg 400w, /images/ieee/2020/10/SS3-600x337.jpg 600w, /images/ieee/2020/10/SS3-768x432.jpg 768w, /images/ieee/2020/10/SS3-800x450.jpg 800w, /images/ieee/2020/10/SS3-1024x576.jpg 1024w, /images/ieee/2020/10/SS3.jpg 1366w"
              />
           </p>
         </div>
@@ -2631,13 +2633,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/FB-event-banner-1536x743-1.jpg"
+              src="/images/event/FB-event-banner-1536x743-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2721,16 +2723,16 @@ const posts = [
             world.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-2.png 1920w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-2.png 1650w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-2.png 1919w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/4-2.png 1919w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/5-1.png 1919w"
+            <img src="/images/ieee/2021/03/1-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/1-2-300x169.png 300w, /images/ieee/2021/03/1-2-768x432.png 768w, /images/ieee/2021/03/1-2-1024x576.png 1024w, /images/ieee/2021/03/1-2.png 1920w"
+             /> <img src="/images/ieee/2021/03/2-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/2-2-300x169.png 300w, /images/ieee/2021/03/2-2-768x432.png 768w, /images/ieee/2021/03/2-2-1024x576.png 1024w, /images/ieee/2021/03/2-2.png 1650w"
+             /> <img src="/images/ieee/2021/03/3-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/3-2-300x169.png 300w, /images/ieee/2021/03/3-2-768x432.png 768w, /images/ieee/2021/03/3-2-1024x576.png 1024w, /images/ieee/2021/03/3-2.png 1919w"
+             /> <img src="/images/ieee/2021/03/4-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/4-2-300x169.png 300w, /images/ieee/2021/03/4-2-768x432.png 768w, /images/ieee/2021/03/4-2-1024x576.png 1024w, /images/ieee/2021/03/4-2.png 1919w"
+             /> <img src="/images/ieee/2021/03/5-1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/5-1-300x169.png 300w, /images/ieee/2021/03/5-1-768x432.png 768w, /images/ieee/2021/03/5-1-1024x576.png 1024w, /images/ieee/2021/03/5-1.png 1919w"
              />
           </p>
         </div>
@@ -2749,13 +2751,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-1.jpg"
+              src="/images/event/banner-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2818,13 +2820,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Ep-3_Speaker_Banner.jpg"
+              src="/images/event/Ep-3_Speaker_Banner.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2869,10 +2871,10 @@ const posts = [
              
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-1.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-2.png 1366w"
+            <img src="/images/ieee/2021/03/anvol-1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/anvol-1-200x112.png 200w, /images/ieee/2021/03/anvol-1-300x169.png 300w, /images/ieee/2021/03/anvol-1-400x225.png 400w, /images/ieee/2021/03/anvol-1-600x337.png 600w, /images/ieee/2021/03/anvol-1-768x432.png 768w, /images/ieee/2021/03/anvol-1-800x450.png 800w, /images/ieee/2021/03/anvol-1-1024x576.png 1024w, /images/ieee/2021/03/anvol-1.png 1366w"
+             /> <img src="/images/ieee/2021/03/anvol-2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/anvol-2-200x112.png 200w, /images/ieee/2021/03/anvol-2-300x169.png 300w, /images/ieee/2021/03/anvol-2-400x225.png 400w, /images/ieee/2021/03/anvol-2-600x337.png 600w, /images/ieee/2021/03/anvol-2-768x432.png 768w, /images/ieee/2021/03/anvol-2-800x450.png 800w, /images/ieee/2021/03/anvol-2-1024x576.png 1024w, /images/ieee/2021/03/anvol-2.png 1366w"
              />
           </p>
         </div>
@@ -2891,13 +2893,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/y.png"
+              src="/images/event/y.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -2935,10 +2937,10 @@ const posts = [
             60 registered women participants.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/1.png 1432w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/06/2.png 1432w"
+            <img src="/images/ieee/2020/06/1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/06/1-200x112.png 200w, /images/ieee/2020/06/1-300x169.png 300w, /images/ieee/2020/06/1-400x225.png 400w, /images/ieee/2020/06/1-600x337.png 600w, /images/ieee/2020/06/1-768x432.png 768w, /images/ieee/2020/06/1-800x450.png 800w, /images/ieee/2020/06/1-1024x576.png 1024w, /images/ieee/2020/06/1.png 1432w"
+             /> <img src="/images/ieee/2020/06/2-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2020/06/2-200x112.png 200w, /images/ieee/2020/06/2-300x169.png 300w, /images/ieee/2020/06/2-400x225.png 400w, /images/ieee/2020/06/2-600x337.png 600w, /images/ieee/2020/06/2-768x432.png 768w, /images/ieee/2020/06/2-800x450.png 800w, /images/ieee/2020/06/2-1024x576.png 1024w, /images/ieee/2020/06/2.png 1432w"
              />
           </p>
         </div>
@@ -2957,13 +2959,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/102404042_3501523579865854_107512186718691185_o.png"
+              src="/images/event/102404042_3501523579865854_107512186718691185_o.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3011,10 +3013,10 @@ const posts = [
             episodes.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-4.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3.png" alt="" width="1366" height="768" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/anvol-3.png 1366w"
+            <img src="/images/ieee/2021/03/anvol-4.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/03/anvol-4-200x112.png 200w, /images/ieee/2021/03/anvol-4-300x169.png 300w, /images/ieee/2021/03/anvol-4-400x225.png 400w, /images/ieee/2021/03/anvol-4-600x337.png 600w, /images/ieee/2021/03/anvol-4-768x432.png 768w, /images/ieee/2021/03/anvol-4-800x450.png 800w, /images/ieee/2021/03/anvol-4-1024x576.png 1024w, /images/ieee/2021/03/anvol-4.png 1366w"
+             /> <img src="/images/ieee/2021/03/anvol-3.png" alt="" width="1366" height="768" srcset=
+            "/images/ieee/2021/03/anvol-3-200x112.png 200w, /images/ieee/2021/03/anvol-3-300x169.png 300w, /images/ieee/2021/03/anvol-3-400x225.png 400w, /images/ieee/2021/03/anvol-3-600x337.png 600w, /images/ieee/2021/03/anvol-3-768x432.png 768w, /images/ieee/2021/03/anvol-3-800x450.png 800w, /images/ieee/2021/03/anvol-3-1024x576.png 1024w, /images/ieee/2021/03/anvol-3.png 1366w"
              />
           </p>
         </div>
@@ -3033,13 +3035,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/1st-show.png"
+              src="/images/event/1st-show.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3084,10 +3086,10 @@ const posts = [
             episode of the live show. The show was a successful one with a huge response of 3800+ live views and 8500+ views in total.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow1.png 1366w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-1024x576.png" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-200x112.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-300x169.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-400x225.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-600x337.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-768x432.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-800x450.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow-1024x576.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/vshow.png 1366w"
+            <img src="/images/ieee/2021/03/vshow1-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/vshow1-200x112.png 200w, /images/ieee/2021/03/vshow1-300x169.png 300w, /images/ieee/2021/03/vshow1-400x225.png 400w, /images/ieee/2021/03/vshow1-600x337.png 600w, /images/ieee/2021/03/vshow1-768x432.png 768w, /images/ieee/2021/03/vshow1-800x450.png 800w, /images/ieee/2021/03/vshow1-1024x576.png 1024w, /images/ieee/2021/03/vshow1.png 1366w"
+             /> <img src="/images/ieee/2021/03/vshow-1024x576.png" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2021/03/vshow-200x112.png 200w, /images/ieee/2021/03/vshow-300x169.png 300w, /images/ieee/2021/03/vshow-400x225.png 400w, /images/ieee/2021/03/vshow-600x337.png 600w, /images/ieee/2021/03/vshow-768x432.png 768w, /images/ieee/2021/03/vshow-800x450.png 800w, /images/ieee/2021/03/vshow-1024x576.png 1024w, /images/ieee/2021/03/vshow.png 1366w"
              />
           </p>
         </div>
@@ -3106,13 +3108,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner.png"
+              src="/images/event/banner.png"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3147,10 +3149,10 @@ const posts = [
             registered participants, and everyone was provided with the Certificate of Participation for their enthusiastic engagement in the webinar.</span>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-1024x549.png" alt="" width="1024" height="549" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-200x107.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-300x161.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-400x214.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-600x322.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-768x412.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-800x429.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1-1024x549.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/1.png 1360w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-1024x546.png" alt="" width="1024" height="546" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-200x107.png 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-300x160.png 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-400x213.png 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-600x320.png 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-768x409.png 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-800x426.png 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2-1024x546.png 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/04/2.png 1359w"
+            <img src="/images/ieee/2020/04/1-1024x549.png" alt="" width="1024" height="549" srcset=
+            "/images/ieee/2020/04/1-200x107.png 200w, /images/ieee/2020/04/1-300x161.png 300w, /images/ieee/2020/04/1-400x214.png 400w, /images/ieee/2020/04/1-600x322.png 600w, /images/ieee/2020/04/1-768x412.png 768w, /images/ieee/2020/04/1-800x429.png 800w, /images/ieee/2020/04/1-1024x549.png 1024w, /images/ieee/2020/04/1.png 1360w"
+             /> <img src="/images/ieee/2020/04/2-1024x546.png" alt="" width="1024" height="546" srcset=
+            "/images/ieee/2020/04/2-200x107.png 200w, /images/ieee/2020/04/2-300x160.png 300w, /images/ieee/2020/04/2-400x213.png 400w, /images/ieee/2020/04/2-600x320.png 600w, /images/ieee/2020/04/2-768x409.png 768w, /images/ieee/2020/04/2-800x426.png 800w, /images/ieee/2020/04/2-1024x546.png 1024w, /images/ieee/2020/04/2.png 1359w"
              />
           </p>
         </div>
@@ -3169,13 +3171,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/1.jpg"
+              src="/images/event/1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3194,18 +3196,18 @@ const posts = [
             indispensable roles of GRE & TOEFL examinations for procuring admission to overseas universities.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/1.jpg" alt="" width="800" height="532" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1-768x511.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/1.jpg 800w"
+            <img src="/images/ieee/2021/03/1.jpg" alt="" width="800" height="532" srcset=
+            "/images/ieee/2021/03/1-200x133.jpg 200w, /images/ieee/2021/03/1-300x200.jpg 300w, /images/ieee/2021/03/1-400x266.jpg 400w, /images/ieee/2021/03/1-600x399.jpg 600w, /images/ieee/2021/03/1-768x511.jpg 768w, /images/ieee/2021/03/1.jpg 800w"
              />
           </p>
           <p>
             After that, the speaker <strong>Sanowar Hossain Shamim</strong> took the stage and initiated the session by discussing GRE and TOEFL examinations’ importance for those keen on acquiring
             higher studies abroad. Later, he talked about the examination structure and the elaborate discussion on various sections involved in GRE & TOEFL examinations, including the keys to
             succeeding them.  Besides, he spoke in detail about the necessity of good English writing, reading, and speaking skills to become a firm contender to any designated occupation. The
-            speaker ended the discussion with an interactive Question-Answer session.<img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/2.jpg" alt="" width="800" height="552" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-200x138.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-300x207.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-400x276.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-600x414.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2-768x530.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/2.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/3.jpg" alt="" width="800" height="532" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3-768x511.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/3.jpg 800w"
+            speaker ended the discussion with an interactive Question-Answer session.<img src="/images/ieee/2021/03/2.jpg" alt="" width="800" height="552" srcset=
+            "/images/ieee/2021/03/2-200x138.jpg 200w, /images/ieee/2021/03/2-300x207.jpg 300w, /images/ieee/2021/03/2-400x276.jpg 400w, /images/ieee/2021/03/2-600x414.jpg 600w, /images/ieee/2021/03/2-768x530.jpg 768w, /images/ieee/2021/03/2.jpg 800w"
+             /> <img src="/images/ieee/2021/03/3.jpg" alt="" width="800" height="532" srcset=
+            "/images/ieee/2021/03/3-200x133.jpg 200w, /images/ieee/2021/03/3-300x200.jpg 300w, /images/ieee/2021/03/3-400x266.jpg 400w, /images/ieee/2021/03/3-600x399.jpg 600w, /images/ieee/2021/03/3-768x511.jpg 768w, /images/ieee/2021/03/3.jpg 800w"
              />
           </p>
         </div>
@@ -3224,13 +3226,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-1.jpg"
+              src="/images/event/banner-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3283,33 +3285,33 @@ const posts = [
             (Polok),</strong> <em>Junior Executive, Office of Student Affairs (OSA), AIUB.</em> The event was graced by the presence of 345 registered IEEE Student Members.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1024x671.jpg" alt="" width="1024" height="671" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-200x131.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-300x196.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-400x262.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-600x393.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-768x503.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-800x524.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1024x671.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1.jpg 1440w"
+            <img src="/images/ieee/2020/09/1-1024x671.jpg" alt="" width="1024" height="671" srcset=
+            "/images/ieee/2020/09/1-200x131.jpg 200w, /images/ieee/2020/09/1-300x196.jpg 300w, /images/ieee/2020/09/1-400x262.jpg 400w, /images/ieee/2020/09/1-600x393.jpg 600w, /images/ieee/2020/09/1-768x503.jpg 768w, /images/ieee/2020/09/1-800x524.jpg 800w, /images/ieee/2020/09/1-1024x671.jpg 1024w, /images/ieee/2020/09/1.jpg 1440w"
              />
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2.jpg" alt="" width="800" height="572" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2-200x143.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2-300x214.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2-400x286.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2-600x429.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2-768x549.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-2.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-3.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-4.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-5.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-6.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7.jpg" alt="" width="800" height="554" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7-200x139.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7-300x208.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7-400x277.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7-600x416.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7-768x532.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-7.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-8.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-10.jpg 800w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1024x681.jpg" alt="" width="1024" height="681" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-800x532.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1024x681.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2.jpg 1440w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1024x681.jpg" alt="" width="1024" height="681" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-800x532.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1024x681.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3.jpg 1440w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11.jpg" alt="" width="800" height="531" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11-600x398.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/02/Picture-11.jpg 800w"
+            <img src="/images/ieee/2021/02/Picture-2.jpg" alt="" width="800" height="572" srcset=
+            "/images/ieee/2021/02/Picture-2-200x143.jpg 200w, /images/ieee/2021/02/Picture-2-300x214.jpg 300w, /images/ieee/2021/02/Picture-2-400x286.jpg 400w, /images/ieee/2021/02/Picture-2-600x429.jpg 600w, /images/ieee/2021/02/Picture-2-768x549.jpg 768w, /images/ieee/2021/02/Picture-2.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-3.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-3-200x133.jpg 200w, /images/ieee/2021/02/Picture-3-300x199.jpg 300w, /images/ieee/2021/02/Picture-3-400x266.jpg 400w, /images/ieee/2021/02/Picture-3-600x398.jpg 600w, /images/ieee/2021/02/Picture-3-768x510.jpg 768w, /images/ieee/2021/02/Picture-3.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-4.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-4-200x133.jpg 200w, /images/ieee/2021/02/Picture-4-300x199.jpg 300w, /images/ieee/2021/02/Picture-4-400x266.jpg 400w, /images/ieee/2021/02/Picture-4-600x398.jpg 600w, /images/ieee/2021/02/Picture-4-768x510.jpg 768w, /images/ieee/2021/02/Picture-4.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-5.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-5-200x133.jpg 200w, /images/ieee/2021/02/Picture-5-300x199.jpg 300w, /images/ieee/2021/02/Picture-5-400x266.jpg 400w, /images/ieee/2021/02/Picture-5-600x398.jpg 600w, /images/ieee/2021/02/Picture-5-768x510.jpg 768w, /images/ieee/2021/02/Picture-5.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-6.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-6-200x133.jpg 200w, /images/ieee/2021/02/Picture-6-300x199.jpg 300w, /images/ieee/2021/02/Picture-6-400x266.jpg 400w, /images/ieee/2021/02/Picture-6-600x398.jpg 600w, /images/ieee/2021/02/Picture-6-768x510.jpg 768w, /images/ieee/2021/02/Picture-6.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-7.jpg" alt="" width="800" height="554" srcset=
+            "/images/ieee/2021/02/Picture-7-200x139.jpg 200w, /images/ieee/2021/02/Picture-7-300x208.jpg 300w, /images/ieee/2021/02/Picture-7-400x277.jpg 400w, /images/ieee/2021/02/Picture-7-600x416.jpg 600w, /images/ieee/2021/02/Picture-7-768x532.jpg 768w, /images/ieee/2021/02/Picture-7.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-8.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-8-200x133.jpg 200w, /images/ieee/2021/02/Picture-8-300x199.jpg 300w, /images/ieee/2021/02/Picture-8-400x266.jpg 400w, /images/ieee/2021/02/Picture-8-600x398.jpg 600w, /images/ieee/2021/02/Picture-8-768x510.jpg 768w, /images/ieee/2021/02/Picture-8.jpg 800w"
+             /> <img src="/images/ieee/2021/02/Picture-10.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-10-200x133.jpg 200w, /images/ieee/2021/02/Picture-10-300x199.jpg 300w, /images/ieee/2021/02/Picture-10-400x266.jpg 400w, /images/ieee/2021/02/Picture-10-600x398.jpg 600w, /images/ieee/2021/02/Picture-10-768x510.jpg 768w, /images/ieee/2021/02/Picture-10.jpg 800w"
+             /> <img src="/images/ieee/2020/09/2-1024x681.jpg" alt="" width="1024" height="681" srcset=
+            "/images/ieee/2020/09/2-200x133.jpg 200w, /images/ieee/2020/09/2-300x199.jpg 300w, /images/ieee/2020/09/2-400x266.jpg 400w, /images/ieee/2020/09/2-600x399.jpg 600w, /images/ieee/2020/09/2-768x510.jpg 768w, /images/ieee/2020/09/2-800x532.jpg 800w, /images/ieee/2020/09/2-1024x681.jpg 1024w, /images/ieee/2020/09/2.jpg 1440w"
+             /> <img src="/images/ieee/2020/09/3-1024x681.jpg" alt="" width="1024" height="681" srcset=
+            "/images/ieee/2020/09/3-200x133.jpg 200w, /images/ieee/2020/09/3-300x199.jpg 300w, /images/ieee/2020/09/3-400x266.jpg 400w, /images/ieee/2020/09/3-600x399.jpg 600w, /images/ieee/2020/09/3-768x510.jpg 768w, /images/ieee/2020/09/3-800x532.jpg 800w, /images/ieee/2020/09/3-1024x681.jpg 1024w, /images/ieee/2020/09/3.jpg 1440w"
+             /> <img src="/images/ieee/2021/02/Picture-11.jpg" alt="" width="800" height="531" srcset=
+            "/images/ieee/2021/02/Picture-11-200x133.jpg 200w, /images/ieee/2021/02/Picture-11-300x199.jpg 300w, /images/ieee/2021/02/Picture-11-400x266.jpg 400w, /images/ieee/2021/02/Picture-11-600x398.jpg 600w, /images/ieee/2021/02/Picture-11-768x510.jpg 768w, /images/ieee/2021/02/Picture-11.jpg 800w"
              />
           </p>
         </div>
@@ -3328,13 +3330,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner.jpg"
+              src="/images/event/banner.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   On 4<sup>th</sup> February 2020, IEEE AIUB Student Branch successfully organized an informative seminar on ‘ROAD TO SWEDEN’ in collaboration with the Faculty of Engineering, AIUB. The seminar was
@@ -3359,12 +3361,12 @@ const posts = [
   which marked the end of the seminar. The session was graced by the presence of 68 registered participants.
 </p>
 <p>
-  <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1.jpg" alt="" width="800" height="532" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1-768x511.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-1.jpg 800w"
-   /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1.jpg" alt="" width="800" height="532" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1-768x511.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-1.jpg 800w"
-   /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1.jpg" alt="" width="800" height="482" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-200x121.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-300x181.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-400x241.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-600x362.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1-768x463.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-1.jpg 800w"
+  <img src="/images/ieee/2020/09/1-1.jpg" alt="" width="800" height="532" srcset=
+  "/images/ieee/2020/09/1-1-200x133.jpg 200w, /images/ieee/2020/09/1-1-300x200.jpg 300w, /images/ieee/2020/09/1-1-400x266.jpg 400w, /images/ieee/2020/09/1-1-600x399.jpg 600w, /images/ieee/2020/09/1-1-768x511.jpg 768w, /images/ieee/2020/09/1-1.jpg 800w"
+   /> <img src="/images/ieee/2020/09/2-1.jpg" alt="" width="800" height="532" srcset=
+  "/images/ieee/2020/09/2-1-200x133.jpg 200w, /images/ieee/2020/09/2-1-300x200.jpg 300w, /images/ieee/2020/09/2-1-400x266.jpg 400w, /images/ieee/2020/09/2-1-600x399.jpg 600w, /images/ieee/2020/09/2-1-768x511.jpg 768w, /images/ieee/2020/09/2-1.jpg 800w"
+   /> <img src="/images/ieee/2020/09/3-1.jpg" alt="" width="800" height="482" srcset=
+  "/images/ieee/2020/09/3-1-200x121.jpg 200w, /images/ieee/2020/09/3-1-300x181.jpg 300w, /images/ieee/2020/09/3-1-400x241.jpg 400w, /images/ieee/2020/09/3-1-600x362.jpg 600w, /images/ieee/2020/09/3-1-768x463.jpg 768w, /images/ieee/2020/09/3-1.jpg 800w"
    />
 </p>`,
     },
@@ -3378,13 +3380,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/banner-2.jpg"
+              src="/images/event/banner-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
   On 21<sup>st</sup> January 2020, <strong>IEEE AIUB Student Branch</strong> successfully organized the first seminar of the year titled “<strong>Optical Fiber Sensing For Healthcare</strong>” in
@@ -3394,8 +3396,8 @@ const posts = [
 <p>
   The seminar was inaugurated by the opening remarks from <strong>Prof. Dr. A.B.M Siddique Hossain</strong>, <em>Dean, Faculty of Engineering, AIUB; Advisor, IEEE AIUB Student Branch,</em> who talked
   about the importance of Optical Fibers and how its properties and structures have progressed significantly in recent times for the betterment of humankind. He also discussed some of the useful
-  properties of Optical Fibers along with their wide range of applications in recent times.<img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2.jpg" alt="" width="800" height="532" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2-768x511.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/1-2.jpg 800w"
+  properties of Optical Fibers along with their wide range of applications in recent times.<img src="/images/ieee/2020/09/1-2.jpg" alt="" width="800" height="532" srcset=
+  "/images/ieee/2020/09/1-2-200x133.jpg 200w, /images/ieee/2020/09/1-2-300x200.jpg 300w, /images/ieee/2020/09/1-2-400x266.jpg 400w, /images/ieee/2020/09/1-2-600x399.jpg 600w, /images/ieee/2020/09/1-2-768x511.jpg 768w, /images/ieee/2020/09/1-2.jpg 800w"
    />
 </p>
 <p>
@@ -3416,10 +3418,10 @@ const posts = [
   Department of AIUB</strong> and 129 registered participants<strong>.</strong>
 </p>
 <p>
-  <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2.jpg" alt="" width="800" height="558" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2-200x140.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2-300x209.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2-400x279.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2-600x419.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2-768x536.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/2-2.jpg 800w"
-   /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2.jpg" alt="" width="800" height="501" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-200x125.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-300x188.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-400x251.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-600x376.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2-768x481.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/3-2.jpg 800w"
+  <img src="/images/ieee/2020/09/2-2.jpg" alt="" width="800" height="558" srcset=
+  "/images/ieee/2020/09/2-2-200x140.jpg 200w, /images/ieee/2020/09/2-2-300x209.jpg 300w, /images/ieee/2020/09/2-2-400x279.jpg 400w, /images/ieee/2020/09/2-2-600x419.jpg 600w, /images/ieee/2020/09/2-2-768x536.jpg 768w, /images/ieee/2020/09/2-2.jpg 800w"
+   /> <img src="/images/ieee/2020/09/3-2.jpg" alt="" width="800" height="501" srcset=
+  "/images/ieee/2020/09/3-2-200x125.jpg 200w, /images/ieee/2020/09/3-2-300x188.jpg 300w, /images/ieee/2020/09/3-2-400x251.jpg 400w, /images/ieee/2020/09/3-2-600x376.jpg 600w, /images/ieee/2020/09/3-2-768x481.jpg 768w, /images/ieee/2020/09/3-2.jpg 800w"
    />
 </p>`,
     },
@@ -3433,13 +3435,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-4.jpg"
+              src="/images/event/Picture-1-4.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3461,8 +3463,8 @@ const posts = [
             universities of different places in the country came to participate in the event.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-4.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-2-4.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-2-4-200x134.jpg 200w, /images/ieee/2022/02/Picture-2-4-300x200.jpg 300w, /images/ieee/2022/02/Picture-2-4-400x267.jpg 400w, /images/ieee/2022/02/Picture-2-4-600x401.jpg 600w, /images/ieee/2022/02/Picture-2-4-768x513.jpg 768w, /images/ieee/2022/02/Picture-2-4-800x534.jpg 800w, /images/ieee/2022/02/Picture-2-4.jpg 1024w"
              />
           </p>
           <p>
@@ -3474,8 +3476,8 @@ const posts = [
             criterions that employers will be looking forward to in the near future and inspired the participants to acquire more task specific skills to lure in a lucrative and successful future.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-4.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-3-4.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-3-4-200x134.jpg 200w, /images/ieee/2022/02/Picture-3-4-300x200.jpg 300w, /images/ieee/2022/02/Picture-3-4-400x267.jpg 400w, /images/ieee/2022/02/Picture-3-4-600x401.jpg 600w, /images/ieee/2022/02/Picture-3-4-768x513.jpg 768w, /images/ieee/2022/02/Picture-3-4-800x534.jpg 800w, /images/ieee/2022/02/Picture-3-4.jpg 1024w"
              />
           </p>
           <p>
@@ -3487,10 +3489,10 @@ const posts = [
             AIUB Student Branch; Advisor, IEEE Microwave Theory and Techniques Society, AIUB Student Branch Chapter; Assistant Professor, Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-4.jpg 1024w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-scaled.jpg" alt="" width="2000" height="1335" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-1024x684.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-1536x1025.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-4-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/Picture-4-4.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-4-4-200x134.jpg 200w, /images/ieee/2022/02/Picture-4-4-300x200.jpg 300w, /images/ieee/2022/02/Picture-4-4-400x267.jpg 400w, /images/ieee/2022/02/Picture-4-4-600x401.jpg 600w, /images/ieee/2022/02/Picture-4-4-768x513.jpg 768w, /images/ieee/2022/02/Picture-4-4-800x534.jpg 800w, /images/ieee/2022/02/Picture-4-4.jpg 1024w"
+             /> <img src="/images/ieee/2022/02/Picture-5-4-scaled.jpg" alt="" width="2000" height="1335" srcset=
+            "/images/ieee/2022/02/Picture-5-4-200x134.jpg 200w, /images/ieee/2022/02/Picture-5-4-300x200.jpg 300w, /images/ieee/2022/02/Picture-5-4-400x267.jpg 400w, /images/ieee/2022/02/Picture-5-4-600x401.jpg 600w, /images/ieee/2022/02/Picture-5-4-768x513.jpg 768w, /images/ieee/2022/02/Picture-5-4-800x534.jpg 800w, /images/ieee/2022/02/Picture-5-4-1024x684.jpg 1024w, /images/ieee/2022/02/Picture-5-4-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-5-4-1536x1025.jpg 1536w, /images/ieee/2022/02/Picture-5-4-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -3503,10 +3505,10 @@ const posts = [
             Engineering, AIUB; Special Assistant, Capstone Project</em>,<em> Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-3.jpg 1024w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-2.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-6-3.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-6-3-200x134.jpg 200w, /images/ieee/2022/02/Picture-6-3-300x200.jpg 300w, /images/ieee/2022/02/Picture-6-3-400x267.jpg 400w, /images/ieee/2022/02/Picture-6-3-600x401.jpg 600w, /images/ieee/2022/02/Picture-6-3-768x513.jpg 768w, /images/ieee/2022/02/Picture-6-3-800x534.jpg 800w, /images/ieee/2022/02/Picture-6-3.jpg 1024w"
+             /> <img src="/images/ieee/2022/02/Picture-7-2.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-7-2-200x134.jpg 200w, /images/ieee/2022/02/Picture-7-2-300x200.jpg 300w, /images/ieee/2022/02/Picture-7-2-400x267.jpg 400w, /images/ieee/2022/02/Picture-7-2-600x401.jpg 600w, /images/ieee/2022/02/Picture-7-2-768x513.jpg 768w, /images/ieee/2022/02/Picture-7-2-800x534.jpg 800w, /images/ieee/2022/02/Picture-7-2.jpg 1024w"
              />
           </p>
           <p>
@@ -3520,8 +3522,8 @@ const posts = [
             Student Branch Chapter; Senior Assistant Professor, Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-scaled.jpg" alt="" width="2000" height="1335" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-1024x684.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-1536x1025.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-8-1-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/Picture-8-1-scaled.jpg" alt="" width="2000" height="1335" srcset=
+            "/images/ieee/2022/02/Picture-8-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-8-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-8-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-8-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-8-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-8-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-8-1-1024x684.jpg 1024w, /images/ieee/2022/02/Picture-8-1-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-8-1-1536x1025.jpg 1536w, /images/ieee/2022/02/Picture-8-1-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -3534,8 +3536,8 @@ const posts = [
             Theory and Techniques Society, AIUB Student Branch Chapter; Assistant Professor, Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-10-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-10-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-10-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-10-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-10-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-10-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-10-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-10-1.jpg 1024w"
              />
           </p>
           <p>
@@ -3549,10 +3551,10 @@ const posts = [
             Section; Assistant Manager, Enterprise Architecture and Planning, Bkash LTD.</em>
           </p>
           <p>
-            <em><img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-12-1.jpg 1024w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-13-1.jpg 1024w"
+            <em><img src="/images/ieee/2022/02/Picture-12-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-12-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-12-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-12-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-12-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-12-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-12-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-12-1.jpg 1024w"
+             /> <img src="/images/ieee/2022/02/Picture-13-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-13-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-13-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-13-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-13-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-13-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-13-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-13-1.jpg 1024w"
              /></em>
           </p>
           <p>
@@ -3562,8 +3564,8 @@ const posts = [
             with <strong>IEEE</strong>, <strong>IEEE AIUB Student Branch</strong> and <strong>IEEE Bangladesh Section.</strong>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-scaled.jpg" alt="" width="2000" height="1335" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-1024x684.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-1536x1025.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-14-1-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/Picture-14-1-scaled.jpg" alt="" width="2000" height="1335" srcset=
+            "/images/ieee/2022/02/Picture-14-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-14-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-14-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-14-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-14-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-14-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-14-1-1024x684.jpg 1024w, /images/ieee/2022/02/Picture-14-1-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-14-1-1536x1025.jpg 1536w, /images/ieee/2022/02/Picture-14-1-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -3574,8 +3576,8 @@ const posts = [
             Branch; , IEEE Engineering in Medicine and Biology Society, AIUB Student Branch Chapter; Senior Assistant Professor, Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-15-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-15-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-15-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-15-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-15-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-15-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-15-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-15-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-15-1.jpg 1024w"
              />
           </p>
           <p>
@@ -3584,8 +3586,8 @@ const posts = [
             patience and attendance.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-16.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-16.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-16-200x134.jpg 200w, /images/ieee/2022/02/Picture-16-300x200.jpg 300w, /images/ieee/2022/02/Picture-16-400x267.jpg 400w, /images/ieee/2022/02/Picture-16-600x401.jpg 600w, /images/ieee/2022/02/Picture-16-768x513.jpg 768w, /images/ieee/2022/02/Picture-16-800x534.jpg 800w, /images/ieee/2022/02/Picture-16.jpg 1024w"
              />
           </p>
           <p>
@@ -3607,33 +3609,33 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17.jpg" width="1024" height="684" alt="" title="Picture-17" aria-label="Picture-17" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-17.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-17.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-17.jpg" width="1024" height="684" alt="" title="Picture-17" aria-label="Picture-17" srcset=
+                "/images/ieee/2022/02/Picture-17-200x134.jpg 200w, /images/ieee/2022/02/Picture-17-400x267.jpg 400w, /images/ieee/2022/02/Picture-17-600x401.jpg 600w, /images/ieee/2022/02/Picture-17-800x534.jpg 800w, /images/ieee/2022/02/Picture-17.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18.jpg" width="684" height="1024" alt="" title="Picture-18" aria-label="Picture-18" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18-200x299.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18-400x599.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18-600x898.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-18.jpg 684w"
+                <a href="/images/ieee/2022/02/Picture-18.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-18.jpg" width="684" height="1024" alt="" title="Picture-18" aria-label="Picture-18" srcset=
+                "/images/ieee/2022/02/Picture-18-200x299.jpg 200w, /images/ieee/2022/02/Picture-18-400x599.jpg 400w, /images/ieee/2022/02/Picture-18-600x898.jpg 600w, /images/ieee/2022/02/Picture-18.jpg 684w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19.jpg" width="684" height="1024" alt="" title="Picture-19" aria-label="Picture-19" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19-200x299.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19-400x599.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19-600x898.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-19.jpg 684w"
+                <a href="/images/ieee/2022/02/Picture-19.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-19.jpg" width="684" height="1024" alt="" title="Picture-19" aria-label="Picture-19" srcset=
+                "/images/ieee/2022/02/Picture-19-200x299.jpg 200w, /images/ieee/2022/02/Picture-19-400x599.jpg 400w, /images/ieee/2022/02/Picture-19-600x898.jpg 600w, /images/ieee/2022/02/Picture-19.jpg 684w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20.jpg" width="1024" height="684" alt="" title="Picture-20" aria-label="Picture-20" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-20.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-20.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_10]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-20.jpg" width="1024" height="684" alt="" title="Picture-20" aria-label="Picture-20" srcset=
+                "/images/ieee/2022/02/Picture-20-200x134.jpg 200w, /images/ieee/2022/02/Picture-20-400x267.jpg 400w, /images/ieee/2022/02/Picture-20-600x401.jpg 600w, /images/ieee/2022/02/Picture-20-800x534.jpg 800w, /images/ieee/2022/02/Picture-20.jpg 1024w"
                  /></a>
               </div>
             </div>
@@ -3654,13 +3656,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-3.jpg"
+              src="/images/event/Picture-1-3.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3704,33 +3706,33 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3.jpg" width="1024" height="684" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-3.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-2-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-2-3.jpg" width="1024" height="684" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2022/02/Picture-2-3-200x134.jpg 200w, /images/ieee/2022/02/Picture-2-3-400x267.jpg 400w, /images/ieee/2022/02/Picture-2-3-600x401.jpg 600w, /images/ieee/2022/02/Picture-2-3-800x534.jpg 800w, /images/ieee/2022/02/Picture-2-3.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3.jpg" width="1024" height="684" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-3.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-3-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-3-3.jpg" width="1024" height="684" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2022/02/Picture-3-3-200x134.jpg 200w, /images/ieee/2022/02/Picture-3-3-400x267.jpg 400w, /images/ieee/2022/02/Picture-3-3-600x401.jpg 600w, /images/ieee/2022/02/Picture-3-3-800x534.jpg 800w, /images/ieee/2022/02/Picture-3-3.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3.jpg" width="1024" height="684" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-3.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-4-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-4-3.jpg" width="1024" height="684" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2022/02/Picture-4-3-200x134.jpg 200w, /images/ieee/2022/02/Picture-4-3-400x267.jpg 400w, /images/ieee/2022/02/Picture-4-3-600x401.jpg 600w, /images/ieee/2022/02/Picture-4-3-800x534.jpg 800w, /images/ieee/2022/02/Picture-4-3.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3.jpg" width="1024" height="563" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3-200x110.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3-400x220.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3-600x330.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3-800x440.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-3.jpg 1024w"
+                <a href="/images/ieee/2022/02/Picture-5-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_11]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-5-3.jpg" width="1024" height="563" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2022/02/Picture-5-3-200x110.jpg 200w, /images/ieee/2022/02/Picture-5-3-400x220.jpg 400w, /images/ieee/2022/02/Picture-5-3-600x330.jpg 600w, /images/ieee/2022/02/Picture-5-3-800x440.jpg 800w, /images/ieee/2022/02/Picture-5-3.jpg 1024w"
                  /></a>
               </div>
             </div>
@@ -3751,13 +3753,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-2.jpg"
+              src="/images/event/Picture-1-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3775,8 +3777,8 @@ const posts = [
             from different universities from all over the country came to participate in the event.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-2.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-2-2.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-2-2-200x134.jpg 200w, /images/ieee/2022/02/Picture-2-2-300x200.jpg 300w, /images/ieee/2022/02/Picture-2-2-400x267.jpg 400w, /images/ieee/2022/02/Picture-2-2-600x401.jpg 600w, /images/ieee/2022/02/Picture-2-2-768x513.jpg 768w, /images/ieee/2022/02/Picture-2-2-800x534.jpg 800w, /images/ieee/2022/02/Picture-2-2.jpg 1024w"
              />
           </p>
           <p>
@@ -3790,8 +3792,8 @@ const posts = [
             Student Branch; Sr. Assistant Professor, Faculty of Engineering, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-2.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-3-2.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-3-2-200x134.jpg 200w, /images/ieee/2022/02/Picture-3-2-300x200.jpg 300w, /images/ieee/2022/02/Picture-3-2-400x267.jpg 400w, /images/ieee/2022/02/Picture-3-2-600x401.jpg 600w, /images/ieee/2022/02/Picture-3-2-768x513.jpg 768w, /images/ieee/2022/02/Picture-3-2-800x534.jpg 800w, /images/ieee/2022/02/Picture-3-2.jpg 1024w"
              />
           </p>
           <p>
@@ -3800,8 +3802,8 @@ const posts = [
             Engineer, Bangla Phone Ltd</em>.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-2.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-4-2.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-4-2-200x134.jpg 200w, /images/ieee/2022/02/Picture-4-2-300x200.jpg 300w, /images/ieee/2022/02/Picture-4-2-400x267.jpg 400w, /images/ieee/2022/02/Picture-4-2-600x401.jpg 600w, /images/ieee/2022/02/Picture-4-2-768x513.jpg 768w, /images/ieee/2022/02/Picture-4-2-800x534.jpg 800w, /images/ieee/2022/02/Picture-4-2.jpg 1024w"
              />
           </p>
           <p>
@@ -3819,17 +3821,17 @@ const posts = [
         <div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_12]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2.jpg" width="1024" height="724" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2-200x141.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2-400x283.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2-600x424.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2-800x566.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-2.jpg 1024w"
+              <a href="/images/ieee/2022/02/Picture-5-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_12]" target="_self"><img src=
+              "/images/ieee/2022/02/Picture-5-2.jpg" width="1024" height="724" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+              "/images/ieee/2022/02/Picture-5-2-200x141.jpg 200w, /images/ieee/2022/02/Picture-5-2-400x283.jpg 400w, /images/ieee/2022/02/Picture-5-2-600x424.jpg 600w, /images/ieee/2022/02/Picture-5-2-800x566.jpg 800w, /images/ieee/2022/02/Picture-5-2.jpg 1024w"
                /></a>
             </div>
           </div>
           <div>
             <div>
-              <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_12]" target="_self"><img src=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2.jpg" width="1024" height="979" alt="" title="Picture-6" aria-label="Picture-6" srcset=
-              "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2-200x191.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2-400x382.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2-600x574.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2-800x765.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-2.jpg 1024w"
+              <a href="/images/ieee/2022/02/Picture-6-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_12]" target="_self"><img src=
+              "/images/ieee/2022/02/Picture-6-2.jpg" width="1024" height="979" alt="" title="Picture-6" aria-label="Picture-6" srcset=
+              "/images/ieee/2022/02/Picture-6-2-200x191.jpg 200w, /images/ieee/2022/02/Picture-6-2-400x382.jpg 400w, /images/ieee/2022/02/Picture-6-2-600x574.jpg 600w, /images/ieee/2022/02/Picture-6-2-800x765.jpg 800w, /images/ieee/2022/02/Picture-6-2.jpg 1024w"
                /></a>
             </div>
           </div>
@@ -3846,8 +3848,8 @@ const posts = [
             where the participating groups presented their unique ideas and solutions.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-7-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-7-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-7-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-7-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-7-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-7-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-7-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-7-1.jpg 1024w"
              />
           </p>
           <p>
@@ -3857,8 +3859,8 @@ const posts = [
             deal with such problems. Mrs Tasnuva Anowar was presented with a token of appreciation by <strong>Dr. Mohammad Hasan Imam.</strong>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-9.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-9.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-9-200x134.jpg 200w, /images/ieee/2022/02/Picture-9-300x200.jpg 300w, /images/ieee/2022/02/Picture-9-400x267.jpg 400w, /images/ieee/2022/02/Picture-9-600x401.jpg 600w, /images/ieee/2022/02/Picture-9-768x513.jpg 768w, /images/ieee/2022/02/Picture-9-800x534.jpg 800w, /images/ieee/2022/02/Picture-9.jpg 1024w"
              />
           </p>
           <p>
@@ -3870,10 +3872,10 @@ const posts = [
             appreciation by <strong>Dr. Mohammad Hasan Imam.</strong>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-10.jpg 1024w"
-             /><img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-11.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-10.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-10-200x134.jpg 200w, /images/ieee/2022/02/Picture-10-300x200.jpg 300w, /images/ieee/2022/02/Picture-10-400x267.jpg 400w, /images/ieee/2022/02/Picture-10-600x401.jpg 600w, /images/ieee/2022/02/Picture-10-768x513.jpg 768w, /images/ieee/2022/02/Picture-10-800x534.jpg 800w, /images/ieee/2022/02/Picture-10.jpg 1024w"
+             /><img src="/images/ieee/2022/02/Picture-11.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-11-200x134.jpg 200w, /images/ieee/2022/02/Picture-11-300x200.jpg 300w, /images/ieee/2022/02/Picture-11-400x267.jpg 400w, /images/ieee/2022/02/Picture-11-600x401.jpg 600w, /images/ieee/2022/02/Picture-11-768x513.jpg 768w, /images/ieee/2022/02/Picture-11-800x534.jpg 800w, /images/ieee/2022/02/Picture-11.jpg 1024w"
              />
           </p>
           <p>
@@ -3900,13 +3902,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1.jpg"
+              src="/images/event/Picture-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -3942,25 +3944,25 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2.jpg" width="800" height="533" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-2.jpg 800w"
+                <a href="/images/ieee/2019/11/Picture-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
+                "/images/ieee/2019/11/Picture-2.jpg" width="800" height="533" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2019/11/Picture-2-200x133.jpg 200w, /images/ieee/2019/11/Picture-2-400x267.jpg 400w, /images/ieee/2019/11/Picture-2-600x400.jpg 600w, /images/ieee/2019/11/Picture-2.jpg 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3.jpg" width="800" height="533" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-3.jpg 800w"
+                <a href="/images/ieee/2019/11/Picture-3.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
+                "/images/ieee/2019/11/Picture-3.jpg" width="800" height="533" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2019/11/Picture-3-200x133.jpg 200w, /images/ieee/2019/11/Picture-3-400x267.jpg 400w, /images/ieee/2019/11/Picture-3-600x400.jpg 600w, /images/ieee/2019/11/Picture-3.jpg 800w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4.jpg" width="800" height="533" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2019/11/Picture-4.jpg 800w"
+                <a href="/images/ieee/2019/11/Picture-4.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_13]" target="_self"><img src=
+                "/images/ieee/2019/11/Picture-4.jpg" width="800" height="533" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2019/11/Picture-4-200x133.jpg 200w, /images/ieee/2019/11/Picture-4-400x267.jpg 400w, /images/ieee/2019/11/Picture-4-600x400.jpg 600w, /images/ieee/2019/11/Picture-4.jpg 800w"
                  /></a>
               </div>
             </div>
@@ -3986,13 +3988,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-1.jpg"
+              src="/images/event/Picture-1-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4033,8 +4035,8 @@ const posts = [
             robot was declared the winner.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-2-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-2-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-2-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-2-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-2-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-2-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-2-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-2-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4043,16 +4045,16 @@ const posts = [
             minor coding and construction for the robots. 4 teams participated in the competition, amongst whom the fastest robot to complete the IEEE shaped black pathway was announced the winner.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1.jpg" alt="" width="1024" height="576" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-200x113.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-300x169.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-400x225.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-600x338.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-768x432.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1-800x450.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-3-1.jpg" alt="" width="1024" height="576" srcset=
+            "/images/ieee/2022/02/Picture-3-1-200x113.jpg 200w, /images/ieee/2022/02/Picture-3-1-300x169.jpg 300w, /images/ieee/2022/02/Picture-3-1-400x225.jpg 400w, /images/ieee/2022/02/Picture-3-1-600x338.jpg 600w, /images/ieee/2022/02/Picture-3-1-768x432.jpg 768w, /images/ieee/2022/02/Picture-3-1-800x450.jpg 800w, /images/ieee/2022/02/Picture-3-1.jpg 1024w"
              />
           </p>
           <p>
             After a short lunch break, the event was taken indoors and was initiated with a cultural program. The hall room resonated with music as the attendees enjoyed a moment of relaxation.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-4-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-4-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-4-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-4-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-4-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-4-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-4-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-4-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4062,8 +4064,8 @@ const posts = [
             They later on announced the names of the second runners up, the runners up and the winner for the online quiz competition.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-5-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/02/Picture-5-1-200x134.jpg 200w, /images/ieee/2022/02/Picture-5-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-5-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-5-1-600x401.jpg 600w, /images/ieee/2022/02/Picture-5-1-768x513.jpg 768w, /images/ieee/2022/02/Picture-5-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-5-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4081,8 +4083,8 @@ const posts = [
             <strong><em> </em></strong>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1.jpg" alt="" width="1024" height="683" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-6-1.jpg" alt="" width="1024" height="683" srcset=
+            "/images/ieee/2022/02/Picture-6-1-200x133.jpg 200w, /images/ieee/2022/02/Picture-6-1-300x200.jpg 300w, /images/ieee/2022/02/Picture-6-1-400x267.jpg 400w, /images/ieee/2022/02/Picture-6-1-600x400.jpg 600w, /images/ieee/2022/02/Picture-6-1-768x512.jpg 768w, /images/ieee/2022/02/Picture-6-1-800x534.jpg 800w, /images/ieee/2022/02/Picture-6-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4091,8 +4093,8 @@ const posts = [
             photo of The IEEE AIUB Student Branch executives and a group photo with all the attendees.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7.jpg" alt="" width="1024" height="428" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-200x84.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-300x125.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-400x167.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-600x251.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-768x321.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7-800x334.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-7.jpg 1024w"
+            <img src="/images/ieee/2022/02/Picture-7.jpg" alt="" width="1024" height="428" srcset=
+            "/images/ieee/2022/02/Picture-7-200x84.jpg 200w, /images/ieee/2022/02/Picture-7-300x125.jpg 300w, /images/ieee/2022/02/Picture-7-400x167.jpg 400w, /images/ieee/2022/02/Picture-7-600x251.jpg 600w, /images/ieee/2022/02/Picture-7-768x321.jpg 768w, /images/ieee/2022/02/Picture-7-800x334.jpg 800w, /images/ieee/2022/02/Picture-7.jpg 1024w"
              />
           </p>
         </div>
@@ -4111,13 +4113,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1.jpg"
+              src="/images/event/Picture-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4146,41 +4148,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/Picture-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-2-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2022/02/Picture-2-200x134.jpg 200w, /images/ieee/2022/02/Picture-2-400x267.jpg 400w, /images/ieee/2022/02/Picture-2-600x401.jpg 600w, /images/ieee/2022/02/Picture-2-800x534.jpg 800w, /images/ieee/2022/02/Picture-2-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-3-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/Picture-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2022/02/Picture-3-200x134.jpg 200w, /images/ieee/2022/02/Picture-3-400x267.jpg 400w, /images/ieee/2022/02/Picture-3-600x401.jpg 600w, /images/ieee/2022/02/Picture-3-800x534.jpg 800w, /images/ieee/2022/02/Picture-3-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-3-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-scaled.jpg" width="2000" height="1335" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-4-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/Picture-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-4-scaled.jpg" width="2000" height="1335" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2022/02/Picture-4-200x134.jpg 200w, /images/ieee/2022/02/Picture-4-400x267.jpg 400w, /images/ieee/2022/02/Picture-4-600x401.jpg 600w, /images/ieee/2022/02/Picture-4-800x534.jpg 800w, /images/ieee/2022/02/Picture-4-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-4-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-scaled.jpg" width="2000" height="1335" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-5-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/Picture-5-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-5-scaled.jpg" width="2000" height="1335" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2022/02/Picture-5-200x134.jpg 200w, /images/ieee/2022/02/Picture-5-400x267.jpg 400w, /images/ieee/2022/02/Picture-5-600x401.jpg 600w, /images/ieee/2022/02/Picture-5-800x534.jpg 800w, /images/ieee/2022/02/Picture-5-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-5-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-scaled.jpg" width="2000" height="1335" alt="" title="Picture-6" aria-label="Picture-6" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Picture-6-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/Picture-6-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_14]" target="_self"><img src=
+                "/images/ieee/2022/02/Picture-6-scaled.jpg" width="2000" height="1335" alt="" title="Picture-6" aria-label="Picture-6" srcset=
+                "/images/ieee/2022/02/Picture-6-200x134.jpg 200w, /images/ieee/2022/02/Picture-6-400x267.jpg 400w, /images/ieee/2022/02/Picture-6-600x401.jpg 600w, /images/ieee/2022/02/Picture-6-800x534.jpg 800w, /images/ieee/2022/02/Picture-6-1200x801.jpg 1200w, /images/ieee/2022/02/Picture-6-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
@@ -4201,13 +4203,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-6.jpg"
+              src="/images/event/Picture-1-6.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4238,8 +4240,8 @@ const posts = [
             an initiative and also urged the participants to take the field into consideration.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-scaled.jpg" alt="" width="2000" height="1150" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-200x115.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-300x172.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-400x230.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-600x345.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-768x441.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-800x460.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-1024x589.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-1200x690.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-1536x883.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-5-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/01/Picture-2-5-scaled.jpg" alt="" width="2000" height="1150" srcset=
+            "/images/ieee/2022/01/Picture-2-5-200x115.jpg 200w, /images/ieee/2022/01/Picture-2-5-300x172.jpg 300w, /images/ieee/2022/01/Picture-2-5-400x230.jpg 400w, /images/ieee/2022/01/Picture-2-5-600x345.jpg 600w, /images/ieee/2022/01/Picture-2-5-768x441.jpg 768w, /images/ieee/2022/01/Picture-2-5-800x460.jpg 800w, /images/ieee/2022/01/Picture-2-5-1024x589.jpg 1024w, /images/ieee/2022/01/Picture-2-5-1200x690.jpg 1200w, /images/ieee/2022/01/Picture-2-5-1536x883.jpg 1536w, /images/ieee/2022/01/Picture-2-5-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -4252,25 +4254,25 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-scaled.jpg" width="2000" height="1263" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-200x126.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-400x253.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-600x379.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-800x505.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-1200x758.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-4-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-3-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-3-4-scaled.jpg" width="2000" height="1263" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2022/01/Picture-3-4-200x126.jpg 200w, /images/ieee/2022/01/Picture-3-4-400x253.jpg 400w, /images/ieee/2022/01/Picture-3-4-600x379.jpg 600w, /images/ieee/2022/01/Picture-3-4-800x505.jpg 800w, /images/ieee/2022/01/Picture-3-4-1200x758.jpg 1200w, /images/ieee/2022/01/Picture-3-4-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-scaled.jpg" width="2000" height="1173" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-200x117.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-400x235.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-600x352.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-800x469.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-1200x704.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-4-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-4-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-4-4-scaled.jpg" width="2000" height="1173" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2022/01/Picture-4-4-200x117.jpg 200w, /images/ieee/2022/01/Picture-4-4-400x235.jpg 400w, /images/ieee/2022/01/Picture-4-4-600x352.jpg 600w, /images/ieee/2022/01/Picture-4-4-800x469.jpg 800w, /images/ieee/2022/01/Picture-4-4-1200x704.jpg 1200w, /images/ieee/2022/01/Picture-4-4-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-scaled.jpg" width="2000" height="976" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-200x98.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-400x195.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-600x293.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-800x390.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-1200x586.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-5-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_15]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-5-2-scaled.jpg" width="2000" height="976" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2022/01/Picture-5-2-200x98.jpg 200w, /images/ieee/2022/01/Picture-5-2-400x195.jpg 400w, /images/ieee/2022/01/Picture-5-2-600x293.jpg 600w, /images/ieee/2022/01/Picture-5-2-800x390.jpg 800w, /images/ieee/2022/01/Picture-5-2-1200x586.jpg 1200w, /images/ieee/2022/01/Picture-5-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
@@ -4294,13 +4296,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-5.jpg"
+              src="/images/event/Picture-1-5.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4355,41 +4357,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-4-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-2-4-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-2-4-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2022/01/Picture-2-4-200x134.jpg 200w, /images/ieee/2022/01/Picture-2-4-400x267.jpg 400w, /images/ieee/2022/01/Picture-2-4-600x401.jpg 600w, /images/ieee/2022/01/Picture-2-4-800x534.jpg 800w, /images/ieee/2022/01/Picture-2-4-1200x801.jpg 1200w, /images/ieee/2022/01/Picture-2-4-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-3-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-3-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-3-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2022/01/Picture-3-3-200x134.jpg 200w, /images/ieee/2022/01/Picture-3-3-400x267.jpg 400w, /images/ieee/2022/01/Picture-3-3-600x401.jpg 600w, /images/ieee/2022/01/Picture-3-3-800x534.jpg 800w, /images/ieee/2022/01/Picture-3-3-1200x801.jpg 1200w, /images/ieee/2022/01/Picture-3-3-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-3-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-4-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-4-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2022/01/Picture-4-3-200x134.jpg 200w, /images/ieee/2022/01/Picture-4-3-400x267.jpg 400w, /images/ieee/2022/01/Picture-4-3-600x401.jpg 600w, /images/ieee/2022/01/Picture-4-3-800x534.jpg 800w, /images/ieee/2022/01/Picture-4-3-1200x801.jpg 1200w, /images/ieee/2022/01/Picture-4-3-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-scaled.jpg" width="2000" height="1335" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-1-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-5-1-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-5-1-scaled.jpg" width="2000" height="1335" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2022/01/Picture-5-1-200x134.jpg 200w, /images/ieee/2022/01/Picture-5-1-400x267.jpg 400w, /images/ieee/2022/01/Picture-5-1-600x401.jpg 600w, /images/ieee/2022/01/Picture-5-1-800x534.jpg 800w, /images/ieee/2022/01/Picture-5-1-1200x801.jpg 1200w, /images/ieee/2022/01/Picture-5-1-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-scaled.jpg" width="2000" height="1335" alt="" title="Picture-6" aria-label="Picture-6" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-1-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/01/Picture-6-1-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_16]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-6-1-scaled.jpg" width="2000" height="1335" alt="" title="Picture-6" aria-label="Picture-6" srcset=
+                "/images/ieee/2022/01/Picture-6-1-200x134.jpg 200w, /images/ieee/2022/01/Picture-6-1-400x267.jpg 400w, /images/ieee/2022/01/Picture-6-1-600x401.jpg 600w, /images/ieee/2022/01/Picture-6-1-800x534.jpg 800w, /images/ieee/2022/01/Picture-6-1-1200x801.jpg 1200w, /images/ieee/2022/01/Picture-6-1-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
@@ -4415,13 +4417,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-4.jpg"
+              src="/images/event/Picture-1-4.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4446,8 +4448,8 @@ const posts = [
             the program.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-3.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-2-3.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-2-3-200x134.jpg 200w, /images/ieee/2022/01/Picture-2-3-300x200.jpg 300w, /images/ieee/2022/01/Picture-2-3-400x267.jpg 400w, /images/ieee/2022/01/Picture-2-3-600x401.jpg 600w, /images/ieee/2022/01/Picture-2-3-768x513.jpg 768w, /images/ieee/2022/01/Picture-2-3-800x534.jpg 800w, /images/ieee/2022/01/Picture-2-3.jpg 1024w"
              />
           </p>
           <p>
@@ -4459,8 +4461,8 @@ const posts = [
             He concluded his presentation by suggesting the students to start preparing themselves for applying for the scholarship from now.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2.jpg" alt="" width="1024" height="756" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-200x148.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-300x221.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-400x295.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-600x443.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-768x567.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2-800x591.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-2.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-3-2.jpg" alt="" width="1024" height="756" srcset=
+            "/images/ieee/2022/01/Picture-3-2-200x148.jpg 200w, /images/ieee/2022/01/Picture-3-2-300x221.jpg 300w, /images/ieee/2022/01/Picture-3-2-400x295.jpg 400w, /images/ieee/2022/01/Picture-3-2-600x443.jpg 600w, /images/ieee/2022/01/Picture-3-2-768x567.jpg 768w, /images/ieee/2022/01/Picture-3-2-800x591.jpg 800w, /images/ieee/2022/01/Picture-3-2.jpg 1024w"
              />
           </p>
           <p>
@@ -4475,33 +4477,33 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2.jpg" width="1024" height="682" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-2.jpg 1024w"
+                <a href="/images/ieee/2022/01/Picture-4-2.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-4-2.jpg" width="1024" height="682" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2022/01/Picture-4-2-200x133.jpg 200w, /images/ieee/2022/01/Picture-4-2-400x266.jpg 400w, /images/ieee/2022/01/Picture-4-2-600x400.jpg 600w, /images/ieee/2022/01/Picture-4-2-800x533.jpg 800w, /images/ieee/2022/01/Picture-4-2.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5.jpg" width="1024" height="682" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-5.jpg 1024w"
+                <a href="/images/ieee/2022/01/Picture-5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-5.jpg" width="1024" height="682" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2022/01/Picture-5-200x133.jpg 200w, /images/ieee/2022/01/Picture-5-400x266.jpg 400w, /images/ieee/2022/01/Picture-5-600x400.jpg 600w, /images/ieee/2022/01/Picture-5-800x533.jpg 800w, /images/ieee/2022/01/Picture-5.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6.jpg" width="1024" height="682" alt="" title="Picture-6" aria-label="Picture-6" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-6.jpg 1024w"
+                <a href="/images/ieee/2022/01/Picture-6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-6.jpg" width="1024" height="682" alt="" title="Picture-6" aria-label="Picture-6" srcset=
+                "/images/ieee/2022/01/Picture-6-200x133.jpg 200w, /images/ieee/2022/01/Picture-6-400x266.jpg 400w, /images/ieee/2022/01/Picture-6-600x400.jpg 600w, /images/ieee/2022/01/Picture-6-800x533.jpg 800w, /images/ieee/2022/01/Picture-6.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7.jpg" width="1024" height="682" alt="" title="Picture-7" aria-label="Picture-7" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-7.jpg 1024w"
+                <a href="/images/ieee/2022/01/Picture-7.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_17]" target="_self"><img src=
+                "/images/ieee/2022/01/Picture-7.jpg" width="1024" height="682" alt="" title="Picture-7" aria-label="Picture-7" srcset=
+                "/images/ieee/2022/01/Picture-7-200x133.jpg 200w, /images/ieee/2022/01/Picture-7-400x266.jpg 400w, /images/ieee/2022/01/Picture-7-600x400.jpg 600w, /images/ieee/2022/01/Picture-7-800x533.jpg 800w, /images/ieee/2022/01/Picture-7.jpg 1024w"
                  /></a>
               </div>
             </div>
@@ -4525,13 +4527,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-3.jpg"
+              src="/images/event/Picture-1-3.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4587,17 +4589,17 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_18]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1.jpg" width="1024" height="684" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1.jpg 1024w"
+                <a href="/images/ieee/2020/09/Picture-2-1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_18]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-2-1.jpg" width="1024" height="684" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2020/09/Picture-2-1-200x134.jpg 200w, /images/ieee/2020/09/Picture-2-1-400x267.jpg 400w, /images/ieee/2020/09/Picture-2-1-600x401.jpg 600w, /images/ieee/2020/09/Picture-2-1-800x534.jpg 800w, /images/ieee/2020/09/Picture-2-1.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_18]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1.jpg" width="1024" height="362" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1-200x71.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1-400x141.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1-600x212.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1-800x283.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1.jpg 1024w"
+                <a href="/images/ieee/2020/09/Picture-3-1.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_18]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-3-1.jpg" width="1024" height="362" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2020/09/Picture-3-1-200x71.jpg 200w, /images/ieee/2020/09/Picture-3-1-400x141.jpg 400w, /images/ieee/2020/09/Picture-3-1-600x212.jpg 600w, /images/ieee/2020/09/Picture-3-1-800x283.jpg 800w, /images/ieee/2020/09/Picture-3-1.jpg 1024w"
                  /></a>
               </div>
             </div>
@@ -4618,13 +4620,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-2.jpg"
+              src="/images/event/Picture-1-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4646,8 +4648,8 @@ const posts = [
             the mobile app development competition as they got a much clear concept of the competition from the session.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2.jpg" alt="" width="1024" height="590" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-200x115.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-300x173.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-400x230.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-600x346.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-768x443.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2-800x461.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-2.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-2-2.jpg" alt="" width="1024" height="590" srcset=
+            "/images/ieee/2022/01/Picture-2-2-200x115.jpg 200w, /images/ieee/2022/01/Picture-2-2-300x173.jpg 300w, /images/ieee/2022/01/Picture-2-2-400x230.jpg 400w, /images/ieee/2022/01/Picture-2-2-600x346.jpg 600w, /images/ieee/2022/01/Picture-2-2-768x443.jpg 768w, /images/ieee/2022/01/Picture-2-2-800x461.jpg 800w, /images/ieee/2022/01/Picture-2-2.jpg 1024w"
              />
           </p>
         </div>
@@ -4666,13 +4668,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1-1.jpg"
+              src="/images/event/Picture-1-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4696,8 +4698,8 @@ const posts = [
             support. He concluded his speech by discussing the upcoming events to be organized by IEEE AIUB Student Branch.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-1.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-2-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-2-1-200x134.jpg 200w, /images/ieee/2022/01/Picture-2-1-300x200.jpg 300w, /images/ieee/2022/01/Picture-2-1-400x267.jpg 400w, /images/ieee/2022/01/Picture-2-1-600x401.jpg 600w, /images/ieee/2022/01/Picture-2-1-768x513.jpg 768w, /images/ieee/2022/01/Picture-2-1-800x534.jpg 800w, /images/ieee/2022/01/Picture-2-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4712,8 +4714,8 @@ const posts = [
             discussed about the achievements of the IEEE AIUB Student Branch and also encouraged members to participate in other IEEE events held in other branches.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-1.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-3-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-3-1-200x134.jpg 200w, /images/ieee/2022/01/Picture-3-1-300x200.jpg 300w, /images/ieee/2022/01/Picture-3-1-400x267.jpg 400w, /images/ieee/2022/01/Picture-3-1-600x401.jpg 600w, /images/ieee/2022/01/Picture-3-1-768x513.jpg 768w, /images/ieee/2022/01/Picture-3-1-800x534.jpg 800w, /images/ieee/2022/01/Picture-3-1.jpg 1024w"
              />
           </p>
           <p>
@@ -4723,8 +4725,8 @@ const posts = [
             AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-4-1.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-4-1.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-4-1-200x134.jpg 200w, /images/ieee/2022/01/Picture-4-1-300x200.jpg 300w, /images/ieee/2022/01/Picture-4-1-400x267.jpg 400w, /images/ieee/2022/01/Picture-4-1-600x401.jpg 600w, /images/ieee/2022/01/Picture-4-1-768x513.jpg 768w, /images/ieee/2022/01/Picture-4-1-800x534.jpg 800w, /images/ieee/2022/01/Picture-4-1.jpg 1024w"
              />
           </p>
         </div>
@@ -4743,13 +4745,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/"
+              src="/images/event/"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4780,13 +4782,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-2.jpg"
+              src="/images/event/Picture-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4808,8 +4810,8 @@ const posts = [
             systems.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-2.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-2.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-2-200x134.jpg 200w, /images/ieee/2022/01/Picture-2-300x200.jpg 300w, /images/ieee/2022/01/Picture-2-400x267.jpg 400w, /images/ieee/2022/01/Picture-2-600x401.jpg 600w, /images/ieee/2022/01/Picture-2-768x513.jpg 768w, /images/ieee/2022/01/Picture-2-800x534.jpg 800w, /images/ieee/2022/01/Picture-2.jpg 1024w"
              />
           </p>
           <p>
@@ -4819,8 +4821,8 @@ const posts = [
             of wind turbines along with his own thesis proposal was described to the participants. The speaker concluded his segment with a question and answer session.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3.jpg" alt="" width="1024" height="684" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/01/Picture-3.jpg 1024w"
+            <img src="/images/ieee/2022/01/Picture-3.jpg" alt="" width="1024" height="684" srcset=
+            "/images/ieee/2022/01/Picture-3-200x134.jpg 200w, /images/ieee/2022/01/Picture-3-300x200.jpg 300w, /images/ieee/2022/01/Picture-3-400x267.jpg 400w, /images/ieee/2022/01/Picture-3-600x401.jpg 600w, /images/ieee/2022/01/Picture-3-768x513.jpg 768w, /images/ieee/2022/01/Picture-3-800x534.jpg 800w, /images/ieee/2022/01/Picture-3.jpg 1024w"
              />
           </p>
           <p>
@@ -4845,13 +4847,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Picture-1.jpg"
+              src="/images/event/Picture-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -4920,41 +4922,41 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2020/09/Picture-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-2-scaled.jpg" width="2000" height="1335" alt="" title="Picture-2" aria-label="Picture-2" srcset=
+                "/images/ieee/2020/09/Picture-2-200x134.jpg 200w, /images/ieee/2020/09/Picture-2-400x267.jpg 400w, /images/ieee/2020/09/Picture-2-600x401.jpg 600w, /images/ieee/2020/09/Picture-2-800x534.jpg 800w, /images/ieee/2020/09/Picture-2-1200x801.jpg 1200w, /images/ieee/2020/09/Picture-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-3-scaled.jpg 2000w"
+                <a href="/images/ieee/2020/09/Picture-3-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-3-scaled.jpg" width="2000" height="1335" alt="" title="Picture-3" aria-label="Picture-3" srcset=
+                "/images/ieee/2020/09/Picture-3-200x134.jpg 200w, /images/ieee/2020/09/Picture-3-400x267.jpg 400w, /images/ieee/2020/09/Picture-3-600x401.jpg 600w, /images/ieee/2020/09/Picture-3-800x534.jpg 800w, /images/ieee/2020/09/Picture-3-1200x801.jpg 1200w, /images/ieee/2020/09/Picture-3-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4.jpg" width="1024" height="684" alt="" title="Picture-4" aria-label="Picture-4" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-4.jpg 1024w"
+                <a href="/images/ieee/2020/09/Picture-4.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-4.jpg" width="1024" height="684" alt="" title="Picture-4" aria-label="Picture-4" srcset=
+                "/images/ieee/2020/09/Picture-4-200x134.jpg 200w, /images/ieee/2020/09/Picture-4-400x267.jpg 400w, /images/ieee/2020/09/Picture-4-600x401.jpg 600w, /images/ieee/2020/09/Picture-4-800x534.jpg 800w, /images/ieee/2020/09/Picture-4.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5.jpg" width="1024" height="684" alt="" title="Picture-5" aria-label="Picture-5" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-5.jpg 1024w"
+                <a href="/images/ieee/2020/09/Picture-5.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-5.jpg" width="1024" height="684" alt="" title="Picture-5" aria-label="Picture-5" srcset=
+                "/images/ieee/2020/09/Picture-5-200x134.jpg 200w, /images/ieee/2020/09/Picture-5-400x267.jpg 400w, /images/ieee/2020/09/Picture-5-600x401.jpg 600w, /images/ieee/2020/09/Picture-5-800x534.jpg 800w, /images/ieee/2020/09/Picture-5.jpg 1024w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6.jpg" width="1024" height="684" alt="" title="Picture-6" aria-label="Picture-6" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/Picture-6.jpg 1024w"
+                <a href="/images/ieee/2020/09/Picture-6.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_19]" target="_self"><img src=
+                "/images/ieee/2020/09/Picture-6.jpg" width="1024" height="684" alt="" title="Picture-6" aria-label="Picture-6" srcset=
+                "/images/ieee/2020/09/Picture-6-200x134.jpg 200w, /images/ieee/2020/09/Picture-6-400x267.jpg 400w, /images/ieee/2020/09/Picture-6-600x401.jpg 600w, /images/ieee/2020/09/Picture-6-800x534.jpg 800w, /images/ieee/2020/09/Picture-6.jpg 1024w"
                  /></a>
               </div>
             </div>
@@ -4975,13 +4977,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/NBI_7521.jpg"
+              src="/images/event/NBI_7521.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5057,65 +5059,65 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7320" aria-label="NBI_7320" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7320-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_7320-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_7320-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7320" aria-label="NBI_7320" srcset=
+                "/images/ieee/2022/02/NBI_7320-200x134.jpg 200w, /images/ieee/2022/02/NBI_7320-400x267.jpg 400w, /images/ieee/2022/02/NBI_7320-600x401.jpg 600w, /images/ieee/2022/02/NBI_7320-800x534.jpg 800w, /images/ieee/2022/02/NBI_7320-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_7320-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7228" aria-label="NBI_7228" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7228-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_7228-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_7228-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7228" aria-label="NBI_7228" srcset=
+                "/images/ieee/2022/02/NBI_7228-200x134.jpg 200w, /images/ieee/2022/02/NBI_7228-400x267.jpg 400w, /images/ieee/2022/02/NBI_7228-600x401.jpg 600w, /images/ieee/2022/02/NBI_7228-800x534.jpg 800w, /images/ieee/2022/02/NBI_7228-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_7228-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7122" aria-label="NBI_7122" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_7122-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_7122-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_7122-scaled.jpg" width="2000" height="1335" alt="" title="NBI_7122" aria-label="NBI_7122" srcset=
+                "/images/ieee/2022/02/NBI_7122-200x134.jpg 200w, /images/ieee/2022/02/NBI_7122-400x267.jpg 400w, /images/ieee/2022/02/NBI_7122-600x401.jpg 600w, /images/ieee/2022/02/NBI_7122-800x534.jpg 800w, /images/ieee/2022/02/NBI_7122-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_7122-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6984" aria-label="NBI_6984" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6984-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6984-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6984-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6984" aria-label="NBI_6984" srcset=
+                "/images/ieee/2022/02/NBI_6984-200x134.jpg 200w, /images/ieee/2022/02/NBI_6984-400x267.jpg 400w, /images/ieee/2022/02/NBI_6984-600x401.jpg 600w, /images/ieee/2022/02/NBI_6984-800x534.jpg 800w, /images/ieee/2022/02/NBI_6984-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6984-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6965" aria-label="NBI_6965" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6965-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6965-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6965-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6965" aria-label="NBI_6965" srcset=
+                "/images/ieee/2022/02/NBI_6965-200x134.jpg 200w, /images/ieee/2022/02/NBI_6965-400x267.jpg 400w, /images/ieee/2022/02/NBI_6965-600x401.jpg 600w, /images/ieee/2022/02/NBI_6965-800x534.jpg 800w, /images/ieee/2022/02/NBI_6965-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6965-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6900" aria-label="NBI_6900" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6900-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6900-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6900-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6900" aria-label="NBI_6900" srcset=
+                "/images/ieee/2022/02/NBI_6900-200x134.jpg 200w, /images/ieee/2022/02/NBI_6900-400x267.jpg 400w, /images/ieee/2022/02/NBI_6900-600x401.jpg 600w, /images/ieee/2022/02/NBI_6900-800x534.jpg 800w, /images/ieee/2022/02/NBI_6900-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6900-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6849" aria-label="NBI_6849" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6849-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6849-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6849-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6849" aria-label="NBI_6849" srcset=
+                "/images/ieee/2022/02/NBI_6849-200x134.jpg 200w, /images/ieee/2022/02/NBI_6849-400x267.jpg 400w, /images/ieee/2022/02/NBI_6849-600x401.jpg 600w, /images/ieee/2022/02/NBI_6849-800x534.jpg 800w, /images/ieee/2022/02/NBI_6849-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6849-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6777" aria-label="NBI_6777" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6777-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6777-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_20]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6777-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6777" aria-label="NBI_6777" srcset=
+                "/images/ieee/2022/02/NBI_6777-200x134.jpg 200w, /images/ieee/2022/02/NBI_6777-400x267.jpg 400w, /images/ieee/2022/02/NBI_6777-600x401.jpg 600w, /images/ieee/2022/02/NBI_6777-800x534.jpg 800w, /images/ieee/2022/02/NBI_6777-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6777-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
@@ -5146,13 +5148,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Capture-1.jpg"
+              src="/images/event/Capture-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5195,25 +5197,25 @@ const posts = [
           <div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-scaled.jpg" width="2000" height="1333" alt="" title="NBI_6219-2" aria-label="NBI_6219-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6219-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6219-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6219-2-scaled.jpg" width="2000" height="1333" alt="" title="NBI_6219-2" aria-label="NBI_6219-2" srcset=
+                "/images/ieee/2022/02/NBI_6219-2-200x133.jpg 200w, /images/ieee/2022/02/NBI_6219-2-400x267.jpg 400w, /images/ieee/2022/02/NBI_6219-2-600x400.jpg 600w, /images/ieee/2022/02/NBI_6219-2-800x533.jpg 800w, /images/ieee/2022/02/NBI_6219-2-1200x800.jpg 1200w, /images/ieee/2022/02/NBI_6219-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6253-2" aria-label="NBI_6253-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6253-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6253-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6253-2-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6253-2" aria-label="NBI_6253-2" srcset=
+                "/images/ieee/2022/02/NBI_6253-2-200x134.jpg 200w, /images/ieee/2022/02/NBI_6253-2-400x267.jpg 400w, /images/ieee/2022/02/NBI_6253-2-600x401.jpg 600w, /images/ieee/2022/02/NBI_6253-2-800x534.jpg 800w, /images/ieee/2022/02/NBI_6253-2-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6253-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
             <div>
               <div>
-                <a href="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6321-2" aria-label="NBI_6321-2" srcset=
-                "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6321-2-scaled.jpg 2000w"
+                <a href="/images/ieee/2022/02/NBI_6321-2-scaled.jpg" rel="noreferrer" data-rel="iLightbox[gallery_image_21]" target="_self"><img src=
+                "/images/ieee/2022/02/NBI_6321-2-scaled.jpg" width="2000" height="1335" alt="" title="NBI_6321-2" aria-label="NBI_6321-2" srcset=
+                "/images/ieee/2022/02/NBI_6321-2-200x134.jpg 200w, /images/ieee/2022/02/NBI_6321-2-400x267.jpg 400w, /images/ieee/2022/02/NBI_6321-2-600x401.jpg 600w, /images/ieee/2022/02/NBI_6321-2-800x534.jpg 800w, /images/ieee/2022/02/NBI_6321-2-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6321-2-scaled.jpg 2000w"
                  /></a>
               </div>
             </div>
@@ -5239,13 +5241,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Capture-2.jpg"
+              src="/images/event/Capture-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5268,8 +5270,8 @@ const posts = [
             achieved COD on 9th January 2016 and this Power plant is relentlessly supplying electricity to national power grid since then and soon going to be converted into the combined cycle.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-scaled.jpg" alt="" width="2000" height="1500" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-200x150.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-300x225.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-400x300.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-600x450.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-768x576.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-800x600.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-1024x768.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-1200x900.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-1536x1152.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image1-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/image1-scaled.jpg" alt="" width="2000" height="1500" srcset=
+            "/images/ieee/2022/02/image1-200x150.jpg 200w, /images/ieee/2022/02/image1-300x225.jpg 300w, /images/ieee/2022/02/image1-400x300.jpg 400w, /images/ieee/2022/02/image1-600x450.jpg 600w, /images/ieee/2022/02/image1-768x576.jpg 768w, /images/ieee/2022/02/image1-800x600.jpg 800w, /images/ieee/2022/02/image1-1024x768.jpg 1024w, /images/ieee/2022/02/image1-1200x900.jpg 1200w, /images/ieee/2022/02/image1-1536x1152.jpg 1536w, /images/ieee/2022/02/image1-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5284,8 +5286,8 @@ const posts = [
             EEE, AIUB who are IEEE Student Members </strong>participated in the industrial tour.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-scaled.jpg" alt="" width="2000" height="1192" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-200x119.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-300x179.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-400x238.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-600x358.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-768x458.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-800x477.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-1024x610.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-1200x715.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-1536x915.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/image3-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/image3-scaled.jpg" alt="" width="2000" height="1192" srcset=
+            "/images/ieee/2022/02/image3-200x119.jpg 200w, /images/ieee/2022/02/image3-300x179.jpg 300w, /images/ieee/2022/02/image3-400x238.jpg 400w, /images/ieee/2022/02/image3-600x358.jpg 600w, /images/ieee/2022/02/image3-768x458.jpg 768w, /images/ieee/2022/02/image3-800x477.jpg 800w, /images/ieee/2022/02/image3-1024x610.jpg 1024w, /images/ieee/2022/02/image3-1200x715.jpg 1200w, /images/ieee/2022/02/image3-1536x915.jpg 1536w, /images/ieee/2022/02/image3-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5307,13 +5309,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Capture-3.jpg"
+              src="/images/event/Capture-3.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5328,8 +5330,8 @@ const posts = [
             Canada </em>and <strong>Shamrat Apu Gazi</strong>, <em>Junior Firmware Developer, Signal Stream Inc. Canada.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-scaled.jpg" alt="" width="2000" height="1335" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-1024x684.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-1536x1026.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6118-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/NBI_6118-scaled.jpg" alt="" width="2000" height="1335" srcset=
+            "/images/ieee/2022/02/NBI_6118-200x134.jpg 200w, /images/ieee/2022/02/NBI_6118-300x200.jpg 300w, /images/ieee/2022/02/NBI_6118-400x267.jpg 400w, /images/ieee/2022/02/NBI_6118-600x401.jpg 600w, /images/ieee/2022/02/NBI_6118-768x513.jpg 768w, /images/ieee/2022/02/NBI_6118-800x534.jpg 800w, /images/ieee/2022/02/NBI_6118-1024x684.jpg 1024w, /images/ieee/2022/02/NBI_6118-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6118-1536x1026.jpg 1536w, /images/ieee/2022/02/NBI_6118-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5338,8 +5340,8 @@ const posts = [
             concluded his speech by advising the students not to be dependent on their digital devices all the time as it cause over-reliance on these devices.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-scaled.jpg" alt="" width="2000" height="1333" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-1024x683.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-1536x1024.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6090-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/NBI_6090-scaled.jpg" alt="" width="2000" height="1333" srcset=
+            "/images/ieee/2022/02/NBI_6090-200x133.jpg 200w, /images/ieee/2022/02/NBI_6090-300x200.jpg 300w, /images/ieee/2022/02/NBI_6090-400x267.jpg 400w, /images/ieee/2022/02/NBI_6090-600x400.jpg 600w, /images/ieee/2022/02/NBI_6090-768x512.jpg 768w, /images/ieee/2022/02/NBI_6090-800x533.jpg 800w, /images/ieee/2022/02/NBI_6090-1024x683.jpg 1024w, /images/ieee/2022/02/NBI_6090-1200x800.jpg 1200w, /images/ieee/2022/02/NBI_6090-1536x1024.jpg 1536w, /images/ieee/2022/02/NBI_6090-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5355,8 +5357,8 @@ const posts = [
             were also discussed in his speech.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-scaled.jpg" alt="" width="2000" height="925" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-200x92.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-300x139.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-400x185.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-600x277.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-768x355.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-800x370.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-1024x474.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-1200x555.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-1536x710.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6067-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/NBI_6067-scaled.jpg" alt="" width="2000" height="925" srcset=
+            "/images/ieee/2022/02/NBI_6067-200x92.jpg 200w, /images/ieee/2022/02/NBI_6067-300x139.jpg 300w, /images/ieee/2022/02/NBI_6067-400x185.jpg 400w, /images/ieee/2022/02/NBI_6067-600x277.jpg 600w, /images/ieee/2022/02/NBI_6067-768x355.jpg 768w, /images/ieee/2022/02/NBI_6067-800x370.jpg 800w, /images/ieee/2022/02/NBI_6067-1024x474.jpg 1024w, /images/ieee/2022/02/NBI_6067-1200x555.jpg 1200w, /images/ieee/2022/02/NBI_6067-1536x710.jpg 1536w, /images/ieee/2022/02/NBI_6067-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5365,8 +5367,8 @@ const posts = [
             speech, a question and answer session was held where the speakers answered some of the audience’s questions.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-scaled.jpg" alt="" width="2000" height="1335" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-200x134.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-600x401.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-768x513.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-1024x684.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-1200x801.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-1536x1025.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/NBI_6007-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/NBI_6007-scaled.jpg" alt="" width="2000" height="1335" srcset=
+            "/images/ieee/2022/02/NBI_6007-200x134.jpg 200w, /images/ieee/2022/02/NBI_6007-300x200.jpg 300w, /images/ieee/2022/02/NBI_6007-400x267.jpg 400w, /images/ieee/2022/02/NBI_6007-600x401.jpg 600w, /images/ieee/2022/02/NBI_6007-768x513.jpg 768w, /images/ieee/2022/02/NBI_6007-800x534.jpg 800w, /images/ieee/2022/02/NBI_6007-1024x684.jpg 1024w, /images/ieee/2022/02/NBI_6007-1200x801.jpg 1200w, /images/ieee/2022/02/NBI_6007-1536x1025.jpg 1536w, /images/ieee/2022/02/NBI_6007-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5395,13 +5397,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/Capture-4.jpg"
+              src="/images/event/Capture-4.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5415,8 +5417,8 @@ const posts = [
             Photoshop CC</strong>. The workshop was carried out by <strong>Ms. Rani Ellen V. Ramos, </strong><em>Animation lecturer, Animation Program – MMC Department, AIUB.</em>
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-scaled.jpg" alt="" width="2000" height="1333" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-1024x683.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-1536x1024.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/MG_8108-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/MG_8108-scaled.jpg" alt="" width="2000" height="1333" srcset=
+            "/images/ieee/2022/02/MG_8108-200x133.jpg 200w, /images/ieee/2022/02/MG_8108-300x200.jpg 300w, /images/ieee/2022/02/MG_8108-400x267.jpg 400w, /images/ieee/2022/02/MG_8108-600x400.jpg 600w, /images/ieee/2022/02/MG_8108-768x512.jpg 768w, /images/ieee/2022/02/MG_8108-800x533.jpg 800w, /images/ieee/2022/02/MG_8108-1024x683.jpg 1024w, /images/ieee/2022/02/MG_8108-1200x800.jpg 1200w, /images/ieee/2022/02/MG_8108-1536x1024.jpg 1536w, /images/ieee/2022/02/MG_8108-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5427,8 +5429,8 @@ const posts = [
             Lastly, he discussed the <strong>IEEE</strong> <strong>WIE Affinity Group</strong> and its inception in Bangladesh.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-scaled.jpg" alt="" width="2000" height="1333" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-1024x683.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-1536x1024.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8169-scaled.jpg 2000w"
+            <img src="/images/ieee/2022/02/IMG_8169-scaled.jpg" alt="" width="2000" height="1333" srcset=
+            "/images/ieee/2022/02/IMG_8169-200x133.jpg 200w, /images/ieee/2022/02/IMG_8169-300x200.jpg 300w, /images/ieee/2022/02/IMG_8169-400x267.jpg 400w, /images/ieee/2022/02/IMG_8169-600x400.jpg 600w, /images/ieee/2022/02/IMG_8169-768x512.jpg 768w, /images/ieee/2022/02/IMG_8169-800x533.jpg 800w, /images/ieee/2022/02/IMG_8169-1024x683.jpg 1024w, /images/ieee/2022/02/IMG_8169-1200x800.jpg 1200w, /images/ieee/2022/02/IMG_8169-1536x1024.jpg 1536w, /images/ieee/2022/02/IMG_8169-scaled.jpg 2000w"
              />
           </p>
           <p>
@@ -5438,8 +5440,8 @@ const posts = [
             they should design a magazine cover in Adobe Photoshop CC.
           </p>
           <p>
-            <strong><img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-scaled.jpg" alt="" width="2000" height="1333" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-1024x683.jpg 1024w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-1200x800.jpg 1200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-1536x1024.jpg 1536w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/IMG_8164-scaled.jpg 2000w"
+            <strong><img src="/images/ieee/2022/02/IMG_8164-scaled.jpg" alt="" width="2000" height="1333" srcset=
+            "/images/ieee/2022/02/IMG_8164-200x133.jpg 200w, /images/ieee/2022/02/IMG_8164-300x200.jpg 300w, /images/ieee/2022/02/IMG_8164-400x267.jpg 400w, /images/ieee/2022/02/IMG_8164-600x400.jpg 600w, /images/ieee/2022/02/IMG_8164-768x512.jpg 768w, /images/ieee/2022/02/IMG_8164-800x533.jpg 800w, /images/ieee/2022/02/IMG_8164-1024x683.jpg 1024w, /images/ieee/2022/02/IMG_8164-1200x800.jpg 1200w, /images/ieee/2022/02/IMG_8164-1536x1024.jpg 1536w, /images/ieee/2022/02/IMG_8164-scaled.jpg 2000w"
              /></strong>
           </p>
           <p>
@@ -5460,8 +5462,8 @@ const posts = [
             workshop.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4.jpg" alt="" width="763" height="508" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2022/02/Capture-4.jpg 763w"
+            <img src="/images/ieee/2022/02/Capture-4.jpg" alt="" width="763" height="508" srcset=
+            "/images/ieee/2022/02/Capture-4-200x133.jpg 200w, /images/ieee/2022/02/Capture-4-300x200.jpg 300w, /images/ieee/2022/02/Capture-4-400x266.jpg 400w, /images/ieee/2022/02/Capture-4-600x399.jpg 600w, /images/ieee/2022/02/Capture-4.jpg 763w"
              />
           </p>
         </div>
@@ -5480,13 +5482,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/PICTURE03-2.jpg"
+              src="/images/event/PICTURE03-2.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5494,9 +5496,9 @@ const posts = [
       <div>
         <div>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2.jpg" alt="" width="1024" height="683" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2-800x534.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-2.jpg 1024w"
-             /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-2.jpg" alt="" />
+            <img src="/images/ieee/2021/03/PICTURE01-2.jpg" alt="" width="1024" height="683" srcset=
+            "/images/ieee/2021/03/PICTURE01-2-200x133.jpg 200w, /images/ieee/2021/03/PICTURE01-2-300x200.jpg 300w, /images/ieee/2021/03/PICTURE01-2-400x267.jpg 400w, /images/ieee/2021/03/PICTURE01-2-600x400.jpg 600w, /images/ieee/2021/03/PICTURE01-2-768x512.jpg 768w, /images/ieee/2021/03/PICTURE01-2-800x534.jpg 800w, /images/ieee/2021/03/PICTURE01-2.jpg 1024w"
+             /> <img src="/images/ieee/2021/03/PICTURE02-2.jpg" alt="" />
           </p>
           <p>
             On 17th February 2016, IEEE AIUB Student Branch in association with Teach for Bangladesh, organized a seminar titled “Building your Career through Leadership Development” at Room # 266,
@@ -5504,8 +5506,8 @@ const posts = [
             significance of valuable non-technical leadership and managerial skills, that can aid them in their professional careers.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2.jpg" alt="" width="1024" height="957" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-200x187.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-300x280.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-400x374.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-600x561.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-768x718.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2-800x748.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-2.jpg 1024w"
+            <img src="/images/ieee/2021/03/PICTURE03-2.jpg" alt="" width="1024" height="957" srcset=
+            "/images/ieee/2021/03/PICTURE03-2-200x187.jpg 200w, /images/ieee/2021/03/PICTURE03-2-300x280.jpg 300w, /images/ieee/2021/03/PICTURE03-2-400x374.jpg 400w, /images/ieee/2021/03/PICTURE03-2-600x561.jpg 600w, /images/ieee/2021/03/PICTURE03-2-768x718.jpg 768w, /images/ieee/2021/03/PICTURE03-2-800x748.jpg 800w, /images/ieee/2021/03/PICTURE03-2.jpg 1024w"
              />
           </p>
           <p>
@@ -5543,21 +5545,21 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/PICTURE02-1.jpg"
+              src="/images/event/PICTURE02-1.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><p>
-  <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1.jpg" alt="" width="960" height="638" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-300x199.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-400x266.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-600x399.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-768x510.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1-800x532.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-1.jpg 960w"
-   /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1.jpg" alt="" width="960" height="640" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-1.jpg 960w"
-   /> <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1.jpg" alt="" width="960" height="640" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-300x200.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-400x267.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-600x400.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-768x512.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1-800x533.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-1.jpg 960w"
+  <img src="/images/ieee/2021/03/PICTURE01-1.jpg" alt="" width="960" height="638" srcset=
+  "/images/ieee/2021/03/PICTURE01-1-200x133.jpg 200w, /images/ieee/2021/03/PICTURE01-1-300x199.jpg 300w, /images/ieee/2021/03/PICTURE01-1-400x266.jpg 400w, /images/ieee/2021/03/PICTURE01-1-600x399.jpg 600w, /images/ieee/2021/03/PICTURE01-1-768x510.jpg 768w, /images/ieee/2021/03/PICTURE01-1-800x532.jpg 800w, /images/ieee/2021/03/PICTURE01-1.jpg 960w"
+   /> <img src="/images/ieee/2021/03/PICTURE02-1.jpg" alt="" width="960" height="640" srcset=
+  "/images/ieee/2021/03/PICTURE02-1-200x133.jpg 200w, /images/ieee/2021/03/PICTURE02-1-300x200.jpg 300w, /images/ieee/2021/03/PICTURE02-1-400x267.jpg 400w, /images/ieee/2021/03/PICTURE02-1-600x400.jpg 600w, /images/ieee/2021/03/PICTURE02-1-768x512.jpg 768w, /images/ieee/2021/03/PICTURE02-1-800x533.jpg 800w, /images/ieee/2021/03/PICTURE02-1.jpg 960w"
+   /> <img src="/images/ieee/2021/03/PICTURE03-1.jpg" alt="" width="960" height="640" srcset=
+  "/images/ieee/2021/03/PICTURE03-1-200x133.jpg 200w, /images/ieee/2021/03/PICTURE03-1-300x200.jpg 300w, /images/ieee/2021/03/PICTURE03-1-400x267.jpg 400w, /images/ieee/2021/03/PICTURE03-1-600x400.jpg 600w, /images/ieee/2021/03/PICTURE03-1-768x512.jpg 768w, /images/ieee/2021/03/PICTURE03-1-800x533.jpg 800w, /images/ieee/2021/03/PICTURE03-1.jpg 960w"
    />
 </p>
 <p>
@@ -5577,8 +5579,8 @@ const posts = [
   Islam, </strong><em>Assistant Professor, Dept. of EEE, AIUB </em>and <strong>Mr. Shuvra Saha, </strong><em>Lecturer, Dept. of EEE, AIUB.</em>
 </p>
 <p>
-  <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04.jpg" alt="" width="960" height="712" srcset=
-  "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-200x148.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-300x223.jpg 300w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-400x297.jpg 400w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-600x445.jpg 600w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-768x570.jpg 768w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04-800x593.jpg 800w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE04.jpg 960w"
+  <img src="/images/ieee/2021/03/PICTURE04.jpg" alt="" width="960" height="712" srcset=
+  "/images/ieee/2021/03/PICTURE04-200x148.jpg 200w, /images/ieee/2021/03/PICTURE04-300x223.jpg 300w, /images/ieee/2021/03/PICTURE04-400x297.jpg 400w, /images/ieee/2021/03/PICTURE04-600x445.jpg 600w, /images/ieee/2021/03/PICTURE04-768x570.jpg 768w, /images/ieee/2021/03/PICTURE04-800x593.jpg 800w, /images/ieee/2021/03/PICTURE04.jpg 960w"
    />
 </p>`,
     },
@@ -5592,13 +5594,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/PICTURE03.jpg"
+              src="/images/event/PICTURE03.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5606,8 +5608,8 @@ const posts = [
       <div>
         <div>
           <p>
-            <span><img width="300" height="200" title="PICTURE01" src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE01.jpg" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE01-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE01.jpg 300w" sizes=
+            <span><img width="300" height="200" title="PICTURE01" src="/images/ieee/2020/09/PICTURE01.jpg" srcset=
+            "/images/ieee/2020/09/PICTURE01-200x133.jpg 200w, /images/ieee/2020/09/PICTURE01.jpg 300w" sizes=
             "(max-width: 992px) 100vw, 300px" /></span>
           </p>
           <p>
@@ -5617,8 +5619,8 @@ const posts = [
             ISO, Folsom, California, USA; Senior Member, IEEE Power and Energy Society (PES) & Chair, IEEE Computational Intelligence Magazine (CIM) Task Force; took the stage. He started by
             talking about the North American electric grid and the different agencies overlooking different aspects of the grid. He then went onto describe the consequences of losing a substation,
             the causes of blackouts and a case of a worldwide blackout. He also shared his insights on the obstacles for renewable energy.<br />
-            <span><img width="300" height="225" title="PICTURE02" src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE02.jpg" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE02-200x150.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE02.jpg 300w" sizes=
+            <span><img width="300" height="225" title="PICTURE02" src="/images/ieee/2020/09/PICTURE02.jpg" srcset=
+            "/images/ieee/2020/09/PICTURE02-200x150.jpg 200w, /images/ieee/2020/09/PICTURE02.jpg 300w" sizes=
             "(max-width: 992px) 100vw, 300px" /></span>
           </p>
           <p>
@@ -5629,8 +5631,8 @@ const posts = [
             Mr.Khursiduzzman, Assistant Professor, Faculty of Engineering, AIUB; blessed the event with their presence.
           </p>
           <p>
-            <span><img width="300" height="200" title="PICTURE03" src="https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE03-1.jpg" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE03-1-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2020/09/PICTURE03-1.jpg 300w" sizes=
+            <span><img width="300" height="200" title="PICTURE03" src="/images/ieee/2020/09/PICTURE03-1.jpg" srcset=
+            "/images/ieee/2020/09/PICTURE03-1-200x133.jpg 200w, /images/ieee/2020/09/PICTURE03-1.jpg 300w" sizes=
             "(max-width: 992px) 100vw, 300px" /></span>
           </p>
         </div>
@@ -5649,13 +5651,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/"
+              src="/images/event/"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5718,13 +5720,13 @@ const posts = [
       __html: `<figure>
             <img
               className="w-full rounded-lg"
-              src="/images/PICTURE03.jpg"
+              src="/images/event/PICTURE03.jpg"
               alt=""
               width={1310}
               height={873}
             />
             <figcaption>
-              
+              Sagittis scelerisque nulla cursus in enim consectetur quam.
             </figcaption>
           </figure><div>
   <div>
@@ -5732,8 +5734,8 @@ const posts = [
       <div>
         <div>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01.jpg" alt="" width="300" height="200" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE01.jpg 300w" sizes=
+            <img src="/images/ieee/2021/03/PICTURE01.jpg" alt="" width="300" height="200" srcset=
+            "/images/ieee/2021/03/PICTURE01-200x133.jpg 200w, /images/ieee/2021/03/PICTURE01.jpg 300w" sizes=
             "(max-width: 300px) 100vw, 300px" />
           </p>
           <p>
@@ -5748,8 +5750,8 @@ const posts = [
             on the obstacles for renewable energy.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02.jpg" alt="" width="300" height="225" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02-200x150.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE02.jpg 300w" sizes=
+            <img src="/images/ieee/2021/03/PICTURE02.jpg" alt="" width="300" height="225" srcset=
+            "/images/ieee/2021/03/PICTURE02-200x150.jpg 200w, /images/ieee/2021/03/PICTURE02.jpg 300w" sizes=
             "(max-width: 300px) 100vw, 300px" />
           </p>
           <p>
@@ -5762,8 +5764,8 @@ const posts = [
             Engineering, AIUB; </em>blessed the event with their presence.
           </p>
           <p>
-            <img src="https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03.jpg" alt="" width="300" height="200" srcset=
-            "https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03-200x133.jpg 200w, https://ieeeaiubsb.com/wp-content/uploads/2021/03/PICTURE03.jpg 300w" sizes=
+            <img src="/images/ieee/2021/03/PICTURE03.jpg" alt="" width="300" height="200" srcset=
+            "/images/ieee/2021/03/PICTURE03-200x133.jpg 200w, /images/ieee/2021/03/PICTURE03.jpg 300w" sizes=
             "(max-width: 300px) 100vw, 300px" />
           </p>
         </div>
@@ -5772,7 +5774,167 @@ const posts = [
   </div>
 </div>`,
     },
-    category: `pes`,
+    category: `PES`,
+  },
+  {
+    id: 67,
+    title: `Seminar on “Women in Engineering”`,
+    body: {
+      __html: `<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On&nbsp;<strong>Wednesday, February 22<sup>nd</sup>, 2023,</strong>&nbsp;the<strong>&nbsp;IEEE AIUB Student Branch WIE Affinity Group</strong>&nbsp;successfully organized a seminar session titled&nbsp;<strong>&ldquo;Women in Engineering&rdquo;</strong>. The event was held to gain insightful information about the successes and experiences of successful female engineers. The seminar was intended to encourage women to pursue engineering careers by providing insights into the experiences and accomplishments of a successful female engineer.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The seminar was inaugurated by Advisor of IEEE AIUB Student Branch<em>,</em><strong>Prof. Dr. Mohammed Abdul Mannan,</strong>&nbsp;<em>Associate Dean, Faculty of Engineering, AIUB.&nbsp;</em>He spoke about the female students in engineering fields while also briefly narrating the distinguished speakers&rsquo; achievements. Furthermore, he discussed the factors that discourage women from studying engineering and encouraged female students to work hard to achieve their goals. Following the inauguration speech,&nbsp;<strong>Dr. Dilshad Mahjabeen,</strong>&nbsp;<em>Acting Chairman &amp;</em>&nbsp;<em>Associate professor, Department of EEE, Stamford University Bangladesh &amp; Counselor, IEEE Stamford Student Branch,&nbsp;</em>took the stage. She began her speech by clarifying the fact that her views are optimistic and not feminist. She proceeded by briefly discussing the importance of Women in Engineering and talked about the capabilities and understanding of women regarding the matter. Additionally, she discussed the reasons for more women choosing medical science over engineering and provided statistics on the percentage of men and women pursuing engineering careers. To encourage her audiences, she briefly narrated the stories of the 3 women who pursued engineering while also discussing the lack of participation and issues concerned with WIE in Bangladesh. Before ending her speech, she suggested arranging more seminars regarding Women in Engineering at both school and university levels. She provided some insights into what the future holds for Women in Engineering. Then&nbsp;<em>Advisor of IEEE AIUB Student Branch,&nbsp;</em><strong>Prof. Dr. A.B.M Siddique Hossain,&nbsp;</strong><em>Dean, Faculty of Engineering, AIUB,&nbsp;</em>briefly discussing Women in Engineering and presenting the token of appreciation to the honorable speaker.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The seminar started at&nbsp;<strong>03:00 PM</strong>&nbsp;and finished at&nbsp;<strong>4:00 PM.</strong>&nbsp;A total of 60+ participants attended the event.</span></span></span></span></p>
+
+<p>&nbsp;</p>
+`,
+    },
+    catagory: `WIE`,
+  },
+
+  {
+    id: 68,
+    title: `IEEE Student Professional Awareness Venture (SPAVe) 6.0`,
+    body: {
+      __html: `<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On&nbsp;<strong>Thursday, March 16<sup>th</sup>, 2023</strong>, The&nbsp;<strong>IEEE AIUB Student Branch</strong>&nbsp;successfully organized the&nbsp;<strong>IEEE Student Professional Awareness Venture 6.0</strong>&nbsp;at&nbsp;<strong>American International University-Bangladesh</strong>. The venture was technically supported by&nbsp;<strong>IEEE, IEEE Bangladesh Section,&nbsp;</strong>and<strong>&nbsp;IEEE Young Professionals Bangladesh&nbsp;</strong>and was sponsored and partnered by<strong>&nbsp;Catec, Kishwan Group, Talukdar Foods,</strong>&nbsp;and&nbsp;<strong>Doinik Amader Shomoi</strong>.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The major focus of the event was a series of professional and career-focused sessions centered on professional development. The daylong venture was inaugurated with an opening remark by&nbsp;<strong>Prof. Dr. Md. Abdur Rahman,&nbsp;</strong><em>Pro Vice Chancellor, AIUB&nbsp;</em>who emphasized the advantages of these professional development activities. The first session of the venture titled&nbsp;<strong>&ldquo;Impact of Renewable Energy on Climate Change&rdquo;</strong>&nbsp;was led by<strong>&nbsp;Dr. Shameem Ahmad,</strong>&nbsp;<em>Motivator, IEEE AIUB SB and Assistant Professor, Faculty of Engineering, AIUB.&nbsp;</em>He talked about how to develop a sustainable future, the goals to raise awareness to contribute to the C02 emission zero targets, and how everyone is involved in research work. Another session titled&nbsp;<strong>&ldquo;The Future of Work: Embracing Technological Disruptions &amp; Developing In-Demand Skills&rdquo;&nbsp;</strong>was conducted by&nbsp;<strong>Dr. M. Tanseer Ali</strong>,&nbsp;<em>SAC, IEEE BDS ExCom 2 and Associate Professor &amp; Special Assistant, Capstone Project, Faculty of Engineering, AIUB.&nbsp;</em>The third session was conducted by&nbsp;<strong>Dr. Celia Shahnaz,&nbsp;</strong><em>2023 Global IEEE WIE Chair, professor BUET, Member IEEE New initiative and History Committee, IEEE EAB FRC.&nbsp;</em>She conversed about&nbsp;<strong>WIE</strong>&nbsp;and engineering scope for female students. She discussed research work, innovation, collaboration, and sharing.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">After the lunch break, the fourth session of the venture, entitled&nbsp;<strong>&lsquo;Engineers Career Potentials and Readiness&rsquo;</strong>, was conducted by&nbsp;<strong>Muhammad Abdul Bari,&nbsp;</strong><em>Head of IT (Associate Director), Brac Enterprises.&nbsp;</em>He demonstrated how to look for the right career path and highlighted how to be prepared and the readiness for the job market. The last session was entitled&nbsp;<strong>&ldquo;Ins and Outs of Entrepreneurship&rdquo;</strong>, conducted by&nbsp;<strong>Ghulam Sumdany Don</strong>,<em>&nbsp;Chief Inspirational Officer at Don Sumdany Facilitation, Managing Director at DS Education, Ikigai HR Services, &amp; LoveGen Bangladesh.&nbsp;</em>The session focused on the important aspects of a person&rsquo;s mental health, growth, persistence &amp; patience, adaptability, willingness to act and fixed mindset in a professional&rsquo;s life. After that,&nbsp;<strong>Prof. Dr. A.B.M Siddique Hossain,&nbsp;</strong><em>Advisor, IEEE AIUB SB; Dean, Faculty of Engineering, AIUB,</em>&nbsp;gave his remarks where he thanked the participants for their patience, the ambassadors, and the speakers for their tremendous effort to make the event successful.&nbsp;<strong>Dr. Md. Raju Ahmed</strong>,&nbsp;<em>Dean, Faculty of Engineering; Director of IQAC, DUET; Vice-Chair (Activity), IEEE Bangladesh Section; Life Fellow IEB, Member IEEE,&nbsp;</em>gave the closing remarks for the session. The Venture ended with a cultural program performed by&nbsp;<strong>AIUB Performing Arts Club,</strong>&nbsp;a thanksgiving ceremony, and a group photo session of the speakers, guests, faculty members, organizing team, and participants. 120+ participants from several universities around the nation participated in this mega flagship event.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p>&nbsp;</p>
+`,
+    },
+    category: `Flagship Event`,
+  },
+  {
+    id: 69,
+    title: `Workshop on "Microwave Antenna Design and Simulation"`,
+    body: {
+      __html: `<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On <strong>20<sup>th</sup>&nbsp;April 2023</strong>, the <strong>IEEE Microwave Theory and Techniques Society AIUB SB Chapter</strong>, in collaboration with the <strong>IEEE AIUB Student Branch</strong>, organized an online workshop titled <strong>&quot;Microwave Antenna Design and Simulation&quot;</strong>. This workshop began at 02:00 pm with more than 100 attendees. The workshop aimed to provide a comprehensive overview of microwave antenna design and its simulation.</span></span></span></span></p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-left:2px; margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><em><span style="font-family:&quot;Times New Roman&quot;,serif">Advisor</span></em><span style="font-family:&quot;Times New Roman&quot;,serif"> of IEEE AIUB Student Branch, <strong>Dr. Md. Saniat Rahman Zishan</strong><em>, (Director &amp; Associate Professor, Faculty of Engineering, AIUB)</em>&nbsp;inaugurated the program. He showed his appreciation towards the instructor, organizer, and participants of the online workshop. He then discussed the future perspective of designing antennas. After the inauguration, <em>Student Activity Coordinator</em> of <em>IEEE Bangladesh Section Executive Committee 2023</em>, <strong>Dr. M. Tanseer Ali</strong>, (<em>Associate Professor, Special Assistant, Capstone Project, Faculty of Engineering, AIUB)</em>&nbsp;started his session. He initially demonstrated the CST Studio Suite&#39;s installation procedure and briefly explained its usage. Then, he explained the calculations required for designing an antenna. He also covered the transmission line theory, the significance of frequency, wavelength, reflection coordinates, the three transverse waves, and the dipole moment calculation. Afterwards, he designed and simulated a dipole microwave antenna. A Q&amp;A session was held, where he demonstrated S-parameter, Y-matrix, Z-matrix, electric field, return loss, and parameter sweep. Following the Q&amp;A session, <em>Counselor</em> of IEEE AIUB Student Branch, <strong>Dr. Mohammad Hasan Imam</strong>, (<em>Advisor, IEEE EMBS AIUB SB Chapter, Associate Professor, Faculty of Engineering, AIUB</em>), provided closing remarks and a virtual token of appreciation to the speaker.</span></span></span></span></p>
+
+<p><br />
+&nbsp;</p>
+`,
+    },
+    category: `MTTS`,
+  },
+
+  {
+    id: 70,
+    title: `IEEE AIUB Student Branch Celebrated PES Day 2023 with Engaging Webinar`,
+    body: {
+      __html: ` <p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On&nbsp;<strong>Sunday, May 21<sup>st</sup>, 2023, the IEEE AIUB Student Branch</strong>&nbsp;successfully organized a webinar session titled&nbsp;<strong>&ldquo;Advancements in Renewable Energy Technologies: Shaping the Future of Power and Energy&rdquo;</strong>&nbsp;in celebration of the&nbsp;<strong>6<sup>th</sup>&nbsp;IEEE PES Day</strong>. The webinar aimed to inform students about the latest developments in the power and renewable energy sectors, including advancements in wind, solar, and hydro technologies. It highlighted the potential of renewable energy to meet growing energy demands while addressing the climate crisis, inspiring students in their career choices.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><em><span style="font-family:&quot;Times New Roman&quot;,serif">Advisor of IEEE AIUB Student Branch</span></em><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp;<strong>Dr. Md. Saniat Rahman Zishan</strong>,&nbsp;<em>Director, Faculty of Engineering, American International University - Bangladesh&nbsp;</em>inaugurated the event by emphasizing the significance of&nbsp;<strong>PES Day</strong>&nbsp;and its relevance to the participants. He shed light on the power and energy sector, setting the stage for an insightful session. Advisor of IEEE Power and Energy Society AUST Student Branch Chapter&nbsp;<strong>Dr. Taskin Jamal</strong>,&nbsp;<em>Assistant Professor, Department of EEE, AUST</em>&nbsp;took the floor as the speaker of the session. His session revolved around sustainability and its crucial role in combating the global energy crisis. He delved into topics such as the impact of climate change, the revolution in renewable energy, and the importance of achieving a carbon emission-free environment. The webinar&#39;s objective aligned with United Nations Sustainable Development Goals (SDGs) 7 and 13. SDG 7 aims to ensure access to affordable, reliable, sustainable, and modern energy for all, while SDG 13 calls for urgent actions to combat climate change and its impacts. The webinar aimed to inspire participants to contribute to a more sustainable future by addressing these goals. The discussion further explored the volatile energy market, shifting energy forecasts, and the expanding capacity of renewable resources.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><strong><span style="font-family:&quot;Times New Roman&quot;,serif">Dr. Taskin</span></strong><span style="font-family:&quot;Times New Roman&quot;,serif">&nbsp;emphasized China&#39;s dominance in renewable energy manufacturing and the potential for wind and solar energy to double within the next five years. He also touched upon alternative fuels, fuel cells, and the increasing adoption of renewable energy in various sectors. Following the completion of the speaker&#39;s session, an engaging&nbsp;<strong>Q&amp;A&nbsp;</strong>session took place, allowing participants to further delve into the topics discussed.&nbsp;<em>Motivator of IEEE AIUB Student Branch</em>&nbsp;<strong>Dr. Shameem Ahmad</strong>,&nbsp;<em>Assistant Professor, Department of EEE, Faculty of Engineering, AIUB&nbsp;</em>concluded the session by expressing gratitude to the esteemed speaker and presenting a token of appreciation on behalf of the&nbsp;<strong>IEEE AIUB Student Branch</strong>. Overall, the webinar served as an educational platform, fostering awareness, and understanding of sustainable energy solutions while emphasizing the importance of taking action to combat climate change in line with United Nations SDGs 7 and 13.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The webinar started at 7:10 PM and ended at 8:40 PM. A total of 100+ participants attended the webinar.</span></span></span></span></p>
+
+<p><br />
+&nbsp;</p>
+`,
+    },
+    category: `PES`,
+  },
+  {
+    id: 71,
+    title: `Unlocking Your Potentials and Pushing Your Boundaries with IEEEXtreme 17.0`,
+    body: {
+      __html: `<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On&nbsp;<strong>Sunday, May 28<sup>th</sup>, 2023,&nbsp;</strong>the&nbsp;<strong>IEEE AIUB Student Branch&nbsp;</strong>successfully organized a webinar titled&nbsp;<strong>&ldquo;Unlocking Your Potentials and Pushing Your Boundaries with IEEEXtreme 17.0&rdquo;.&nbsp;</strong>The webinar was held with the purpose of helping participants better prepare for the upcoming&nbsp;<strong>IEEEXtreme</strong>&nbsp;<strong>17.0</strong>&nbsp;by providing relevant and productive information. It highlighted the importance of teamwork, creativity, time management, a healthy lifestyle along with having skills for instant challenges and problem solving.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><strong><span style="font-family:&quot;Times New Roman&quot;,serif">Dr. Mohammad Hasan Imam,&nbsp;</span></strong><em><span style="font-family:&quot;Times New Roman&quot;,serif">Associate Professor, Faculty of Engineering, AIUB; Counselor, IEEE AIUB Student Branch, Advisor, IEEE EMBS AIUB SB Chapter,&nbsp;</span></em><span style="font-family:&quot;Times New Roman&quot;,serif">inaugurated the event by discussing briefly IEEEXtreme and its significance. He further went on to emphasize the need for problem solving, before handing over the stage to the honorable speaker.<strong>&nbsp;Md. Jamil Istiaq</strong>,&nbsp;<em>Information Technology Officer, Semiotify; Former chairperson, IEEE Computer Society AIUB SB Chapter,&nbsp;</em>took the floor as the speaker of the session. His session focused on IEEEXtreme, its benefits, the opportunity it provides, and its recognition. He inquired about topics such as how the competition is conducted, methods for hosting, participating, organizing and highlighted the various activities involved in IEEEXtreme. The webinar aimed to inspire IEEE members to participate in IEEEXtreme 17.0 and showcase their abilities on this platform.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The discussion continued to explore the importance of teamwork and creativity along with the need for proper health and rest.&nbsp;<strong>Md. Jamil&nbsp;</strong>mentioned that problem-solving is a key aspect of the competition and described different types of problem-solving approaches. Furthermore, he provided tips for practicing, managing time, using programming languages and tools, demonstrating problem analysis, implementation, testing, and solution submission. Lastly, he gave an idea for the IEEEXtreme Portal and CS Academy Website and provided a guideline for the activities on the day of IEEEXtreme. Following the completion of the speaker&rsquo;s session, an engaging&nbsp;<strong>Q&amp;A</strong>&nbsp;session took place, allowing participants to further delve into the topics discussed.<strong>&nbsp;Dr. Shameem Ahmad</strong>,&nbsp;<em>Assistant Professor, Department of EEE, Faculty of Engineering, AIUB; Motivator, IEEE AIUB Student Branch</em>, concluded the session by expressing gratitude to the honorable speaker and presenting a token of appreciation on behalf of the&nbsp;<strong>IEEE AIUB Student Branch.&nbsp;</strong>Overall, the webinar served as an educational platform, noting the importance and benefits of IEEEXtreme while signifying the necessity of different types of skills required for the competition. The webinar&#39;s objective aligned with United Nations Sustainable Development Goals (SDGs) 4 which aims to ensure access to quality education for all. </span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The webinar started at&nbsp;<strong>7:00 PM&nbsp;</strong>and ended at&nbsp;<strong>8:30 PM.&nbsp;</strong>A total of 95+ participants attended the webinar.</span></span></span></span></p>
+
+<p><br />
+&nbsp;</p>
+`,
+    },
+    category: `CS`,
+  },
+  {
+    id: 72,
+    title: `Seminar on “EEG Signal Processing & Application to the Neurofeedback:
+Operant Conditioning of Brain and Behaviors”.`,
+    body: {
+      __html: `<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On <strong>Thursday, 22<sup>nd</sup>&nbsp;June 2023</strong>, the <strong>IEEE EMBS AIUB Student Branch</strong> <strong>Chapter</strong> successfully hosted a seminar titled <strong>&ldquo;EEG Signal Processing &amp; Application to the Neurofeedback: Operant Conditioning of Brain and Behaviors&rdquo;</strong>. This seminar was organized in collaboration with the <strong>IEEE AIUB Student Branch</strong> and <strong>Centre for Biomedical Research (CBR), Dr. Anwarul Abedin Institute of Innovation</strong>. The event was held with the purpose to raise and increase public understanding about EEG Signals and Neurofeedback and develop its knowledge among the population.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The seminar was inaugurated by the&nbsp;<em>Advisor of IEEE AIUB Student Branch</em>&nbsp;<strong>Prof. Dr. A.B.M Siddique Hossain</strong><strong>,&nbsp;</strong><em>Dean, Faculty of Engineering, AIUB.&nbsp;</em>During his speech, he briefly explained about electrical signal and signal processing along with what neurons are and their specifications. After the inaugurating speech, the distinguished speaker of the session,&nbsp;<strong>Prof. Dr. M.O.K Wahedi</strong>,&nbsp;<em>MBBS(BD), MRCP (UK), MRCPCH (UK), FRCP (Edin), DCH(Hon&#39;s) Ire NUI, MSc ECD (BRACU); Professor of Pediatrics &amp; Child Health,&nbsp;</em>took the floor as the speaker of the session. He introduced the audience to EEG (electroencephalogram) and QEEG (quantitative electroencephalogram), explaining how these techniques are used to record and analyze brain activity. He explained the digital processing of EEG signals and the application of QEEG, highlighting their role in brain mapping and understanding brainwave characteristics. Furthermore, he provided an overview of the neurofeedback market and discussed the types of brainwaves that EEG measures, emphasizing the different brainwave patterns and frequencies. Afterwards, he shared his real-life experiences and discussed the use of neurofeedback in treating conditions such as ADHD, autism, epilepsy, depression, and anxiety. Before concluding his session, he discussed training programs and awareness related to neurofeedback, along with additional research in the field and demonstrated the outcomes and processes through a video, providing a practical illustration of neurofeedback in action.&nbsp;<em>Advisor of IEEE AIUB Student Branch,&nbsp;</em><strong>Prof. Dr. Mohammad Abdul Mannan</strong><strong>,</strong>&nbsp;<em>Associate Dean, Faculty of Engineering, AIUB&nbsp;</em>delivered the closing remarks of the session where he encouraged participants to carry out research in this field.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">The event concluded with Prof. Dr. A.B.M Siddique Hossain and Prof. Dr. Mohammad Abdul Mannan provided the token of appreciation to the distinguished speaker. This seminar also focused on raising awareness on good health and wellbeing, which aims to ensure healthy lives and promotes well-being for all at all ages. A total of 50+ participants attended the seminar.&nbsp;<em>Counselor of IEEE AIUB Student Branch,&nbsp;</em><strong>Dr. Mohammad Hasan Imam</strong>,<em>&nbsp;Associate Professor, Faculty of Engineering, AIUB,&nbsp;</em><strong>Ms. Humayra Fredous<em>,</em></strong><em>&nbsp;Deputy Director,&nbsp;Center for Biomedical Research (CBR), Dr. Anwarul Abedin Institute of Innovation and Head-in-Charge, Department of Physics, AIUB</em>,&nbsp;<strong>Dr. Md. Humayun Kabir</strong>,&nbsp;<em>Associate Professor, Faculty of Engineering, AIUB</em>&nbsp;attended the event.</span></span></span></span></p>
+
+<p><br />
+&nbsp;</p>
+`,
+    },
+    category: `EMBS`,
+  },
+  {
+    id: 73,
+    title: `IEEE AIUB Student Branch WIE Affinity Group Successfully Celebrated “WIE Day”`,
+    body: {
+      __html: `<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On&nbsp;<strong>Sunday, June 18<sup>th</sup>, 2023,&nbsp;</strong>the&nbsp;<strong>IEEE AIUB Student Branch WIE Affinity Group&nbsp;</strong>successfully celebrated&nbsp;<strong>&ldquo;WIE Day&rdquo;.&nbsp;</strong>The event was held with the aim of empowering and motivating more women to pursue a career in engineering. It highlighted the significant contributions made by current female engineers to various industries and the challenges women engineers face in the traditionally male-dominated field.&nbsp;<em>Advisor of IEEE AIUB Student Branch,&nbsp;</em><strong>Prof. Dr. A.B.M Siddique Hossain,&nbsp;</strong><em>Dean, Faculty of Engineering, AIUB,&nbsp;</em>inaugurated the event by briefly talking about women&rsquo;s advancement in engineering and education before handing over the stage to the honorable speaker.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><strong><span style="font-family:&quot;Times New Roman&quot;,serif">Dr. Dilshad Mahjabeen,&nbsp;</span></strong><em><span style="font-family:&quot;Times New Roman&quot;,serif">Counselor, IEEE STAMFORD Student Branch, Acting Chairman &amp; Associate professor, Department of EEE, Stamford University Bangladesh,&nbsp;</span></em><span style="font-family:&quot;Times New Roman&quot;,serif">took the floor as the speaker of the session. She provided an insightful discussion on women&#39;s involvement in Artificial Intelligence (AI) during the event and talked about the current state of women in AI while acknowledging both the specialties of women and the challenges they face.&nbsp;<strong>Dr. Dilshad&nbsp;</strong>continued the session by mentioning the benefits of diversity and inclusion in corporations, as well as the availability of grants, scholarships, and mentorship programs for women in technical disciplines.&nbsp;<em>Advisor of IEEE AIUB Student Branch</em><strong>&nbsp;Prof. Dr. Mohammad Abdul Mannan,</strong><em>&nbsp;Associate Dean, Faculty of Engineering, AIUB,&nbsp;</em>delivered the closing remarks of the session. The event concluded with Prof<strong>. Dr. Mohammad Abdul Mannan&nbsp;</strong>providing the token of appreciation to the distinguished speaker. Following a designated break period,&nbsp;<strong>Khan Farhana Ma&rsquo;am,</strong>&nbsp;<em>International Relations Specialist, Consultant, Systech Digital Limited; Founder, Farhana&rsquo;s Brainstation.&nbsp;</em>assumed the role of the session&rsquo;s speaker. She delivered an informative session centered around empowering women globally while emphasizing the importance of equality between men and women, highlighting the significance of education for both genders and acknowledged the crucial support of friends and family in women&#39;s empowerment. She touched upon the importance of SWOT analysis and its relevance, emphasizing the value of analytical thinking. Additionally, the speaker demonstrated and provided guidance on emailing a resume effectively. &nbsp;</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><em><span style="font-family:&quot;Times New Roman&quot;,serif">Advisor of IEEE AIUB Student Branch,&nbsp;</span></em><strong><span style="font-family:&quot;Times New Roman&quot;,serif">Dr. Md. Saniat Rahman Zishan,&nbsp;</span></strong><span style="font-family:&quot;Times New Roman&quot;,serif">Director<em>, Faculty of Engineering, AIUB&nbsp;</em>presented the closing remarks of the event. He highlighted on the positive change in number of female engineers in engineering studies in recent years and appreciated the significant contribution of women in engineering. Afterwards he congratulated the&nbsp;<strong>IEEE AIUB Student Branch WIE Affinity Group&nbsp;</strong>for arranging the event and thanked the participants for attending the event. Overall, the event served as a medium to update and inform about the current state of females in different engineering industries and motivate the current female participants to pursue a career in engineering. This event aimed to raise awareness on gender equality and empower all women. A total of 90+ attended the event.&nbsp;<strong>Dr. Rifat Hazari</strong>,&nbsp;<em>Senior Assistant Professor, Faculty of Engineering, AIUB</em>,&nbsp;<strong>Md. Shahariar Parvez</strong>,<em>&nbsp;Lecturer, Faculty of Engineering, AIUB</em>&nbsp;and&nbsp;<strong>Tamim Hossain</strong>,&nbsp;<em>Lecturer, Faculty of Engineering, AIUB</em>&nbsp;attended the session.</span></span></span></span></p>
+
+<p>&nbsp;</p>
+`,
+    },
+    category: `WIE`,
+  },
+
+  {
+    id: 74,
+    title: ` Seminar on ‘Terahertz and Novel Antenna Design Techniques for Next Generation 6G Technologies’`,
+    body: {
+      __html: `<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">On <strong>4<sup>th</sup>&nbsp;July 2023</strong>, the <strong>IEEE MTT-S AIUB Student Branch Chapter</strong>, in collaboration with the <strong>IEEE AIUB Student Branch</strong>, hosted a seminar titled <strong>&lsquo;Terahertz and Novel Antenna Techniques for Next Generation 6G Technologies&rsquo;</strong>. The seminar began at 4:00 pm with more than 50 attendees and concluded at 6:00 pm. The seminar aimed to provide an overview on the possibilities of terahertz frequencies to bring the next generation wireless communication technologies.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><strong><span style="font-family:&quot;Times New Roman&quot;,serif">Prof. Dr. A.B.M Siddique Hossain</span></strong><span style="font-family:&quot;Times New Roman&quot;,serif">,&nbsp;<em>Dean, Faculty of Engineering, AIUB; Advisor, IEEE AIUB Student Branch</em> inaugurated the program. He provided a concise overview of various topics, including the wireless band, electromagnetic spectrum, smart grid, 6G, applications of wireless systems and antennas (WSA), and the prospects and advancements in the ICT sector. After the inauguration, Alumnus of the Department of EEE, AIUB,&nbsp;<strong>Dr. Nasim Al Islam</strong>,&nbsp;<em>Postdoctoral Research Fellow, Kyungpook National University, South Korea</em> took the floor. He began by introducing the audience to the concept of the 6G network. He explained the timeline for allocating the 6G spectrum, forecasted the deployment and expansion of the network, and discussed the challenges associated with operating in high frequency ranges. In addition, he gave an overview of metamaterials, discussing the various types of metamaterials and emphasizing their benefits and fabrication methods. Furthermore, he discussed the performance of nanoantenna-integrated MOS diodes. Before concluding his session, he highlighted the role of funding agencies and acknowledged the contributions of his co-workers in his device fabrication project. He closed the session by emphasizing the abundant opportunities in the field of communication and the application of processes in South Korea, sharing his own personal experience.&nbsp;</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p style="margin-right:1px; text-align:justify"><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span style="color:#181717"><span style="font-family:&quot;Times New Roman&quot;,serif">Following the keynote session, Advisor of IEEE AIUB Student Branch,&nbsp;<strong>Dr. Md. Saniat Rahman Zishan</strong>,&nbsp;<em>Director, Faculty of Engineering, AIUB</em> presented a token of appreciation to the honorable speaker, followed by a closing speech. In his speech, he expressed his admiration for the speaker&#39;s dedication to his work and research, while also encouraging the participants to pursue research in this field. Distinguished faculty members,&nbsp;<strong>Prof. Dr. Mohammad Abdul Mannan,</strong>&nbsp;<em>Associate Dean, Faculty of Engineering, AIUB; Advisor, IEEE AIUB Student Branch</em>;&nbsp;<strong>Dr. Mohammad Hasan Imam,</strong>&nbsp;<em>Associate Professor, Faculty of Engineering, AIUB; Counselor, IEEE AIUB Student Branch</em>;<strong>&nbsp;Dr. Shameem Ahmad,</strong>&nbsp;<em>Assistant Professor, Department of EEE, Faculty of Engineering, AIUB, Motivator, IEEE AIUB Student Branch</em>;&nbsp;<strong>Sadman Shahriar Alam</strong>, <em>Lecturer, Faculty of Engineering, AIUB</em>;&nbsp;<strong>Tamim Hossain</strong>,&nbsp;<em>Lecturer, Faculty of Engineering, AIUB</em>,&nbsp;also attended the session.</span></span></span></span></p>
+
+<p style="margin-right:1px; text-align:justify">&nbsp;</p>
+
+<p>&nbsp;</p>
+`,
+    },
+    category: `MTTS`,
   },
 ];
 
@@ -5885,8 +6047,11 @@ function BackgroundPattern() {
 }
 
 export default function Post({ params }) {
+  // if(isNaN(params.id)) return notFound();
+  // else if (params.id > 74 || params.id < 1) return notFound();
+
   let post = posts.filter((post) => post.id == params.id)[0];
-  // if (!post) return error();
+  if (!post) return(<></>);
 
   return (
     <div className="relative overflow-hidden bg-white py-16">

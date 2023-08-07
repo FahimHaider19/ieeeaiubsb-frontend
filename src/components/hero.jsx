@@ -55,16 +55,16 @@ export default function Hero() {
     <div className="relative my-2">
       {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" /> */}
       <div className="absolute inset-x-0 top-0 -bottom-6 overflow-hidden bg-cyan-50">
-        <Image
+        <img
           alt=""
           src="https://img.freepik.com/free-vector/blue-background-with-abstract-waves_1393-258.jpg"
-          decoding="async"
-          data-nimg="future"
+          // decoding="async"
+          // data-nimg="future"
           className="absolute top-0 w-full h-full object-cover object-center opacity-10"
-          loading="lazy"
+          // loading="lazy"
           // style="color:transparent"
-          width="918"
-          height="1495"
+          // width="918"
+          // height="1495"
         />
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white"></div>
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white"></div>
@@ -111,7 +111,7 @@ export default function Hero() {
                     <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                       <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                         <a
-                          href="#"
+                          href="https://www.ieee.org/"
                           className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-cyan-700 shadow-sm hover:bg-cyan-50 sm:px-8"
                         >
                           Get started

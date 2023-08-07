@@ -4,7 +4,7 @@ import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 
 const faqs = [
   {
-    question: "What's the mission and vision of IEEE AIUB SB?",
+    question: "What&epos; the mission and vision of IEEE AIUB SB?",
     answer: "The mission and vision statements of IEEE student branches focus on promoting technical excellence, fostering innovation, and providing opportunities for personal and professional growth to their members. They often aim to create a vibrant community of students passionate about technology and engineering, offering various events, workshops, and activities to enrich the learning experience and prepare students for successful careers in their respective fields.",
   },
   {
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "What benefits do the members of IEEE AIUB STUDENT BRANCH receive from the chapters?",
-    answer: "IEEE is divided into technical societies and affinity groups, which are like specialized chapters focusing on specific areas of technology and professional interests. Chapters offer access to technical publications, journals, conference proceedings, and other valuable resources in their respective fields. Members can network with professionals, researchers, and industry experts who are part of the specific chapters. Chapters often organize specialized workshops, seminars, technical sessions, career development and mentorship program focused on specific topics related to their field. Active involvement in IEEE chapters can lead to professional recognition and opportunities for leadership roles within the organization, which can enhance a student's resume and future career prospects. Chapters may facilitate collaborative projects among members, offer travel grants or financial support for attending conferences and events.",
+    answer: "IEEE is divided into technical societies and affinity groups, which are like specialized chapters focusing on specific areas of technology and professional interests. Chapters offer access to technical publications, journals, conference proceedings, and other valuable resources in their respective fields. Members can network with professionals, researchers, and industry experts who are part of the specific chapters. Chapters often organize specialized workshops, seminars, technical sessions, career development and mentorship program focused on specific topics related to their field. Active involvement in IEEE chapters can lead to professional recognition and opportunities for leadership roles within the organization, which can enhance a student&epos; resume and future career prospects. Chapters may facilitate collaborative projects among members, offer travel grants or financial support for attending conferences and events.",
   },
 ];
 

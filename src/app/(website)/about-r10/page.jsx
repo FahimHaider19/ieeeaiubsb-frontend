@@ -31,7 +31,7 @@ function Description() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="https://www.ieeer10.org/"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>

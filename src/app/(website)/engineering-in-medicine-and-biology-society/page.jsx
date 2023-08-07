@@ -72,7 +72,7 @@ function Example() {
                   Join Us
                 </a>
                 <a
-                  href="#"
+                  href="https://www.embs.org/"
                   className="text-base font-semibold leading-7 text-gray-900"
                 >
                   Learn more <span aria-hidden="true">→</span>
@@ -153,17 +153,17 @@ function Conference() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.embs.org/events"
                     className="rounded-md bg-purple-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -206,17 +206,17 @@ function Publication() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="https://www.embs.org/publications"
                     className="rounded-md bg-purple-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-purple-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600"
                   >
-                    Documentation
+                    Learn More
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-base font-semibold leading-7 text-gray-900"
                   >
                     View on GitHub <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -255,19 +255,20 @@ const benefits = [
   {
     name: 'Technical community',
     description: 'IEEE Engineering in Medicine and Biology Society (EMBS) provides a vibrant technical community where professionals in the field of biomedical engineering connect, collaborate, and share knowledge. Through conferences, workshops, and online forums, members stay updated on the latest advancements, exchange ideas, and contribute to the growth of this interdisciplinary field.',
-    href: '#',
+    href: 'https://www.embs.org/',
+    // change
     icon: UserGroupIcon,
   },
   {
     name: 'Career development',
     description:"EMBS offers valuable resources for career development  including job boards, mentoring programs and professional networking opportunities. Members can access career guidance, find job openings, and connect with experienced mentors to enhance their skills and advance in their biomedical engineering careers.",
-    href: '#',
+    href: 'https://www.embs.org/',
     icon: AcademicCapIcon,
   },
   {
     name: 'Research and Publications',
     description:"EMBS supports and promotes research in biomedical engineering through its publications, such as journals, magazines, and conference proceedings. Researchers can disseminate their work to a wide audience, gain recognition for their contributions, and stay informed about the latest research trends and findings in the field.",
-    href: '#',
+    href: 'https://www.embs.org/',
     icon: NewspaperIcon,
   },
 ]

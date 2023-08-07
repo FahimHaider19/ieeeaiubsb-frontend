@@ -23,7 +23,7 @@ export default function PhotoGallery() {
     { name: "2022", current: activeTab === 1 },
     { name: "2021", current: activeTab === 2 },
     { name: "2020", current: activeTab === 3 },
-    { name: "2019", current: activeTab === 4 },
+    // { name: "2019", current: activeTab === 4 },
     // { name: "2018", current: activeTab === 5 },
     // { name: "2017", current: activeTab === 6 },
     // { name: "2016", current: activeTab === 7 },
@@ -57,7 +57,7 @@ const images = {
   2022: require.context("../../../../public/images/gallery/2022", true),
   2021: require.context("../../../../public/images/gallery/2021", true),
   2020: require.context("../../../../public/images/gallery/2020", true),
-  2019: require.context("../../../../public/images/gallery/2019", true),
+  // 2019: require.context("../../../../public/images/gallery/2019", true),
   // 2018: require.context("../../../../public/images/gallery/2018", true),
   // 2017: require.context("../../../../public/images/gallery/2017", true),
 };

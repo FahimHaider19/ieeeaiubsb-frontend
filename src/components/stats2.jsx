@@ -33,7 +33,7 @@ export default function Stats2() {
               <div className="aspect-[2/3]">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
-                  src="/images/rahiq-1_cropped.jpg"
+                  src="/images/NBI_1361.JPG"
                   alt=""
                 />
               </div>

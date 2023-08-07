@@ -1,11 +1,10 @@
-import { getServerSession } from "next-auth"
-import { authOptions } from "../api/auth/[...nextauth]/route";
+// import { getServerSession } from "next-auth"
+// import { authOptions } from "../api/auth/[...nextauth]/route";
 
 export default async function Register() {
-  const session = await getServerSession(authOptions);
-  console.log(session);
-  
+  // const session = await getServerSession(authOptions);
+  // console.log(session);
   return (
-    <h1>register</h1>
+    <h1></h1>
   )
 }
