@@ -17,38 +17,38 @@ const years = [
 const committees = [
   {
     logo: "/images/logo/executive.png",
-    name: 'Executive Committee',
-    href: '/executive-committee'
+    name: "Executive Committee",
+    href: "/executive-committee",
   },
   {
     logo: "/images/logo/volunteer.png",
-    name: 'Volunteers',
-    href: '/volunteers'
+    name: "Volunteers",
+    href: "/volunteers",
   },
   {
-    logo: "/images/logo/CS-Icon.png",
-    name: 'CS Committee',
-    href: '/cs-committee'
+    logo: "/images/logo/CS-icon.png",
+    name: "CS Committee",
+    href: "/cs-committee",
   },
   {
     logo: "/images/logo/IAS-2ND-01.png",
-    name: 'IAS Committee',
-    href: '/ias-committee'
+    name: "IAS Committee",
+    href: "/ias-committee",
   },
   {
-    logo: "/images/logo/EMBS 1ST-01.png",
-    name: 'EMBS Committee',
-    href: '/embs-committee'
+    logo: "/images/logo/EMBS 1st-01.png",
+    name: "EMBS Committee",
+    href: "/embs-committee",
   },
   {
     logo: "/images/logo/MTTS-icon.png",
-    name: 'MTTS Committee',
-    href: '/mtts-committee'
+    name: "MTTS Committee",
+    href: "/mtts-committee",
   },
   {
     logo: "/images/logo/WIE-icon.png",
-    name: 'WIE Committee',
-    href: '/wie-committee'
+    name: "WIE Committee",
+    href: "/wie-committee",
   },
 ];
 
