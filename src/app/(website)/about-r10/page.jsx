@@ -6,7 +6,7 @@ function Description() {
           <div className="mx-auto max-w-7xl py-20">
             <div className="text-center grid place-items-center justify-center">
               <h1 className="mt-1 max-w-fit text-3xl font-extrabold bg-gradient-to-r from-cyan-600 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
-                IEEE Reion-10
+                IEEE Region-10
               </h1>
               <p className="mt-8 sm:mt-12 text-lg  text-justify leading-8 text-gray-600">
                 IEEE Region 10, also known as the Asia Pacific Region,
