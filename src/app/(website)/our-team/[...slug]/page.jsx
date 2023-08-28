@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Panel from "../components/panel";
 import TeamCard1 from "@/components/TeamCard1";
-import TeamCard2 from "@/components/TeamCard2";
 
 const excom21 = [
   {
@@ -319,6 +318,154 @@ const excom22 = [
   },
 ];
 
+const excom23 = [
+  {
+    name: "DR. Shameem Ahmad",
+    role: "Counselor",
+    recognition: "#",
+    imageUrl: "/images/committee/shameem sir.jpg",
+    email: "#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Khandoker Mainul Islam",
+    role: "Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/rsz_21khandoker_mainul_islam.jpeg",
+    email: "mailto:imainul941@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100006608590871",
+    linkedinUrl:
+      "https://www.linkedin.com/in/khandoker-mainul-islam-8103a5215/",
+  },
+  {
+    name: "Md. Sums Dip Sarker",
+    role: "Vice-Chariperson (Activity)",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/sumsdipsarker.jpg",
+    email: "mailto:Sumsdip@ieee.org",
+    facebookUrl: "https://www.facebook.com/sums.dip",
+    linkedinUrl: "https://www.linkedin.com/in/sums-dip-sarker-84638121b",
+  },
+  {
+    name: "Tayefur Rahman",
+    role: "Vice-Chariperson (Technical)",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/Tayefur-Rahman-400x600.jpeg",
+    email: "mailto:rahmantayefur@ieee.org",
+    facebookUrl: "https://www.facebook.com/moronic.creature",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Al Shahriar Zishan",
+    role: "Secretary",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/shahriar_zisan_450x600-400x533.jpeg",
+    email: "mailto:shahriar.zishanziss@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100010736582706",
+    linkedinUrl: "https://www.linkedin.com/in/shahriar-zishan-9ab927221/",
+  },
+  {
+    name: "Md Kamrul Hasan",
+    role: "Treasurer",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/MD-Kamrul-Hasan-400x600.jpeg",
+    email: "mailto:kamrul.hasan@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100007567124412",
+    linkedinUrl: "https://www.linkedin.com/in/kamrulhasan72/",
+  },
+  {
+    name: "Fahim Haider",
+    role: "Webmaster",
+    recognition: "BSc. in CSE",
+    email: "mailto:fhmhaider19@gmail.com",
+    imageUrl: "/images/committee/Fahim-Haider-400x600.jpeg",
+    facebookUrl: "https://www.facebook.com/wolf.eye.19",
+    linkedinUrl: "https://www.linkedin.com/in/fahimhaider19/",
+  },
+  {
+    name: "Md.Tamzid Hasan",
+    role: "Creative Team Lead",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/MD.-TAMZID-HASAN-400x600.jpeg",
+    email: "mailto:tamzidhasan737@gmail.com",
+    facebookUrl: "https://www.facebook.com/tamzid.hasan.737/",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Piash Ghosh",
+    role: "Creative Team Lead",
+    recognition: "BSc. in IPE",
+    imageUrl: "/images/committee/Piash-Ghosh-400x600.jpeg",
+    email: "mailto:ghoshpiash361@ieee.org",
+    facebookUrl: "https://www.facebook.com/piashghost",
+    linkedinUrl: "https://www.linkedin.com/in/piash-ghosh-288753236/",
+  },
+  {
+    name: "Tanjil Bin Mohiuddin",
+    role: "Event Coordinator",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/tanjil400-600.jpeg",
+    email: "mailto:bintanjil@ieee.org",
+    facebookUrl: "https://www.facebook.com/tanjilm445",
+    linkedinUrl: "https://www.linkedin.com/in/tanjil-bin-mohiuddin-103a34246/",
+  },
+  {
+    name: "Afiat Zahan Akhi",
+    role: "WIE Affinity Group Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/Sadia_Afrin_450x600.jpeg",
+    email: "mailto:afiatzakhi@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
+    linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
+  },
+  {
+    name: "Riajul Karim Adil",
+    role: "Logistics Coordinator",
+    recognition: "BSc. in EEE",
+    email: "mailto:riajuladil@gmail.com",
+    imageUrl: "/images/committee/Riajul karim Adil.jpg",
+    facebookUrl: "https://www.facebook.com/riajulkarim.adil.5",
+    linkedinUrl: "https://www.linkedin.com/in/riajul-karim-adil-033aa1223",
+  },
+  {
+    name: "Rahiq Al-Makhtum Rahi",
+    role: "Photojournalist",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/Rahiq-Al-Makhtum-400x600.jpeg",
+    email: "mailto:rahiq789@gmail.com",
+    facebookUrl: "https://www.facebook.com/rahiqam",
+    linkedinUrl: "https://www.linkedin.com/in/rahiq-al-makhtum-3a240422a/",
+  },
+  {
+    name: "Riad Al Hasan",
+    role: "Membership Development Coordinator",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/Riad-Al-Hasan-400x600.jpeg",
+    email: "mailto:riadalhasan@ieee.org",
+    facebookUrl: "https://www.facebook.com/Riad.Al.Hasan.1065/",
+    linkedinUrl: "https://www.linkedin.com/in/riad-al-hasan-89893123a/",
+  },
+  {
+    name: "Nishat Tasnim Rakhi",
+    role: "Public Relations Coordinator",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/nishat-rakhi-200-226.png",
+    email: "mailto:nishattasnimrakhi10@gmail.com",
+    facebookUrl: "https://www.facebook.com/tasnim.rakhi.7",
+    linkedinUrl: "https://www.linkedin.com/in/tasnim-rakhi-5b3363241/",
+  },
+  {
+    name: "Mohammed Mahruf Malek",
+    role: "Publication Coordinator",
+    recognition: "BSc. in IPE",
+    email: "mailto:marufmalek161@gmail.com",
+    imageUrl: "/images/committee/Maruf Malek.jpg",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100008014365965",
+    linkedinUrl: "https://www.linkedin.com/in/maruf-malek-158981205",
+  },
+];
+
 const vol21 = [
   {
     name: "Asif-Ul Arefin",
@@ -473,7 +620,7 @@ const vol22 = [
     name: "Afiat Zahan Akhi",
     role: "volunteer",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Sadia_Afrin_450x600.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpeg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -789,7 +936,7 @@ const vol23 = [
   },
 ];
 
-const wie23 = [
+const wie22 = [
   {
     name: "Sadia Afrin",
     role: "Chairperson",
@@ -828,7 +975,46 @@ const wie23 = [
   },
 ];
 
-const ias23 = [
+const wie23 = [
+  {
+    name: "Afiat Zahan Akhi",
+    role: "Affinity Group Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/Akhi-400x533.jpeg",
+    email: "mailto:afiatzakhi@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
+    linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
+  },
+  {
+    name: "Nishat Tasnim Rakhi",
+    role: "Affinity Group Vice-Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/nishat-rakhi-200-226.png",
+    email: "mailto:nishattasnimrakhi10@gmail.com",
+    facebookUrl: "https://www.facebook.com/tasnim.rakhi.7",
+    linkedinUrl: "https://www.linkedin.com/in/tasnim-rakhi-5b3363241/",
+  },
+  {
+    name: "Nazifa Maimuna",
+    role: "Affinity Group Secretary",
+    recognition: "BSc. in IPE",
+    email: "mailto:nazifamaimuna43@gmail.com",
+    imageUrl: "/images/committee/nazifa.jpg",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100028680131418",
+    linkedinUrl: "https://www.linkedin.com/in/nazifa-maimuna-44005b268",
+  },
+  {
+    name: "Nowrin Binte Rashid Rio",
+    role: "Affinity Group Treasurer",
+    recognition: "BSc. in CSE",
+    email: "mailto:nowrinrashid004@gmail.com",
+    imageUrl: "/images/committee/Nowrin Rashid Rio.jpeg",
+    facebookUrl: "https://www.facebook.com/NowrinRio",
+    linkedinUrl: "http://linkedin.com/in/nowrin-rashid-rio-775953269",
+  },
+];
+
+const ias22 = [
   {
     name: "Khandoker Mainul Islam",
     role: "Chairperson",
@@ -859,7 +1045,37 @@ const ias23 = [
   },
 ];
 
-const mtts23 = [
+const ias23 = [
+  {
+    name: "Tanjil Bin Mohiuddin",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/tanjil400-600.jpeg",
+    email: "mailto:bintanjil@ieee.org",
+    facebookUrl: "https://www.facebook.com/tanjilm445",
+    linkedinUrl: "https://www.linkedin.com/in/tanjil-bin-mohiuddin-103a34246/",
+  },
+  {
+    name: "Abdullah Al Faisal",
+    role: "Chapter Sceretary",
+    recognition: "BSc. in CSE",
+    email: "mailto:abdullahalfaisal992@gmail.com",
+    imageUrl: "/images/committee/faisal.jpg",
+    facebookUrl: "https://www.facebook.com/abdullahal.faisal.7737",
+    linkedinUrl: "https://www.linkedin.com/in/abdullah-al-faisal-a57945279/",
+  },
+  {
+    name: "Nahian Ibn Amin",
+    role: "Chapter Treasurer",
+    recognition: "BSc. in EEE",
+    email: "mailto:aminnahianibn@gmail.com",
+    imageUrl: "/images/committee/nahian amin.jpg",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100012872718898",
+    linkedinUrl: "https://www.linkedin.com/in/nahian-ibn-amin-9a3988267",
+  },
+];
+
+const mtts22 = [
   {
     name: "Golam Masrur Chowdhury",
     role: "Chairperson",
@@ -890,7 +1106,37 @@ const mtts23 = [
   },
 ];
 
-const embs23 = [
+const mtts23 = [
+  {
+    name: "Piash Ghosh",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in IPE",
+    imageUrl: "/images/committee/Piash-Ghosh-400x600.jpeg",
+    email: "mailto:ghoshpiash361@ieee.org",
+    facebookUrl: "https://www.facebook.com/piashghost",
+    linkedinUrl: "https://www.linkedin.com/in/piash-ghosh-288753236/",
+  },
+  {
+    name: "Rahiq Al-Makhtum Rahi",
+    role: "Chapter Secretary",
+    recognition: "BSc. in CSE",
+    imageUrl: "/images/committee/Rahiq-Al-Makhtum-400x600.jpeg",
+    email: "mailto:rahiq789@gmail.com",
+    facebookUrl: "https://www.facebook.com/rahiqam",
+    linkedinUrl: "https://www.linkedin.com/in/rahiq-al-makhtum-3a240422a/",
+  },
+  {
+    name: "Musanna Tarique",
+    role: "Chapter Treasurer",
+    recognition: "BSc. in EEE",
+    email: "mailto:musannatarique@gmail.com",
+    imageUrl: "/images/committee/Musanna Tarique.jpg",
+    facebookUrl: "https://www.facebook.com/Kathbadaam",
+    linkedinUrl: "https://www.linkedin.com/in/musanna-tarique/",
+  },
+];
+
+const embs22 = [
   {
     name: "Al Shahriar Zishan",
     role: "Chairperson",
@@ -920,7 +1166,46 @@ const embs23 = [
   },
 ];
 
-const cs23 = [
+const embs23 = [
+  {
+    name: "Tayefur Rahman",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/Tayefur-Rahman-400x600.jpeg",
+    email: "mailto:rahmantayefur@ieee.org",
+    facebookUrl: "https://www.facebook.com/moronic.creature",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md Kamrul Hasan",
+    role: "Chapter Vice Chairperson",
+    recognition: "BSc. in EEE",
+    imageUrl: "/images/committee/MD-Kamrul-Hasan-400x600.jpeg",
+    email: "mailto:kamrul.hasan@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100007567124412",
+    linkedinUrl: "https://www.linkedin.com/in/kamrulhasan72/",
+  },
+  {
+    name: "MD TANZIL RAYHAN ",
+    role: "Chapter Secretary",
+    recognition: "BSc. in CSE",
+    email: "mailto:tanzilrayhan@ieee.org",
+    imageUrl: "/images/committee/TANZIL RAYHAN.jpeg",
+    facebookUrl: "https://www.facebook.com/tanzilrayhan2001",
+    linkedinUrl: "https://www.linkedin.com/in/tanzilrayhan/",
+  },
+  {
+    name: "MD.Ahnaf Ibtahaz",
+    role: "Chapter Treasurer",
+    recognition: "BSc. in CSE",
+    email: "mailto:ahnaf.ibtahaz.17@gmail.com",
+    imageUrl: "/images/committee/ahnaf.jpg",
+    facebookUrl: "https://www.facebook.com/ahnaf.ibtahaz.9",
+    linkedinUrl: "https://www.linkedin.com/in/ahnaf-ibtahaz-47793b285/",
+  },
+];
+
+const cs22 = [
   {
     name: "Md. Sums Dip Sarker",
     role: "Chairperson",
@@ -956,6 +1241,36 @@ const cs23 = [
     email: "mailto:riadalhasan@ieee.org",
     facebookUrl: "https://www.facebook.com/Riad.Al.Hasan.1065/",
     linkedinUrl: "https://www.linkedin.com/in/riad-al-hasan-89893123a/",
+  },
+];
+
+const cs23 = [
+  {
+    name: "Fahim Haider",
+    role: "Chapter Chairperson",
+    recognition: "BSc. in CSE",
+    email: "mailto:fhmhaider19@gmail.com",
+    imageUrl: "/images/committee/Fahim-Haider-400x600.jpeg",
+    facebookUrl: "https://www.facebook.com/wolf.eye.19",
+    linkedinUrl: "https://www.linkedin.com/in/fahimhaider19/",
+  },
+  {
+    name: "Shafayet Ullah",
+    role: "Chapter Secratary",
+    recognition: "BSc. in EEE",
+    email: "mailto:#",
+    imageUrl: "/images/committee/shefayet.jpg",
+    facebookUrl: "https://www.facebook.com/shefayet.ador",
+    linkedinUrl: "https://www.linkedin.com/mwlite/in/shafayet-ullah-9009a0267",
+  },
+  {
+    name: "Sameen Khan",
+    role: "Chapter Treasurer",
+    recognition: "BSc. in EEE",
+    email: "mailto:sameen1820@gmail.com",
+    imageUrl: "/images/committee/sameen.jpg",
+    facebookUrl: "https://www.facebook.com/sameen.khan20",
+    linkedinUrl: "https://www.linkedin.com/in/sameen-khan-b56997267",
   },
 ];
 
@@ -1054,7 +1369,6 @@ function EXCOM(props) {
   );
 }
 
-
 function VOL(props) {
   return (
     <div className="bg-white">
@@ -1072,7 +1386,7 @@ function VOL(props) {
           >
             {props.people.map((p) => (
               <li key={p.name}>
-                <TeamCard2 person={p} />
+                <TeamCard1 person={p} />
               </li>
             ))}
           </ul>
@@ -1097,7 +1411,7 @@ function Ias(props) {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto">
             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Executive Committee {props.year}
+              Industry Applications Society Committee {props.year}
             </h1>
           </div>
           <ul
@@ -1151,7 +1465,7 @@ function Embs(props) {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto">
             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Executive Committee {props.year}
+              Engineering in Medicine and Biology Society Committee {props.year}
             </h1>
           </div>
           <ul
@@ -1208,7 +1522,7 @@ function Wie(props) {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto">
             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Executive Committee {props.year}
+              Women In Engineering Affinity Group Committee {props.year}
             </h1>
           </div>
           <ul
@@ -1242,7 +1556,7 @@ function Wie(props) {
 
           <ul
             role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3 justify-center content-center"
           >
             {all.map((p) => (
               <li key={p.name}>
@@ -1271,7 +1585,7 @@ function Mtts(props) {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto">
             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Executive Committee {props.year}
+              Microwave Theory and Technology Society Committee {props.year}
             </h1>
           </div>
           <ul
@@ -1374,78 +1688,42 @@ function CS23(props) {
   );
 }
 
-
-// export default function Page({ params }) {
-//   console.log(params.slug);
-//   if(params.slug[2])
-//     return notFound();
-//   if(isNaN(params.slug[0])){
-//     switch(params.slug[0]){
-//       case "executive-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "volunteers":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "cs-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "ias-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "mtts-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "embs-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       case "wie-committee":
-//         return <><h1>{params.slug[0]}</h1></>
-//       default:
-//         return notFound();
-//     }
-//   }
-//   else if(Number(params.slug[0])>2023 || Number(params.slug[0])<2012)
-//     return notFound();
-//   else if(params.slug[1]){
-//     switch(params.slug[1]){
-//       case "executive-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "volunteers":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "cs-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "ias-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "mtts-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "embs-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       case "wie-committee":
-//         return <><h1>{params.slug[0]} {params.slug[1]}</h1></>
-//       default:
-//         return notFound();
-//     }
-//   }
-//   else if(params.slug[0])
-//     return <Panel year={params.slug[0]} />
-// }
-
-
 export default function Page({ params }) {
   console.log(params.slug);
   if (params.slug[2]) return notFound();
   if (isNaN(params.slug[0])) {
     switch (params.slug[0]) {
       case "executive-committee":
-        return <EXCOM people={excom22} year={2022} />;
+        return <EXCOM people={excom23} year={2023} />;
         break;
       case "volunteers":
         return <VOL people={vol23} year={2023} />;
       case "cs-committee":
         return <CS23 people={cs23} />;
       case "ias-committee":
-        return <Ias people={ias23} year={2023} />
+        return (
+          <>
+            <Ias people={ias23} year={2023} />
+          </>
+        );
       case "mtts-committee":
-        return <Mtts people={mtts23} year={2023} />
+        return (
+          <>
+            <Mtts people={mtts23} year={2023} />
+          </>
+        );
       case "embs-committee":
-        return <Embs people={embs23} year={2023} />
+        return (
+          <>
+            <Embs people={embs23} year={2023} />
+          </>
+        );
       case "wie-committee":
-        return <Wie people={wie23} year={2023} />
+        return (
+          <>
+            <Wie people={wie23} year={2023} />
+          </>
+        );
       default:
         return notFound();
     }
@@ -1454,11 +1732,17 @@ export default function Page({ params }) {
   else if (params.slug[1]) {
     switch (params.slug[1]) {
       case "executive-committee":
+        if (params.slug[0] == 2023)
+          return <EXCOM people={excom23} year={2023} />;
+
         if (params.slug[0] == 2022)
           return <EXCOM people={excom22} year={2022} />;
 
         if (params.slug[0] == 2021)
           return <EXCOM people={excom21} year={2021} />;
+
+        if (params.slug[0] == 2023)
+          return <EXCOM people={excom23} year={2023} />;
         return (
           <>
             <h1>
@@ -1467,20 +1751,28 @@ export default function Page({ params }) {
           </>
         );
       case "volunteers":
+        if (params.slug[0] == 2023)
+          return <VOL people={vol23} year={params.slug[0]} />;
         if (params.slug[0] == 2022)
           return <VOL people={vol22} year={params.slug[0]} />;
-        else if ((params.slug[0] == 2021))
+        else if ((params.slug[0] = 2021))
           return <VOL people={vol21} year={params.slug[0]} />;
       case "cs-committee":
-        return notFound();
+        if (params.slug[0] == 2023) return <CS23 people={cs23} year={2023} />;
+        if (params.slug[0] == 2022) return <CS23 people={cs22} year={2022} />;
       case "ias-committee":
-        return <Ias people={ias23} year={params.slug[0]} />
+        if (params.slug[0] == 2023) return <Ias people={ias23} year={2023} />;
+        if (params.slug[0] == 2022) return <Ias people={ias22} year={2022} />;
       case "mtts-committee":
-        return <Mtts people={mtts23} year={params.slug[0]} />
+        if (params.slug[0] == 2023) return <Mtts people={mtts23} year={2023} />;
+        if (params.slug[0] == 2022) return <Mtts people={mtts22} year={2022} />;
       case "embs-committee":
-        return <Embs people={embs23} year={params.slug[0]} />
+        if (params.slug[0] == 2023) return <Embs people={embs23} year={2023} />;
+        if (params.slug[0] == 2022) return <Embs people={embs22} year={2022} />;
       case "wie-committee":
-        return <Wie people={wie23} year={params.slug[0]} />
+        if (params.slug[0] == 2023) return <Wie people={wie23} year={2023} />;
+        if (params.slug[0] == 2022) return <Wie people={wie22} year={2022} />;
+
       default:
         return notFound();
     }
