@@ -1,4 +1,7 @@
 export default function TeamCard1({ person }) {
+  if (typeof person === "undefined") {
+    return null;
+  }
   return (
     <>
       <div key={person.name} className="grid place-items-center">

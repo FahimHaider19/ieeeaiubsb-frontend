@@ -322,7 +322,7 @@ const excom23 = [
   {
     name: "DR. Shameem Ahmad",
     role: "Counselor",
-    recognition: "#",
+    recognition: "Assistant Professor, Faculty of Engineering, AIUB",
     imageUrl: "/images/committee/shameem sir.jpg",
     email: "#",
     facebookUrl: "#",
@@ -414,7 +414,7 @@ const excom23 = [
     name: "Afiat Zahan Akhi",
     role: "WIE Affinity Group Chairperson",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Sadia_Afrin_450x600.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpeg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -1289,9 +1289,15 @@ function EXCOM(props) {
     if (i >= 6 && i <= 8) return p;
   });
 
-  const all = props.people.filter((p, i) => {
-    if (i > 8) return p;
+  const list6 = props.people.filter((p, i) => {
+    if (i >= 9 && i <= 11) return p;
   });
+
+  const list7 = props.people.filter((p, i) => {
+    if (i >= 12 && i <= 14) return p;
+  });
+
+  const last = props.people[props.people.length - 1];
 
   return (
     <div className="bg-white">
@@ -1357,11 +1363,31 @@ function EXCOM(props) {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
           >
-            {all.map((p) => (
+            {list6.map((p) => (
               <li key={p.name}>
                 <TeamCard1 person={p} />
               </li>
             ))}
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+          >
+            {list7.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
+          >
+            <li>
+              <TeamCard1 person={last} />
+            </li>
           </ul>
         </div>
       </div>
@@ -1370,6 +1396,11 @@ function EXCOM(props) {
 }
 
 function VOL(props) {
+  const all = props.people.filter((p, i) => {
+    if (props.people.length - 1 == i) return null;
+    else return p;
+  });
+  const last = props.people[props.people.length - 1];
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
@@ -1384,11 +1415,17 @@ function VOL(props) {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-4"
           >
-            {props.people.map((p) => (
+            {all.map((p) => (
               <li key={p.name}>
                 <TeamCard1 person={p} />
               </li>
             ))}
+          </ul>
+
+          <ul role="list" className="grid grid-cols-5 col-start-2">
+            <li className="col-start-3">
+              <TeamCard1 person={last} />
+            </li>
           </ul>
         </div>
       </div>
@@ -1452,10 +1489,10 @@ function Ias(props) {
 
 function Embs(props) {
   const list1 = props.people[0];
-  const list3 = props.people.filter((p, i) => {
+  const list2 = props.people.filter((p, i) => {
     if (i >= 1 && i <= 2) return p;
   });
-  const all = props.people.filter((p, i) => {
+  const last = props.people.filter((p, i) => {
     if (i > 2) return p;
   });
 
@@ -1481,7 +1518,7 @@ function Embs(props) {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
           >
-            {list3.map((p) => (
+            {list2.map((p) => (
               <li key={p.name}>
                 <TeamCard1 person={p} />
               </li>
@@ -1490,10 +1527,10 @@ function Embs(props) {
 
           <ul
             role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-6xl lg:grid-cols-3  justify-center content-center"
           >
-            {all.map((p) => (
-              <li key={p.name}>
+            {last.map((p) => (
+              <li key={p.name} className="col-start-2">
                 <TeamCard1 person={p} />
               </li>
             ))}
@@ -1626,9 +1663,8 @@ function Mtts(props) {
 
 function CS23(props) {
   const list1 = props.people[0];
-  const list2 = props.people[1];
   const list3 = props.people.filter((p, i) => {
-    if (i >= 2 && i <= 3) return p;
+    if (i >= 1 && i <= 3) return p;
   });
   const all = props.people.filter((p, i) => {
     if (i > 8) return p;
@@ -1649,15 +1685,6 @@ function CS23(props) {
           >
             <li>
               <TeamCard1 person={list1} />
-            </li>
-          </ul>
-
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
-          >
-            <li>
-              <TeamCard1 person={list2} />
             </li>
           </ul>
 
