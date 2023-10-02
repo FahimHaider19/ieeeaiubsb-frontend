@@ -340,7 +340,7 @@ const excom23 = [
   },
   {
     name: "Md. Sums Dip Sarker",
-    role: "Vice-Chariperson (Activity)",
+    role: "Vice-Chairperson (Activity)",
     recognition: "BSc. in EEE",
     imageUrl: "/images/committee/sumsdipsarker.jpg",
     email: "mailto:Sumsdip@ieee.org",
@@ -349,7 +349,7 @@ const excom23 = [
   },
   {
     name: "Tayefur Rahman",
-    role: "Vice-Chariperson (Technical)",
+    role: "Vice-Chairperson (Technical)",
     recognition: "BSc. in EEE",
     imageUrl: "/images/committee/Tayefur-Rahman-400x600.jpeg",
     email: "mailto:rahmantayefur@ieee.org",
@@ -1057,7 +1057,7 @@ const ias23 = [
   },
   {
     name: "Abdullah Al Faisal",
-    role: "Chapter Sceretary",
+    role: "Chapter Secretary",
     recognition: "BSc. in CSE",
     email: "mailto:abdullahalfaisal992@gmail.com",
     imageUrl: "/images/committee/faisal.jpg",
@@ -1256,7 +1256,7 @@ const cs23 = [
   },
   {
     name: "Shafayet Ullah",
-    role: "Chapter Secratary",
+    role: "Chapter Secretary",
     recognition: "BSc. in EEE",
     email: "mailto:#",
     imageUrl: "/images/committee/shefayet.jpg",
@@ -1285,19 +1285,21 @@ function EXCOM(props) {
     if (i >= 4 && i <= 5) return p;
   });
 
-  const list5 = props.people.filter((p, i) => {
-    if (i >= 6 && i <= 8) return p;
+  const all = props.people.filter((p, i) => {
+    if (i >= 6) {
+      if (props.people[props.people.length - 1] === p && props.year !== 2022) {
+        return null;
+      } else return p;
+    }
   });
 
-  const list6 = props.people.filter((p, i) => {
-    if (i >= 9 && i <= 11) return p;
+  const last = props.people.filter((p, i) => {
+    if (props.year === 2022) {
+      return null;
+    } else {
+      return p;
+    }
   });
-
-  const list7 = props.people.filter((p, i) => {
-    if (i >= 12 && i <= 14) return p;
-  });
-
-  const last = props.people[props.people.length - 1];
 
   return (
     <div className="bg-white">
@@ -1352,14 +1354,14 @@ function EXCOM(props) {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
           >
-            {list5.map((p) => (
+            {all.map((p) => (
               <li key={p.name}>
                 <TeamCard1 person={p} />
               </li>
             ))}
           </ul>
 
-          <ul
+          {/* <ul
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
           >
@@ -1379,14 +1381,14 @@ function EXCOM(props) {
                 <TeamCard1 person={p} />
               </li>
             ))}
-          </ul>
+            </ul>*/}
 
           <ul
             role="list"
             className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
           >
             <li>
-              <TeamCard1 person={last} />
+              <TeamCard1 person={last[props.people.length - 1]} />
             </li>
           </ul>
         </div>
@@ -1400,7 +1402,9 @@ function VOL(props) {
     if (props.people.length - 1 == i) return null;
     else return p;
   });
-  const last = props.people[props.people.length - 1];
+  const last = props.people.filter((p, i) => {
+    return p;
+  });
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
@@ -1424,7 +1428,7 @@ function VOL(props) {
 
           <ul role="list" className="grid grid-cols-5 col-start-2">
             <li className="col-start-3">
-              <TeamCard1 person={last} />
+              <TeamCard1 person={last[props.people.length - 1]} />
             </li>
           </ul>
         </div>
@@ -1664,11 +1668,12 @@ function Mtts(props) {
 function CS23(props) {
   const list1 = props.people[0];
   const list3 = props.people.filter((p, i) => {
-    if (i >= 1 && i <= 3) return p;
+    if (i >= 1 && i <= 2) return p;
   });
   const all = props.people.filter((p, i) => {
     if (i > 8) return p;
   });
+  const last = props.people[props.people.length - 1];
 
   return (
     <div className="bg-white">
@@ -1676,7 +1681,7 @@ function CS23(props) {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto">
             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Computer Society Committee 2023
+              Computer Society Committee {props.year}
             </h1>
           </div>
           <ul
@@ -1701,13 +1706,11 @@ function CS23(props) {
 
           <ul
             role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
           >
-            {all.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
+            <li>
+              <TeamCard1 person={last} />
+            </li>
           </ul>
         </div>
       </div>
