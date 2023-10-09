@@ -6050,7 +6050,7 @@ export default function Post({ params }) {
   // else if (params.id > 74 || params.id < 1) return notFound();
 
   let post = posts.filter((post) => post.id == params.id)[0];
-  if (!post) return(<></>);
+  if (!post) return <></>;
 
   return (
     <div className="relative overflow-hidden bg-white py-16">

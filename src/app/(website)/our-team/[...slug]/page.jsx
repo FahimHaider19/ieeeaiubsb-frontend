@@ -1671,9 +1671,16 @@ function CS23(props) {
     if (i >= 1 && i <= 2) return p;
   });
   const all = props.people.filter((p, i) => {
-    if (i > 8) return p;
+    if (i >= 1) {
+      if (props.people[props.people.length - 1] === p && props.year === 2022) {
+        return null;
+      } else return p;
+    }
   });
-  const last = props.people[props.people.length - 1];
+  const last = props.people.filter((p, i) => {
+    if (props.year != 2022) return null;
+    else return p;
+  });
 
   return (
     <div className="bg-white">
@@ -1697,7 +1704,7 @@ function CS23(props) {
             role="list"
             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
           >
-            {list3.map((p) => (
+            {all.map((p) => (
               <li key={p.name}>
                 <TeamCard1 person={p} />
               </li>
@@ -1709,7 +1716,7 @@ function CS23(props) {
             className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
           >
             <li>
-              <TeamCard1 person={last} />
+              <TeamCard1 person={last[props.people.length - 1]} />
             </li>
           </ul>
         </div>
