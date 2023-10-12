@@ -1,9 +1,9 @@
-'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
-import Image from 'next/image';
-import 'swiper/css';
-import 'swiper/css/pagination';
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const slides = [
   {
@@ -54,7 +54,7 @@ export default function Hero() {
   return (
     <div className="relative my-2">
       {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" /> */}
-      <div className="absolute inset-x-0 top-0 -bottom-6 overflow-hidden bg-cyan-50">
+      <div className=" -bottom-5 overflow-hidden bg-cyan-50">
         <img
           alt=""
           src="https://img.freepik.com/free-vector/blue-background-with-abstract-waves_1393-258.jpg"
@@ -85,7 +85,7 @@ export default function Hero() {
         {slides.map((slide) => (
           <>
             <SwiperSlide>
-              <div className="mx-auto max-w-7xl bottom-2 sm:px-6 lg:px-8">
+              <div className=" mx-auto max-w-7xl bottom-2 sm:px-6 lg:px-8">
                 <div className="relative shadow-xl lg:h-[80vh] max-h-[720px] sm:overflow-hidden sm:rounded-2xl">
                   <div className="absolute inset-0">
                     <img
@@ -96,7 +96,7 @@ export default function Hero() {
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-sky-100 mix-blend-multiply" />
                   </div>
                   <div className="relative h-full pb-12 flex flex-col justify-end">
-                    <h1 className="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+                    <h1 className="text-center text-2xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                       {/* <span className="block text-gray-200">
                         {slide.heading}
                       </span> */}
@@ -112,13 +112,13 @@ export default function Hero() {
                       <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                         <a
                           href="https://www.ieee.org/"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-cyan-700 shadow-sm hover:bg-cyan-50 sm:px-8"
+                          className="flex items-center justify-center rounded-md lg:border lg:border-transparent bg-white px-4 lg:py-3 text-base font-medium text-cyan-700 shadow-sm hover:bg-cyan-50 invisible lg:visible "
                         >
                           Get started
                         </a>
                         <a
                           href="/membership"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 px-[0.25rem] py-1 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 sm:text-base"
                         >
                           Join Us
                         </a>

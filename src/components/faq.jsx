@@ -64,12 +64,12 @@ export default function Faq() {
                         </span>
                         <span className="ml-6 flex h-7 items-center">
                           {open ? (
-                            <PlusSmallIcon
+                            <MinusSmallIcon
                               className="h-6 w-6"
                               aria-hidden="true"
                             />
                           ) : (
-                            <MinusSmallIcon
+                            <PlusSmallIcon
                               className="h-6 w-6"
                               aria-hidden="true"
                             />

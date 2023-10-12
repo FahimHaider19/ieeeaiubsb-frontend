@@ -414,7 +414,7 @@ const excom23 = [
     name: "Afiat Zahan Akhi",
     role: "WIE Affinity Group Chairperson",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Akhi-400x533.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -620,7 +620,7 @@ const vol22 = [
     name: "Afiat Zahan Akhi",
     role: "volunteer",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Akhi-400x533.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -859,7 +859,7 @@ const vol23 = [
     recognition: "BSc. in EEE",
     email: "mailto:musannatarique@gmail.com",
     imageUrl: "/images/committee/Musanna Tarique.jpg",
-    facebookUrl: "https://www.facebook.com/Kathbadaam",
+    facebookUrl: "https://www.facebook.com/musannatarique",
     linkedinUrl: "https://www.linkedin.com/in/musanna-tarique/",
   },
   {
@@ -959,7 +959,7 @@ const wie22 = [
     name: "Afiat Zahan Akhi",
     role: "Secretary",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Akhi-400x533.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -980,7 +980,7 @@ const wie23 = [
     name: "Afiat Zahan Akhi",
     role: "Affinity Group Chairperson",
     recognition: "BSc. in EEE",
-    imageUrl: "/images/committee/Akhi-400x533.jpeg",
+    imageUrl: "/images/committee/Akhi-400x533.jpg",
     email: "mailto:afiatzakhi@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100073301439012",
     linkedinUrl: "https://www.linkedin.com/in/afiat-z-akhi-475b6523b/",
@@ -1131,7 +1131,7 @@ const mtts23 = [
     recognition: "BSc. in EEE",
     email: "mailto:musannatarique@gmail.com",
     imageUrl: "/images/committee/Musanna Tarique.jpg",
-    facebookUrl: "https://www.facebook.com/Kathbadaam",
+    facebookUrl: "https://www.facebook.com/musannatarique",
     linkedinUrl: "https://www.linkedin.com/in/musanna-tarique/",
   },
 ];
@@ -1426,7 +1426,7 @@ function VOL(props) {
             ))}
           </ul>
 
-          <ul role="list" className="grid grid-cols-5 col-start-2">
+          <ul role="list" className="lg:grid lg:grid-cols-5 lg:col-start-2">
             <li className="col-start-3">
               <TeamCard1 person={last[props.people.length - 1]} />
             </li>
