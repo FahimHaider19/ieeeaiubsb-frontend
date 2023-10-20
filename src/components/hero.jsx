@@ -13,16 +13,16 @@ const slides = [
     subheading: "SPAVE 6.0",
   },
   {
-    imageSrc: "/images/2_IEEE DAY 2022-362.jpg",
+    imageSrc: "/images/ieee-day-23-314-edit2.jpg",
     imageAlt: "image",
     heading: "IEEE AIUB Student Branch",
-    subheading: "IEEE Day 2022",
+    subheading: "IEEE Day 2023",
   },
   {
-    imageSrc: "/images/3_IEEE ORIENTATION 2022-169.jpg",
+    imageSrc: "/images/orientation-2023_19-cropped-2.jpg",
     imageAlt: "image",
     heading: "IEEE AIUB Student Branch",
-    subheading: "Members Orientation  2022",
+    subheading: "Members Orientation 2023",
   },
   {
     imageSrc: "/images/4_NBI_1819.JPG",
@@ -100,7 +100,7 @@ export default function Hero() {
                       {/* <span className="block text-gray-200">
                         {slide.heading}
                       </span> */}
-                      <span className="block text-cyan-300">
+                      <span className="block text-cyan-300 drop-shadow-lg">
                         {slide.subheading}
                       </span>
                     </h1>
