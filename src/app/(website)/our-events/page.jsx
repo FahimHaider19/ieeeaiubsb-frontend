@@ -1,8 +1,11 @@
-'use client'
-import { useState } from 'react';
-import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/20/solid'
-import Post  from '@/components/post';
-import Link from 'next/link';
+"use client";
+import { useState } from "react";
+import {
+  ArrowLongLeftIcon,
+  ArrowLongRightIcon,
+} from "@heroicons/react/20/solid";
+import Post from "@/components/post";
+import Link from "next/link";
 
 const posts = [
   {
@@ -612,14 +615,13 @@ const posts = [
     id: 74,
     title: ` Seminar on ‘Terahertz and Novel Antenna Design Techniques for Next Generation 6G Technologies’`,
     category: ``,
-    imageUrl: "/images/event/terahertz-banner.png",
+    imageUrl: "/images/event/terahertz-banner.jpg",
     date: "July 4,2023",
     datetime: "2023/6/4",
   },
 ];
 
 export default function OurEvents() {
-
   const postsPerPage = 9;
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
@@ -674,36 +676,44 @@ export default function OurEvents() {
               className="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
               disabled={currentPage === 1}
             >
-              <ArrowLongLeftIcon className="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+              <ArrowLongLeftIcon
+                className="mr-3 h-5 w-5 text-gray-400"
+                aria-hidden="true"
+              />
               Previous
             </button>
           </div>
           <div className="hidden md:-mt-px md:flex">
-          {/* Render page numbers dynamically */}
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+            {/* Render page numbers dynamically */}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+              (pageNum) => (
+                <button
+                  key={pageNum}
+                  onClick={() => setCurrentPage(pageNum)}
+                  className={`inline-flex items-center border-t-2 ${
+                    pageNum === currentPage
+                      ? "border-cyan-500 text-cyan-600"
+                      : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                  } px-4 pt-4 text-sm font-medium`}
+                  aria-current={pageNum === currentPage ? "page" : undefined}
+                >
+                  {pageNum}
+                </button>
+              )
+            )}
+          </div>
+          <div className="-mt-px flex w-0 flex-1 justify-end">
             <button
-              key={pageNum}
-              onClick={() => setCurrentPage(pageNum)}
-              className={`inline-flex items-center border-t-2 ${
-                pageNum === currentPage
-                  ? 'border-cyan-500 text-cyan-600'
-                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-              } px-4 pt-4 text-sm font-medium`}
-              aria-current={pageNum === currentPage ? 'page' : undefined}
+              onClick={handleNextPage}
+              className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
             >
-              {pageNum}
+              Next
+              <ArrowLongRightIcon
+                className="ml-3 h-5 w-5 text-gray-400"
+                aria-hidden="true"
+              />
             </button>
-          ))}
-        </div>
-        <div className="-mt-px flex w-0 flex-1 justify-end">
-          <button
-            onClick={handleNextPage}
-            className="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-          >
-            Next
-            <ArrowLongRightIcon className="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-          </button>
-        </div>
+          </div>
         </nav>
       </div>
     </div>
