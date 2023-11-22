@@ -619,6 +619,79 @@ const posts = [
     date: "July 4,2023",
     datetime: "2023/6/4",
   },
+  
+  {
+    id: 75,
+    title: `Seminar on ‘Climate Change and Human Health : Unraveling the nexus’`,
+    
+    imageUrl: "/images/event/climate-change-banner.jpg",
+    date: "July 29,2023",
+    datetime: "2023/6/29",
+    category: ``,
+  },
+  {
+    id: 76,
+    title: `Members' Orientation 2023 - IEEE AIUB Student Branch`,
+     
+    imageUrl: "/images/event/member-orinetation-2023.jpg",
+    date: "August 8,2023",
+    datetime: "2023/8/8",
+    category: ``,
+  },
+  {
+    id: 77,
+    title: ` Seminar on ‘Postgraduate Studies In Engineering	’`,
+     
+    imageUrl: "/images/event/postgraduade-banner.jpg",
+    date: "August 13,2023",
+    datetime: "2023/8/13",
+    category: ``,
+  },
+  {
+    id: 78,
+    title: ` Seminar on ‘Reliability and Safety Risks for the AI Hardware in the Perspective of the Future Metaverse ’`,
+    
+    imageUrl: "/images/event/realiblity-img.jpg",
+    date: "September 9,2023",
+    datetime: "2023/9/9",
+    category: ``,
+  },
+  {
+    id: 79,
+    title: ` Seminar on ‘Securing the Bits and Bytes: Navigating through Classical and Modern Measures of Digital Security’`,
+    
+    imageUrl: "/images/event/securing-bit-ab.jpg",
+    date: "September 16,2023",
+    datetime: "2023/9/16",
+    category: ``,
+  },
+  {
+    id: 80,
+    title: `Seminar on ‘A Rapid & Low-Cost Multifrequency Electrical Impedance Tomography System for Precision Agriculture’`,
+    
+    imageUrl: "/images/event/tomography.jpg",
+    date: "September 27,2023",
+    datetime: "2023/9/17",
+    category: ``,
+  },
+  {
+    id: 81,
+    title: `Celebration of IEEE Day 2023`,
+    
+    imageUrl: "/images/event/ieee-day-2023.jpg",
+    date: "October 10,2023",
+    datetime: "2023/10/10",
+    category: ``,
+  },
+  {
+    id: 82,
+    title: ` Seminar on ‘A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship’`,
+    
+    imageUrl: "/images/event/erasum-mundus-banner.jpg",
+    date: "October 22,2023",
+    datetime: "2023/10/22",
+    category: ``,
+  }
 ];
 
 export default function OurEvents() {
