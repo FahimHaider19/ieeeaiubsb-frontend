@@ -5935,6 +5935,78 @@ Operant Conditioning of Brain and Behaviors”.`,
     },
     category: `MTTS`,
   },
+  {
+    id: 75,
+    title: `Seminar on ‘Climate Change and Human Health : Unraveling the nexus’`,
+    body: {
+      __html: `On July 29, 2023, the<strong> IEEE AIUB Student Branch</strong> hosted a groundbreaking webinar featuring the distinguished <strong>Dr. Celia Shahnaz,</strong> the global chair (2023) of IEEE Women in Engineering (WIE). With over two decades of expertise in leading impactful power and energy projects at both national and international levels, Dr. Shahnaz brought a wealth of knowledge to our virtual stage.`,
+    },
+    category: ``,
+  },
+  {
+    id: 76,
+    title: `Members' Orientation 2023 - IEEE AIUB Student Branch`,
+    body: {
+      __html: `<p>
+      The <strong>IEEE AIUB Student Branch</strong> has successfully organized the orientation ceremony for the new members of the <strong>IEEE</strong>. The event took place from <strong>4:30
+      pm</strong> to <strong>6:30 pm</strong> at the <strong>Multipurpose Hall, D building, AIUB Campus</strong>. The objective of this event was to welcome the new members, volunteers, and the new
+      executive committee for the year 2022 of the <strong>IEEE AIUB Student Branch.</strong>
+    </p>`,
+    },
+    category: ``,
+  },
+  {
+    id: 77,
+    title: ` Seminar on ‘Postgraduate Studies In Engineering	’`,
+    body: {
+      __html: `On <strong>13th August 2023</strong>, the <strong>IEEE AIUB Student Branch</strong> hosted a seminar titled “<strong>Postgraduate Studies In Engineering” </strong>
+
+      The seminar began at 5:30 pm and concluded at 8:00 pm.`,
+    },
+    category: ``,
+  },
+  {
+    id: 78,
+    title: ` Seminar on ‘Reliability and Safety Risks for the AI Hardware in the Perspective of the Future Metaverse ’`,
+    body: {
+      __html: `On <strong>Saturday, September 9, 2023</strong>, the IEEE AIUB Student Branch, in collaboration with the Faculty of Engineering, AIUB successfully organized a webinar titled "<strong>Reliability and safety risks for the AI Hardware in the Perspective of the Future Metaverse</strong>". This webinar provided an informative session for AI enthusiasts and those interested in the application of the metaverse. It was an exciting event which emphasized the future integration of AI in the metaverse, as well as the dependability and safety of the hardware used, particularly in addressing potential faults and wear and tear that may occur during its operation in real-world scenarios."`,
+    },
+    category: ``,
+  },
+  {
+    id: 79,
+    title: ` Seminar on ‘Securing the Bits and Bytes: Navigating through Classical and Modern Measures of Digital Security’`,
+    body: {
+      __html: `On <strong>16th September 2023</strong>, the <strong>IEEE AIUB Student Branch</strong> hosted a seminar titled “<strong>Securing the Bits and Bytes: Navigating through Classical and Modern Measures of Digital Security” </strong>
+
+      In an era where information is the driving force of our digital society, the concepts of cryptography and computer security serve as protectors of our most sensitive data and digital interactions. Together, cryptography and computer security form an indispensable partnership, working hand in hand to protect the digital world. In an effort to increase awareness of cryptography and computer security, the IEEE AIUB Student Branch, in collaboration with IEEE Computer Society AIUB SB Chapter, is organized webinar titled “Securing the Bits and Bytes: Navigating through Classical and Modern Measures of Digital Security” on Saturday, 16th September 2023.`,
+    },
+    category: ``,
+  },
+  {
+    id: 80,
+    title: `Seminar on ‘A Rapid & Low-Cost Multifrequency Electrical Impedance Tomography System for Precision Agriculture’`,
+    body: {
+      __html: `On <strong>Wednesday, September 27th, 2023</strong>,<strong> The IEEE AIUB Student Branch</strong>, successfully organized a seminar titled “A Rapid and Low-Cost Multifrequency Electrical Impedance Tomography Data Acquisition System for Precision Agriculture”. The session enabled participants to grasp and actively participate in the evolution of precision agriculture. It provided valuable insights into how this notable technological advancement in precision agriculture can impact the contemporary agricultural landscape.`,
+    },
+    category: ``,
+  },
+  {
+    id: 81,
+    title: `Celebration of IEEE Day 2023`,
+    body: {
+      __html: `On <strong>Tuesday, 10th October 2023</strong>, the <strong>IEEE AIUB Student Branch</strong> organized an all-day long event celebrating “<strong>IEEE Day 2023</strong>”. The event featured a workshop on "Modeling and Analysis of PV Inverters using MATLAB/Simulink," followed by a seminar on "Smart Power Systems: Automating Sustainability in the Age of Climate Change." Additionally, there was a cultural performance by the Executive Committee members of IEEE AIUB Student Branch and a competition for poster presentations. The event aimed to unite members and supporters of the IEEE AIUB Student Branch, showcasing the collaborative efforts of local IEEE members in shaping technology for a brighter future. It emphasized the collective impact of community-driven ideas and contributions in creating a positive change.`,
+    },
+    category: ``,
+  },
+  {
+    id: 82,
+    title: ` Seminar on ‘A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship’`,
+    body: {
+      __html: `On <strong>Sunday, 22nd October 2023,</strong> the IEEE AIUB Student Branch organized a webinar titled “<strong>A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship</strong>”. The webinar offered comprehensive insights into the Erasmus Mundus Program, outlining its perks and application procedures. The session went in-depth on the scholarship advantages, underscoring the significance of global exposure for students. In summary, the webinar proved highly valuable for students aspiring to pursue their advanced studies overseas.`,
+    },
+    category: ``,
+  }
 ];
 
 function BackgroundPattern() {
