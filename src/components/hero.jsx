@@ -100,7 +100,7 @@ export default function Hero() {
                       {/* <span className="block text-gray-200">
                         {slide.heading}
                       </span> */}
-                      <span className="block text-cyan-300 drop-shadow-lg">
+                      <span className="block text-cyan-400">
                         {slide.subheading}
                       </span>
                     </h1>

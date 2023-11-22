@@ -1,9 +1,8 @@
-"use client"
-import { Popover } from '@headlessui/react'
-import Link from 'next/link'
-import Options from './navbar options'
-import MobileOptions from './navbar mobile options'
-
+"use client";
+import { Popover } from "@headlessui/react";
+import Link from "next/link";
+import Options from "./navbar options";
+import MobileOptions from "./navbar mobile options";
 
 export default function NavBar2() {
   return (

@@ -1,6 +1,6 @@
-"use client"
-import { Fragment } from 'react'
-import { Popover, Transition, Disclosure } from '@headlessui/react'
+"use client";
+import { Fragment } from "react";
+import { Popover, Transition, Disclosure } from "@headlessui/react";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -15,97 +15,99 @@ import {
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/20/solid'
-import Link from 'next/link'
+} from "@heroicons/react/24/outline";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const about = [
   {
-    name: 'About IEEE',
-    href: '/about-ieee',
+    name: "About IEEE",
+    href: "/about-ieee",
     icon: CheckIcon,
   },
   {
-    name: 'IEEE R10',
-    href: '/about-r10',
+    name: "IEEE R10",
+    href: "/about-r10",
     icon: CheckIcon,
   },
   {
-    name: 'IEEE Bangladesh Section',
-    href: '/about-ieeebds',
+    name: "IEEE Bangladesh Section",
+    href: "/about-ieeebds",
     icon: CheckIcon,
   },
   {
-    name: 'IEEE AIUB Student Branch',
-    href: '/about',
+    name: "IEEE AIUB Student Branch",
+    href: "/about",
     icon: CheckIcon,
-  }
-]
+  },
+];
 
 const chaptersandaffinitygroup = [
   {
-    name: 'Computer Society',
-    href: '/computer-society',
+    name: "Computer Society",
+    href: "/computer-society",
     icon: CheckIcon,
   },
   {
-    name: 'Engineering in Medicine and Biology Society',
-    href: '/engineering-in-medicine-and-biology-society',
+    name: "Engineering in Medicine and Biology Society",
+    href: "/engineering-in-medicine-and-biology-society",
     icon: CheckIcon,
-  }, {
-    name: 'Industry Applications Society',
-    href: '/industry-application-society',
+  },
+  {
+    name: "Industry Applications Society",
+    href: "/industry-application-society",
     icon: CheckIcon,
-  }, {
-    name: 'Microwave Theory and Techniques Society',
-    href: '/microwave-theory-techniques-society',
+  },
+  {
+    name: "Microwave Theory and Techniques Society",
+    href: "/microwave-theory-techniques-society",
     icon: CheckIcon,
-  }, {
-    name: 'WIE Affinity Group',
-    href: '/women-in-engineering',
+  },
+  {
+    name: "WIE Affinity Group",
+    href: "/women-in-engineering",
     icon: CheckIcon,
-  }
-]
+  },
+];
 
 const activity = [
   {
-    name: 'Our Events',
-    href: '/our-events',
+    name: "Our Events",
+    href: "/our-events",
     icon: CheckIcon,
   },
   {
-    name: 'Achievements',
-    href: '/achievements',
+    name: "Achievements",
+    href: "/achievements",
     icon: CheckIcon,
   },
   {
-    name: 'Abozzo',
-    href: '/abozzo',
+    name: "Abozzo",
+    href: "/abozzo",
     icon: CheckIcon,
   },
   {
-    name: 'Gallery',
-    href: '/gallery',
+    name: "Gallery",
+    href: "/gallery",
     icon: CheckIcon,
-  }
-]
+  },
+];
 
 const team = [
   {
-    name: 'Our Team',
-    href: '/our-team',
+    name: "Our Team",
+    href: "/our-team",
     icon: CheckIcon,
   },
   {
-    name: 'Membership',
-    href: '/membership',
+    name: "Membership",
+    href: "/membership",
     icon: CheckIcon,
   },
-]
-
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function Options() {
@@ -118,9 +120,15 @@ export default function Options() {
           <Bars3Icon className="h-6 w-6" aria-hidden="true" />
         </Popover.Button>
       </div>
-      <Popover.Group as="nav" className="hidden block space-x-6 lg:flex items-center mr-2">
+      <Popover.Group
+        as="nav"
+        className="hidden block space-x-6 lg:flex items-center mr-2"
+      >
         {/* ??? */}
-        <a href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+        <a
+          href="/"
+          className="text-base font-medium text-gray-500 hover:text-gray-900"
+        >
           Home
         </a>
         <Popover className="relative">
@@ -128,15 +136,15 @@ export default function Options() {
             <>
               <Popover.Button
                 className={classNames(
-                  open ? 'text-gray-900' : 'text-gray-500',
-                  'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 outline-none'
+                  open ? "text-gray-900" : "text-gray-500",
+                  "group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 outline-none"
                 )}
               >
                 <span>Chapters & AG</span>
                 <ChevronDownIcon
                   className={classNames(
-                    open ? 'text-gray-600' : 'text-gray-400',
-                    'ml-2 h-5 w-5 group-hover:text-gray-500'
+                    open ? "text-gray-600" : "text-gray-400",
+                    "ml-2 h-5 w-5 group-hover:text-gray-500"
                   )}
                   aria-hidden="true"
                 />
@@ -159,11 +167,18 @@ export default function Options() {
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                          onClick={ async () => {close()} }
+                          onClick={async () => {
+                            close();
+                          }}
                         >
-                          <item.icon className="h-6 w-6 flex-shrink-0 text-cyan-600" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 flex-shrink-0 text-cyan-600"
+                            aria-hidden="true"
+                          />
                           <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">{item.name}</p>
+                            <p className="text-base font-medium text-gray-900">
+                              {item.name}
+                            </p>
                           </div>
                         </Link>
                       ))}
@@ -180,15 +195,15 @@ export default function Options() {
             <>
               <Popover.Button
                 className={classNames(
-                  open ? 'text-gray-900' : 'text-gray-500',
-                  'group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none'
+                  open ? "text-gray-900" : "text-gray-500",
+                  "group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none"
                 )}
               >
                 <span>Activity</span>
                 <ChevronDownIcon
                   className={classNames(
-                    open ? 'text-gray-600' : 'text-gray-400',
-                    'ml-2 h-5 w-5 group-hover:text-gray-500'
+                    open ? "text-gray-600" : "text-gray-400",
+                    "ml-2 h-5 w-5 group-hover:text-gray-500"
                   )}
                   aria-hidden="true"
                 />
@@ -211,11 +226,18 @@ export default function Options() {
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                          onClick={ async () => {close()} }
+                          onClick={async () => {
+                            close();
+                          }}
                         >
-                          <item.icon className="h-6 w-6 flex-shrink-0 text-cyan-600" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 flex-shrink-0 text-cyan-600"
+                            aria-hidden="true"
+                          />
                           <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">{item.name}</p>
+                            <p className="text-base font-medium text-gray-900">
+                              {item.name}
+                            </p>
                           </div>
                         </Link>
                       ))}
@@ -227,21 +249,20 @@ export default function Options() {
           )}
         </Popover>
 
-
         <Popover className="relative">
           {({ open, close }) => (
             <>
               <Popover.Button
                 className={classNames(
-                  open ? 'text-gray-900' : 'text-gray-500',
-                  'group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none'
+                  open ? "text-gray-900" : "text-gray-500",
+                  "group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none"
                 )}
               >
                 <span>Team</span>
                 <ChevronDownIcon
                   className={classNames(
-                    open ? 'text-gray-600' : 'text-gray-400',
-                    'ml-2 h-5 w-5 group-hover:text-gray-500'
+                    open ? "text-gray-600" : "text-gray-400",
+                    "ml-2 h-5 w-5 group-hover:text-gray-500"
                   )}
                   aria-hidden="true"
                 />
@@ -264,11 +285,18 @@ export default function Options() {
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                          onClick={ async () => {close()} }
+                          onClick={async () => {
+                            close();
+                          }}
                         >
-                          <item.icon className="h-6 w-6 flex-shrink-0 text-cyan-600" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 flex-shrink-0 text-cyan-600"
+                            aria-hidden="true"
+                          />
                           <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">{item.name}</p>
+                            <p className="text-base font-medium text-gray-900">
+                              {item.name}
+                            </p>
                             {/* <p className="mt-1 text-sm text-gray-500">{item.description}</p> */}
                           </div>
                         </Link>
@@ -286,15 +314,15 @@ export default function Options() {
             <>
               <Popover.Button
                 className={classNames(
-                  open ? 'text-gray-900' : 'text-gray-500',
-                  'group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none'
+                  open ? "text-gray-900" : "text-gray-500",
+                  "group inline-flex items-center bg-white text-base font-medium hover:text-gray-900 outline-none"
                 )}
               >
                 <span>About</span>
                 <ChevronDownIcon
                   className={classNames(
-                    open ? 'text-gray-600' : 'text-gray-400',
-                    'ml-2 h-5 w-5 group-hover:text-gray-500'
+                    open ? "text-gray-600" : "text-gray-400",
+                    "ml-2 h-5 w-5 group-hover:text-gray-500"
                   )}
                   aria-hidden="true"
                 />
@@ -317,11 +345,18 @@ export default function Options() {
                           key={item.name}
                           href={item.href}
                           className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                          onClick={ async () => {close()} }
+                          onClick={async () => {
+                            close();
+                          }}
                         >
-                          <item.icon className="h-6 w-6 flex-shrink-0 text-cyan-600" aria-hidden="true" />
+                          <item.icon
+                            className="h-6 w-6 flex-shrink-0 text-cyan-600"
+                            aria-hidden="true"
+                          />
                           <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">{item.name}</p>
+                            <p className="text-base font-medium text-gray-900">
+                              {item.name}
+                            </p>
                           </div>
                         </Link>
                       ))}
@@ -332,10 +367,13 @@ export default function Options() {
             </>
           )}
         </Popover>
-        <Link href="contact" className="text-base font-medium text-gray-500 hover:text-gray-900">
+        <Link
+          href="contact"
+          className="text-base font-medium text-gray-500 hover:text-gray-900"
+        >
           Contact
         </Link>
       </Popover.Group>
     </>
-  )
+  );
 }

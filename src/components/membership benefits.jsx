@@ -1,4 +1,4 @@
-import { CheckIcon } from '@heroicons/react/20/solid'
+import { CheckIcon } from "@heroicons/react/20/solid";
 
 const tiers = [
   {
@@ -47,7 +47,6 @@ const tiers = [
       "Access to resume tips and resources",
       "Resume reviewer service",
       "Resume builder service",
-
     ],
   },
   {
@@ -55,31 +54,50 @@ const tiers = [
     href: "/images/logo/ieeecollabratec-01.png",
     description: "All the basics for starting a new business",
     link: "https://ieee-collabratec.ieee.org/",
-    perks: [],
+    perks: [
+      "Connect and Network with IEEE Technical Experts and Peers",
+      "Collaborate with Technology Professionals Globally",
+      "Advance Your Research",
+      "Find Your Community",
+    ],
   },
   {
     name: "IEEE Xtreme",
     href: "/images/logo/ieeextreme-01.png",
     description: "All the basics for starting a new business",
     link: "https://ieeextreme.org/",
-    perks: [],
+    perks: [
+      "Global Coding Challenge within 24-hour virtual competition",
+      "Innovation and Problem Solving",
+      "Networking and Collaboration",
+      "Skill Enhancement and Recognition",
+    ],
   },
   {
     name: "IEEE Spectrum",
     href: "/images/logo/ieeespectrum-01.png",
     description: "All the basics for starting a new business",
     link: "https://spectrum.ieee.org/",
-    perks: [],
+    perks: [
+      "Expert opinion and news for engineering professionals",
+      "Global Community of Experts",
+      "Professional discussion, webinars, and events",
+      "Career advice and job opportunities",
+    ],
   },
   {
     name: "IEEE Google Apps",
     href: "/images/logo/ieeegoogleapps-01.png",
     description: "All the basics for starting a new business",
     link: "https://www.ieee.org/membership/products/google-apps.html",
-    perks: [],
+    perks: [
+      "A unique IEEE email address (e.g., John.A.Doe@ieee.org)",
+      "30 GB of storage",
+      "Access to Google Drive, Docs, Sheets, Slides, and more",
+      "Collaborate with others in real time",
+    ],
   },
 ];
-
 
 export default function MembershipBenefits() {
   return (
@@ -92,10 +110,10 @@ export default function MembershipBenefits() {
           </h1>
           <p className="mt-5 text-xl text-gray-500 sm:text-center text-justify">
             IEEE membership offers a range of benefits, including access to IEEE
-            Xplore&epos; extensive research, career insights from IEEE Potentials,
-            industry-specific job sites, and tools like IEEE ResumeLab for
-            creating professional resumes. These resources enhance knowledge,
-            career opportunities, and networking for members.
+            Xplore&epos; extensive research, career insights from IEEE
+            Potentials, industry-specific job sites, and tools like IEEE
+            ResumeLab for creating professional resumes. These resources enhance
+            knowledge, career opportunities, and networking for members.
           </p>
         </div>
         <div className="mt-12 space-y-4 sm:mt-16 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:mx-auto lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
