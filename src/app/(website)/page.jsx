@@ -1,7 +1,5 @@
 "use client";
-import HeaderCentered from "../../components/HeaderCentered";
-import HeaderBanner from "../../components/HeaderBanner";
-import Banner from "../../components/banner";
+import HeaderCentered from "@/components/header centered";
 import Hero from "../../components/hero";
 import Description from "../../components/description";
 import Stats2 from "../../components/stats2";

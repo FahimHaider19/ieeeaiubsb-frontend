@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function Example() {
+export default function HeaderCentered() {
   const [showNotification, setShowNotification] = useState(true);
 
   const dismissNotification = () => {
