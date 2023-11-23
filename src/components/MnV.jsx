@@ -47,7 +47,7 @@ export default function MissionAndVision() {
           />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
+          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-400 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
             Mission and Vision
           </h1>
           <p className="mt-6 max-w-inherited text-xl text-white text-center">
