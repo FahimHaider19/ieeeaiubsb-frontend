@@ -115,7 +115,7 @@ export default function Footer() {
             <ul role="list" className="flex justify-start space-x-5">
               <li>
                 <a
-                  href="ieeeaiubstudentbranch@gmail.com"
+                  href="mailto:ieeeaiubstudentbranch@gmail.com"
                   className="text-gray-400 hover:text-[#EA4335]"
                 >
                   <span className="sr-only">Email</span>
