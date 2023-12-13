@@ -1,5 +1,9 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
-
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
 const benefits = [
   {
@@ -11,7 +15,7 @@ const benefits = [
   {
     name: "Career Resources",
     description:
-      "One&epos; career may benefit from being an IEEE member. IEEE provides a range of activities and programs, including career tools, job fairs, and mentorship programs, to assist professionals in advancing their careers. Being a member of IEEE can also increase one&epos; professional credibility and create new prospects.",
+      "One's career may benefit from being an IEEE member. IEEE provides a range of activities and programs, including career tools, job fairs, and mentorship programs, to assist professionals in advancing their careers. Being a member of IEEE can also increase one&epos; professional credibility and create new prospects.",
     icon: LockClosedIcon,
   },
   {
@@ -28,12 +32,14 @@ const benefits = [
   },
   {
     name: "Events and Activities",
-    description:"Throughout the year IEEE sponsors a variety of events like IEEE Conferences, Hackathons and coding competitions, Networking events, and Awards and recognition programs and participates in a range of activities, including job fairs, career fairs, seminars, webinars, and mentorship programs.",
+    description:
+      "Throughout the year IEEE sponsors a variety of events like IEEE Conferences, Hackathons and coding competitions, Networking events, and Awards and recognition programs and participates in a range of activities, including job fairs, career fairs, seminars, webinars, and mentorship programs.",
     icon: FingerPrintIcon,
   },
   {
     name: "Education(Discount/scholarships)",
-    description: "IEEE books and eBooks, journals, articles, conferences, proceedings, standards, society memberships, and continuing education courses are all discounted for IEEE members. A sign-in with an IEEE account might be necessary for some of the sites listed below to protect access to certain member benefit programs.",
+    description:
+      "IEEE books and eBooks, journals, articles, conferences, proceedings, standards, society memberships, and continuing education courses are all discounted for IEEE members. A sign-in with an IEEE account might be necessary for some of the sites listed below to protect access to certain member benefit programs.",
     icon: FingerPrintIcon,
   },
 ];
@@ -72,11 +78,13 @@ export default function WhyJoinIEEE() {
                   {feature.name}
                 </dt>
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto text-justify">{feature.description}</p>
+                  <p className="flex-auto text-justify">
+                    {feature.description}
+                  </p>
                   <p className="mt-6">
                     <a
                       // href={feature.href}
-                      href='https://www.ieee.org/'
+                      href="https://www.ieee.org/"
                       className="text-base font-semibold leading-7 text-cyan-600"
                     >
                       Learn more <span aria-hidden="true">→</span>
