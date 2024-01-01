@@ -1,41 +1,57 @@
-import { AcademicCapIcon, ArrowPathIcon, BanknotesIcon, CloudArrowUpIcon, CurrencyDollarIcon, FingerPrintIcon, GlobeAltIcon, LockClosedIcon, NewspaperIcon, SquaresPlusIcon } from '@heroicons/react/24/outline'
+import {
+  AcademicCapIcon,
+  ArrowPathIcon,
+  BanknotesIcon,
+  CloudArrowUpIcon,
+  CurrencyDollarIcon,
+  FingerPrintIcon,
+  GlobeAltIcon,
+  LockClosedIcon,
+  NewspaperIcon,
+  SquaresPlusIcon,
+} from "@heroicons/react/24/outline";
 // import { Dialog } from '@headlessui/react'
 // import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 // import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const benefits = [
   {
-    name: 'Professonal Networking',
-    description: "IEEE Microwave Theory and Techniques Society (MTTS) provides a platform for professionals to connect and collaborate with like-minded individuals, fostering valuable networking opportunities within the microwave and RF community.",
+    name: "Professonal Networking",
+    description:
+      "IEEE Microwave Theory and Techniques Society (MTTS) provides a platform for professionals to connect and collaborate with like-minded individuals, fostering valuable networking opportunities within the microwave and RF community.",
     icon: GlobeAltIcon,
   },
   {
-    name: 'Publications and Education Activities',
-    description:"MTTS offers access to high-quality publications, including journals and conference proceedings, as well as educational resources, enabling members to stay updated with the latest research and advancements in the field.",
+    name: "Publications and Education Activities",
+    description:
+      "MTTS offers access to high-quality publications, including journals and conference proceedings, as well as educational resources, enabling members to stay updated with the latest research and advancements in the field.",
     icon: NewspaperIcon,
   },
   {
-    name: 'Discounts on IEEE/Wiley Books',
-    description:"Members enjoy exclusive discounts on IEEE and Wiley publications, allowing them to access a wealth of technical literature at reduced prices.",
+    name: "Discounts on IEEE/Wiley Books",
+    description:
+      "Members enjoy exclusive discounts on IEEE and Wiley publications, allowing them to access a wealth of technical literature at reduced prices.",
     icon: BanknotesIcon,
   },
   {
-    name: 'Discount for Conferences Registration',
-    description:"MTTS members receive discounted rates for attending conferences, symposiums, and workshops, facilitating their participation in key industry events.",
+    name: "Discount for Conferences Registration",
+    description:
+      "MTTS members receive discounted rates for attending conferences, symposiums, and workshops, facilitating their participation in key industry events.",
     icon: CurrencyDollarIcon,
   },
   {
-    name: 'GOOGLEAPPS@IEEE',
-    description:"MTTS provides members with access to Google Apps, facilitating efficient communication and collaboration among members using tools such as Gmail, Google Drive, and Google Calendar.",
+    name: "GOOGLEAPPS@IEEE",
+    description:
+      "MTTS provides members with access to Google Apps, facilitating efficient communication and collaboration among members using tools such as Gmail, Google Drive, and Google Calendar.",
     icon: SquaresPlusIcon,
   },
   {
-    name: 'Scholarship for Students',
-    description: 'The society offers scholarships to support and encourage students pursuing studies and research in the field of microwave theory and techniques, empowering the next generation of RF and microwave professionals.',
+    name: "Scholarship for Students",
+    description:
+      "The society offers scholarships to support and encourage students pursuing studies and research in the field of microwave theory and techniques, empowering the next generation of RF and microwave professionals.",
     icon: AcademicCapIcon,
   },
-]
-
+];
 
 function Description() {
   return (
@@ -119,7 +135,6 @@ function Description() {
   );
 }
 
-
 function Benefits() {
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -161,7 +176,7 @@ function Benefits() {
                   <p className="mt-6">
                     <a
                       // href={feature.href}
-                      href='https://mtt.org'
+                      href="https://mtt.org"
                       className="text-base font-semibold leading-7 text-sky-600"
                     >
                       Learn more <span aria-hidden="true">→</span>
@@ -176,8 +191,6 @@ function Benefits() {
     </div>
   );
 }
-
-
 
 function Conference() {
   return (
@@ -241,7 +254,6 @@ function Conference() {
   );
 }
 
-
 function Publication() {
   return (
     <div className="bg-white">
@@ -259,20 +271,20 @@ function Publication() {
                   microwave and wireless component technology. The Society has
                   extensive Digital Products including Multimedia Products. All
                   this has been made possible by volunteers, authors, and
-                  readers like you. The MTT-S publish monthly e-Newsletter
-                  and quarterly Student Newsletter which announcements of upcoming microwave events and
-                  deadlines for nominations, applications and calls for papers.
-                  IT also publishes
-                  peer reviewed papers in IEEE Transactions on Microwave Theory
-                  and Techniques, IEEE Transactions on Terahertz Science and
-                  Technology, IEEE Microwave and Wireless Technology Letters,
-                  IEEE Journal of Microwaves (Open Access) and IEEE Microwave
-                  Magazine that focus on that part of engineering and theory
-                  associated with microwave/millimeter-wave technology and
-                  components, electronic devices, guided wave structures and
-                  theory, electromagnetic theory, Radio Frequency Hybrid and
-                  Monolithic Integrated Circuits, including mixed-signal
-                  circuits, and systems from a few MHz to THz.
+                  readers like you. The MTT-S publish monthly e-Newsletter and
+                  quarterly Student Newsletter which announcements of upcoming
+                  microwave events and deadlines for nominations, applications
+                  and calls for papers. IT also publishes peer reviewed papers
+                  in IEEE Transactions on Microwave Theory and Techniques, IEEE
+                  Transactions on Terahertz Science and Technology, IEEE
+                  Microwave and Wireless Technology Letters, IEEE Journal of
+                  Microwaves (Open Access) and IEEE Microwave Magazine that
+                  focus on that part of engineering and theory associated with
+                  microwave/millimeter-wave technology and components,
+                  electronic devices, guided wave structures and theory,
+                  electromagnetic theory, Radio Frequency Hybrid and Monolithic
+                  Integrated Circuits, including mixed-signal circuits, and
+                  systems from a few MHz to THz.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
@@ -304,7 +316,7 @@ function Publication() {
                 />
                 <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">
                   <div className="mx-auto max-w-2xl md:mx-0 md:max-w-none">
-                    <img src="/images/NBI_7180.jpg" alt="" />
+                    <img src="/images/NBI_7180.JPG" alt="" />
                   </div>
                   <div
                     className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/10 md:rounded-3xl"
@@ -327,10 +339,13 @@ function JoinUs() {
       <div className="mx-auto max-w-5xl py-16 px-6 text-center sm:py-20 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           <span className="block py-2">Join IEEE today.</span>
-          <span className="block text-sky-900">Embark on a journey of limitless possibilities.</span>
+          <span className="block text-sky-900">
+            Embark on a journey of limitless possibilities.
+          </span>
         </h2>
         <p className="mt-4 text-lg leading-6 text-sky-100">
-          Explore the frontiers of innovation, share knowledge, and collaborate to advance technology for humanity.
+          Explore the frontiers of innovation, share knowledge, and collaborate
+          to advance technology for humanity.
         </p>
         <a
           href="/membership"
@@ -343,7 +358,6 @@ function JoinUs() {
   );
 }
 
-
 export default function MTTS() {
   return (
     <>
@@ -353,5 +367,5 @@ export default function MTTS() {
       <Benefits />
       <JoinUs />
     </>
-  )
+  );
 }

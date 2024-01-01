@@ -1,28 +1,48 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon, BookOpenIcon, GlobeAltIcon, AcademicCapIcon, ComputerDesktopIcon, ClipboardDocumentCheckIcon, BuildingOffice2Icon, MicrophoneIcon, UserGroupIcon, NewspaperIcon, UserPlusIcon, SparklesIcon } from '@heroicons/react/24/outline'
-import { CheckIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+  BookOpenIcon,
+  GlobeAltIcon,
+  AcademicCapIcon,
+  ComputerDesktopIcon,
+  ClipboardDocumentCheckIcon,
+  BuildingOffice2Icon,
+  MicrophoneIcon,
+  UserGroupIcon,
+  NewspaperIcon,
+  UserPlusIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/outline";
+import { CheckIcon } from "@heroicons/react/20/solid";
 
 const features = [
   {
-    name: 'Access the Latest Research',
-    description: 'The IEEE Computer Society provides access to a vast repository of cutting-edge research papers, articles, and publications, keeping individuals updated with the latest advancements in the field of computer science and technology.',
+    name: "Access the Latest Research",
+    description:
+      "The IEEE Computer Society provides access to a vast repository of cutting-edge research papers, articles, and publications, keeping individuals updated with the latest advancements in the field of computer science and technology.",
     icon: NewspaperIcon,
   },
   {
-    name: 'Network With Your Peers',
-    description: 'Engage with a global community of like-minded professionals, researchers, and experts through IEEE CS, fostering valuable connections and collaborations to enhance knowledge and career opportunities.',
+    name: "Network With Your Peers",
+    description:
+      "Engage with a global community of like-minded professionals, researchers, and experts through IEEE CS, fostering valuable connections and collaborations to enhance knowledge and career opportunities.",
     icon: GlobeAltIcon,
   },
   {
-    name: 'Get Recognized',
-    description: 'Participation in IEEE CS activities, conferences, and certifications enhances professional credibility, showcasing commitment to continuous learning and expertise in the domain of computer science.p',
+    name: "Get Recognized",
+    description:
+      "Participation in IEEE CS activities, conferences, and certifications enhances professional credibility, showcasing commitment to continuous learning and expertise in the domain of computer science.p",
     icon: UserPlusIcon,
   },
   {
-    name: 'Sharpen Your Skills to boost your career',
-    description: 'IEEE CS fosters a sense of community among its members, offering support and camaraderie in the pursuit of shared interests and goals. Whether you are seeking guidance, collaboration, or mentorship, the society provides a supportive environment.',
+    name: "Sharpen Your Skills to boost your career",
+    description:
+      "IEEE CS fosters a sense of community among its members, offering support and camaraderie in the pursuit of shared interests and goals. Whether you are seeking guidance, collaboration, or mentorship, the society provides a supportive environment.",
     icon: SparklesIcon,
   },
-]
+];
 
 function Description() {
   return (
@@ -102,12 +122,12 @@ function Description() {
                 culture of collaboration among engineers, sparking ingenious
                 solutions and forging unparalleled opportunities in the
                 ever-evolving landscape of technology. In essence, IEEE Computer
-                Society&epos;s unwavering commitment to excellence not only shapes
-                the trajectory of the computing field but also fortifies the
-                industry for a dynamic and promising future.
+                Society&epos;s unwavering commitment to excellence not only
+                shapes the trajectory of the computing field but also fortifies
+                the industry for a dynamic and promising future.
               </p>
               <div className="grid place-items-center my-12">
-                <img src="/images/logo/CS-01.png" alt="" />
+                <img src="/images/logo/CS-01.png" alt="join us btn" />
               </div>
               <div className="mt-8 flex items-center justify-center gap-x-6">
                 <a
@@ -130,7 +150,6 @@ function Description() {
     </div>
   );
 }
-
 
 function Benefits() {
   return (
@@ -174,8 +193,6 @@ function Benefits() {
   );
 }
 
-
-
 function Conference() {
   return (
     <div className="mx-auto max-w-7xl px-6 mt-24">
@@ -194,15 +211,15 @@ function Conference() {
                   backgrounds. These conferences serve as platforms for
                   presenting research findings, innovative projects, and
                   cutting-edge technologies within the field of computer
-                  science. In addition to conferences, the student
-                  branch hosts workshops and seminars focused on emerging
-                  technologies, industry trends, and skill development. These
-                  interactive sessions provide hands-on training and insights
-                  from industry experts, empowering participants to stay updated
-                  with the latest advancements and preparing them for the
-                  challenges of the tech industry. The IEEE CS also organizes
-                  hackathons and coding competitions that unleash the creativity
-                  and problem-solving skills of students. These events allow
+                  science. In addition to conferences, the student branch hosts
+                  workshops and seminars focused on emerging technologies,
+                  industry trends, and skill development. These interactive
+                  sessions provide hands-on training and insights from industry
+                  experts, empowering participants to stay updated with the
+                  latest advancements and preparing them for the challenges of
+                  the tech industry. The IEEE CS also organizes hackathons and
+                  coding competitions that unleash the creativity and
+                  problem-solving skills of students. These events allow
                   participants to work collaboratively on real-world projects,
                   enhancing their practical knowledge and fostering teamwork.
                 </p>
@@ -237,7 +254,6 @@ function Conference() {
     </div>
   );
 }
-
 
 function Publication() {
   return (
@@ -308,49 +324,56 @@ function Publication() {
   );
 }
 
-
 const educationFeatures = [
   {
-    name: 'Bodies of Knowledge',
-    description: 'IEEE CS provides comprehensive bodies of knowledge that serve as essential references for professionals, covering various domains within the technology industry.',
+    name: "Bodies of Knowledge",
+    description:
+      "IEEE CS provides comprehensive bodies of knowledge that serve as essential references for professionals, covering various domains within the technology industry.",
     icon: BookOpenIcon,
   },
   {
-    name: 'Online Courses',
-    description: 'IEEE CS offers a wide range of courses through its online learning platform, allowing individuals to access high-quality education conveniently from anywhere in the world.',
+    name: "Online Courses",
+    description:
+      "IEEE CS offers a wide range of courses through its online learning platform, allowing individuals to access high-quality education conveniently from anywhere in the world.",
     icon: ComputerDesktopIcon,
   },
   {
-    name: 'Certifications',
-    description: 'IEEE CS certifications validate expertise in specific technical areas, bolstering professional credentials and recognition within the global tech community.',
+    name: "Certifications",
+    description:
+      "IEEE CS certifications validate expertise in specific technical areas, bolstering professional credentials and recognition within the global tech community.",
     icon: AcademicCapIcon,
   },
   {
-    name: 'Webinars',
-    description: 'Regular webinars hosted by IEEE CS feature industry experts, offering insights into cutting-edge technologies and trends, fostering continuous learning.',
+    name: "Webinars",
+    description:
+      "Regular webinars hosted by IEEE CS feature industry experts, offering insights into cutting-edge technologies and trends, fostering continuous learning.",
     icon: GlobeAltIcon,
   },
   {
-    name: 'Conferences',
-    description: 'IEEE CS organizes conferences that bring together researchers, practitioners, and enthusiasts, facilitating knowledge exchange and collaboration to advance the field.',
+    name: "Conferences",
+    description:
+      "IEEE CS organizes conferences that bring together researchers, practitioners, and enthusiasts, facilitating knowledge exchange and collaboration to advance the field.",
     icon: UserGroupIcon,
   },
   {
-    name: 'Boards',
-    description: 'IEEE CS establishes boards to address critical topics, promote research, and drive technological advancements, fostering innovation and best practices.',
+    name: "Boards",
+    description:
+      "IEEE CS establishes boards to address critical topics, promote research, and drive technological advancements, fostering innovation and best practices.",
     icon: ClipboardDocumentCheckIcon,
   },
   {
-    name: 'Podcasts',
-    description: 'The platform offers podcasts, presenting engaging discussions on various technology-related topics, making learning entertaining and accessible.',
+    name: "Podcasts",
+    description:
+      "The platform offers podcasts, presenting engaging discussions on various technology-related topics, making learning entertaining and accessible.",
     icon: MicrophoneIcon,
   },
   {
-    name: 'Digital Library',
-    description: 'IEEE CS provides an extensive digital library, housing a vast collection of research papers, journals, and publications, serving as a valuable resource for academic and professional researchers.',
-    icon: BuildingOffice2Icon
+    name: "Digital Library",
+    description:
+      "IEEE CS provides an extensive digital library, housing a vast collection of research papers, journals, and publications, serving as a valuable resource for academic and professional researchers.",
+    icon: BuildingOffice2Icon,
   },
-]
+];
 
 function Education() {
   return (
@@ -358,20 +381,26 @@ function Education() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <div>
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-amber-600">Everything you need</h2>
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-amber-600">
+              Everything you need
+            </h2>
             <h1 className="mt-1 max-w-fit text-3xl font-extrabold bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
               Education
             </h1>
             <p className="mt-6 text-base leading-7 text-gray-600">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-              dolor cupiditate blanditiis ratione.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
             </p>
           </div>
           <dl className="col-span-2 grid grid-cols-1 gap-x-8 gap-y-10 text-base leading-7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
             {educationFeatures.map((feature) => (
               <div key={feature.name} className="relative pl-9">
                 <dt className="font-semibold text-gray-900">
-                  <feature.icon className="absolute top-1 left-0 h-5 w-5 text-amber-500" aria-hidden="true" />
+                  <feature.icon
+                    className="absolute top-1 left-0 h-5 w-5 text-amber-500"
+                    aria-hidden="true"
+                  />
                   {feature.name}
                 </dt>
                 <dd className="mt-2 text-justify">{feature.description}</dd>
@@ -381,9 +410,8 @@ function Education() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
 
 function JoinUs() {
   return (
@@ -410,7 +438,6 @@ function JoinUs() {
   );
 }
 
-
 export default function CS() {
   return (
     <>
@@ -421,5 +448,5 @@ export default function CS() {
       <Benefits />
       <JoinUs />
     </>
-  )
+  );
 }
