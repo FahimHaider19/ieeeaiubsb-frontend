@@ -806,7 +806,7 @@ export default function Page() {
                 </div>
               </div>
 
-              {positionValue.size > 0 && Array.from(positionValue)[0] == "Graphics Designer" && (
+              {positionValue.size > 0 && (Array.from(positionValue)[0] == "Graphics Designer" || Array.from(positionValue)[0] == "Video Editor") && (
                 <div className="col-span-full">
                   <div className="mt-2">
                     <Input
