@@ -24,6 +24,7 @@ export default function Page() {
   const [facebookValue, setFacebookValue] = useState("");
   const [linkedinValue, setLinkedinValue] = useState("");
   const [portfolioValue, setPortfolioValue] = useState("");
+  const [toolValue, setToolValue] = useState("");
   const [positionValue, setPositionValue] = useState(new Set([]));
   const [previousVolunteeringExperience, setPreviousVolunteeringExperience] = useState("");
   const [qualificationValue, setQualificationValue] = useState("");
@@ -36,7 +37,7 @@ export default function Page() {
   const isNameInvalid = useMemo(() => {
     return (name) => {
       if (name === "") return false;
-      return name.match(/^[A-Za-z]+$/) ? false : true;
+      return name.match(/^[A-Za-z ]+$/) ? false : true;
     };
   });
 
@@ -87,6 +88,11 @@ export default function Page() {
   const [genderTouched, setGenderTouched] = useState(false);
   const [positionTouched, setPositionTouched] = useState(false);
   const [isIeeeMemberTouched, setIsIeeeMemberTouched] = useState(false);
+  const [isCvValid, setIsCvValid] = useState(false);
+  const [isPhotoValid, setIsPhotoValid] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isPhotoTounched, setIsPhotoTounched] = useState(false);
+  const [isCvTounched, setIsCvTounched] = useState(false);
 
   const fileExtension = (file)=>file.type.slice(((file.name.lastIndexOf("/")+1)));
 
@@ -102,33 +108,107 @@ export default function Page() {
       !isCompletedCreditsInvalid &&
       bloodGroupValue.size > 0 &&
       genderValue.size > 0 &&
-      positionValue.size > 0
+      positionValue.size > 0 &&
+      !isCurrentCgpaInvalid
     );
   };
 
+  const handelCvSubmit = (e) => {
+    setIsCvTounched(true);
+    setResumeValue(null);
+    const selectedFile = e.target.files[0];
+
+    if (!selectedFile) {
+      // console.log("No file selected");
+      setIsCvValid(false);
+      return;
+    }
+
+    const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
+    const allowedExtensions = ["pdf", "doc", "docx"];
+    const fileSize = selectedFile.size;
+    const maxSize = 2 * 1024 * 1024; // 2 MB
+
+    if (!allowedExtensions.includes(fileExtension)) {
+      // console.log("Invalid file type");
+      setIsCvValid(false);
+      e.target.value = "";
+      return;
+    }
+
+    if (fileSize > maxSize) {
+      // console.log("File size too large");
+      setIsCvValid(false);
+      e.target.value = "";
+      return;
+    }
+    setIsCvValid(true);
+    setResumeValue(selectedFile);
+    // console.log("selectedFile", selectedFile);
+  }
+
+  const handlePhotoSubmit = (e) => {
+    setIsPhotoTounched(true);
+    setPhotoValue(null);
+    const selectedFile = e.target.files[0];
+
+    if (!selectedFile) {
+      // console.log("No file selected");
+      setIsPhotoValid(false);
+      return;
+    }
+
+    const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
+    const allowedExtensions = ["png", "jpg", "jpeg", "webp"];
+    const fileSize = selectedFile.size;
+    const maxSize = 2 * 1024 * 1024; // 2 MB
+
+    if (!allowedExtensions.includes(fileExtension)) {
+      // console.log("Invalid file type");
+      setIsPhotoValid(false);
+      e.target.value = "";
+      return;
+    }
+
+    if (fileSize > maxSize) {
+      // console.log("File size too large");
+      setIsPhotoValid(false);
+      e.target.value = "";
+      return;
+    }
+    setIsPhotoValid(true);
+    setPhotoValue(selectedFile);
+    // console.log("selectedFile", selectedFile);
+  }
+
   const submitform = async (e) => {
     e.preventDefault();
-    console.log("submitting form");
+    // console.log("submitting form");
     // if (!isFormValid()) {
     //   console.log("form is not valid");
     //   return;
     // }
 
-    const imageRef = ref(storage, "images/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
-    uploadBytes(imageRef, photoValue).then(() => {
-      getDownloadURL(imageRef).then((url) => {
-        setPhotoUrl(url);
-        console.log(photoUrl);
-      });
-    });
     // console.log(data);
-    const resumeRef = ref(storage, "resumes/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
-    uploadBytes(resumeRef, resumeValue).then(() => {
-      getDownloadURL(resumeRef).then((url) => {
-        setResumeUrl(url);
-        console.log(resumeUrl);
+    if(!resumeValue) return alert("Please upload your CV");
+    else if(!photoValue) return alert("Please upload your photo");
+    else {
+      const imageRef = ref(storage, "images/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
+          uploadBytes(imageRef, photoValue).then(() => {
+            getDownloadURL(imageRef).then((url) => {
+              setPhotoUrl(url);
+              // console.log(photoUrl);
+            });
+      const resumeRef = ref(storage, "resumes/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
+        uploadBytes(resumeRef, resumeValue).then(() => {
+          getDownloadURL(resumeRef).then((url) => {
+            setResumeUrl(url);
+            // console.log(resumeUrl);
+          });
+        });
       });
-    });
+    }
+
 
     const data = {
       firstName: firstNameValue,
@@ -146,6 +226,7 @@ export default function Page() {
       facebook: facebookValue,
       linkedin: linkedinValue,
       position: Array.from(positionValue)[0],
+      tool: toolValue,
       portfolio: portfolioValue,
       isIeeeMember: Array.from(isIeeeMemberValue)[0],
       ieeeMembershipId: ieeeMembershipIdValue,
@@ -159,21 +240,163 @@ export default function Page() {
     };
 
     const response = await axios.post("https://ieeeaiubsb.pockethost.io/api/collections/volunteer_recruitment/records", data);
-    if(response.status == 200){
-      alert("Form Submitted Successfully");
+    if(response.status == 200) {
+      setIsFormSubmitted(true);
+
     }
-    console.log(response);
+    // console.log(response);
   };
 
   return (
     <div className=" overflow-y-hidden grid place-items-center bg-gray-200">
       <div className="lg:max-w-2xl max-w-screen-sm w-full">
-        <form
+        {!isFormSubmitted && <form
           id="volunteer-recruitment-form"
           className="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl my-6 sm:my-8"
           onSubmit={submitform}
         >
-          <div className="text-4xl w-full text-center pt-16 text-gray-600 font-semibold">
+          <img
+            src="/images/volunteer-recruitment-form-cover.png"
+            alt="Cover-Photo"
+            className="rounded-t-md"
+          />
+          {/* desc */}
+          <div className="text-medium w-full text-wrap py-4 px-12 text-gray-600">
+            <p>
+              Are you interested in developing professionalism, honing your
+              skills, and fostering personal improvement? Look no further than
+              the <span className="font-bold">IEEE AIUB Student Branch</span> –
+              the perfect place for you! The{" "}
+              <span className="font-bold">IEEE AIUB Student Branch</span> is
+              recruiting volunteers for the year 2024. Join and be a part of one
+              of the top Student Branches within the IEEE Bangladesh Section.
+              Seize the chance to refine your skills, heighten your career
+              opportunities and elevate your potential as a significant
+              contributor to the{" "}
+              <span className="font-bold">IEEE AIUB Student Branch</span> .
+              Enthusiastic individuals are encouraged to sign up today and join
+              the IEEE community!
+            </p>
+            <h1 className="font-bold">
+              Recruitment Segments and Required Skill Sets for each Segment:
+            </h1>
+            <div className="px-8">
+              <ul role="list" className="list-disc">
+                <li>
+                  <span className="font-bold"> Event Management Team:</span> The
+                  ideal candidate should be dedicated, punctual, and diligent,
+                  possessing excellent communication and coordination skills.
+                  They should be capable of working under pressure and willing
+                  to undertake fieldwork.
+                </li>
+                <li>
+                  <span className="font-bold"> Event Management Team:</span> The
+                  ideal candidate should be dedicated, punctual, and motivated,
+                  possessing fluency in both English and Bangla, along with
+                  robust writing and presentation/anchoring abilities.
+                </li>
+                <li>
+                  <span className="font-bold">Logistics Team:</span> The ideal
+                  candidate should be dedicated, punctual, and hardworking, with
+                  a willingness to engage in fieldwork. They should possess good
+                  management and negotiation skills, along with familiarity with
+                  local markets.
+                </li>
+                <li>
+                  <span className="font-bold">Photography Team:</span> The ideal
+                  candidate should be dedicated, punctual, and hardworking,
+                  possessing their own camera gear along with sufficient
+                  photography skills.
+                </li>
+                <li>
+                  <span className="font-bold">Creative Team:</span> Consists of
+                  two other segments:
+                  <p className="px-8">
+                    <span className="font-bold">Graphics Team - </span> The
+                    ideal Candidate should be dedicated, punctual and
+                    hardworking individual skilled in designing with Photoshop
+                    and Illustrator.
+                  </p>
+                  <p className="px-8">
+                    <span className="font-bold">Video Editing Team - </span> The
+                    ideal Candidate should be a dedicated, punctual and
+                    hardworking individual with adequate skills in Video Editing
+                    Software and can produce creative &amp; artistic videos.
+                  </p>
+                </li>
+                <li>
+                  <span className="font-bold">Web Designing Team:</span>The
+                  ideal Candidate should be a dedicated, punctual and
+                  hardworking individual skilled in WordPress, HTML, Website
+                  Development and Website Management Skills. <br />
+                  <br /> [For individuals interested in Web Designing Team, if
+                  possible, add your portfolio to your CV]
+                </li>
+                <li>
+                  <span className="font-bold">Public Relation Team:</span>The
+                  ideal candidate should be a dedicated, punctual and
+                  hardworking individual with good communication &amp;
+                  coordination skills, willing to plan and maintain publicity
+                  strategies.
+                </li>
+                <li>
+                  <span className="font-bold">
+                    Women in Engineering (WIE) Team:
+                  </span>
+                  The ideal candidate should be dedicated female individuals
+                  willing to represent women in the Field of Engineering.
+                </li>
+              </ul>
+            </div>
+            <p>
+              * Individuals Interested in Volunteering must have or must be
+              willing to take{" "}
+              <span className="font-bold">
+                {" "}
+                IEEE Membership. Non- IEEE Members{" "}
+              </span>
+              are also encouraged to apply. Volunteers are chosen regardless of
+              whether they are IEEE members or not.
+              <span className="font-bold">
+                {" "}
+                They must become IEEE members if selected.{" "}
+              </span>
+              *
+            </p>
+            <p>
+              * Any false information provided in your registration will not be
+              tolerated and will lead to immediate cancellation of your
+              registration, banning you from future registrations, and might
+              even lead to legal actions. *
+            </p>
+            <p className="font-bold text-red-600">Registration Deadline: 22/02/2024</p>
+            <p className="text-red-500">
+              * Selected candidates in the primary phase will be informed
+              through email to sit for VIVA/Skill Assessment.{" "}
+              {/* <span className="text-red-600"> XX/02/2024. </span>* */}
+            </p>
+            <p className="font-bold">
+              For any query, don’t hesitate to contact: <br /> Tanjil Bin
+              Mohiuddin <br /> Contact Number: 01797241407
+            </p>
+            <p>
+              For further updates and a more detailed overview of our Student
+              Branch, please check out our social handles below- <br /> Link to
+              Official Website:{" "}
+              <a href="https://ieeeaiubsb.com ">https://ieeeaiubsb.com </a>{" "}
+              <br /> Link to official Facebook Page:{" "}
+              <a href="https://www.facebook.com/IEEEAIUBStudentBranch">
+                https://www.facebook.com/IEEEAIUBStudentBranch{" "}
+              </a>
+              <br />
+              Link to official LinkedIn Page:{" "}
+              <a href="https://www.linkedin.com/company/ieee-aiub-student-branch">
+                https://www.linkedin.com/company/ieee-aiub-student-branch
+              </a>
+            </p>
+          </div>
+          {/* desc end */}
+          <div className="text-4xl w-full text-center pt-8 bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent font-bold">
             Volunteer Recruitment 2024
           </div>
           <div className="px-4 py-6 sm:p-8 grid place-items-center">
@@ -347,7 +570,7 @@ export default function Page() {
                     isInvalid={isAiubIdInvalid}
                     color={isAiubIdInvalid ? "danger" : "content"}
                     errorMessage={
-                      isAiubIdInvalid && "Please enter a valid email"
+                      isAiubIdInvalid && "Please enter a valid AIUB ID"
                     }
                     onValueChange={setAiubIdValue}
                     className="w-full"
@@ -383,10 +606,10 @@ export default function Page() {
                     {"EEE"}
                   </SelectItem>
                   <SelectItem key={"IPE"} value={"IPE"}>
-                    {"CSE"}
+                    {"IPE"}
                   </SelectItem>
-                  <SelectItem key={"Architecture"} value={"Architecture"}>
-                    {"Architecture"}
+                  <SelectItem key={"CoE"} value={"CoE"}>
+                    {"CoE"}
                   </SelectItem>
                 </Select>
 
@@ -461,7 +684,7 @@ export default function Page() {
                   errorMessage={
                     completedCreditsValue.length > 0 &&
                     isCompletedCreditsInvalid
-                      ? "Please enter a valid email"
+                      ? "Please enter a valid number"
                       : ""
                   }
                   onValueChange={setCompletedCreditsValue}
@@ -583,6 +806,57 @@ export default function Page() {
                 </div>
               </div>
 
+              {positionValue.size > 0 && Array.from(positionValue)[0] == "Graphics Designer" && (
+                <div className="col-span-full">
+                  <div className="mt-2">
+                    <Input
+                      isRequired
+                      isClearable
+                      value={toolValue}
+                      type="text"
+                      label={"What tools/softwares do you use?"}
+                      variant="bordered"
+                      onValueChange={setToolValue}
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {positionValue.size > 0 && Array.from(positionValue)[0] == "Website Development" && (
+                <div className="col-span-full">
+                  <div className="mt-2">
+                    <Input
+                      isRequired
+                      isClearable
+                      value={toolValue}
+                      type="text"
+                      label={"What Languages/Libraries/Frameworks are you familiar with?"}
+                      variant="bordered"
+                      onValueChange={setToolValue}
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+              )}
+
+              {positionValue.size > 0 && Array.from(positionValue)[0] == "Photojournalist" && (
+                <div className="col-span-full">
+                  <div className="mt-2">
+                    <Input
+                      isRequired
+                      isClearable
+                      value={toolValue}
+                      type="text"
+                      label={"What Devices/Cameras/Lenses do you use for photography?"}
+                      variant="bordered"
+                      onValueChange={setToolValue}
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+              )}
+
               <div className="col-span-full">
                 <div className="mt-2">
                   <Input
@@ -627,7 +901,10 @@ export default function Page() {
                 </Select>
 
                 <Input
-                  isRequired
+                  isDisabled={
+                    isIeeeMemberValue.size == 0 ||
+                    Array.from(isIeeeMemberValue)[0] == "No"
+                  }
                   isClearable
                   value={ieeeMembershipIdValue}
                   type="text"
@@ -744,11 +1021,11 @@ export default function Page() {
                     type="file"
                     id="photoUpload"
                     className="hidden"
-                    onChange={(e) => setPhotoValue(e.target.files[0])}
+                    onChange={(e) => handlePhotoSubmit(e)}
                   />
                   {photoValue ? (
                     <div className="relative rounded-sm overflow-clip w-full p-2 gap-2 grid place-items-center">
-                      {console.log(photoValue)}
+                      {/* {console.log(photoValue)} */}
                       <img
                         className=" rounded-md overflow-clip object-cover max-h-[150px]"
                         src={URL.createObjectURL(photoValue)}
@@ -775,11 +1052,13 @@ export default function Page() {
                       </svg>
                       <p className="text-gray-600">Upload a Photo</p>
                       <p className="text-xs text-gray-400 mt-2 text-center">
-                        PNG, JPG SVG, WEBP, and GIF are Allowed.
+                        PNG, JPG SVG, WEBP, and GIF are Allowed. Maximum file size 2MB.
                       </p>
-                      <p className="text-xs text-red-500 mt-2 mx-2 text-center">
-                        Invalid File format.
-                      </p>
+                      {isPhotoTounched && !isPhotoValid && (
+                        <p className="text-xs text-red-500 mt-2 mx-2 text-center">
+                          Invalid File.
+                        </p>
+                      )}
                     </>
                   )}
                 </label>
@@ -792,11 +1071,11 @@ export default function Page() {
                     type="file"
                     id="resumeUpload"
                     className="hidden"
-                    onChange={(e) => setResumeValue(e.target.files[0])}
+                    onChange={(e) => handelCvSubmit(e)}
                   />
                   {resumeValue ? (
                     <div className="relative rounded-sm overflow-clip w-full p-2 gap-2 flex flex-col justify-center items-center">
-                      {console.log(resumeValue)}
+                      {/* {console.log(resumeValue)} */}
                       <svg
                         height="80"
                         xmlns="http://www.w3.org/2000/svg"
@@ -829,32 +1108,53 @@ export default function Page() {
                       </svg>
                       <p className="text-gray-600">Upload CV/Resume</p>
                       <p className="text-xs text-gray-400 mt-2 text-center">
-                        PNG, JPG SVG, WEBP, and GIF are Allowed.
+                        PDF, DOC, DOCX are Allowed. Maximum file size 2MB.
                       </p>
-                      <p className="text-xs text-red-500 mt-2 mx-2 text-center">
-                        Invalid File format.
-                      </p>
+                      { isCvTounched && !isCvValid && (
+                        <p className="text-xs text-red-500 mt-2 mx-2 text-center">
+                          Invalid File.
+                        </p>
+                      )}
                     </>
                   )}
                 </label>
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-            <button
+          <div className="flex items-center justify-center gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
+            {/* <button
               type="button"
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               Cancel
-            </button>
+            </button> */}
             <button
               type="submit"
-              className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-cyan-600 px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
             >
-              Save
+              Submit
             </button>
           </div>
-        </form>
+        </form>}
+        {isFormSubmitted && <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 rounded-md my-16">
+          <div className="text-center">
+            <p className="text-base font-semibold text-cyan-600">Best of Luck</p>
+            <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              Thank you for for your interest.
+            </h1>
+            <p className="mt-6 text-base leading-7 text-gray-600">
+              Please check your email for further instructions.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="/"
+                className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
+              >
+                Go back to Home Page
+              </a>
+            </div>
+          </div>
+        </main>}
       </div>
     </div>
   );
