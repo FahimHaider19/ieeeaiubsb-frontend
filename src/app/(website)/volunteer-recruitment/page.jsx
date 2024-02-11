@@ -261,7 +261,7 @@ export default function Page() {
             className="rounded-t-md"
           />
           {/* desc */}
-          <div className="text-medium w-full text-wrap py-4 px-12 text-gray-600">
+          <div className="text-medium w-full text-wrap py-4 px-6 md:px-12 text-gray-600">
             <p>
               Are you interested in developing professionalism, honing your
               skills, and fostering personal improvement? Look no further than
@@ -369,10 +369,13 @@ export default function Page() {
               registration, banning you from future registrations, and might
               even lead to legal actions. *
             </p>
-            <p className="font-bold text-red-600">Registration Deadline: 22/02/2024</p>
+            <p className="text-red-500">
+              * If you choose Graphics Designer/Video Editor/Photo-Journalist /Web Design please send some sample (Portfolio) of your work via google drive link/github. (Don't forget to make the accessibility setting: Anyone with the link can view)
+            </p>
+            <p className="font-bold text-red-600">Registration Deadline: 20/02/2024</p>
             <p className="text-red-500">
               * Selected candidates in the primary phase will be informed
-              through email to sit for VIVA/Skill Assessment.{" "}
+              through email to sit for VIVA/Skill Assessment. Tantative Date 22/02/2022() and 24/02/2022{" "}
               {/* <span className="text-red-600"> XX/02/2024. </span>* */}
             </p>
             <p className="font-bold">
@@ -857,9 +860,14 @@ export default function Page() {
                 </div>
               )}
 
-              <div className="col-span-full">
+              {positionValue.size > 0 && (Array.from(positionValue)[0] == "Graphics Designer"
+                || Array.from(positionValue)[0] == "Photojournalist"
+                || Array.from(positionValue)[0] == "Website Development"
+                || Array.from(positionValue)[0] == "Video Editor") &&
+                (<div className="col-span-full">
                 <div className="mt-2">
                   <Input
+                    isRequired
                     isClearable
                     value={portfolioValue}
                     type="text"
@@ -869,9 +877,9 @@ export default function Page() {
                     className="w-full"
                   />
                 </div>
-              </div>
+              </div>)}
 
-              <div className="mt-2 w-full grid grid-cols-2 gap-2">
+              <div className="mt-2 w-full grid grid-cols-1 md:grid-cols-2 gap-2">
                 <Select
                   isRequired
                   label="Are You an IEEE Member?"
