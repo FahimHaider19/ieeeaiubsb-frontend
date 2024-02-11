@@ -375,7 +375,7 @@ export default function Page() {
             <p className="font-bold text-red-600">Registration Deadline: 20/02/2024</p>
             <p className="text-red-500">
               * Selected candidates in the primary phase will be informed
-              through email to sit for VIVA/Skill Assessment. Tantative Date 22/02/2022() and 24/02/2022{" "}
+              through email to sit for VIVA/Skill Assessment. Tentative Date 22/02/2022() and 24/02/2022{" "}
               {/* <span className="text-red-600"> XX/02/2024. </span>* */}
             </p>
             <p className="font-bold">
