@@ -370,7 +370,7 @@ export default function Page() {
               even lead to legal actions. *
             </p>
             <p className="text-red-500">
-              * If you choose Graphics Designer/Video Editor/Photo-Journalist /Web Design please send some sample (Portfolio) of your work via google drive link/github. (Don't forget to make the accessibility setting: Anyone with the link can view)
+              * If you choose Graphics Designer/Video Editor/Photo-Journalist /Web Design please send some sample (Portfolio) of your work via google drive link/github. (Do not forget to make the accessibility setting: Anyone with the link can view)
             </p>
             <p className="font-bold text-red-600">Registration Deadline: 20/02/2024</p>
             <p className="text-red-500">
