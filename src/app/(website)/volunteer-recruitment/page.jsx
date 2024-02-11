@@ -370,17 +370,20 @@ export default function Page() {
               even lead to legal actions. *
             </p>
             <p className="text-red-500">
-              * If you choose Graphics Designer/Video Editor/Photo-Journalist /Web Design please send some sample (Portfolio) of your work via google drive link/github. (Do not forget to make the accessibility setting: Anyone with the link can view)
+              * If you choose Graphics Designer/Video Editor/Photo-Journalist/Web Design please send some sample (Portfolio) of your work via google drive link/github. (Do not forget to make the accessibility setting: Anyone with the link can view)
             </p>
             <p className="font-bold text-red-600">Registration Deadline: 20/02/2024</p>
             <p className="text-red-500">
-              * Selected candidates in the primary phase will be informed
-              through email to sit for VIVA/Skill Assessment. Tentative Date 22/02/2022() and 24/02/2022{" "}
+              {"* Selected candidates in the primary phase will be informed through email to sit for VIVA/Skill Assessment."}
+              {/* <span className="text-red-600"> XX/02/2024. </span>* */}
+            </p>
+            <p className="text-red-500">
+              {"Tentative Date: 22/02/2022(Thursday) and 24/02/2022(Saturday)"}
               {/* <span className="text-red-600"> XX/02/2024. </span>* */}
             </p>
             <p className="font-bold">
               For any query, don’t hesitate to contact: <br />
-              MD.Ahnaf Ibtahaz <br />
+              MD. Ahnaf Ibtahaz <br />
               Contact Number: 019202991960
             </p>
             <p>
