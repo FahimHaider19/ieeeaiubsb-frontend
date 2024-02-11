@@ -37,7 +37,7 @@ export default function Page() {
   const isNameInvalid = useMemo(() => {
     return (name) => {
       if (name === "") return false;
-      return name.match(/^[A-Za-z ]+$/) ? false : true;
+      return name.match(/^[A-Za-z. ]+$/) ? false : true;
     };
   });
 
@@ -379,8 +379,9 @@ export default function Page() {
               {/* <span className="text-red-600"> XX/02/2024. </span>* */}
             </p>
             <p className="font-bold">
-              For any query, don’t hesitate to contact: <br /> Tanjil Bin
-              Mohiuddin <br /> Contact Number: 01797241407
+              For any query, don’t hesitate to contact: <br />
+              MD.Ahnaf Ibtahaz <br />
+              Contact Number: 019202991960
             </p>
             <p>
               For further updates and a more detailed overview of our Student
