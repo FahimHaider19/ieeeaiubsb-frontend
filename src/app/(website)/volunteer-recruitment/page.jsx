@@ -190,61 +190,59 @@ export default function Page() {
     // }
 
     // console.log(data);
-    if(!resumeValue) return alert("Please upload your CV");
-    else if(!photoValue) return alert("Please upload your photo");
+    if(!photoValue) return alert("Please upload your Photo")
+    else if(!resumeValue) return alert("Please upload your CV/Resume");
     else {
       const imageRef = ref(storage, "images/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
-          uploadBytes(imageRef, photoValue).then(() => {
-            getDownloadURL(imageRef).then((url) => {
-              setPhotoUrl(url);
-              // console.log(photoUrl);
-            });
-      const resumeRef = ref(storage, "resumes/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
-        uploadBytes(resumeRef, resumeValue).then(() => {
+      await uploadBytes(imageRef, photoValue).then(async () => {
+        getDownloadURL(imageRef).then((url) => {
+          setPhotoUrl(url);
+          // console.log(photoUrl);
+        });
+        const resumeRef = ref(storage, "resumes/" + firstNameValue + lastNameValue + "_" + aiubIdValue);
+        await uploadBytes(resumeRef, resumeValue).then(async () => {
           getDownloadURL(resumeRef).then((url) => {
             setResumeUrl(url);
             // console.log(resumeUrl);
           });
         });
       });
+
+      const data = {
+        firstName: firstNameValue,
+        lastName: lastNameValue,
+        email: emailValue,
+        phone: phoneValue,
+        bloodGroup: Array.from(bloodGroupValue)[0],
+        gender: Array.from(genderValue)[0],
+        aiubId: aiubIdValue,
+        department: Array.from(departmentValue)[0],
+        academicYear: Array.from(academicYearValue)[0],
+        currentCgpa: currentCgpaValue,
+        completedCredits: completedCreditsValue,
+        address: addressValue,
+        facebook: facebookValue,
+        linkedin: linkedinValue,
+        position: Array.from(positionValue)[0],
+        tool: toolValue,
+        portfolio: portfolioValue,
+        isIeeeMember: Array.from(isIeeeMemberValue)[0],
+        ieeeMembershipId: ieeeMembershipIdValue,
+        affiliationWithOtherOrg: affiliationWithOtherOrgValue,
+        previousVolunteeringExperience: previousVolunteeringExperience,
+        qualification: qualificationValue,
+        whyJoinIeee: whyJoinIeee,
+        resume: resumeUrl,
+        photo: photoUrl,
+        year: 2024,
+      };
+      const response = await axios.post(
+        "https://ieeeaiubsb.pockethost.io/api/collections/volunteer_recruitment/records",
+        data
+      );
+      if (response.status == 200) setIsFormSubmitted(true);
+      // console.log(response);
     }
-
-
-    const data = {
-      firstName: firstNameValue,
-      lastName: lastNameValue,
-      email: emailValue,
-      phone: phoneValue,
-      bloodGroup: Array.from(bloodGroupValue)[0],
-      gender: Array.from(genderValue)[0],
-      aiubId: aiubIdValue,
-      department: Array.from(departmentValue)[0],
-      academicYear: Array.from(academicYearValue)[0],
-      currentCgpa: currentCgpaValue,
-      completedCredits: completedCreditsValue,
-      address: addressValue,
-      facebook: facebookValue,
-      linkedin: linkedinValue,
-      position: Array.from(positionValue)[0],
-      tool: toolValue,
-      portfolio: portfolioValue,
-      isIeeeMember: Array.from(isIeeeMemberValue)[0],
-      ieeeMembershipId: ieeeMembershipIdValue,
-      affiliationWithOtherOrg: affiliationWithOtherOrgValue,
-      previousVolunteeringExperience: previousVolunteeringExperience,
-      qualification: qualificationValue,
-      whyJoinIeee: whyJoinIeee,
-      resume: resumeUrl,
-      photo: photoUrl,
-      year: 2024,
-    };
-
-    const response = await axios.post("https://ieeeaiubsb.pockethost.io/api/collections/volunteer_recruitment/records", data);
-    if(response.status == 200) {
-      setIsFormSubmitted(true);
-
-    }
-    // console.log(response);
   };
 
   return (
