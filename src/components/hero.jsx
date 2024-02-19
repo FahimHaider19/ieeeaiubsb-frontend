@@ -118,7 +118,7 @@ export default function Hero() {
                         </a>
                         <a
                           href="/membership"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 px-[0.25rem] py-1 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8 sm:text-base"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 py-1 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:text-base lg:visible sm:invisible"
                         >
                           Join Us
                         </a>

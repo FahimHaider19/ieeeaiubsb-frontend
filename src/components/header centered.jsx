@@ -23,14 +23,14 @@ export default function HeaderCentered() {
 
               <p className="font-medium text-neutral-50">
                 <span className="md:hidden">
-                  Membership Drive is going on. Join us now.
+                  Volunteer recruitment is happening! Join us now.
                 </span>
                 <span className="hidden md:inline">
-                  Big news! Membership Drive is going on. Join us now.
+                  Big news! Volunteer recruitment is going on. Join us now.
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <a
-                    href="/membership"
+                    href="/volunteer-recruitment"
                     className="font-bold text-white underline"
                   >
                     Learn more
@@ -41,7 +41,7 @@ export default function HeaderCentered() {
               <div className="absolute inset-y-0 right-0 flex items-start pt-1 pr-1 sm:items-start sm:pt-1 sm:pr-2">
                 <button
                   type="button"
-                  className="flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
+                  className="flex rounded-md p-2 hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-white"
                   onClick={dismissNotification}
                 >
                   <span className="sr-only">Dismiss</span>
