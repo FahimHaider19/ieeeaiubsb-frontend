@@ -709,15 +709,15 @@ const vol22 = [
 ];
 
 const vol23 = [
-  {
-    name: "Swapnil Paul",
-    role: "volunteer",
-    recognition: "BSc. in CSE",
-    email: "mailto:spniloync@gmail.com",
-    imageUrl: "/images/committee/swapnil.jpg",
-    facebookUrl: "https://www.facebook.com/swapnilpaul.niloy/",
-    linkedinUrl: "#",
-  },
+  // {
+  //   name: "Swapnil Paul",
+  //   role: "volunteer",
+  //   recognition: "BSc. in CSE",
+  //   email: "mailto:spniloync@gmail.com",
+  //   imageUrl: "/images/committee/swapnil.jpg",
+  //   facebookUrl: "https://www.facebook.com/swapnilpaul.niloy/",
+  //   linkedinUrl: "#",
+  // },
   {
     name: "Md Sohag Islam",
     role: "volunteer",

@@ -1,46 +1,57 @@
 const posts = [
-  
-  
+   
   {
-    id: 82,
-    title: ` Seminar on ‘A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship’`,
-    
-    imageUrl: "/images/event/erasum-mundus-banner.jpg",
-    date: "October 22,2023",
-    datetime: "2023/10/22", 
-      
-    href: "/images/event/erasum-mundus-banner.jpg",
+    id: 83,
+    title: `Webinar on “AIUBIANS on ERASMUS”`,
+    imageUrl: "/images/erasmus-23.jpg",
+    date: "November 19, 2023",
+    datetime: "2023/11/19", 
+    href: "/images/erasmus-23.jpg",
     category: {  href: "#" },
     description:
-      "On Sunday, 22nd October 2023, the IEEE AIUB Student Branch organized a webinar titled “A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship”.",
-    
-     
-
-  },
-  {
-    id: 81,
-    title: `Celebration of IEEE Day 2023`,
-    description:
-    `On Tuesday, 10th October 2023, the IEEE AIUB Student Branch organized an all-day long event celebrating “IEEE Day 2023”.`,
-  
-    
-    imageUrl: "/images/event/ieee-day-2023.jpg",
-    href: "/images/event/ieee-day-2023.jpg",
-    date: "October 10,2023",
-    datetime: "2023/10/10",
-    category: ``,
-  },{
-    id: 80,
-    title: `Seminar on ‘A Rapid & Low-Cost Multifrequency Electrical Impedance Tomography System for Precision Agriculture’`,
-    
-    imageUrl: "/images/event/tomography.jpg",
-    href: "/images/event/tomography.jpg",
-    description:
-    `On Wednesday, September 27th, 2023, The IEEE AIUB Student Branch, successfully organized a seminar titled “A Rapid and Low-Cost Multifrequency Electrical Impedance Tomography Data Acquisition System for Precision Agriculture”..`,
-    date: "September 27,2023",
-    datetime: "2023/9/17",
-    category: ``,
+      "On Sunday, November 19, 2023, the IEEE AIUB Student Branch successfully organized a webinar titled “AIUBians on Erasmus.” The webinar aimed to provide an informative session for individuals passionate about availing themselves of the ERASMUS MUNDUS scholarship. The speakers were AIUB alumni who had successfully received this prestigious scholarship. They covered the fundamentals and offered helpful guidance on various Erasmus programs.",
   }
+  ,
+  {
+    id: 84,
+    title: `The IEEE AIUB SB successfully organized International Student Led-Conference 2023`,
+    imageUrl: "/images/student-led.jpg",
+    date: "December 13,2023",
+    datetime: "2023/12/13", 
+    href: "/images/student-led.jpg",
+    category: {  href: "#" },
+    description:
+      "IEEE Bangladesh Section, IEEE AIUB Student Branch, and IEEE NSU Student Branch jointly organized the International Student-Led Conference 2023. The conference was held at the Long Beach Hotel in Cox's Bazar, Bangladesh as a co-located conference of the 26th International Conference on Computer and Information Technology (ICCIT) and the 10th International Conference on Power Systems (ICPS) on 13th December 2023.",
+ 
+  }
+  ,
+  {
+    id: 85,
+    title: `Webinar on “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”`,
+    imageUrl: "/images/green-computing.jpg",
+    date: "January 22, 2024",
+    datetime: "2024/01/22", 
+    href: "/images/green-computing.jpg",
+    category: {  href: "#" },
+    description:
+      "On Monday, 22nd January 2024, the IEEE AIUB Student Branch in collaboration with the IEEE Industry Applications Society AIUB Student Branch Chapter and IEEE Computer Society AIUB Student Branch Chapter successfully hosted a webinar titled “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”. The event emphasized the importance of integrating energy-efficient and compact compute-in-memory solutions into AI systems for high-performance and environmentally conscious AI applications.",
+ 
+  }
+  // ,
+  // {
+  //   id: 86,
+  //   title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
+  //   imageUrl: "/images/power-energy.jpg",
+  //   date: "January 31, 2024",
+  //   datetime: "2024/1/31",
+
+  //   href: "/images/power-energy.jpg",
+  //   category: {  href: "#" },
+  //   description:
+  //     "On Wednesday, 31st January 2024, the Department of EEE, Faculty of Engineering, AIUB, in collaboration with IEEE AIUB Student Branch successfully organized a seminar on “Emerging Research Highlights in Power & Energy”. The main goal of this session was to provide insights into the current developments in the power and energy sector while also motivating participants to engage in further research on this topic, particularly focusing on renewable energy.    ",
+ 
+  // }
+  
 ];
 
 export default function RecentPosts3() {
