@@ -387,7 +387,7 @@ export default function Page() {
                 can view)
               </p>
               <p className="font-bold text-red-600">
-                Registration Deadline: 20/02/2024
+                Registration Deadline: 06/03/2024
               </p>
               <p className="text-red-500">
                 {
@@ -395,12 +395,7 @@ export default function Page() {
                 }
                 {/* <span className="text-red-600"> XX/02/2024. </span>* */}
               </p>
-              <p className="text-red-500">
-                {
-                  "Tentative Date: 22/02/2022(Thursday) and 24/02/2022(Saturday)"
-                }
-                {/* <span className="text-red-600"> XX/02/2024. </span>* */}
-              </p>
+
               <p className="font-bold">
                 For any query, don’t hesitate to contact: <br />
                 MD. Ahnaf Ibtahaz <br />
