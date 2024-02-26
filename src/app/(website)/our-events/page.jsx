@@ -692,6 +692,42 @@ const posts = [
     datetime: "2023/10/22",
     category: ``,
   }
+  ,
+  {
+    id: 83,
+    title: `Webinar on “AIUBIANS on ERASMUS”`,
+    imageUrl: "/images/erasmus-23.jpg",
+    date: "November 19, 2023",
+    datetime: "2023/11/19",
+    category: ``,
+  }
+  ,
+  {
+    id: 84,
+    title: `The IEEE AIUB SB successfully organized International Student Led-Conference 2023`,
+    imageUrl: "/images/student-led.jpg",
+    date: "December 13,2023",
+    datetime: "2023/12/13",
+    category: ``,
+  }
+  ,
+  {
+    id: 85,
+    title: `Webinar on “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”`,
+    imageUrl: "/images/green-computing.jpg",
+    date: "January 22, 2024",
+    datetime: "2024/01/22",
+    category: ``,
+  }
+  ,
+  {
+    id: 86,
+    title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
+    imageUrl: "/images/power-energy.jpg",
+    date: "January 31, 2024",
+    datetime: "2024/1/31",
+    category: ``,
+  }
 ];
 
 export default function OurEvents() {
