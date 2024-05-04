@@ -390,7 +390,7 @@ const excom23 = [
     imageUrl: "/images/committee/MD.-TAMZID-HASAN-400x600.jpeg",
     email: "mailto:tamzidhasan737@gmail.com",
     facebookUrl: "https://www.facebook.com/tamzid.hasan.737/",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/tamzid-hasan/",
   },
   {
     name: "Piash Ghosh",
@@ -650,7 +650,7 @@ const vol22 = [
     imageUrl: "/images/committee/MD.-TAMZID-HASAN-400x600.jpeg",
     email: "mailto:tamzidhasan737@gmail.com",
     facebookUrl: "https://www.facebook.com/tamzid.hasan.737/",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/tamzid-hasan/",
   },
   {
     name: "Nishat Tasnim Rakhi",
@@ -1232,7 +1232,7 @@ const cs22 = [
     imageUrl: "/images/committee/MD.-TAMZID-HASAN-400x600.jpeg",
     email: "mailto:tamzidhasan737@gmail.com",
     facebookUrl: "https://www.facebook.com/tamzid.hasan.737/",
-    linkedinUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/tamzid-hasan/",
   },
   {
     name: "Riad Al Hasan",
