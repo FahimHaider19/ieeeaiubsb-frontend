@@ -14,6 +14,7 @@ import JoinUs from "../../components/join us";
 export default function Home() {
   return (
     <>
+      <HeaderCentered></HeaderCentered>
       <Hero></Hero>
       <Description></Description>
       <Stats2></Stats2>
