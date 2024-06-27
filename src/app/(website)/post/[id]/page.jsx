@@ -6059,8 +6059,7 @@ Operant Conditioning of Brain and Behaviors”.`,
       <!-- /wp:paragraph -->`,
     },
     category: ``,
-  }
-  ,
+  },
   {
     id: 84,
     title: `The IEEE AIUB SB successfully organized International Student Led-Conference 2023`,
@@ -6071,8 +6070,7 @@ Operant Conditioning of Brain and Behaviors”.`,
       <!-- /wp:paragraph -->`,
     },
     category: ``,
-  }
-  ,
+  },
   {
     id: 85,
     title: `Webinar on “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”`,
@@ -6085,8 +6083,7 @@ Operant Conditioning of Brain and Behaviors”.`,
       <!-- /wp:paragraph -->`,
     },
     category: ``,
-  }
-  ,
+  },
   {
     id: 86,
     title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
@@ -6100,8 +6097,40 @@ Operant Conditioning of Brain and Behaviors”.`,
       <!-- /wp:paragraph -->`,
     },
     category: ``,
-  }
-  
+  },
+  {
+    id: 87,
+    title: `Seminar on “Beyond Boundaries: Electrochemical Sensors Shaping Tomorrow's World`,
+    body: {
+      __html: `<p>On <b>Wednesday, 7<sup>th</sup>February 2024</b>, the <b>IEEE AIUB Student Branch</b> successfully organized a seminar titled <b>“Beyond Boundaries: Electrochemical Sensors Shaping Tomorrow’s World”</b> in collaboration with the <b>IEEE Industry Applications Society (IAS) AIUB Chapter.</b> The objective of this session was to explore the intriguing domain of electrochemical sensors and their fundamental significance in reshaping the trajectory of future technologies.
+
+                <p>The event was commenced by <b>Prof. Dr. ABM Siddique Hossain,</b> Dean, Faculty of Engineering, AIUB; Advisor, IEEE AIUB Student Branch with a heartfelt and welcoming speech. He started by commending the speaker's accomplishments, delivered his remarks about the topic and its significance. Additionally, he emphasized the advantages of IEEE membership, highlighting its benefits regarding journals, publications, and research opportunities. Afterwards, the distinguished speaker for the session, <b>Mr. Mashrur Sakib Choyon,</b> Engineer and Production Manager, Zimmer & Peacock Ltd; took the stage. He delved into the details of the company he works for, and the technology involved. Encouraging the audience, he emphasized the importance of setting goals in life. Moving on, he provided a detailed explanation of electrochemistry and its applications, particularly in biosensors. The speaker also touched upon the topic of addictive functions before demonstrating the uses and functionality of screen printing. Furthermore, he described the company's technology stack and discussed the growing trend in European countries of measuring the spiciness of chili. The speaker elaborated on his company's <b>“Agri-Tech”</b> project and discussed their ongoing work in microbiology. Additionally, he mentioned the various types of tests they conduct and emphasized the relevance of chemical sensors in ensuring food quality and safety. At the end of his presentation, there was an interactive Q&A session.</p>
+
+                <p>Following the Q&A session, <b>Prof. Dr. Mohammad Abdul Mannan,</b> <i>Associate Dean, Faculty of Engineering, AIUB; Advisor, IEEE AIUB Student Branch,</i> took the floor to provide his thoughts during the session's closing remarks, highlighting the accomplishments and works of the speaker.</p>
+
+                <p>The seminar shed light on the implications of electrochemical sensors, aligning with various Sustainable Development Goals. It emphasized the role of electrochemical sensors in medical diagnostics and monitoring, thereby contributing to the goal of <b>Good Health and Well-Being.</b> Furthermore, it highlighted their significance in detecting water pollutants and ensuring access to safe drinking water, aligning with <b>Clean Water and Sanitation.</b></p>
+
+                <p>The session began at <b>3:00 PM</b> and ended around <b>4:30 PM.</b> A total of 60+ participants attended the seminar. Honorable faculty member <b>Dr. MD. Rukonuzzaman</b> also attended the seminar, whose presence added further significance to the occasion. was among the participants.</p>`,
+    },
+    category: ``,
+  },
+  {
+    id: 88,
+    title: `Scientific visit to Secondary Standard Dosimetry Laboratory (SSDL) funded by IEEE EMBS`,
+    body: {
+      __html: `<p>On <strong>February 28<sup>th</sup>, 2024</strong>, the <strong>IEEE EMBS AIUB Student Branch Chapter</strong> organized a scientific visit to the <strong>Secondary Standard Dosimetry Laboratory (SSDL)</strong> located at the <strong>Atomic Energy Research Establishment (AERE)</strong>, <strong>Institute of Nuclear Science and Technology (INST), Ganakbari, Savar, Dhaka</strong>. The visit aimed to promote practical understanding and knowledge exchange in the field of nuclear science, application of engineering principles to radiology, medicine, and healthcare to provide effective solutions to related problems, which falls within the field of interest of the <strong>IEEE EMBS</strong>. The visit was also supported by the <strong>IEEE</strong> <strong>Engineering in Medicine and Biology Society (EMBS)</strong>.</p> 
+
+        <p>The <strong>IEEE Engineering in Medicine and Biology Society (EMBS)</strong> is a prominent international organization within the <strong>IEEE</strong>, which focuses on advancing the application of engineering and technology in medicine and biology. <strong>EMBS</strong> grants <strong>Chapter Project Initiative Funding</strong> awards to its chapters, student chapters, and clubs to initiate impactful initiatives. The <strong>IEEE Engineering in Medicine and Biology Society (EMBS) AIUB Student Branch Chapter </strong>was awarded this funding for taking the initiative to organize an impactful scientific visit. The funds were utilized to arrange the visit to the <strong>Secondary Standard Dosimetry Laboratory</strong>, which aimed to delve deeper into the field of biomedical engineering and create an impact.</p>
+
+        <p>The program began with an inaugural session conducted by <strong>Dr. Swapan Kumar Chakraborty,</strong> <em>Director &amp; CSO</em>, <em>Scientific Information Unit, AERE</em>. During this session, the participants were introduced to the operations and functions of the facility, which set the stage for an enriching day ahead. Following the inaugural session, <strong>Dr. Shakilur Rahman</strong>, <em>Chief Scientific Officer &amp; Director, NSSSD, BAEC</em>, led a comprehensive briefing session covering topics ranging from the basics of radioactivity, radiation, and nuclear medicine to the intricate schemes for radiation protection. His expertise illuminated key concepts, providing attendees with a solid foundation for the day's activities.</p>
+
+        <p>The most noteworthy aspect of the visit was the tour of the laboratories situated within the SSDL. Led by <strong>Dr. Shakilur Rahman</strong>, the tour offered firsthand insights into the methodologies and equipment utilized in activities such as whole-body counting, gross alpha-beta counting, beta and gamma calibration, gamma spectrometry, and many more. The interactive nature of the tour allowed participants to engage directly with cutting-edge technologies and procedures, enhancing their understanding of practical applications in the field of radiology and nuclear medicine. The visit concluded with a brief closing ceremony and a pleasant lunch. Participants left with newfound knowledge and a deeper appreciation for the complexities of radiation-related research and applications.</p>
+
+        <p>SSDL calibrates dosimetry equipment used in medical procedures that rely on ionizing radiation for diagnosis and treatment. This helps in measuring the amount of radiation delivered and in ensuring the safety of staff and the public. The contents, procedures, and objectives of each laboratory within the SSDL are entirely dedicated to human health and radiation protection, aligning closely with the 17<sup>th</sup> Sustainable Development Goal <strong>"Good Health and Well-being"</strong>.&nbsp; A total of <strong>25 Selected </strong>Participants, mostly IEEE Student members attended the visit, along with honorable faculty members <strong>Dr. Shameem Ahmad</strong>, <em>Assistant Professor, Dept. of EEE, AIUB</em> and <strong>Dr. Humayra Ferdous</strong><em> Associate Professor, Department Head, Department of Natural Science [Physics], AIUB. </em></p>
+`,
+    },
+    category: ``,
+  },
 ];
 
 function BackgroundPattern() {

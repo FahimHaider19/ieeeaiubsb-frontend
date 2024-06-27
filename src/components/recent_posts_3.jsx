@@ -1,57 +1,31 @@
 const posts = [
-   
   {
-    id: 83,
-    title: `Webinar on “AIUBIANS on ERASMUS”`,
-    imageUrl: "/images/erasmus-23.jpg",
-    date: "November 19, 2023",
-    datetime: "2023/11/19", 
-    href: "/images/erasmus-23.jpg",
-    category: {  href: "#" },
-    description:
-      "On Sunday, November 19, 2023, the IEEE AIUB Student Branch successfully organized a webinar titled “AIUBians on Erasmus.” The webinar aimed to provide an informative session for individuals passionate about availing themselves of the ERASMUS MUNDUS scholarship. The speakers were AIUB alumni who had successfully received this prestigious scholarship. They covered the fundamentals and offered helpful guidance on various Erasmus programs.",
-  }
-  ,
+    id: 88,
+    title: `Scientific visit to Secondary Standard Dosimetry Laboratory (SSDL) funded by IEEE EMBS`,
+    imageUrl: "/images/ssdl-visit.jpg",
+    date: "February 28, 2024",
+    datetime: "2024/02/28",
+    category: ``,
+    description: `On Wednesday, 28th February 2024, the IEEE AIUB Student Branch successfully organized a scientific visit funded by IEEE EMBS. The visit aimed to provide participants with hands-on experience in dosimetry and radiation protection. The participants had the opportunity to learn about the calibration of radiation measurement devices and the importance of accurate dosimetry in medical and industrial applications.`,
+  },
   {
-    id: 84,
-    title: `The IEEE AIUB SB successfully organized International Student Led-Conference 2023`,
-    imageUrl: "/images/student-led.jpg",
-    date: "December 13,2023",
-    datetime: "2023/12/13", 
-    href: "/images/student-led.jpg",
-    category: {  href: "#" },
-    description:
-      "IEEE Bangladesh Section, IEEE AIUB Student Branch, and IEEE NSU Student Branch jointly organized the International Student-Led Conference 2023. The conference was held at the Long Beach Hotel in Cox's Bazar, Bangladesh as a co-located conference of the 26th International Conference on Computer and Information Technology (ICCIT) and the 10th International Conference on Power Systems (ICPS) on 13th December 2023.",
- 
-  }
-  ,
+    id: 87,
+    title: `Seminar on “Beyond Boundaries: Electrochemical Sensors Shaping Tomorrow's World"`,
+    imageUrl: "/images/electrochemical-sensor.jpg",
+    date: "February 7, 2024",
+    datetime: "2024/02/07",
+    category: ``,
+    description: `On Wednesday, 7th February 2024, the IEEE AIUB Student Branch successfully organized this seminar. The seminar aimed to provide participants with an in-depth understanding of the significance of electrochemical sensors in shaping the future of various industries. The session featured expert speakers who shared their insights on the latest advancements in electrochemical sensors and their applications in different fields.`,
+  },
   {
-    id: 85,
-    title: `Webinar on “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”`,
-    imageUrl: "/images/green-computing.jpg",
-    date: "January 22, 2024",
-    datetime: "2024/01/22", 
-    href: "/images/green-computing.jpg",
-    category: {  href: "#" },
-    description:
-      "On Monday, 22nd January 2024, the IEEE AIUB Student Branch in collaboration with the IEEE Industry Applications Society AIUB Student Branch Chapter and IEEE Computer Society AIUB Student Branch Chapter successfully hosted a webinar titled “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”. The event emphasized the importance of integrating energy-efficient and compact compute-in-memory solutions into AI systems for high-performance and environmentally conscious AI applications.",
- 
-  }
-  // ,
-  // {
-  //   id: 86,
-  //   title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
-  //   imageUrl: "/images/power-energy.jpg",
-  //   date: "January 31, 2024",
-  //   datetime: "2024/1/31",
-
-  //   href: "/images/power-energy.jpg",
-  //   category: {  href: "#" },
-  //   description:
-  //     "On Wednesday, 31st January 2024, the Department of EEE, Faculty of Engineering, AIUB, in collaboration with IEEE AIUB Student Branch successfully organized a seminar on “Emerging Research Highlights in Power & Energy”. The main goal of this session was to provide insights into the current developments in the power and energy sector while also motivating participants to engage in further research on this topic, particularly focusing on renewable energy.    ",
- 
-  // }
-  
+    id: 86,
+    title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
+    imageUrl: "/images/power-energy.jpg",
+    date: "January 31, 2024",
+    datetime: "2024/1/31",
+    category: ``,
+    description: `On Wednesday, 31st January 2024, the Department of EEE,Faculty of Engineering, AIUB, in collaboration with IEEE AIUB Student Branch successfully organized a seminar on “Emerging Research Highlights in Power & Energy”. The main goal of this session was to provide insights into the current developments in the power and energy sector while also motivating participants to engage in further research on this topic, particularly focusing on renewable energy.`,
+  },
 ];
 
 export default function RecentPosts3() {
@@ -79,7 +53,7 @@ export default function RecentPosts3() {
               <div className="flex-shrink-0">
                 <img
                   className="h-64 w-full object-fill"
-                  src={post.href}
+                  src={post.imageUrl}
                   alt=""
                 />
               </div>

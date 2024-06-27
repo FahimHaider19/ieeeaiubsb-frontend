@@ -619,11 +619,11 @@ const posts = [
     date: "July 4,2023",
     datetime: "2023/6/4",
   },
-  
+
   {
     id: 75,
     title: `Seminar on ‘Climate Change and Human Health : Unraveling the nexus’`,
-    
+
     imageUrl: "/images/event/climate-change-banner.jpg",
     date: "July 29,2023",
     datetime: "2023/6/29",
@@ -632,7 +632,7 @@ const posts = [
   {
     id: 76,
     title: `Members' Orientation 2023 - IEEE AIUB Student Branch`,
-     
+
     imageUrl: "/images/event/member-orinetation-2023.jpg",
     date: "August 8,2023",
     datetime: "2023/8/8",
@@ -641,7 +641,7 @@ const posts = [
   {
     id: 77,
     title: ` Seminar on ‘Postgraduate Studies In Engineering	’`,
-     
+
     imageUrl: "/images/event/postgraduade-banner.jpg",
     date: "August 13,2023",
     datetime: "2023/8/13",
@@ -650,7 +650,7 @@ const posts = [
   {
     id: 78,
     title: ` Seminar on ‘Reliability and Safety Risks for the AI Hardware in the Perspective of the Future Metaverse ’`,
-    
+
     imageUrl: "/images/event/realiblity-img.jpg",
     date: "September 9,2023",
     datetime: "2023/9/9",
@@ -659,7 +659,7 @@ const posts = [
   {
     id: 79,
     title: ` Seminar on ‘Securing the Bits and Bytes: Navigating through Classical and Modern Measures of Digital Security’`,
-    
+
     imageUrl: "/images/event/securing-bit-ab.jpg",
     date: "September 16,2023",
     datetime: "2023/9/16",
@@ -668,7 +668,7 @@ const posts = [
   {
     id: 80,
     title: `Seminar on ‘A Rapid & Low-Cost Multifrequency Electrical Impedance Tomography System for Precision Agriculture’`,
-    
+
     imageUrl: "/images/event/tomography.jpg",
     date: "September 27,2023",
     datetime: "2023/9/17",
@@ -677,7 +677,7 @@ const posts = [
   {
     id: 81,
     title: `Celebration of IEEE Day 2023`,
-    
+
     imageUrl: "/images/event/ieee-day-2023.jpg",
     date: "October 10,2023",
     datetime: "2023/10/10",
@@ -686,13 +686,12 @@ const posts = [
   {
     id: 82,
     title: ` Seminar on ‘A Road to Erasmus Mundus Joint Masters (EMJM) and Erasmus Mundus Scholarship’`,
-    
+
     imageUrl: "/images/event/erasum-mundus-banner.jpg",
     date: "October 22,2023",
     datetime: "2023/10/22",
     category: ``,
-  }
-  ,
+  },
   {
     id: 83,
     title: `Webinar on “AIUBIANS on ERASMUS”`,
@@ -700,8 +699,7 @@ const posts = [
     date: "November 19, 2023",
     datetime: "2023/11/19",
     category: ``,
-  }
-  ,
+  },
   {
     id: 84,
     title: `The IEEE AIUB SB successfully organized International Student Led-Conference 2023`,
@@ -709,8 +707,7 @@ const posts = [
     date: "December 13,2023",
     datetime: "2023/12/13",
     category: ``,
-  }
-  ,
+  },
   {
     id: 85,
     title: `Webinar on “Green Computing for AI: Compact and Energy-Efficient Compute-in-Memory”`,
@@ -718,8 +715,7 @@ const posts = [
     date: "January 22, 2024",
     datetime: "2024/01/22",
     category: ``,
-  }
-  ,
+  },
   {
     id: 86,
     title: `Seminar on “Emerging Research Highlights in Power & Energy”`,
@@ -727,7 +723,23 @@ const posts = [
     date: "January 31, 2024",
     datetime: "2024/1/31",
     category: ``,
-  }
+  },
+  {
+    id: 87,
+    title: `Seminar on “Beyond Boundaries: Electrochemical Sensors Shaping Tomorrow's World"`,
+    imageUrl: "/images/electrochemical-sensor.jpg",
+    date: "February 7, 2024",
+    datetime: "2024/02/07",
+    category: ``,
+  },
+  {
+    id: 88,
+    title: `Scientific visit to Secondary Standard Dosimetry Laboratory (SSDL) funded by IEEE EMBS`,
+    imageUrl: "/images/ssdl-visit.jpg",
+    date: "February 28, 2024",
+    datetime: "2024/02/28",
+    category: ``,
+  },
 ];
 
 export default function OurEvents() {
