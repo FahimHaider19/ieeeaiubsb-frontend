@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useId, useState } from "react";
 import Image from "next/image";
 import { Tab } from "@headlessui/react";
@@ -413,8 +413,6 @@ const achievements = [
   },
 ];
 
-
-
 export default function Records() {
   let id = useId();
   let [tabOrientation, setTabOrientation] = useState("horizontal");
@@ -435,32 +433,52 @@ export default function Records() {
   }, []);
 
   return (
-    <section id="records" aria-labelledby="records-title" className="grid place-items-center">
+    <section
+      id="records"
+      aria-labelledby="records-title"
+      className="grid place-items-center"
+    >
       <div className="max-w-7xl w-full p-8">
-      <div className="mx-auto w-full lg:mx-0 grid place-items-center">
-        <h1 className="mt-6 md:mt-12 max-w-fit text-3xl font-extrabold bg-gradient-to-r from-cyan-600 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
-           Achievements
-        </h1>
+        <div className="mx-auto w-full lg:mx-0 grid place-items-center">
+          <h1 className="mt-6 md:mt-12 max-w-fit text-3xl font-extrabold bg-gradient-to-r from-cyan-600 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+            Achievements
+          </h1>
         </div>
-        <Tab.Group as="div" vertical={tabOrientation === "vertical"} className="mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4">
+        <Tab.Group
+          as="div"
+          vertical={tabOrientation === "vertical"}
+          className="mt-14 grid grid-cols-1 items-start gap-y-8 gap-x-8 sm:mt-16 sm:gap-y-16 lg:mt-24 lg:grid-cols-4"
+        >
           <div className="relative flex pb-4 sm:mx-0 sm:block sm:pb-0 p-5 md:justify-self-center lg:justify-self-end">
             <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
             <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 w-full overflow-scroll px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 achievements.map((achievement, dayIndex) => (
                   <div key={achievement.year} className="relative lg:pl-8">
-                    <DiamondIcon className={clsx("absolute top-[0.5625rem] left-[0.3px] hidden h-1.5 w-1.5 lg:block",
+                    <DiamondIcon
+                      className={clsx(
+                        "absolute top-[0.5625rem] left-[0.3px] hidden h-1.5 w-1.5 lg:block",
                         dayIndex === selectedIndex
                           ? "fill-cyan-600 stroke-cyan-600"
                           : "fill-transparent stroke-slate-400"
                       )}
                     />
                     <div className="relative">
-                      <div className={clsx("font-mono text-sm", dayIndex===selectedIndex ? "text-cyan-600": "text-slate-500")}>
+                      <div
+                        className={clsx(
+                          "font-mono text-sm",
+                          dayIndex === selectedIndex
+                            ? "text-cyan-600"
+                            : "text-slate-500"
+                        )}
+                      >
                         <Tab className="">
                           {/* <span className="absolute inset-0" /> */}
                           {/* {achievement.title} */}
-                          <dev year={achievement.year} className="inset-0 mt-1.5 pb-3 block text-2xl font-semibold tracking-tight text-cyan-900">
+                          <dev
+                            year={achievement.year}
+                            className="inset-0 mt-1.5 pb-3 block text-2xl font-semibold tracking-tight text-cyan-900"
+                          >
                             {achievement.year}
                           </dev>
                         </Tab>
@@ -473,11 +491,15 @@ export default function Records() {
           </div>
           <Tab.Panels className="lg:col-span-3">
             {achievements.map((achievement) => (
-              <Tab.Panel key={achievement.year} className="flex flex-row flex-wrap justify-around gap-x-8 gap-y-10 sm:gap-y-16" unmount={false}>
+              <Tab.Panel
+                key={achievement.year}
+                className="flex flex-row flex-wrap justify-around gap-x-8 gap-y-10 sm:gap-y-16"
+                unmount={false}
+              >
                 {achievement.records.map((record, recordIndex) => (
                   <div key={recordIndex} className="w-fit">
                     {/* <div className="group relative h-[17.5rem] transform overflow-hidden rounded-4xl"> */}
-                      {/* <div
+                    {/* <div
                         className={clsx(
                           "absolute top-0 left-0 right-4 bottom-6 rounded-4xl border transition duration-300 group-hover:scale-95 xl:right-6",
                           [
@@ -498,9 +520,15 @@ export default function Records() {
                     <p className="mt-1 text-base tracking-tight text-slate-500"> {record.icon} </p> */}
                     <div class="text-gray-900">
                       <div class="grid place-items-center">
-                        <img class="h-60 w-60 rounded-md" src={record.icon} alt=""/>
+                        <img
+                          class="h-60 w-60 rounded-md"
+                          src={record.icon}
+                          alt=""
+                        />
                       </div>
-                      <p class="mt-4 max-w-sm text-lg text-center text-justify font-medium leading-6 before:content-['“'] after:content-['”']">{record.title}</p>
+                      <p class="mt-4 max-w-sm text-lg text-center text-justify font-medium leading-6 before:content-['“'] after:content-['”']">
+                        {record.title}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -508,7 +536,7 @@ export default function Records() {
             ))}
           </Tab.Panels>
         </Tab.Group>
-      {/* <ImageClipPaths id={id} />
+        {/* <ImageClipPaths id={id} />
       <Container>
       </Container> */}
       </div>

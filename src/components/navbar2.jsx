@@ -7,7 +7,7 @@ import MobileOptions from "./navbar mobile options";
 export default function NavBar2() {
   return (
     <>
-      <div className="bg-white shadow">
+      <div className="bg-white shadow ">
         <Popover className="relative shadow">
           <div className="mx-auto max-w-7xl px-6">
             <div className="flex items-center space-x-4 justify-between py-6 lg:justify-start">

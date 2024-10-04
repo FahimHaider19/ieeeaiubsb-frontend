@@ -740,6 +740,38 @@ const posts = [
     datetime: "2024/02/28",
     category: ``,
   },
+  {
+    id: 89,
+    title: `Seminar on “Navigating Higher Education Opportunities at Indiana Tech University”`,
+    imageUrl: "/images/indianaTech.jpg",
+    date: "February 12, 2024",
+    datetime: "2024/02/12",
+    category: ``,
+  },
+  {
+    id: 90,
+    title: `Webinar on “Data-Driven Electric Vehicle Customer Profiling”`,
+    imageUrl: "/images/data-driven-electric-vehicle.jpg",
+    date: "February 12, 2024",
+    datetime: "2024/02/12",
+    category: ``,
+  },
+  {
+    id: 91,
+    title: `Seminar titled “IEEE USER-AWARENESS SESSION-2024”`,
+    imageUrl: "/images/awareness-session-2024.jpg",
+    date: "May 27, 2024",
+    datetime: "2024/05/27",
+    category: ``,
+  },
+  {
+    id: 92,
+    title: `IEEE Student Professional Awareness Venture (SPAVe) 7.0`,
+    imageUrl: "/images/Spave7.0.jpg",
+    date: "June 06, 2024",
+    datetime: "2024/06/06",
+    category: ``,
+  },
 ];
 
 export default function OurEvents() {

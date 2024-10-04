@@ -1,4 +1,3 @@
-
 export default function Stats2() {
   return (
     <div className="overflow-hidden">
@@ -30,7 +29,7 @@ export default function Stats2() {
           </div>
           <div className="w-full h-auto grid grid-cols-2 grid-rows-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:grid-rows-2 md:gap-y-12 md:gap-x-4 lg:gap-4 py-6">
             <div className="w-full md:h-3/4 col-span-1 row-start-1 row-end-3 self-end aspect-[2/3] max-h-full max-w-full hidden lg:block">
-              <div className="aspect-[2/3]">
+              <div className="aspect-[2/3] rounded-md shadow-lg shadow-amber-400 ">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
                   src="/images/NBI_1361.JPG"
@@ -38,8 +37,8 @@ export default function Stats2() {
                 />
               </div>
             </div>
-            <div className="relative top-4 md:top-4 max-h-3/4 col-span-1 md:row-start-1 md:row-end-2 self-end grid">
-              <div className="aspect-[2/3]">
+            <div className="relative top-4 md:top-4 max-h-3/4 col-span-1 md:row-start-1 md:row-end-2 self-end grid ">
+              <div className="aspect-[2/3] rounded-md shadow-lg shadow-amber-400 ">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
                   src="/images/SPAVe 6.0-336.jpg"
@@ -47,8 +46,9 @@ export default function Stats2() {
                 />
               </div>
             </div>
+
             <div className="relative -top-4 md:top-4 max-h-3/4 col-span-1 md:row-start-2 md:row-end-3 self-start grid">
-              <div className="aspect-[2/3]">
+              <div className="aspect-[2/3]  rounded-md shadow-lg shadow-amber-400 ">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
                   src="/images/NBI_0627.JPG"
@@ -57,7 +57,7 @@ export default function Stats2() {
               </div>
             </div>
             <div className="relative -top-4 md:-top-4 max-h-3/4 col-span-1 md:row-start-1 row-end-2 self-end grid">
-              <div className="aspect-[2/3]">
+              <div className="aspect-[2/3]  rounded-md shadow-lg shadow-amber-400 ">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
                   src="/images/_NBI1579.JPG"
@@ -66,7 +66,7 @@ export default function Stats2() {
               </div>
             </div>
             <div className="relative top-4 md:-top-4 max-h-3/4 col-span-1 md:row-start-2 md:row-end-3 self-start grid">
-              <div className="aspect-[2/3]">
+              <div className="aspect-[2/3] rounded-md shadow-lg shadow-amber-400 ">
                 <img
                   className="inset-0 h-full w-full object-cover rounded-md"
                   src="/images/NBI_0505.JPG"
@@ -115,15 +115,3 @@ export default function Stats2() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-

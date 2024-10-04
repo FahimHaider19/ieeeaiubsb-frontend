@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    imageSrc: "/images/_TRP4612.jpg",
+    imageSrc: "/images/Spave7.0.jpg",
     imageAlt: "image",
     heading: "IEEE AIUB Student Branch",
     subheading: "SPAVE 7.0",
