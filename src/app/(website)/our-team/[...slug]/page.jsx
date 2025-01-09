@@ -476,6 +476,7 @@ const vol21 = [
     facebookUrl: "https://www.facebook.com/arefin0arnobxD",
     linkedinUrl: "#",
   },
+
   {
     name: "Anika Islam",
     role: "volunteer",
@@ -1398,40 +1399,63 @@ function EXCOM(props) {
   );
 }
 
-function VOL(props) {
-  const all = props.people.filter((p, i) => {
-    if (props.people.length - 1 == i) return null;
-    else return p;
-  });
-  const last = props.people.filter((p, i) => {
-    return p;
-  });
+function VOL23({ people, year }) {
+  const allCards = people;
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
         <div className="space-y-12">
-          <div className="space-y-5 sm:mx-auto">
-            <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Volunteers {props.year}
-            </h1>
-          </div>
-
+          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+            Volunteers {year}
+          </h1>
           <ul
             role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-4"
+            className="mx-auto grid gap-y-16 sm:grid-cols-3 sm:gap-12 lg:max-w-5xl lg:grid-cols-4"
           >
-            {all.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
+            {allCards.map((person, i) => (
+              <li key={i}>
+                <TeamCard1 person={person} />
               </li>
             ))}
           </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
 
-          <ul role="list" className="lg:grid lg:grid-cols-5 lg:col-start-2">
-            <li className="col-start-3">
-              <TeamCard1 person={last[props.people.length - 1]} />
-            </li>
+function VOL({ people, year }) {
+  const allCards = people.slice(0, -1); // All but the last card
+  const lastCard = people[people.length - 1]; // Last card
+
+  return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
+        <div className="space-y-12">
+          <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl">
+            Volunteers {year}
+          </h1>
+          <ul
+            role="list"
+            className="mx-auto grid gap-y-16 sm:grid-cols-3 sm:gap-12 lg:max-w-5xl lg:grid-cols-4"
+          >
+            {allCards.map((person, i) => (
+              <li key={i}>
+                <TeamCard1 person={person} />
+              </li>
+            ))}
           </ul>
+          <div className="mt-16">
+            <ul
+              role="list"
+              className="mx-auto grid gap-y-16 sm:grid-cols-3 sm:gap-12 lg:max-w-3xl lg:grid-cols-3"
+            >
+              <li className="col-start-2">
+                <TeamCard1 person={lastCard} />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1735,7 +1759,7 @@ export default function Page({ params }) {
         return <EXCOM people={excom23} year={2023} />;
         break;
       case "volunteers":
-        return <VOL people={vol23} year={2023} />;
+        return <VOL23 people={vol23} year={2023} />;
       case "cs-committee":
         return <CS23 people={cs23} />;
       case "ias-committee":
@@ -1790,7 +1814,7 @@ export default function Page({ params }) {
         );
       case "volunteers":
         if (params.slug[0] == 2023)
-          return <VOL people={vol23} year={params.slug[0]} />;
+          return <VOL23 people={vol23} year={params.slug[0]} />;
         if (params.slug[0] == 2022)
           return <VOL people={vol22} year={params.slug[0]} />;
         else if ((params.slug[0] = 2021))
