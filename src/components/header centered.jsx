@@ -11,7 +11,7 @@ export default function HeaderCentered() {
   return (
     <div>
       {showNotification && (
-        <div className="flex flex-wrap relative bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800   text-white">
+        <div className="flex flex-wrap relative bg-gradient-to-r from-cyan-800 via-cyan-600 to-cyan-800   text-white">
           <div className="flex flex-wrap items-center justify-between mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
             <div className="flex flex-1 items-center pr-16 sm:px-16 sm:text-center">
               <span className="rounded-lg  p-2">
@@ -22,13 +22,15 @@ export default function HeaderCentered() {
               </span>
 
               <p className="font-medium text-neutral-50">
-                <span className="md:hidden">SPAVE 7.0 is here!</span>
+                <span className="md:hidden">
+                  Membership Drive 2025 is here!
+                </span>
                 <span className="hidden md:inline">
-                  Most awaited flagship event SPAVE 7.0 is here!
+                  Join the largest technical community in the world.
                 </span>
                 <span className="block sm:ml-2 sm:inline-block">
                   <a
-                    href="https://spave.ieeeaiubsb.com/"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdoSsNjA9hMXQeF9veebffdgR6IcHabzlR0B0m3KlQ9BUWyzw/viewform"
                     className="font-bold text-white underline"
                     target="_blank"
                   >
