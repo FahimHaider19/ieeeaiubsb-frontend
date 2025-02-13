@@ -545,7 +545,7 @@ const excom24 = [
     facebookUrl: "https://www.facebook.com/abdullahal.faisal.7737",
     linkedinUrl: "https://www.linkedin.com/in/abdullah-al-faisal-a57945279/",
     recognition: "BSc. in CSE",
-    role: "Creative Lead",
+    role: "Creative Team Lead",
     imageUrl: "/images/committee/com24/Excom/Abdullah_Al_Faisal.jpg",
   },
   {
