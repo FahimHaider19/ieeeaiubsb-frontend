@@ -87,7 +87,7 @@ export default function Stats2() {
                       Members
                     </dt>
                     <dd className="order-1 text-5xl font-bold tracking-tight text-cyan-600">
-                      226
+                      322
                     </dd>
                   </div>
                   <div className="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">

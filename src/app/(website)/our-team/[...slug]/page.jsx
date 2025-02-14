@@ -469,7 +469,7 @@ const excom23 = [
 const excom24 = [
   {
     name: "DR.Shameem Ahmed",
-    email: "",
+    email: "#",
     facebookUrl: "",
     linkedinUrl: "",
     recognition: "Assistant Professor, Faculty of Engineering, AIUB",
@@ -478,7 +478,7 @@ const excom24 = [
   },
   {
     name: "Al Shahriar Zishan",
-    email: "shahriar.zishan@ieee.org",
+    email: "mailto:shahriar.zishan@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100010736582706",
     linkedinUrl: "https://www.linkedin.com/in/shahriar-zishan-9ab927221/",
     recognition: "BSc. in EEE",
@@ -487,7 +487,7 @@ const excom24 = [
   },
   {
     name: "MD.Kamrul Hasan",
-    email: "kamrul.hasan@ieee.org",
+    email: "mailto:kamrul.hasan@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100007567124412",
     linkedinUrl: "https://www.linkedin.com/in/kamrulhasan72/",
     recognition: "BSc. in EEE",
@@ -496,7 +496,7 @@ const excom24 = [
   },
   {
     name: "Riajul Karim Adil",
-    email: "riajulkarim@ieee.org",
+    email: "mailto:riajulkarim@ieee.org",
     facebookUrl: "https://www.facebook.com/riajulkarim.adil.5",
     linkedinUrl: "https://www.linkedin.com/in/riajul-karim-adil-033aa1223",
     recognition: "BSc. in EEE",
@@ -505,7 +505,7 @@ const excom24 = [
   },
   {
     name: "Nahian Ibn Amin",
-    email: "Nahian@ieee.org",
+    email: "mailto:Nahian@ieee.org",
     facebookUrl: "https://www.facebook.com/profile.php?id=100012872718898",
     linkedinUrl: "https://www.facebook.com/profile.php?id=100012872718898",
     recognition: "BSc. in EEE",
@@ -514,7 +514,7 @@ const excom24 = [
   },
   {
     name: "Ahnaf Ibtahaz",
-    email: "ahnaf_17@ieee.org",
+    email: "mailto:ahnaf_17@ieee.org",
     facebookUrl: "https://www.facebook.com/ahnaf.ibtahaz.9",
     linkedinUrl: "https://www.linkedin.com/in/ahnaf-ibtahaz-47793b285/",
     recognition: "BSc. in CSE",
@@ -523,7 +523,7 @@ const excom24 = [
   },
   {
     name: "Mohaimenul Haque Mohan",
-    email: "mhmohan@ieee.org",
+    email: "mailto:mhmohan@ieee.org",
     facebookUrl: "https://www.facebook.com/mhMohan19",
     linkedinUrl: "https://www.linkedin.com/in/mhmohan20/",
     recognition: "BSc. in CSE",
@@ -532,7 +532,7 @@ const excom24 = [
   },
   {
     name: "Sameen Khan",
-    email: "sameen_khan@ieee.org",
+    email: "mailto:sameen_khan@ieee.org",
     facebookUrl: "https://www.facebook.com/sameen.khan20",
     linkedinUrl: "https://www.linkedin.com/in/sameen-khan-b56997267",
     recognition: "BSc. in EEE",
@@ -541,7 +541,7 @@ const excom24 = [
   },
   {
     name: "Abdullah Al Faisal",
-    email: "abdullahalfaisal@ieee.org",
+    email: "mailto:abdullahalfaisal@ieee.org",
     facebookUrl: "https://www.facebook.com/abdullahal.faisal.7737",
     linkedinUrl: "https://www.linkedin.com/in/abdullah-al-faisal-a57945279/",
     recognition: "BSc. in CSE",
@@ -550,7 +550,7 @@ const excom24 = [
   },
   {
     name: "Shifat Arman",
-    email: "shifatshiam@ieee.org",
+    email: "mailto:shifatshiam@ieee.org",
     facebookUrl: "https://www.facebook.com/shifatarman.shiam",
     linkedinUrl: "https://www.linkedin.com/in/shifat-arman-629880252/",
     recognition: "BSc. in CSE",
@@ -559,17 +559,17 @@ const excom24 = [
   },
   {
     name: "Riyaduzzaman Bhuyan",
-    email: "mdriyaduzzaman@ieee.org",
+    email: "mailto:mdriyaduzzaman@ieee.org",
     facebookUrl: "https://www.facebook.com/pres.bhuiyan.riad.3.1",
     linkedinUrl:
       "https://www.linkedin.com/in/md-riyaduzzaman-bhuiyan-b047b4216",
     recognition: "BSc. in EEE",
     role: "Logistic Coordinator",
-    imageUrl: "/images/committee/riyadduzzaman.jpg",
+    imageUrl: "/images/committee/riyadduzzaman.png",
   },
   {
     name: "Sanour Islam",
-    email: "sanour@ieee.org",
+    email: "mailto:sanour@ieee.org",
     facebookUrl: "https://www.facebook.com/saroar.sabbir.39",
     linkedinUrl: "https://www.linkedin.com/in/saroar-hosen-8048b9249",
     recognition: "BSc. in EEE",
@@ -578,7 +578,7 @@ const excom24 = [
   },
   {
     name: "Shafayet Ullah Ador",
-    email: "shafayetullah@ieee.org",
+    email: "mailto:shafayetullah@ieee.org",
     facebookUrl: "https://www.facebook.com/shefayet.ador",
     linkedinUrl: "https://www.linkedin.com/mwlite/in/shafayet-ullah-9009a0267",
     recognition: "BSc. in EEE",
@@ -586,8 +586,8 @@ const excom24 = [
     imageUrl: "/images/committee/com24/Excom/Shafayet_Ador.png",
   },
   {
-    name: "Nawshin Prima",
-    email: "naprima@ieee.org",
+    name: "Nawshin Anjum Prima",
+    email: "mailto:naprima@ieee.org",
     facebookUrl: "https://www.facebook.com/nawshin.prima.35",
     linkedinUrl: "https://www.linkedin.com/in/na-prima-0baba0267",
     recognition: "BSc. in CSE",
@@ -596,7 +596,7 @@ const excom24 = [
   },
   {
     name: "Abdul Ahad Bin Younus",
-    email: "a.ahad@ieee.org",
+    email: "mailto:a.ahad@ieee.org",
     facebookUrl: "https://www.facebook.com/abdulahad.apu",
     linkedinUrl: "https://www.linkedin.com/in/abdul-ahad-bin-younus-92344b250",
     recognition: "BSc. in EEE",
@@ -605,7 +605,7 @@ const excom24 = [
   },
   {
     name: "Nowrin Binte Rashid Rio",
-    email: "nowrin_binte_rashid_rio@ieee.org",
+    email: "mailto:nowrin_binte_rashid_rio@ieee.org",
     facebookUrl: "https://www.facebook.com/NowrinRio",
     linkedinUrl: "http://linkedin.com/in/nowrin-rashid-rio-775953269",
     recognition: "BSc. in CSE",
@@ -1034,7 +1034,7 @@ const vol23 = [
     role: "volunteer",
     recognition: "BSc. in IPE",
     email: "mailto:mdriyaduzzaman@ieee.org",
-    imageUrl: "/images/committee/riyadduzzaman.jpg",
+    imageUrl: "/images/committee/riyadduzzaman.png",
     facebookUrl: "https://www.facebook.com/pres.bhuiyan.riad.3.1",
     linkedinUrl:
       "https://www.linkedin.com/in/md-riyaduzzaman-bhuiyan-b047b4216",
@@ -1447,7 +1447,7 @@ const ias24 = [
       "https://www.linkedin.com/in/md-riyaduzzaman-bhuiyan-b047b4216",
     recognition: "BSc. in EEE",
     role: "Chapter Chairperson",
-    imageUrl: "/images/committee/riyadduzzaman.jpg",
+    imageUrl: "/images/committee/riyadduzzaman.png",
   },
   {
     name: "Ahnaf Ibtahaz",

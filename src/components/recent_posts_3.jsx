@@ -20,7 +20,7 @@ const posts = [
   {
     id: 92,
     title: `IEEE Student Professional Awareness Venture (SPAVe) 7.0`,
-    imageUrl: "/images/Spave7.0.jpg",
+    imageUrl: "/images/Spave7.0.png",
     date: "June 06, 2024",
     datetime: "2024/06/06",
     category: ``,
