@@ -451,7 +451,7 @@ export default function Records() {
         >
           <div className="relative flex pb-4 sm:mx-0 sm:block sm:pb-0 p-5 md:justify-self-center lg:justify-self-end">
             <div className="absolute bottom-0 top-2 left-0.5 hidden w-px bg-slate-200 lg:block" />
-            <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 w-full overflow-scroll px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
+            <Tab.List className="grid auto-cols-auto grid-flow-col justify-start gap-x-8 gap-y-10 w-full px-4 sm:mx-auto sm:max-w-2xl sm:grid-cols-3 sm:px-0 sm:text-center lg:grid-flow-row lg:grid-cols-1 lg:text-left">
               {({ selectedIndex }) =>
                 achievements.map((achievement, dayIndex) => (
                   <div key={achievement.year} className="relative lg:pl-8">

@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 

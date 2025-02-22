@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function TeamCard1({ person }) {
   if (typeof person === "undefined") {
     return null;
@@ -8,10 +9,12 @@ export default function TeamCard1({ person }) {
         <div className="border border-gray-300 bg-white rounded-lg max-w-sm w-full">
           <div className="space-y-4">
             <div className="aspect-w-4 aspect-h-5">
-              <img
+              <Image
                 className="rounded-t-lg object-cover shadow-lg"
                 src={person.imageUrl}
-                alt=""
+                alt={person.name}
+                width={420}
+                height={256}
               />
             </div>
             <div className="space-y-2 p-5">

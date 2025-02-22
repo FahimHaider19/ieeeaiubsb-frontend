@@ -61,7 +61,7 @@ export default function Hero() {
     <div className="relative my-2">
       {/* <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" /> */}
       <div className=" -bottom-5 overflow-hidden bg-cyan-50">
-        <img
+        <Image
           alt=""
           src="https://img.freepik.com/free-vector/blue-background-with-abstract-waves_1393-258.jpg"
           // decoding="async"
@@ -69,8 +69,8 @@ export default function Hero() {
           className="absolute top-0 w-full h-full object-cover object-center opacity-10"
           // loading="lazy"
           // style="color:transparent"
-          // width="918"
-          // height="1495"
+          width={918}
+          height={1495}
         />
         <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white"></div>
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white"></div>
@@ -93,11 +93,12 @@ export default function Hero() {
             <SwiperSlide>
               <div className=" mx-auto max-w-7xl bottom-2 sm:px-6 lg:px-8">
                 <div className="relative shadow-xl lg:h-[80vh] max-h-[720px] sm:overflow-hidden sm:rounded-2xl">
-                  <div className="absolute inset-0">
-                    <img
-                      className="h-full w-full object-cover"
+                  <div className="absolute inset-0 aspect-w-16 aspect-h-9">
+                    <Image
+                      className="h-full w-full object-cover "
                       src={slide.imageSrc}
-                      alt="image"
+                      alt={slide.subheading}
+                      fill
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-sky-100 mix-blend-multiply" />
                   </div>
@@ -118,13 +119,13 @@ export default function Hero() {
                       <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                         <a
                           href="https://www.ieee.org/"
-                          className="flex items-center justify-center rounded-md lg:border lg:border-transparent bg-white px-4 lg:py-3 text-base font-medium text-cyan-700 shadow-sm hover:bg-cyan-50 invisible lg:visible "
+                          className="flex items-center justify-center rounded-md lg:border lg:border-transparent bg-white px-4 lg:py-3 text-base font-medium text-cyan-700 shadow-sm hover:bg-cyan-50 invisible md:visible "
                         >
                           Get started
                         </a>
                         <a
                           href="/membership"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 py-1 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:text-base lg:visible sm:invisible"
+                          className="flex items-center justify-center rounded-md border border-transparent bg-cyan-500 bg-opacity-60 py-1 text-sm font-medium text-white shadow-sm hover:bg-opacity-70 sm:text-base md:visible invisible"
                         >
                           Join Us
                         </a>
