@@ -2355,24 +2355,14 @@ export default function Page({ params }) {
         if (params.slug[0] == 2021)
           return <EXCOM people={excom21} year={2021} />;
 
-        // if (params.slug[0] == 2023)
-        //   return <EXCOM people={excom23} year={2023} />;
-        return (
-          <>
-            <h1>
-              {params.slug[0]} {params.slug[1]}
-            </h1>
-          </>
-        );
+      // if (params.slug[0] == 2023)
+      //   return <EXCOM people={excom23} year={2023} />;
+
       case "volunteers":
-        if (params.slug[0] == 2024)
-          return <VOL23 people={vol24} year={params.slug[0]} />;
-        if (params.slug[0] == 2023)
-          return <VOL23 people={vol23} year={params.slug[0]} />;
-        if (params.slug[0] == 2022)
-          return <VOL people={vol22} year={params.slug[0]} />;
-        if ((params.slug[0] = 2021))
-          return <VOL people={vol21} year={params.slug[0]} />;
+        if (params.slug[0] == 2024) return <VOL23 people={vol24} year={2024} />;
+        if (params.slug[0] == 2023) return <VOL23 people={vol23} year={2023} />;
+        if (params.slug[0] == 2022) return <VOL people={vol22} year={2022} />;
+        if (params.slug[0] == 2021) return <VOL people={vol21} year={2021} />;
       case "cs-committee":
         if (params.slug[0] == 2024) return <CS23 people={cs24} year={2024} />;
         if (params.slug[0] == 2023) return <CS23 people={cs23} year={2023} />;
