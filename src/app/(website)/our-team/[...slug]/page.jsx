@@ -2,6 +2,383 @@ import { notFound } from "next/navigation";
 import Panel from "../components/panel";
 import TeamCard1 from "@/components/TeamCard1";
 
+const excom19 = [
+  {
+    name: "Md. Tauhidur Rahman",
+    role: "Chairperson",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md._Tauhidur_Rahman.jpg",
+    email: "tauhidur.rahman@ieee.org",
+    facebookUrl: "https://www.facebook.com/tauhidsifat",
+    linkedinUrl: "https://www.linkedin.com/in/md-tauhidur-rahman/",
+  },
+
+  {
+    name: "Jobayer Ibne Azad",
+    role: "Vice-Chairperson",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Jobayer_Ibne_Azad.jpg",
+    email: "jobairabeed@gmail.com",
+    facebookUrl: "https://www.facebook.com/jobayeribneazad",
+    linkedinUrl: "https://www.linkedin.com/in/jobayer-ibne-azad/",
+  },
+
+  {
+    name: "Md. Asaf-Ud-Doulah",
+    role: "Secretary",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Mohammed _Asaf_Ud-Doulah.jpeg",
+    email: "asafniloy8@gmail.com",
+    facebookUrl: "https://www.facebook.com/asaf.niloyii",
+    linkedinUrl: "https://www.linkedin.com/in/asaf-ud-doulah/",
+  },
+  {
+    name: "Rafid Azad",
+    role: "Chapters & Affinity Group Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Rafid_Azad.jpg",
+    email: "rafid.azad@ieee.org",
+    facebookUrl: "https://www.facebook.com/ravinx9",
+    linkedinUrl: "https://www.linkedin.com/in/rafid-azad/",
+  },
+  {
+    name: "Md. Mahabubur Rahman",
+    role: "Treasuer",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md._Mahabubur_Rahman.jpg",
+    email: "m.mhabubur21@ieee.org",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100005810281656",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md Rahat Azad",
+    role: "Finance Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md_Rahat_Azad.jpg",
+    email: "azad.rahat@ieee.org",
+    facebookUrl: "https://www.facebook.com/rahat889",
+    linkedinUrl: "https://www.linkedin.com/in/rahatazad-b3b984155/",
+  },
+  {
+    name: "Md Eyasin Rahman",
+    role: "Logistic Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md_Eyasin_Rahman.jpg",
+    email: "#",
+    facebookUrl: "https://www.facebook.com/eyasin.rahman.9",
+    linkedinUrl: "https://www.linkedin.com/in/eyasinrahman/",
+  },
+  {
+    name: "Shahriar Siraj Khan",
+    role: "Logistic Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Shahriar_Siraj_Khan.jpeg",
+    email: "khan.shahriarsiraj@ieee.org",
+    facebookUrl: "https://www.facebook.com/shahriarsirajkhan",
+    linkedinUrl: "https://www.linkedin.com/in/shahriarsirajkhan/",
+  },
+  {
+    name: "Md. Minhajul Abedin",
+    role: "Creative Designer & Publicity Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md._Minhajul_Abedin.jpg",
+    email: "minhajul.rony@ieee.org",
+    facebookUrl: "https://web.facebook.com/minhazulrony01",
+    linkedinUrl: "https://www.linkedin.com/in/minhazulrony01",
+  },
+  {
+    name: "Dewan Mahnaaz Mahmud",
+    role: "Event Designer",
+    recognition: "",
+    imageUrl: "/images/committee/com20/dewan_mahnaz.jpg",
+    email: "mahnaaz4211@ieee.org",
+    facebookUrl: "https://www.facebook.com/dmmahmud4211",
+    linkedinUrl: "https://www.linkedin.com/in/mahnaaz4211/",
+  },
+  {
+    name: "Mashrur Sakib Choyon",
+    role: "Event Designer",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Mashrur_Sakib_Choyon.jpeg",
+    email: "choyon@ieee.org",
+    facebookUrl: "https://www.facebook.com/mashrurchoyon7",
+    linkedinUrl: "https://www.linkedin.com/in/choyon7/",
+  },
+  {
+    name: "Md. Anisur Rahman",
+    role: "Outreach Program Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md._Anisur_Rahman..jpg",
+    email: "#",
+    facebookUrl: "https://www.facebook.com/anisur.rhaman.1485",
+    linkedinUrl: "https://www.linkedin.com/in/md-anisur-rahman-849b45142/",
+  },
+  {
+    name: "Md. Mohaiminul Islam",
+    role: "Outreach Program Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/Md._Mohaiminul_Islam.jpg",
+    email: "mohaimin_siam@ieee.org",
+    facebookUrl: "https://web.facebook.com/siam.bright.0",
+    linkedinUrl: "https://www.linkedin.com/in/md-mohaiminul-islam-110966153/",
+  },
+  {
+    name: "Naymul Bari",
+    role: "Photojournalist",
+    recognition: "",
+    imageUrl: "",
+    email: "naymulbari@ieee.org",
+    facebookUrl: "https://www.facebook.com/Naymul.bari.666666",
+    linkedinUrl: "https://www.linkedin.com/in/naymul-bari-724059164/",
+  },
+  {
+    name: "Farabee Khalid",
+    role: "Publications Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Farabee_Khalid.jpeg",
+    email: "farabeeklhalid.fk@gmail.com",
+    facebookUrl: "https://www.facebook.com/farabee.khalid",
+    linkedinUrl: "https://www.linkedin.com/in/farabee-khalid-4a8108205/",
+  },
+  {
+    name: "Tamanna Dewan Mimi",
+    role: "Public Relations Coordinator",
+    recognition: "",
+    imageUrl: "",
+    email: "tamannamim@ieee.org",
+    facebookUrl: "https://www.facebook.com/t.mim.29",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Ishrat Jahan Muniya",
+    role: "Public Relations Coordinator",
+    recognition: "",
+    imageUrl: "",
+    email: "esratmunia28@gmail.com",
+    facebookUrl: "https://www.facebook.com/profile.php?id=100011689691983",
+    linkedinUrl: "https://www.linkedin.com/in/eashratj/",
+  },
+  {
+    name: "Md. Jalal Uddin",
+    role: "Social Activity Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md._Jalal_Uddin.jpeg",
+    email: "jalaluddin@ieee.org",
+    facebookUrl: "https://www.facebook.com/uddin.jalal377",
+    linkedinUrl: "https://www.linkedin.com/in/md-jalal-uddin-13368915a/",
+  },
+  {
+    name: "Sm. Habibul Mursaleen",
+    role: "Social Activity Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Sm._Habibul_Musarleen.jpeg",
+    email: "habibulmursaleen@ieee.org",
+    facebookUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/habibulmursaleen/",
+  },
+  {
+    name: "Khalid Ibne Hasan",
+    role: "Webmaster",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Khalid_Ibne_Hasan.jpeg",
+    email: "khalid.hasan@ieee.org",
+    facebookUrl: "https://www.facebook.com/iamkih",
+    linkedinUrl: "https://www.linkedin.com/in/khalid-ibne-hasan/",
+  },
+  {
+    name: "Md. Shahariar Khan Hemel",
+    role: "Webmaster",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md._Shahariar_Khan_Hemel.jpeg",
+    email: "skhemel@ieee.org",
+    facebookUrl: "https://www.facebook.com/sk.hemel.3",
+    linkedinUrl: "https://www.linkedin.com/in/md-shahriar-khan-hemel/",
+  },
+  {
+    name: "Md. Farhanul Abeed",
+    role: "Social Media Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md._Farhanul_Abeed.jpeg",
+    email: "farhanulabed@ieee.org",
+    facebookUrl: "https://web.facebook.com/farhanulabed",
+    linkedinUrl: "https://www.linkedin.com/in/md-farhanul-abed-94b817153/",
+  },
+  {
+    name: "Tasnim Ahamed",
+    role: "Social Media Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Tasnim_Ahamed.jpeg",
+    email: "tasnimahmedfahim@gmail.com",
+    facebookUrl: "https://web.facebook.com/tasnimahamed.fahim",
+    linkedinUrl: "https://www.linkedin.com/in/tasnim-ahmed-ieee/",
+  },
+];
+
+const excom20 = [
+  {
+    name: "Md. Asaf-Ud-Doulah",
+    role: "Chairperson",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Mohammed _Asaf_Ud-Doulah.jpeg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/asaf.niloyii",
+    linkedinUrl: "https://www.linkedin.com/in/asaf-ud-doulah/",
+  },
+  {
+    name: "Mashrur Sakib Choyon",
+    role: "Vice-Chairperson (Technical)",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Mashrur_Sakib_Choyon.jpeg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/mashrurchoyon7",
+    linkedinUrl: "https://www.linkedin.com/in/choyon7/",
+  },
+  {
+    name: "Shahriar Siraj Khan",
+    role: "Vice-Chairperson (Activity)",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Shahriar_Siraj_Khan.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Tasnim Ahmed",
+    role: "Secretary",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Tasnim_Ahmed.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Farabee Khalid",
+    role: "Chapters & Affinity Group Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Farabee_Khalid.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Dewan Mahnaaz Mahmud",
+    role: "Treasurer",
+    recognition: "",
+    imageUrl: "/images/committee/com20/dewan_mahnaz.jpg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/dmmahmud4211",
+    linkedinUrl: "https://www.linkedin.com/in/mahnaaz4211/",
+  },
+  {
+    name: "Md. Rezwan Hossain Naeem",
+    role: "Event Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md.Rezwan_Hossain Naeem.jpg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md. Yeasib Bin Hassan",
+    role: "Event Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md.Yeasib_Bin_Hassan.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Sadman Sakib Rafat",
+    role: "Logistics Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/rafat-200-200.jpeg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/sadmansakib.sadmansakib.5",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md Zilan Uddin Saif",
+    role: "Logistics Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/zilan-uddin-saif-200-200.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Shartaz Khan Akash",
+    role: "Creative Designer",
+    recognition: "",
+    imageUrl: "/images/committee/akash.jpg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md Touhidul Islam",
+    role: "Photojournalist",
+    recognition: "",
+    imageUrl: "/images/committee/touhidul-200.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Al Jamy Abu Rahman",
+    role: "Webmaster",
+    recognition: "",
+    imageUrl: "/images/dummy_pfp.png",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md. Jamil Istiaq",
+    role: "Webmaster",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Md_Jamil_Istiaq .jpeg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/jamilistiaq",
+    linkedinUrl: "https://www.linkedin.com/in/jamilistiaq/",
+  },
+  {
+    name: "Mohd. Abidur Rahman Muhit",
+    role: "Public Relations Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/muhit-200.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Md. Arifur Rahman Moon",
+    role: "Public Relations Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com19/arifur_rahman_moon.jpg",
+    email: "mailto:#",
+    facebookUrl: "https://www.facebook.com/arifurrahman.moon.5",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Alve Rahman Akash",
+    role: "Publications Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Alve_Rahman_Akash.jpg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/alvieee/",
+  },
+  {
+    name: "Fardeen Mahbub",
+    role: "Publications Coordinator",
+    recognition: "",
+    imageUrl: "/images/committee/com20/Fardeen_Mahbub.jpeg",
+    email: "mailto:#",
+    facebookUrl: "#",
+    linkedinUrl: "https://www.linkedin.com/in/fardeen-mahbub/",
+  },
+];
+
 const excom21 = [
   {
     name: "Prof. Dr. A.B.M. Siddique Hossain",
@@ -99,7 +476,7 @@ const excom21 = [
     recognition: "B.Sc in EEE",
     imageUrl: "/images/committee/rafat-200-200.jpeg",
     email: "mailto: sakibrafat82@gmail.com",
-    facebookUrl: "#",
+    facebookUrl: "https://www.facebook.com/sadmansakib.sadmansakib.5",
     linkedinUrl: "#",
   },
   {
@@ -1881,6 +2258,118 @@ function EXCOM(props) {
   );
 }
 
+function EXCOM20(props) {
+  const list1 = props.people[0];
+  const list2 = props.people[1];
+  const list3 = props.people.filter((p, i) => {
+    if (i >= 2 && i <= 3) return p;
+  });
+
+  const list4 = props.people.filter((p, i) => {
+    if (i >= 4 && i <= 5) return p;
+  });
+
+  const all = props.people.filter((p, i) => {
+    if (i >= 6) {
+      return p;
+    }
+  });
+
+  const last = props.people.filter((p, i) => {
+    if (props.year === 2022) {
+      return null;
+    } else {
+      return p;
+    }
+  });
+
+  return (
+    <div className="bg-white">
+      <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
+        <div className="space-y-12">
+          <div className="space-y-5 sm:mx-auto">
+            <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
+              Executive Committee {props.year}
+            </h1>
+          </div>
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
+          >
+            <li>
+              <TeamCard1 person={list1} />
+            </li>
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
+          >
+            <li>
+              <TeamCard1 person={list2} />
+            </li>
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
+          >
+            {list3.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
+          >
+            {list4.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+          >
+            {all.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+          </ul>
+
+          {/* <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+          >
+            {list6.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+          </ul>
+
+          <ul
+            role="list"
+            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+          >
+            {list7.map((p) => (
+              <li key={p.name}>
+                <TeamCard1 person={p} />
+              </li>
+            ))}
+            </ul>*/}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function EXCOM24(props) {
   const { people, year } = props;
 
@@ -2354,6 +2843,10 @@ export default function Page({ params }) {
           return <EXCOM people={excom22} year={2022} />;
         if (params.slug[0] == 2021)
           return <EXCOM people={excom21} year={2021} />;
+        if (params.slug[0] == 2020)
+          return <EXCOM20 people={excom20} year={2020} />;
+      // if (params.slug[0] == 2019)
+      //   return <EXCOM20 people={excom19} year={2019} />;
 
       // if (params.slug[0] == 2023)
       //   return <EXCOM people={excom23} year={2023} />;
