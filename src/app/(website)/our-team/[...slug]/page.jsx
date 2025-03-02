@@ -2,171 +2,6 @@ import { notFound } from "next/navigation";
 import Panel from "../components/panel";
 import TeamCard1 from "@/components/TeamCard1";
 
-const excom20 = [
-  {
-    name: "Md. Asaf-Ud-Doulah",
-    role: "Chairperson",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Mohammed _Asaf_Ud-Doulah.jpeg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/asaf.niloyii",
-    linkedinUrl: "https://www.linkedin.com/in/asaf-ud-doulah/",
-  },
-  {
-    name: "Mashrur Sakib Choyon",
-    role: "Vice-Chairperson (Technical)",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Mashrur_Sakib_Choyon.jpeg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/mashrurchoyon7",
-    linkedinUrl: "https://www.linkedin.com/in/choyon7/",
-  },
-  {
-    name: "Shahriar Siraj Khan",
-    role: "Vice-Chairperson (Activity)",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Shahriar_Siraj_Khan.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Tasnim Ahmed",
-    role: "Secretary",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Tasnim_Ahmed.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Farabee Khalid",
-    role: "Chapters & Affinity Group Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Farabee_Khalid.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Dewan Mahnaaz Mahmud",
-    role: "Treasurer",
-    recognition: "",
-    imageUrl: "/images/committee/com20/dewan_mahnaz.jpg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/dmmahmud4211",
-    linkedinUrl: "https://www.linkedin.com/in/mahnaaz4211/",
-  },
-  {
-    name: "Md. Rezwan Hossain Naeem",
-    role: "Event Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Md.Rezwan_Hossain Naeem.jpg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Md. Yeasib Bin Hassan",
-    role: "Event Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Md.Yeasib_Bin_Hassan.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Sadman Sakib Rafat",
-    role: "Logistics Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/rafat-200-200.jpeg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/sadmansakib.sadmansakib.5",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Md Zilan Uddin Saif",
-    role: "Logistics Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/zilan-uddin-saif-200-200.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Shartaz Khan Akash",
-    role: "Creative Designer",
-    recognition: "",
-    imageUrl: "/images/committee/akash.jpg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Md Touhidul Islam",
-    role: "Photojournalist",
-    recognition: "",
-    imageUrl: "/images/committee/touhidul-200.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Al Jamy Abu Rahman",
-    role: "Webmaster",
-    recognition: "",
-    imageUrl: "/images/dummy_pfp.png",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Md. Jamil Istiaq",
-    role: "Webmaster",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Md_Jamil_Istiaq .jpeg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/jamilistiaq",
-    linkedinUrl: "https://www.linkedin.com/in/jamilistiaq/",
-  },
-  {
-    name: "Mohd. Abidur Rahman Muhit",
-    role: "Public Relations Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/muhit-200.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Md. Arifur Rahman Moon",
-    role: "Public Relations Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com19/arifur_rahman_moon.jpg",
-    email: "mailto:#",
-    facebookUrl: "https://www.facebook.com/arifurrahman.moon.5",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Alve Rahman Akash",
-    role: "Publications Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Alve_Rahman_Akash.jpg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "https://www.linkedin.com/in/alvieee/",
-  },
-  {
-    name: "Fardeen Mahbub",
-    role: "Publications Coordinator",
-    recognition: "",
-    imageUrl: "/images/committee/com20/Fardeen_Mahbub.jpeg",
-    email: "mailto:#",
-    facebookUrl: "#",
-    linkedinUrl: "https://www.linkedin.com/in/fardeen-mahbub/",
-  },
-];
-
 const excom21 = [
   {
     name: "Prof. Dr. A.B.M. Siddique Hossain",
@@ -2046,117 +1881,117 @@ function EXCOM(props) {
   );
 }
 
-function EXCOM20(props) {
-  const list1 = props.people[0];
-  const list2 = props.people[1];
-  const list3 = props.people.filter((p, i) => {
-    if (i >= 2 && i <= 3) return p;
-  });
+// function EXCOM20(props) {
+//   const list1 = props.people[0];
+//   const list2 = props.people[1];
+//   const list3 = props.people.filter((p, i) => {
+//     if (i >= 2 && i <= 3) return p;
+//   });
 
-  const list4 = props.people.filter((p, i) => {
-    if (i >= 4 && i <= 5) return p;
-  });
+//   const list4 = props.people.filter((p, i) => {
+//     if (i >= 4 && i <= 5) return p;
+//   });
 
-  const all = props.people.filter((p, i) => {
-    if (i >= 6) {
-      return p;
-    }
-  });
+//   const all = props.people.filter((p, i) => {
+//     if (i >= 6) {
+//       return p;
+//     }
+//   });
 
-  const last = props.people.filter((p, i) => {
-    if (props.year === 2022) {
-      return null;
-    } else {
-      return p;
-    }
-  });
+//   const last = props.people.filter((p, i) => {
+//     if (props.year === 2022) {
+//       return null;
+//     } else {
+//       return p;
+//     }
+//   });
 
-  return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
-        <div className="space-y-12">
-          <div className="space-y-5 sm:mx-auto">
-            <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
-              Executive Committee {props.year}
-            </h1>
-          </div>
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
-          >
-            <li>
-              <TeamCard1 person={list1} />
-            </li>
-          </ul>
+//   return (
+//     <div className="bg-white">
+//       <div className="mx-auto max-w-7xl py-12 px-6 text-center lg:px-8 lg:py-24">
+//         <div className="space-y-12">
+//           <div className="space-y-5 sm:mx-auto">
+//             <h1 className="mt-1 text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-cyan-900 bg-clip-text text-transparent sm:text-5xl sm:tracking-tight lg:text-6xl text-center">
+//               Executive Committee {props.year}
+//             </h1>
+//           </div>
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
+//           >
+//             <li>
+//               <TeamCard1 person={list1} />
+//             </li>
+//           </ul>
 
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
-          >
-            <li>
-              <TeamCard1 person={list2} />
-            </li>
-          </ul>
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid auto-rows-max sm:grid-cols-1 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-1 justify-center content-center	"
+//           >
+//             <li>
+//               <TeamCard1 person={list2} />
+//             </li>
+//           </ul>
 
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
-          >
-            {list3.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
-          </ul>
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
+//           >
+//             {list3.map((p) => (
+//               <li key={p.name}>
+//                 <TeamCard1 person={p} />
+//               </li>
+//             ))}
+//           </ul>
 
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
-          >
-            {list4.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
-          </ul>
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-2  justify-center content-center"
+//           >
+//             {list4.map((p) => (
+//               <li key={p.name}>
+//                 <TeamCard1 person={p} />
+//               </li>
+//             ))}
+//           </ul>
 
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
-          >
-            {all.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
-          </ul>
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+//           >
+//             {all.map((p) => (
+//               <li key={p.name}>
+//                 <TeamCard1 person={p} />
+//               </li>
+//             ))}
+//           </ul>
 
-          {/* <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
-          >
-            {list6.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
-          </ul>
+//           {/* <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+//           >
+//             {list6.map((p) => (
+//               <li key={p.name}>
+//                 <TeamCard1 person={p} />
+//               </li>
+//             ))}
+//           </ul>
 
-          <ul
-            role="list"
-            className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
-          >
-            {list7.map((p) => (
-              <li key={p.name}>
-                <TeamCard1 person={p} />
-              </li>
-            ))}
-            </ul>*/}
-        </div>
-      </div>
-    </div>
-  );
-}
+//           <ul
+//             role="list"
+//             className="mx-auto space-y-16 sm:grid sm:grid-cols-3 sm:gap-12 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3  justify-center content-center"
+//           >
+//             {list7.map((p) => (
+//               <li key={p.name}>
+//                 <TeamCard1 person={p} />
+//               </li>
+//             ))}
+//             </ul>*/}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 function EXCOM24(props) {
   const { people, year } = props;
@@ -2631,8 +2466,8 @@ export default function Page({ params }) {
           return <EXCOM people={excom22} year={2022} />;
         if (params.slug[0] == 2021)
           return <EXCOM people={excom21} year={2021} />;
-        if (params.slug[0] == 2020)
-          return <EXCOM20 people={excom20} year={2020} />;
+      //   if (params.slug[0] == 2020)
+      //     return <EXCOM20 people={excom20} year={2020} />;
       // if (params.slug[0] == 2019)
       //   return <EXCOM20 people={excom19} year={2019} />;
 
