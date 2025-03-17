@@ -10,7 +10,7 @@ export default function NavBar2() {
       <div className="bg-white shadow ">
         <Popover className="relative shadow">
           <div className="mx-auto max-w-7xl px-6">
-            <div className="flex items-center space-x-4 justify-between py-6 lg:justify-start">
+            <div className="flex items-center space-x-4 justify-between py-6 lg:justify-center">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
                   <span className="sr-only">IEEEAIUBSB</span>
@@ -22,7 +22,7 @@ export default function NavBar2() {
                 </a>
               </div>
               <Options />
-              <div className="hidden items-center justify-end space-x-6 lg:flex lg:flex-1 lg:w-0">
+              {/* <div className="hidden items-center justify-end space-x-6 lg:flex lg:flex-1 lg:w-0">
                 <Link
                   href="#"
                   className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 invisible"
@@ -35,7 +35,7 @@ export default function NavBar2() {
                 >
                   Sign up
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <MobileOptions />

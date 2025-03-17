@@ -92,9 +92,9 @@ export default function Panel(props) {
           href="#prev"
           className="text-base font-semibold leading-7 text-cyan-600 grid place-items-center"
         >
-          <div>
+          {/* <div>
             View more <span aria-hidden="true">→</span>
-          </div>
+          </div> */}
         </a>
       </div>
 

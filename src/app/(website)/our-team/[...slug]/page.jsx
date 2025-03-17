@@ -1524,7 +1524,7 @@ const mtts23 = [
 const mtts24 = [
   {
     name: "Abdullah Al Faisal",
-    role: "volunteer",
+    role: "Chapter Chairperson",
     recognition: "BSc. in CSE",
     email: "mailto:abdullahalfaisal992@gmail.com",
     imageUrl: "/images/committee/faisal.jpg",
