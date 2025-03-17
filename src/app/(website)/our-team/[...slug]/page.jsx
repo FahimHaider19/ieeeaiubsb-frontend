@@ -563,7 +563,7 @@ const excom24 = [
     facebookUrl: "https://www.facebook.com/pres.bhuiyan.riad.3.1",
     linkedinUrl:
       "https://www.linkedin.com/in/md-riyaduzzaman-bhuiyan-b047b4216",
-    recognition: "BSc. in EEE",
+    recognition: "BSc. in IPE",
     role: "Logistic Coordinator",
     imageUrl: "/images/committee/riyadduzzaman.png",
   },
@@ -1162,7 +1162,7 @@ const vol24 = [
   {
     name: "Nuren Tasnim",
     role: "volunteer",
-    recognition: "BSc. in EEE",
+    recognition: "BSc. in CSE",
     imageUrl: "/images/committee/com24/volunteers/Nuren Tasnim Risha.jpg",
     email: "risha3532@gmail.com",
     facebookUrl: "https://www.facebook.com/share/1BoJqgqx3t/",
@@ -1171,20 +1171,11 @@ const vol24 = [
   {
     name: "Aishee Debnath",
     role: "volunteer",
-    recognition: "BSc. in EEE",
+    recognition: "BSc. in CSE",
     imageUrl: "/images/committee/com24/volunteers/Aishee Debnath.png",
     email: "aisheedebnath86@gmail.com",
     facebookUrl: "https://www.facebook.com/share/188RLQHtNF/",
     linkedinUrl: "https://www.linkedin.com/in/aishee-debnath-14763b2b4/",
-  },
-  {
-    name: "Sidratul Montaha",
-    role: "volunteer",
-    recognition: "BSc. in IPE",
-    imageUrl: "/images/committee/com24/volunteers/Sidratul Montaha_.jpg",
-    email: "montaham528@gmail.com",
-    facebookUrl: "#",
-    linkedinUrl: "#",
   },
   {
     name: "Md. Nahiduzzaman",
@@ -1532,13 +1523,13 @@ const mtts23 = [
 
 const mtts24 = [
   {
-    name: "Abdul Ahad Bin Younus",
-    email: "a.ahad@ieee.org",
-    facebookUrl: "https://www.facebook.com/abdulahad.apu",
-    linkedinUrl: "https://www.linkedin.com/in/abdul-ahad-bin-younus-92344b250",
-    recognition: "BSc. in EEE",
-    role: "Chapter Chairperson",
-    imageUrl: "/images/committee/com24/Excom/Abdul_Ahad_Apu.png",
+    name: "Abdullah Al Faisal",
+    role: "volunteer",
+    recognition: "BSc. in CSE",
+    email: "mailto:abdullahalfaisal992@gmail.com",
+    imageUrl: "/images/committee/faisal.jpg",
+    facebookUrl: "https://www.facebook.com/abdullahal.faisal.7737",
+    linkedinUrl: "https://www.linkedin.com/in/abdullah-al-faisal-a57945279/",
   },
   {
     name: "Md Fahim Abdullah",
